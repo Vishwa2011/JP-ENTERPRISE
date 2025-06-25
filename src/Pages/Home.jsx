@@ -1,9 +1,9 @@
-import React from 'react'
-import Navbar from './Navbar'
+
 
 const Home = () => {
   return (
     <div>
+      
        {/* <!-- Start Main Banner Area --> */}
         <div className="home-slides-three owl-carousel owl-theme">
             <div className="hero-banner">
