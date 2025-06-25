@@ -101,11 +101,11 @@ const Navbar = () => {
 
                         <div class="collapse navbar-collapse mean-menu">
                             <ul class="navbar-nav">
-                                <li class="nav-item"><a href="#" class="nav-link active">Home </a>
+                                <li class="nav-item"><a href="/" class="nav-link active">Home </a>
                                    
                                 </li>
 
-                                <li class="nav-item "><a href="#" class="nav-link">About Us </a>
+                                <li class="nav-item "><a href="/Aboutus" class="nav-link">About Us </a>
                                     {/* <ul class="dropdown-menu">
                                         <li class="nav-item">
                                             <div class="container">
@@ -587,23 +587,13 @@ const Navbar = () => {
                         </a>
 
                         <div class="collapse navbar-collapse mean-menu">
-                            <ul class="navbar-nav">
-                                <li class="nav-item"><a href="#" class="nav-link active">Home <i class='bx bx-chevron-down'></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a href="index.html" class="nav-link">Home 1</a></li>
-
-                                        <li class="nav-item"><a href="index-2.html" class="nav-link">Home 2</a></li>
-
-                                        <li class="nav-item"><a href="index-3.html" class="nav-link">Home 3</a></li>
-
-                                        <li class="nav-item"><a href="index-4.html" class="nav-link active">Home 4</a></li>
-
-                                        <li class="nav-item"><a href="index-5.html" class="nav-link">Home 5</a></li>
-                                    </ul>
+                       <ul class="navbar-nav">
+                                <li class="nav-item"><a href="/" class="nav-link active">Home </a>
+                                   
                                 </li>
 
-                                <li class="nav-item megamenu"><a href="#" class="nav-link">Shop <i class='bx bx-chevron-down'></i></a>
-                                    <ul class="dropdown-menu">
+                                <li class="nav-item "><a href="/Aboutus" class="nav-link">About Us </a>
+                                    {/* <ul class="dropdown-menu">
                                         <li class="nav-item">
                                             <div class="container">
                                                 <div class="row justify-content-center">
@@ -715,11 +705,11 @@ const Navbar = () => {
                                                 </div>
                                             </div>
                                         </li>
-                                    </ul>
+                                    </ul> */}
                                 </li>
 
-                                <li class="nav-item megamenu"><a href="#" class="nav-link">Pages <i class='bx bx-chevron-down'></i></a>
-                                    <ul class="dropdown-menu">
+                                <li class="nav-item "><a href="#" class="nav-link">Mice Problem </a>
+                                    {/* <ul class="dropdown-menu">
                                         <li class="nav-item">
                                             <div class="container">
                                                 <div class="row justify-content-center">
@@ -821,11 +811,11 @@ const Navbar = () => {
                                                 </div>
                                             </div>
                                         </li>
-                                    </ul>
+                                    </ul> */}
                                 </li>
 
-                                <li class="nav-item megamenu"><a href="#" class="nav-link">Women's <i class='bx bx-chevron-down'></i></a>
-                                    <ul class="dropdown-menu">
+                                <li class="nav-item "><a href="#" class="nav-link">Our Products </a>
+                                    {/* <ul class="dropdown-menu">
                                         <li class="nav-item">
                                             <div class="container">
                                                 <div class="row justify-content-center">
@@ -917,11 +907,11 @@ const Navbar = () => {
                                                 </div>
                                             </div>
                                         </li>
-                                    </ul>
+                                    </ul> */}
                                 </li>
 
-                                <li class="nav-item megamenu"><a href="#" class="nav-link">Men's <i class='bx bx-chevron-down'></i></a>
-                                    <ul class="dropdown-menu">
+                                <li class="nav-item "><a href="#" class="nav-link">Contact Us </a>
+                                    {/* <ul class="dropdown-menu">
                                         <li class="nav-item">
                                             <div class="container">
                                                 <div class="row justify-content-center">
@@ -1013,11 +1003,11 @@ const Navbar = () => {
                                                 </div>
                                             </div>
                                         </li>
-                                    </ul>
+                                    </ul> */}
                                 </li>
 
-                                <li class="nav-item"><a href="#" class="nav-link">Blog <i class='bx bx-chevron-down'></i></a>
-                                    <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="#" class="nav-link">Blog </a>
+                                    {/* <ul class="dropdown-menu">
                                         <li class="nav-item"><a href="blog-1.html" class="nav-link">Grid (2 in Row)</a></li>
 
                                         <li class="nav-item"><a href="blog-2.html" class="nav-link">Grid (3 in Row)</a></li>
@@ -1039,8 +1029,9 @@ const Navbar = () => {
                                                 <li class="nav-item"><a href="single-blog-3.html" class="nav-link">With Image Slider</a></li>
                                             </ul>
                                         </li>
-                                    </ul>
+                                    </ul> */}
                                 </li>
+                                
                             </ul>
 
                             <div class="others-option">

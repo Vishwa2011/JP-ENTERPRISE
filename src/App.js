@@ -1,9 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import React, { useEffect, useState } from "react";
-
+import Aboutus from "./Pages/Aboutus";
 import Mice_problem from "./Pages/Mice_problem";
-
 
 
 function App() {
@@ -37,6 +36,7 @@ function App() {
     </div>
      <Routes>
         <Route path="/"  element={<Home />}/>
+        <Route path="/Aboutus" element={<Aboutus/>} />
         <Route path="/Mice_problem"  element={<Mice_problem />}/>
      </Routes>
      <div class="go-top"><i class='bx bx-up-arrow-alt'></i></div>
