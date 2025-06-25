@@ -85,35 +85,44 @@
     });
 
     // Home Slides Three
-    $('.home-slides-three').owlCarousel({
+   $(document).ready(function () {
+    const $carousel = $('.home-slides-three');
+
+    $carousel.owlCarousel({
         loop: true,
         nav: false,
         dots: true,
+        autoplay: true,
         autoplayHoverPause: true,
         items: 1,
         smartSpeed: 750,
-        autoplay: true,
         navText: [
             "<i class='flaticon-left'></i>",
             "<i class='flaticon-right-arrow'></i>"
         ],
     });
-    $(".home-slides-three").on("translate.owl.carousel", function(){
-        $(".main-banner-content .sub-title").removeClass("animate__animated animate__fadeInUp").css("opacity", "0");
-        $(".main-banner-content h1").removeClass("animate__animated animate__fadeInUp").css("opacity", "0");
-        $(".main-banner-content p").removeClass("animate__animated animate__fadeInUp").css("opacity", "0");
-        $(".main-banner-content .btn-box").removeClass("animate__animated animate__fadeInUp").css("opacity", "0");
-        $(".banner-image img").removeClass("animate__animated animate__fadeInUp").css("opacity", "0");
-        $(".banner-image .circle").removeClass("animate__animated animate__zoomIn").css("opacity", "0");
+
+    $carousel.on("translate.owl.carousel", function () {
+        $(".main-banner-content .sub-title, .main-banner-content h1, .main-banner-content p, .main-banner-content .btn-box, .banner-image img")
+            .removeClass("animate__animated animate__fadeInUp")
+            .css("opacity", "0");
+
+        $(".banner-image .circle")
+            .removeClass("animate__animated animate__zoomIn")
+            .css("opacity", "0");
     });
-    $(".home-slides-three").on("translated.owl.carousel", function(){
-        $(".main-banner-content .sub-title").addClass("animate__animated animate__fadeInUp").css("opacity", "1");
-        $(".main-banner-content h1").addClass("animate__animated animate__fadeInUp").css("opacity", "1");
-        $(".main-banner-content p").addClass("animate__animated animate__fadeInUp").css("opacity", "1");
-        $(".main-banner-content .btn-box").addClass("animate__animated animate__fadeInUp").css("opacity", "1");
-        $(".banner-image img").addClass("animate__animated animate__fadeInUp").css("opacity", "1");
-        $(".banner-image .circle").addClass("animate__animated animate__zoomIn").css("opacity", "1");
+
+    $carousel.on("translated.owl.carousel", function () {
+        $(".main-banner-content .sub-title, .main-banner-content h1, .main-banner-content p, .main-banner-content .btn-box, .banner-image img")
+            .addClass("animate__animated animate__fadeInUp")
+            .css("opacity", "1");
+
+        $(".banner-image .circle")
+            .addClass("animate__animated animate__zoomIn")
+            .css("opacity", "1");
     });
+});
+
     
     // Tooltip JS
     $(function () {
@@ -121,12 +130,13 @@
     });
 
     // Facility Slides
+$(document).ready(function () {
     $('.facility-slides').owlCarousel({
         loop: true,
         nav: true,
         dots: false,
-        autoplayHoverPause: true,
         autoplay: true,
+        autoplayHoverPause: true,
         margin: 30,
         navText: [
             "<i class='flaticon-left'></i>",
@@ -147,6 +157,8 @@
             }
         }
     });
+});
+
     
     // Products Slides
     $('.products-slides').owlCarousel({
@@ -177,6 +189,7 @@
     });
 
     // Instagram Slides
+    $(document).ready(function () {
     $('.instagram-slides').owlCarousel({
         loop: true,
         nav: false,
@@ -201,6 +214,7 @@
                 items: 6,
             }
         }
+    });
     });
     
     // Partner Slides
@@ -231,12 +245,13 @@
     });
 
     // Offer Products Slides
+$(document).ready(function () {
     $('.offer-products-slides').owlCarousel({
         loop: true,
         nav: false,
         dots: true,
-        autoplayHoverPause: true,
         autoplay: true,
+        autoplayHoverPause: true,
         animateOut: 'fadeOut',
         mouseDrag: false,
         items: 1,
@@ -245,14 +260,18 @@
             "<i class='flaticon-right-arrow'></i>"
         ],
     });
+});
+
 
     // Brand Slides
+ 
+$(document).ready(function () {
     $('.brand-slides').owlCarousel({
         loop: true,
         nav: false,
         dots: false,
-        autoplayHoverPause: true,
         autoplay: true,
+        autoplayHoverPause: true,
         navText: [
             "<i class='flaticon-left'></i>",
             "<i class='flaticon-right-arrow'></i>"
@@ -272,6 +291,7 @@
             }
         }
     });
+});
 
     // Price Range Slider JS
     $(".js-range-of-price").ionRangeSlider({
