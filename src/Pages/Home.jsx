@@ -1,5 +1,7 @@
 import Navbar from "./Navbar"
 import Footer from "./Footer"
+import Instragram from "../Components/Instragram"
+import Facility from "../Components/Facility"
 
 
 
@@ -886,60 +888,7 @@ const Home = () => {
         {/* <!-- End Products Area --> */}
 
          {/* <!-- Start Facility Area --> */}
-        <section className="facility-area pb-70">
-            <div className="container">
-                <div className="facility-slides owl-carousel owl-theme">
-                    <div className="single-facility-box">
-                        <div className="icon">
-                            <i class='flaticon-tracking'></i>
-                        </div>
-                        <h3>Free Shipping Worldwide</h3>
-                    </div>
-
-                    <div className="single-facility-box">
-                        <div className="icon">
-                            <i class='flaticon-return'></i>
-                        </div>
-                        <h3>Easy Return Policy</h3>
-                    </div>
-
-                    <div className="single-facility-box">
-                        <div className="icon">
-                            <i class='flaticon-shuffle'></i>
-                        </div>
-                        <h3>7 Day Exchange Policy</h3>
-                    </div>
-
-                    <div className="single-facility-box">
-                        <div className="icon">
-                            <i class='flaticon-sale'></i>
-                        </div>
-                        <h3>Weekend Discount Coupon</h3>
-                    </div>
-
-                    <div className="single-facility-box">
-                        <div className="icon">
-                            <i class='flaticon-credit-card'></i>
-                        </div>
-                        <h3>Secure Payment Methods</h3>
-                    </div>
-
-                    <div className="single-facility-box">
-                        <div className="icon">
-                            <i class='flaticon-location'></i>
-                        </div>
-                        <h3>Track Your Package</h3>
-                    </div>
-
-                    <div className="single-facility-box">
-                        <div className="icon">
-                            <i class='flaticon-customer-service'></i>
-                        </div>
-                        <h3>24/7 Customer Support</h3>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <Facility />
         {/* <!-- End Facility Area --> */}
 
           {/* <!-- Start Products Area --> */}
@@ -1412,75 +1361,7 @@ const Home = () => {
         {/* <!-- End Blog Area --> */}
 
          {/* <!-- Start Instagram Area --> */}
-        <div className="instagram-area">
-            <div className="container-fluid">
-                <div className="instagram-title">
-                    <a href="#" target="_blank"><i class='bx bxl-instagram'></i> Follow us on @xton</a>
-                </div>
-
-                <div className="instagram-slides owl-carousel owl-theme">
-                    <div className="single-instagram-post">
-                        <img src="assets/img/instagram/img1.jpg" alt="image" />
-                        <i class='bx bxl-instagram'></i>
-                        <a href="https://www.instagram.com/" target="_blank" className="link-btn"></a>
-                    </div>
-
-                    <div className="single-instagram-post">
-                        <img src="assets/img/instagram/img2.jpg" alt="image" />
-                        <i class='bx bxl-instagram'></i>
-                        <a href="https://www.instagram.com/" target="_blank" className="link-btn"></a>
-                    </div>
-
-                    <div className="single-instagram-post">
-                        <img src="assets/img/instagram/img3.jpg" alt="image" />
-                        <i class='bx bxl-instagram'></i>
-                        <a href="https://www.instagram.com/" target="_blank" className="link-btn"></a>
-                    </div>
-                    
-                    <div className="single-instagram-post">
-                        <img src="assets/img/instagram/img4.jpg" alt="image" />
-                        <i class='bx bxl-instagram'></i>
-                        <a href="https://www.instagram.com/" target="_blank" className="link-btn"></a>
-                    </div>
-                    
-                    <div className="single-instagram-post">
-                        <img src="assets/img/instagram/img10.jpg" alt="image" />
-                        <i class='bx bxl-instagram'></i>
-                        <a href="https://www.instagram.com/" target="_blank" className="link-btn"></a>
-                    </div>
-                    
-                    <div className="single-instagram-post">
-                        <img src="assets/img/instagram/img6.jpg" alt="image" />
-                        <i class='bx bxl-instagram'></i>
-                        <a href="https://www.instagram.com/" target="_blank" className="link-btn"></a>
-                    </div>
-                    
-                    <div className="single-instagram-post">
-                        <img src="assets/img/instagram/img7.jpg" alt="image" />
-                        <i class='bx bxl-instagram'></i>
-                        <a href="https://www.instagram.com/" target="_blank" className="link-btn"></a>
-                    </div>
-                    
-                    <div className="single-instagram-post">
-                        <img src="assets/img/instagram/img8.jpg" alt="image" />
-                        <i class='bx bxl-instagram'></i>
-                        <a href="https://www.instagram.com/" target="_blank" className="link-btn"></a>
-                    </div>
-                    
-                    <div className="single-instagram-post">
-                        <img src="assets/img/instagram/img9.jpg" alt="image" />
-                        <i class='bx bxl-instagram'></i>
-                        <a href="https://www.instagram.com/" target="_blank" className="link-btn"></a>
-                    </div>
-                    
-                    <div className="single-instagram-post">
-                        <img src="assets/img/instagram/img5.jpg" alt="image" />
-                        <i class='bx bxl-instagram'></i>
-                        <a href="https://www.instagram.com/" target="_blank" className="link-btn"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <Instragram />
         {/* <!-- End Instagram Area --> */}
 
 

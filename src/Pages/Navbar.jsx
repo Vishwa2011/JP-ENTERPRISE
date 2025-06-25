@@ -221,7 +221,7 @@ const Navbar = () => {
                                     </ul> */}
                                 </li>
 
-                                <li class="nav-item "><a href="#" class="nav-link">Mice Problem </a>
+                                <li class="nav-item "><a href="/Mice_problem" class="nav-link">Mice Problem </a>
                                     {/* <ul class="dropdown-menu">
                                         <li class="nav-item">
                                             <div class="container">
