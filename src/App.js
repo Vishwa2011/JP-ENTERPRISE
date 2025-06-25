@@ -9,6 +9,7 @@ import BlogDetails from "./Pages/BlogDetails";
 import Cart from "./Pages/Cart";
 import Checkout from "./Pages/Checkout";
 import OurProducts from "./Pages/OurProducts";
+import Productdetails from "./Pages/Productdetails";
 
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
         <Route path="/BlogDetails"  element={<BlogDetails />}/>
         <Route path="/Cart"  element={<Cart />}/>
         <Route path="/Checkout"  element={<Checkout />}/>
+        <Route path="/Productdetails" element={<Productdetails/>}/>
 
      </Routes>
      <div class="go-top"><i class='bx bx-up-arrow-alt'></i></div>
