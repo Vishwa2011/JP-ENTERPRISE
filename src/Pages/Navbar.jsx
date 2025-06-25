@@ -327,7 +327,7 @@ const Navbar = () => {
                                     </ul> */}
                                 </li>
 
-                                <li class="nav-item "><a href="#" class="nav-link">Our Products </a>
+                                <li class="nav-item "><a href="/OurProducts" class="nav-link">Our Products </a>
                                     {/* <ul class="dropdown-menu">
                                         <li class="nav-item">
                                             <div class="container">
@@ -814,7 +814,7 @@ const Navbar = () => {
                                     </ul> */}
                                 </li>
 
-                                <li class="nav-item "><a href="#" class="nav-link">Our Products </a>
+                                <li class="nav-item "><a href="/OurProducts" class="nav-link">Our Products </a>
                                     {/* <ul class="dropdown-menu">
                                         <li class="nav-item">
                                             <div class="container">

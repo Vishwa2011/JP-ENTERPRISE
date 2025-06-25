@@ -3,6 +3,7 @@ import Home from "./Pages/Home";
 import React, { useEffect, useState } from "react";
 import Aboutus from "./Pages/Aboutus";
 import Mice_problem from "./Pages/Mice_problem";
+import OurProducts from "./Pages/OurProducts";
 
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
         <Route path="/"  element={<Home />}/>
         <Route path="/Aboutus" element={<Aboutus/>} />
         <Route path="/Mice_problem"  element={<Mice_problem />}/>
+        <Route path="/OurProducts" element={<OurProducts/>}/>
      </Routes>
      <div class="go-top"><i class='bx bx-up-arrow-alt'></i></div>
     </>

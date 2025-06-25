@@ -1,6 +1,8 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
+import Facility from '../Components/Facility'
+import Instragram from '../Components/Instragram'
 
 const Aboutus = () => {
   return (
@@ -228,7 +230,8 @@ const Aboutus = () => {
         </section>
         {/* <!-- End Testimonials Area --> */}
 
-        
+        <Facility />
+        <Instragram />
       </div>
       <Footer />
     </>
