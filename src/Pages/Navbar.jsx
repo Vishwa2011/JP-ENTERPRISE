@@ -53,10 +53,10 @@ const Navbar = () => {
 
                     <div className="col-lg-4 col-md-12">
                         <ul className="header-top-menu">
-                            <li><a href="login.html"><i className='bx bxs-user'></i> My Account</a></li>
+                            <li><a href="/Login"><i className='bx bxs-user'></i> My Account</a></li>
                             <li><a href="#" data-bs-toggle="modal" data-bs-target="#shoppingWishlistModal"><i className='bx bx-heart'></i> Wishlist</a></li>
-                            <li><a href="compare.html"><i className='bx bx-shuffle'></i> Compare</a></li>
-                            <li><a href="login.html"><i className='bx bx-log-in'></i> Login</a></li>
+                            <li><a href="/Compare"><i className='bx bx-shuffle'></i> Compare</a></li>
+                            <li><a href="/Login"><i className='bx bx-log-in'></i> Login</a></li>
                         </ul>
 
                         <ul className="header-top-others-option">
@@ -82,7 +82,7 @@ const Navbar = () => {
                 <div className="container">
                     <div className="xton-responsive-menu mean-container" >
                         <div className="logo">
-                            <a href="index.html">
+                            <a href="/">
                                 <img src="assets/img/logo.png" className="main-logo" alt="logo" />
                                 <img src="assets/img/white-logo.png" className="white-logo" alt="logo" />
                             </a>
@@ -94,7 +94,7 @@ const Navbar = () => {
             <div className="xton-nav">
                 <div className="container-fluid">
                     <nav className="navbar navbar-expand-md navbar-light">
-                        <a className="navbar-brand" href="index.html">
+                        <a className="navbar-brand" href="/">
                             <img src="assets/img/logo.png" className="main-logo" alt="logo" />
                             <img src="assets/img/white-logo.png" className="white-logo" alt="logo" />
                         </a>
@@ -142,7 +142,7 @@ const Navbar = () => {
 
                                                             <li><a href="products-right-sidebar-with-categories-2.html">Right Sidebar With Categories</a></li>
 
-                                                            <li><a href="products-one-row-2.html">1 Products Per Row</a></li>
+                                                            <li><a href="/">1 Products Per Row</a></li>
 
                                                             <li><a href="products-without-sidebar-2.html">Without Sidebar</a></li>
 
@@ -364,7 +364,7 @@ const Navbar = () => {
 
                                                             <li><a href="products-right-sidebar-with-categories-2.html">Right Sidebar With Categories</a></li>
 
-                                                            <li><a href="products-one-row-2.html">1 Products Per Row</a></li>
+                                                            <li><a href="/">1 Products Per Row</a></li>
 
                                                             <li><a href="products-without-sidebar-2.html">Without Sidebar</a></li>
 
@@ -460,7 +460,7 @@ const Navbar = () => {
 
                                                             <li><a href="products-right-sidebar-with-categories-2.html">Right Sidebar With Categories</a></li>
 
-                                                            <li><a href="products-one-row-2.html">1 Products Per Row</a></li>
+                                                            <li><a href="/">1 Products Per Row</a></li>
 
                                                             <li><a href="products-without-sidebar-2.html">Without Sidebar</a></li>
 
@@ -582,7 +582,7 @@ const Navbar = () => {
             <div className="xton-nav">
                 <div className="container-fluid">
                     <nav className="navbar navbar-expand-md navbar-light">
-                        <a className="navbar-brand" href="index-4.html">
+                        <a className="navbar-brand" href="/">
                             <img src="assets/img/logo.png" alt="logo" />
                         </a>
 
@@ -629,7 +629,7 @@ const Navbar = () => {
 
                                                             <li><a href="products-right-sidebar-with-categories-2.html">Right Sidebar With Categories</a></li>
 
-                                                            <li><a href="products-one-row-2.html">1 Products Per Row</a></li>
+                                                            <li><a href="/">1 Products Per Row</a></li>
 
                                                             <li><a href="products-without-sidebar-2.html">Without Sidebar</a></li>
 
@@ -708,7 +708,7 @@ const Navbar = () => {
                                     </ul> */}
                                 </li>
 
-                                <li className="nav-item "><a href="#" className="nav-link">Mice Problem </a>
+                                <li className="nav-item "><a href="/Mice_problem" className="nav-link">Mice Problem </a>
                                     {/* <ul className="dropdown-menu">
                                         <li className="nav-item">
                                             <div className="container">
@@ -851,7 +851,7 @@ const Navbar = () => {
 
                                                             <li><a href="products-right-sidebar-with-categories-2.html">Right Sidebar With Categories</a></li>
 
-                                                            <li><a href="products-one-row-2.html">1 Products Per Row</a></li>
+                                                            <li><a href="/">1 Products Per Row</a></li>
 
                                                             <li><a href="products-without-sidebar-2.html">Without Sidebar</a></li>
 
@@ -910,7 +910,7 @@ const Navbar = () => {
                                     </ul> */}
                                 </li>
 
-                                <li className="nav-item "><a href="#" className="nav-link">Contact Us </a>
+                                <li className="nav-item "><a href="/Contact" className="nav-link">Contact Us </a>
                                     {/* <ul className="dropdown-menu">
                                         <li className="nav-item">
                                             <div className="container">
@@ -947,7 +947,7 @@ const Navbar = () => {
 
                                                             <li><a href="products-right-sidebar-with-categories-2.html">Right Sidebar With Categories</a></li>
 
-                                                            <li><a href="products-one-row-2.html">1 Products Per Row</a></li>
+                                                            <li><a href="/">1 Products Per Row</a></li>
 
                                                             <li><a href="products-without-sidebar-2.html">Without Sidebar</a></li>
 
@@ -1006,7 +1006,7 @@ const Navbar = () => {
                                     </ul> */}
                                 </li>
 
-                                <li className="nav-item"><a href="#" className="nav-link">Blog </a>
+                                <li className="nav-item"><a href="/Blog" className="nav-link">Blog </a>
                                     {/* <ul className="dropdown-menu">
                                         <li className="nav-item"><a href="blog-1.html" className="nav-link">Grid (2 in Row)</a></li>
 
@@ -1177,24 +1177,24 @@ const Navbar = () => {
 
                             <ul className="products-list">
                                 <li>
-                                    <a href="products-one-row-2.html"><img src="assets/img/products/img1.jpg" alt="image" /></a>
+                                    <a href="/"><img src="assets/img/products/img1.jpg" alt="image" /></a>
                                 </li>
 
                                 <li>
-                                    <a href="products-one-row-2.html"><img src="assets/img/products/img2.jpg" alt="image" /></a>
+                                    <a href="/"><img src="assets/img/products/img2.jpg" alt="image" /></a>
                                 </li>
 
                                 <li>
-                                    <a href="products-one-row-2.html"><img src="assets/img/products/img3.jpg" alt="image" /></a>
+                                    <a href="/"><img src="assets/img/products/img3.jpg" alt="image" /></a>
                                 </li>
 
                                 <li>
-                                    <a href="products-one-row-2.html"><img src="assets/img/products/img4.jpg" alt="image" /></a>
+                                    <a href="/"><img src="assets/img/products/img4.jpg" alt="image" /></a>
                                 </li>
                             </ul>
 
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <a href="products-left-sidebar-with-categories-3.html" className="shop-now-btn">Shop Now</a>
+                            <a href="/OurProducts" className="shop-now-btn">Shop Now</a>
                         </div>
                     </div>
                 </div>

@@ -368,6 +368,7 @@ $(document).ready(function () {
      });
 
     // Tabs
+     $(document).ready(function () {
     (function ($) {
         $('.tab ul.tabs').addClass('active').find('> li:eq(0)').addClass('current');
         $('.tab ul.tabs li a').on('click', function (g) {
@@ -380,20 +381,36 @@ $(document).ready(function () {
             g.preventDefault();
         });
     })(jQuery);
+});
 
     // FAQ Accordion
-    $(function() {
-        $('.accordion').find('.accordion-title').on('click', function(){
-            // Adds Active Class
-            $(this).toggleClass('active');
-            // Expand or Collapse This Panel
-            $(this).next().slideToggle('fast');
-            // Hide The Other Panels
-            $('.accordion-content').not($(this).next()).slideUp('fast');
-            // Removes Active Class From Other Titles
-            $('.accordion-title').not($(this)).removeClass('active');		
-        });
+  $(document).ready(function () {
+  $('.accordion').each(function () {
+    const $accordion = $(this);
+    $accordion.find('.accordion-title').on('click', function () {
+      const $this = $(this);
+
+      // Toggle active class on clicked title
+      $this.toggleClass('active');
+
+      // Slide toggle the associated content
+      $this.next('.accordion-content').slideToggle('fast');
+
+      // Close all other contents in this accordion
+      $accordion
+        .find('.accordion-content')
+        .not($this.next())
+        .slideUp('fast');
+
+      // Remove active class from other titles
+      $accordion
+        .find('.accordion-title')
+        .not($this)
+        .removeClass('active');
     });
+  });
+});
+
 
     // Products Filter Options
     $(function(){

@@ -40,7 +40,7 @@ const Aboutus = () => {
                 <div class="page-title-content">
                     <h2>About Us</h2>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li>About Us</li>
                     </ul>
                 </div>
@@ -150,27 +150,27 @@ const Aboutus = () => {
                 
                 <div class="partner-slides owl-carousel owl-theme">
                     <div class="partner-item">
-                        <a href="index.html"><img src="assets/img/partner/partner1.png" alt="image" /></a>
+                        <a href=""><img src="assets/img/partner/partner1.png" alt="image" /></a>
                     </div>
 
                     <div class="partner-item">
-                        <a href="index.html"><img src="assets/img/partner/partner2.png" alt="image" /></a>
+                        <a href=""><img src="assets/img/partner/partner2.png" alt="image" /></a>
                     </div>
 
                     <div class="partner-item">
-                        <a href="index.html"><img src="assets/img/partner/partner3.png" alt="image" /></a>
+                        <a href=""><img src="assets/img/partner/partner3.png" alt="image" /></a>
                     </div>
 
                     <div class="partner-item">
-                        <a href="index.html"><img src="assets/img/partner/partner4.png" alt="image" /></a>
+                        <a href=""><img src="assets/img/partner/partner4.png" alt="image" /></a>
                     </div>
 
                     <div class="partner-item">
-                        <a href="index.html"><img src="assets/img/partner/partner5.png" alt="image" /></a>
+                        <a href=""><img src="assets/img/partner/partner5.png" alt="image" /></a>
                     </div>
 
                     <div class="partner-item">
-                        <a href="index.html"><img src="assets/img/partner/partner6.png" alt="image" /></a>
+                        <a href=""><img src="assets/img/partner/partner6.png" alt="image" /></a>
                     </div>
                 </div>
             </div>

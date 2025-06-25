@@ -35,27 +35,26 @@ export default function Footer() {
                             <h3>Quick Links</h3>
 
                             <ul className="quick-links">
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="products-left-sidebar.html">Shop Now!</a></li>
-                                <li><a href="products-left-sidebar-2.html">Woman's</a></li>
-                                <li><a href="faqs.html">FAQ's</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
-                                <li><a href="customer-service.html">Customer Services</a></li>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/Aboutus">About Us</a></li>
+                                <li><a href="/Contact">Contact</a></li>
+                                <li><a href="/Faq">FAQ</a></li>
+                                <li><a href="/Blog">Blog</a></li>
+                               
                             </ul>
                         </div>
                     </div>
 
                     <div className="col-lg-3 col-md-6 col-sm-6">
                         <div className="single-footer-widget">
-                            <h3>Customer Support</h3>
+                            <h3>Policies</h3>
 
                             <ul className="customer-support">
-                                <li><a href="login.html">My Account</a></li>
-                                <li><a href="checkout.html">Checkout</a></li>
-                                <li><a href="cart.html">Cart</a></li>
-                                <li><a href="faqs.html">FAQ's</a></li>
-                                <li><a href="track-order.html">Order Tracking</a></li>
-                                <li><a href="contact.html">Help & Support</a></li>
+                                <li><a href="/Login">Privacy Policy</a></li>
+                                <li><a href="checkout.html">Shipping Policy</a></li>
+                                <li><a href="cart.html">Return Policy</a></li>
+                                <li><a href="faqs.html">Terms and Conditions</a></li>
+                                <li><a href="track-order.html">Track Order</a></li>
                             </ul>
                         </div>
                     </div>

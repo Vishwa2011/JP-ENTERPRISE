@@ -22,8 +22,8 @@ const Home = () => {
                                         <h1>Winter-Spring!</h1>
                                         <p>Take 20% Off ‘Sale Must-Haves'</p>
                                         <div className="btn-box">
-                                            <a href="products-left-sidebar-3.html" className="default-btn">Shop Women's</a>
-                                            <a href="products-left-sidebar-3.html" className="optional-btn">Shop Men's</a>
+                                            <a href="/OurProducts" className="default-btn">Shop Women's</a>
+                                            <a href="/OurProducts" className="optional-btn">Shop Men's</a>
                                         </div>
                                     </div>
                                 </div>
@@ -51,8 +51,8 @@ const Home = () => {
                                         <h1>Summer-Fashion!</h1>
                                         <p>Leap year offer ‘Sale Must-Haves'</p>
                                         <div className="btn-box">
-                                            <a href="products-left-sidebar-3.html" className="default-btn">Shop Women's</a>
-                                            <a href="products-left-sidebar-3.html" className="optional-btn">Shop Men's</a>
+                                            <a href="/OurProducts" className="default-btn">Shop Women's</a>
+                                            <a href="/OurProducts" className="optional-btn">Shop Men's</a>
                                         </div>
                                     </div>
                                 </div>
@@ -82,9 +82,9 @@ const Home = () => {
                             <div className="content text-white">
                                 <span>Don’t Miss Today</span>
                                 <h3>50% OFF</h3>
-                                <a href="products-left-sidebar-3.html" className="default-btn">Discover Now</a>
+                                <a href="/OurProducts" className="default-btn">Discover Now</a>
                             </div>
-                            <a href="products-left-sidebar-3.html" className="link-btn"></a>
+                            <a href="/OurProducts" className="link-btn"></a>
                         </div>
                     </div>
 
@@ -95,9 +95,9 @@ const Home = () => {
                             <div className="content">
                                 <span>New Collection</span>
                                 <h3>Need Now</h3>
-                                <a href="products-left-sidebar-3.html" className="default-btn">Discover Now</a>
+                                <a href="/OurProducts" className="default-btn">Discover Now</a>
                             </div>
-                            <a href="products-left-sidebar-3.html" className="link-btn"></a>
+                            <a href="/OurProducts" className="link-btn"></a>
                         </div>
                     </div>
                 </div>
@@ -117,7 +117,7 @@ const Home = () => {
                     <div className="col-lg-4 col-md-6 col-sm-6">
                         <div className="single-productsBox">
                             <div className="products-image">
-                                <a href="products-type-3.html">
+                                <a href="/Productdetails">
                                     <img src="assets/img/products/img13.jpg" className="main-image" alt="image" />
                                     <img src="assets/img/products/img-hover13.jpg" className="hover-image" alt="image" />
                                 </a>
@@ -134,7 +134,7 @@ const Home = () => {
                                         </li>
                                         <li>
                                             <div className="compare-btn">
-                                                <a href="compare.html">
+                                                <a href="/Compare">
                                                     <i class='bx bx-refresh'></i>
                                                     <span className="tooltip-label">Compare</span>
                                                 </a>
@@ -156,7 +156,7 @@ const Home = () => {
 
                             <div className="products-content">
                                 <span className="category">T-Shirt</span>
-                                <h3><a href="products-type-3.html">Long Sleeve Leopard T-Shirt</a></h3>
+                                <h3><a href="/Productdetails">Long Sleeve Leopard T-Shirt</a></h3>
                                 <div className="star-rating">
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
@@ -168,7 +168,7 @@ const Home = () => {
                                     <span className="old-price">$321</span>
                                     <span className="new-price">$250</span>
                                 </div>
-                                <a href="cart.html" className="add-to-cart">Add to Cart</a>
+                                <a href="/Cart" className="add-to-cart">Add to Cart</a>
                             </div>
 
                             <span className="products-discount">
@@ -182,7 +182,7 @@ const Home = () => {
                     <div className="col-lg-4 col-md-6 col-sm-6">
                         <div className="single-productsBox">
                             <div className="products-image">
-                                <a href="products-type-3.html">
+                                <a href="/Productdetails">
                                     <img src="assets/img/products/img14.jpg" className="main-image" alt="image" />
                                     <img src="assets/img/products/img-hover14.jpg" className="hover-image" alt="image" />
                                 </a>
@@ -199,7 +199,7 @@ const Home = () => {
                                         </li>
                                         <li>
                                             <div className="compare-btn">
-                                                <a href="compare.html">
+                                                <a href="/Compare">
                                                     <i class='bx bx-refresh'></i>
                                                     <span className="tooltip-label">Compare</span>
                                                 </a>
@@ -219,7 +219,7 @@ const Home = () => {
 
                             <div className="products-content">
                                 <span className="category">T-Shirt</span>
-                                <h3><a href="products-type-3.html">Causal V-Neck Soft Raglan</a></h3>
+                                <h3><a href="/Productdetails">Causal V-Neck Soft Raglan</a></h3>
                                 <div className="star-rating">
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
@@ -231,7 +231,7 @@ const Home = () => {
                                     <span className="old-price">$210</span>
                                     <span className="new-price">$200</span>
                                 </div>
-                                <a href="cart.html" className="add-to-cart">Add to Cart</a>
+                                <a href="/Cart" className="add-to-cart">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -239,7 +239,7 @@ const Home = () => {
                     <div className="col-lg-4 col-md-6 col-sm-6">
                         <div className="single-productsBox">
                             <div className="products-image">
-                                <a href="products-type-3.html">
+                                <a href="/Productdetails">
                                     <img src="assets/img/products/img15.jpg" className="main-image" alt="image" />
                                     <img src="assets/img/products/img-hover15.jpg" className="hover-image" alt="image" />
                                 </a>
@@ -256,7 +256,7 @@ const Home = () => {
                                         </li>
                                         <li>
                                             <div className="compare-btn">
-                                                <a href="compare.html">
+                                                <a href="/Compare">
                                                     <i class='bx bx-refresh'></i>
                                                     <span className="tooltip-label">Compare</span>
                                                 </a>
@@ -276,7 +276,7 @@ const Home = () => {
 
                             <div className="products-content">
                                 <span className="category">Shirt</span>
-                                <h3><a href="products-type-3.html">Hanes Men's Pullover</a></h3>
+                                <h3><a href="/Productdetails">Hanes Men's Pullover</a></h3>
                                 <div className="star-rating">
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
@@ -287,7 +287,7 @@ const Home = () => {
                                 <div className="price">
                                     <span className="new-price">$200</span>
                                 </div>
-                                <a href="cart.html" className="add-to-cart">Add to Cart</a>
+                                <a href="/Cart" className="add-to-cart">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -295,7 +295,7 @@ const Home = () => {
                     <div className="col-lg-4 col-md-6 col-sm-6">
                         <div className="single-productsBox">
                             <div className="products-image">
-                                <a href="products-type-3.html">
+                                <a href="/Productdetails">
                                     <img src="assets/img/products/img16.jpg" className="main-image" alt="image" />
                                     <img src="assets/img/products/img-hover16.jpg" className="hover-image" alt="image" />
                                 </a>
@@ -312,7 +312,7 @@ const Home = () => {
                                         </li>
                                         <li>
                                             <div className="compare-btn">
-                                                <a href="compare.html">
+                                                <a href="/Compare">
                                                     <i class='bx bx-refresh'></i>
                                                     <span className="tooltip-label">Compare</span>
                                                 </a>
@@ -334,7 +334,7 @@ const Home = () => {
 
                             <div className="products-content">
                                 <span className="category">Twist Shirt</span>
-                                <h3><a href="products-type-3.html">Gildan Men's Crew T-Shirt</a></h3>
+                                <h3><a href="/Productdetails">Gildan Men's Crew T-Shirt</a></h3>
                                 <div className="star-rating">
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
@@ -345,7 +345,7 @@ const Home = () => {
                                 <div className="price">
                                     <span className="new-price">$150</span>
                                 </div>
-                                <a href="cart.html" className="add-to-cart">Add to Cart</a>
+                                <a href="/Cart" className="add-to-cart">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -353,7 +353,7 @@ const Home = () => {
                     <div className="col-lg-4 col-md-6 col-sm-6">
                         <div className="single-productsBox">
                             <div className="products-image">
-                                <a href="products-type-3.html">
+                                <a href="/Productdetails">
                                     <img src="assets/img/products/img17.jpg" className="main-image" alt="image" />
                                     <img src="assets/img/products/img-hover17.jpg" className="hover-image" alt="image" />
                                 </a>
@@ -370,7 +370,7 @@ const Home = () => {
                                         </li>
                                         <li>
                                             <div className="compare-btn">
-                                                <a href="compare.html">
+                                                <a href="/Compare">
                                                     <i class='bx bx-refresh'></i>
                                                     <span className="tooltip-label">Compare</span>
                                                 </a>
@@ -390,7 +390,7 @@ const Home = () => {
 
                             <div className="products-content">
                                 <span className="category">Smart Shirt</span>
-                                <h3><a href="products-type-3.html">Yidarton Women's Comfy</a></h3>
+                                <h3><a href="/Productdetails">Yidarton Women's Comfy</a></h3>
                                 <div className="star-rating">
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
@@ -401,7 +401,7 @@ const Home = () => {
                                 <div className="price">
                                     <span className="new-price">$240</span>
                                 </div>
-                                <a href="cart.html" className="add-to-cart">Add to Cart</a>
+                                <a href="/Cart" className="add-to-cart">Add to Cart</a>
                             </div>
 
                             <span className="products-discount">
@@ -415,7 +415,7 @@ const Home = () => {
                     <div className="col-lg-4 col-md-6 col-sm-6">
                         <div className="single-productsBox">
                             <div className="products-image">
-                                <a href="products-type-3.html">
+                                <a href="/Productdetails">
                                     <img src="assets/img/products/img18.jpg" className="main-image" alt="image" />
                                     <img src="assets/img/products/img-hover18.jpg" className="hover-image" alt="image" />
                                 </a>
@@ -432,7 +432,7 @@ const Home = () => {
                                         </li>
                                         <li>
                                             <div className="compare-btn">
-                                                <a href="compare.html">
+                                                <a href="/Compare">
                                                     <i class='bx bx-refresh'></i>
                                                     <span className="tooltip-label">Compare</span>
                                                 </a>
@@ -452,7 +452,7 @@ const Home = () => {
 
                             <div className="products-content">
                                 <span className="category">EcoSmart</span>
-                                <h3><a href="products-type-3.html">Womens Tops Color</a></h3>
+                                <h3><a href="/Productdetails">Womens Tops Color</a></h3>
                                 <div className="star-rating">
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
@@ -464,7 +464,7 @@ const Home = () => {
                                     <span className="old-price">$150</span>
                                     <span className="new-price">$100</span>
                                 </div>
-                                <a href="cart.html" className="add-to-cart">Add to Cart</a>
+                                <a href="/Cart" className="add-to-cart">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -479,37 +479,37 @@ const Home = () => {
                 <div className="offer-products-slides owl-carousel owl-theme">
                     <div className="single-offer-products">
                         <div className="content">
-                            <h3><a href="products-without-sidebar-3.html">New Collections!</a></h3>
+                            <h3><a href="/OurProducts">New Collections!</a></h3>
                             <p>Stylist Allison Taylor take on the summer season's trends.</p>
-                            <a href="products-without-sidebar-3.html" className="default-btn">Discover Now!</a>
+                            <a href="/OurProducts" className="default-btn">Discover Now!</a>
                         </div>
 
                         <div className="image">
-                            <a href="products-without-sidebar-3.html"><img src="assets/img/offer/img1.jpg" alt="image" /></a>
+                            <a href="/OurProducts"><img src="assets/img/offer/img1.jpg" alt="image" /></a>
                         </div>
                     </div>
 
                     <div className="single-offer-products">
                         <div className="content">
-                            <h3><a href="products-without-sidebar-3.html">Our Popular Products</a></h3>
+                            <h3><a href="/OurProducts">Our Popular Products</a></h3>
                             <p>Stylist Allison Taylor take on the summer season's trends.</p>
-                            <a href="products-without-sidebar-3.html" className="default-btn">Discover Now!</a>
+                            <a href="/OurProducts" className="default-btn">Discover Now!</a>
                         </div>
 
                         <div className="image">
-                            <a href="products-without-sidebar-3.html"><img src="assets/img/offer/img2.jpg" alt="image" /></a>
+                            <a href="/OurProducts"><img src="assets/img/offer/img2.jpg" alt="image" /></a>
                         </div>
                     </div>
 
                     <div className="single-offer-products">
                         <div className="content">
-                            <h3><a href="products-without-sidebar-3.html">Hot Trending Products</a></h3>
+                            <h3><a href="/OurProducts">Hot Trending Products</a></h3>
                             <p>Stylist Allison Taylor take on the summer season's trends.</p>
-                            <a href="products-without-sidebar-3.html" className="default-btn">Discover Now!</a>
+                            <a href="/OurProducts" className="default-btn">Discover Now!</a>
                         </div>
 
                         <div className="image">
-                            <a href="products-without-sidebar-3.html"><img src="assets/img/offer/img3.jpg" alt="image" /></a>
+                            <a href="/OurProducts"><img src="assets/img/offer/img3.jpg" alt="image" /></a>
                         </div>
                     </div>
                 </div>
@@ -530,7 +530,7 @@ const Home = () => {
                     <div className="col-lg-4 col-md-6 col-sm-6">
                         <div className="single-productsBox">
                             <div className="products-image">
-                                <a href="products-type-3.html"> 
+                                <a href="/Productdetails"> 
                                     <img src="assets/img/products/img7.jpg" className="main-image" alt="image" />
                                     <img src="assets/img/products/img-hover7.jpg" className="hover-image" alt="image" />
                                 </a>
@@ -547,7 +547,7 @@ const Home = () => {
                                         </li>
                                         <li>
                                             <div className="compare-btn">
-                                                <a href="compare.html">
+                                                <a href="/Compare">
                                                     <i class='bx bx-refresh'></i>
                                                     <span className="tooltip-label">Compare</span>
                                                 </a>
@@ -569,7 +569,7 @@ const Home = () => {
 
                             <div className="products-content">
                                 <span className="category">T-Shirt</span>
-                                <h3><a href="products-type-3.html">Tbmpoy Men's Tapered</a></h3>
+                                <h3><a href="/Productdetails">Tbmpoy Men's Tapered</a></h3>
                                 <div className="star-rating">
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
@@ -581,7 +581,7 @@ const Home = () => {
                                     <span className="old-price">$321</span>
                                     <span className="new-price">$250</span>
                                 </div>
-                                <a href="cart.html" className="add-to-cart">Add to Cart</a>
+                                <a href="/Cart" className="add-to-cart">Add to Cart</a>
                             </div>
 
                             <span className="products-discount">
@@ -595,7 +595,7 @@ const Home = () => {
                     <div className="col-lg-4 col-md-6 col-sm-6">
                         <div className="single-productsBox">
                             <div className="products-image">
-                                <a href="products-type-3.html">
+                                <a href="/Productdetails">
                                     <img src="assets/img/products/img8.jpg" className="main-image" alt="image" />
                                     <img src="assets/img/products/img-hover8.jpg" className="hover-image" alt="image" />
                                 </a>
@@ -612,7 +612,7 @@ const Home = () => {
                                         </li>
                                         <li>
                                             <div className="compare-btn">
-                                                <a href="compare.html">
+                                                <a href="/Compare">
                                                     <i class='bx bx-refresh'></i>
                                                     <span className="tooltip-label">Compare</span>
                                                 </a>
@@ -632,7 +632,7 @@ const Home = () => {
 
                             <div className="products-content">
                                 <span className="category">T-Shirt</span>
-                                <h3><a href="products-type-3.html">Sunnyme Women's Ponchos</a></h3>
+                                <h3><a href="/Productdetails">Sunnyme Women's Ponchos</a></h3>
                                 <div className="star-rating">
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
@@ -644,7 +644,7 @@ const Home = () => {
                                     <span className="old-price">$210</span>
                                     <span className="new-price">$200</span>
                                 </div>
-                                <a href="cart.html" className="add-to-cart">Add to Cart</a>
+                                <a href="/Cart" className="add-to-cart">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -652,7 +652,7 @@ const Home = () => {
                     <div className="col-lg-4 col-md-6 col-sm-6">
                         <div className="single-productsBox">
                             <div className="products-image">
-                                <a href="products-type-3.html">
+                                <a href="/Productdetails">
                                     <img src="assets/img/products/img9.jpg" className="main-image" alt="image" />
                                     <img src="assets/img/products/img-hover9.jpg" className="hover-image" alt="image" />
                                 </a>
@@ -669,7 +669,7 @@ const Home = () => {
                                         </li>
                                         <li>
                                             <div className="compare-btn">
-                                                <a href="compare.html">
+                                                <a href="/Compare">
                                                     <i class='bx bx-refresh'></i>
                                                     <span className="tooltip-label">Compare</span>
                                                 </a>
@@ -689,7 +689,7 @@ const Home = () => {
 
                             <div className="products-content">
                                 <span className="category">Shirt</span>
-                                <h3><a href="products-type-3.html">Open Front Knit Sweaters</a></h3>
+                                <h3><a href="/Productdetails">Open Front Knit Sweaters</a></h3>
                                 <div className="star-rating">
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
@@ -701,7 +701,7 @@ const Home = () => {
                                     <span className="old-price">$210</span>
                                     <span className="new-price">$200</span>
                                 </div>
-                                <a href="cart.html" className="add-to-cart">Add to Cart</a>
+                                <a href="/Cart" className="add-to-cart">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -709,7 +709,7 @@ const Home = () => {
                     <div className="col-lg-4 col-md-6 col-sm-6">
                         <div className="single-productsBox">
                             <div className="products-image">
-                                <a href="products-type-3.html">
+                                <a href="/Productdetails">
                                     <img src="assets/img/products/img10.jpg" className="main-image" alt="image" />
                                     <img src="assets/img/products/img-hover10.jpg" className="hover-image" alt="image" />
                                 </a>
@@ -726,7 +726,7 @@ const Home = () => {
                                         </li>
                                         <li>
                                             <div className="compare-btn">
-                                                <a href="compare.html">
+                                                <a href="/Compare">
                                                     <i class='bx bx-refresh'></i>
                                                     <span className="tooltip-label">Compare</span>
                                                 </a>
@@ -748,7 +748,7 @@ const Home = () => {
 
                             <div className="products-content">
                                 <span className="category">Twist Shirt</span>
-                                <h3><a href="products-type-3.html">Block Striped Draped</a></h3>
+                                <h3><a href="/Productdetails">Block Striped Draped</a></h3>
                                 <div className="star-rating">
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
@@ -759,7 +759,7 @@ const Home = () => {
                                 <div className="price">
                                     <span className="new-price">$150</span>
                                 </div>
-                                <a href="cart.html" className="add-to-cart">Add to Cart</a>
+                                <a href="/Cart" className="add-to-cart">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -767,7 +767,7 @@ const Home = () => {
                     <div className="col-lg-4 col-md-6 col-sm-6">
                         <div className="single-productsBox">
                             <div className="products-image">
-                                <a href="products-type-3.html">
+                                <a href="/Productdetails">
                                     <img src="assets/img/products/img11.jpg" className="main-image" alt="image" />
                                     <img src="assets/img/products/img-hover11.jpg" className="hover-image" alt="image" />
                                 </a>
@@ -784,7 +784,7 @@ const Home = () => {
                                         </li>
                                         <li>
                                             <div className="compare-btn">
-                                                <a href="compare.html">
+                                                <a href="/Compare">
                                                     <i class='bx bx-refresh'></i>
                                                     <span className="tooltip-label">Compare</span>
                                                 </a>
@@ -804,7 +804,7 @@ const Home = () => {
 
                             <div className="products-content">
                                 <span className="category">Smart Shirt</span>
-                                <h3><a href="products-type-3.html">Fleece Hooded Sweatshirt</a></h3>
+                                <h3><a href="/Productdetails">Fleece Hooded Sweatshirt</a></h3>
                                 <div className="star-rating">
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
@@ -815,7 +815,7 @@ const Home = () => {
                                 <div className="price">
                                     <span className="new-price">$240</span>
                                 </div>
-                                <a href="cart.html" className="add-to-cart">Add to Cart</a>
+                                <a href="/Cart" className="add-to-cart">Add to Cart</a>
                             </div>
 
                             <span className="products-discount">
@@ -829,7 +829,7 @@ const Home = () => {
                     <div className="col-lg-4 col-md-6 col-sm-6">
                         <div className="single-productsBox">
                             <div className="products-image">
-                                <a href="products-type-3.html">
+                                <a href="/Productdetails">
                                     <img src="assets/img/products/img12.jpg" className="main-image" alt="image" />
                                     <img src="assets/img/products/img-hover12.jpg" className="hover-image" alt="image" />
                                 </a>
@@ -846,7 +846,7 @@ const Home = () => {
                                         </li>
                                         <li>
                                             <div className="compare-btn">
-                                                <a href="compare.html">
+                                                <a href="/Compare">
                                                     <i class='bx bx-refresh'></i>
                                                     <span className="tooltip-label">Compare</span>
                                                 </a>
@@ -866,7 +866,7 @@ const Home = () => {
 
                             <div className="products-content">
                                 <span className="category">EcoSmart</span>
-                                <h3><a href="products-type-3.html">Women's Modern-Skinny</a></h3>
+                                <h3><a href="/Productdetails">Women's Modern-Skinny</a></h3>
                                 <div className="star-rating">
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
@@ -878,7 +878,7 @@ const Home = () => {
                                     <span className="old-price">$150</span>
                                     <span className="new-price">$100</span>
                                 </div>
-                                <a href="cart.html" className="add-to-cart">Add to Cart</a>
+                                <a href="/Cart" className="add-to-cart">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -903,7 +903,7 @@ const Home = () => {
                     <div className="col-lg-4 col-md-6 col-sm-6">
                         <div className="single-productsBox">
                             <div className="products-image">
-                                <a href="products-type-3.html">
+                                <a href="/Productdetails">
                                     <img src="assets/img/products/img1.jpg" className="main-image" alt="image" />
                                     <img src="assets/img/products/img-hover1.jpg" className="hover-image" alt="image" />
                                 </a>
@@ -920,7 +920,7 @@ const Home = () => {
                                         </li>
                                         <li>
                                             <div className="compare-btn">
-                                                <a href="compare.html">
+                                                <a href="/Compare">
                                                     <i class='bx bx-refresh'></i>
                                                     <span className="tooltip-label">Compare</span>
                                                 </a>
@@ -942,7 +942,7 @@ const Home = () => {
 
                             <div className="products-content">
                                 <span className="category">T-Shirt</span>
-                                <h3><a href="products-type-3.html">Sleeve Faux Suede Loose</a></h3>
+                                <h3><a href="/Productdetails">Sleeve Faux Suede Loose</a></h3>
                                 <div className="star-rating">
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
@@ -954,7 +954,7 @@ const Home = () => {
                                     <span className="old-price">$321</span>
                                     <span className="new-price">$250</span>
                                 </div>
-                                <a href="cart.html" className="add-to-cart">Add to Cart</a>
+                                <a href="/Cart" className="add-to-cart">Add to Cart</a>
                             </div>
 
                             <span className="products-discount">
@@ -968,7 +968,7 @@ const Home = () => {
                     <div className="col-lg-4 col-md-6 col-sm-6">
                         <div className="single-productsBox">
                             <div className="products-image">
-                                <a href="products-type-3.html">
+                                <a href="/Productdetails">
                                     <img src="assets/img/products/img2.jpg" className="main-image" alt="image" />
                                     <img src="assets/img/products/img-hover2.jpg" className="hover-image" alt="image" />
                                 </a>
@@ -985,7 +985,7 @@ const Home = () => {
                                         </li>
                                         <li>
                                             <div className="compare-btn">
-                                                <a href="compare.html">
+                                                <a href="/Compare">
                                                     <i class='bx bx-refresh'></i>
                                                     <span className="tooltip-label">Compare</span>
                                                 </a>
@@ -1005,7 +1005,7 @@ const Home = () => {
 
                             <div className="products-content">
                                 <span className="category">T-Shirt</span>
-                                <h3><a href="products-type-3.html">T-Shirt Casual Stripe Tunic</a></h3>
+                                <h3><a href="/Productdetails">T-Shirt Casual Stripe Tunic</a></h3>
                                 <div className="star-rating">
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
@@ -1017,7 +1017,7 @@ const Home = () => {
                                     <span className="old-price">$210</span>
                                     <span className="new-price">$200</span>
                                 </div>
-                                <a href="cart.html" className="add-to-cart">Add to Cart</a>
+                                <a href="/Cart" className="add-to-cart">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -1025,7 +1025,7 @@ const Home = () => {
                     <div className="col-lg-4 col-md-6 col-sm-6">
                         <div className="single-productsBox">
                             <div className="products-image">
-                                <a href="products-type-3.html">
+                                <a href="/Productdetails">
                                     <img src="assets/img/products/img3.jpg" className="main-image" alt="image" />
                                     <img src="assets/img/products/img-hover3.jpg" className="hover-image" alt="image" />
                                 </a>
@@ -1042,7 +1042,7 @@ const Home = () => {
                                         </li>
                                         <li>
                                             <div className="compare-btn">
-                                                <a href="compare.html">
+                                                <a href="/Compare">
                                                     <i class='bx bx-refresh'></i>
                                                     <span className="tooltip-label">Compare</span>
                                                 </a>
@@ -1062,7 +1062,7 @@ const Home = () => {
 
                             <div className="products-content">
                                 <span className="category">Shirt</span>
-                                <h3><a href="products-type-3.html">Chest Cutout Tunics Long</a></h3>
+                                <h3><a href="/Productdetails">Chest Cutout Tunics Long</a></h3>
                                 <div className="star-rating">
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
@@ -1074,7 +1074,7 @@ const Home = () => {
                                     <span className="old-price">$210</span>
                                     <span className="new-price">$200</span>
                                 </div>
-                                <a href="cart.html" className="add-to-cart">Add to Cart</a>
+                                <a href="/Cart" className="add-to-cart">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -1082,7 +1082,7 @@ const Home = () => {
                     <div className="col-lg-4 col-md-6 col-sm-6">
                         <div className="single-productsBox">
                             <div className="products-image">
-                                <a href="products-type-3.html">
+                                <a href="/Productdetails">
                                     <img src="assets/img/products/img4.jpg" className="main-image" alt="image" />
                                     <img src="assets/img/products/img-hover4.jpg" className="hover-image" alt="image" />
                                 </a>
@@ -1099,7 +1099,7 @@ const Home = () => {
                                         </li>
                                         <li>
                                             <div className="compare-btn">
-                                                <a href="compare.html">
+                                                <a href="/Compare">
                                                     <i class='bx bx-refresh'></i>
                                                     <span className="tooltip-label">Compare</span>
                                                 </a>
@@ -1121,7 +1121,7 @@ const Home = () => {
 
                             <div className="products-content">
                                 <span className="category">Twist Shirt</span>
-                                <h3><a href="products-type-3.html">Twist Knotted Tops</a></h3>
+                                <h3><a href="/Productdetails">Twist Knotted Tops</a></h3>
                                 <div className="star-rating">
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
@@ -1132,7 +1132,7 @@ const Home = () => {
                                 <div className="price">
                                     <span className="new-price">$150</span>
                                 </div>
-                                <a href="cart.html" className="add-to-cart">Add to Cart</a>
+                                <a href="/Cart" className="add-to-cart">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -1140,7 +1140,7 @@ const Home = () => {
                     <div className="col-lg-4 col-md-6 col-sm-6">
                         <div className="single-productsBox">
                             <div className="products-image">
-                                <a href="products-type-3.html">
+                                <a href="/Productdetails">
                                     <img src="assets/img/products/img5.jpg" className="main-image" alt="image" />
                                     <img src="assets/img/products/img-hover5.jpg" className="hover-image" alt="image" />
                                 </a>
@@ -1157,7 +1157,7 @@ const Home = () => {
                                         </li>
                                         <li>
                                             <div className="compare-btn">
-                                                <a href="compare.html">
+                                                <a href="/Compare">
                                                     <i class='bx bx-refresh'></i>
                                                     <span className="tooltip-label">Compare</span>
                                                 </a>
@@ -1177,7 +1177,7 @@ const Home = () => {
 
                             <div className="products-content">
                                 <span className="category">Smart Shirt</span>
-                                <h3><a href="products-type-3.html">Premium Lightweight Fleece</a></h3>
+                                <h3><a href="/Productdetails">Premium Lightweight Fleece</a></h3>
                                 <div className="star-rating">
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
@@ -1188,7 +1188,7 @@ const Home = () => {
                                 <div className="price">
                                     <span className="new-price">$240</span>
                                 </div>
-                                <a href="cart.html" className="add-to-cart">Add to Cart</a>
+                                <a href="/Cart" className="add-to-cart">Add to Cart</a>
                             </div>
 
                             <span className="products-discount">
@@ -1202,7 +1202,7 @@ const Home = () => {
                     <div className="col-lg-4 col-md-6 col-sm-6">
                         <div className="single-productsBox">
                             <div className="products-image">
-                                <a href="products-type-3.html">
+                                <a href="/Productdetails">
                                     <img src="assets/img/products/img6.jpg" className="main-image" alt="image" />
                                     <img src="assets/img/products/img-hover6.jpg" className="hover-image" alt="image" />
                                 </a>
@@ -1219,7 +1219,7 @@ const Home = () => {
                                         </li>
                                         <li>
                                             <div className="compare-btn">
-                                                <a href="compare.html">
+                                                <a href="/Compare">
                                                     <i class='bx bx-refresh'></i>
                                                     <span className="tooltip-label">Compare</span>
                                                 </a>
@@ -1239,7 +1239,7 @@ const Home = () => {
 
                             <div className="products-content">
                                 <span className="category">EcoSmart</span>
-                                <h3><a href="products-type-3.html">EcoSmart Fleece Hoodie</a></h3>
+                                <h3><a href="/Productdetails">EcoSmart Fleece Hoodie</a></h3>
                                 <div className="star-rating">
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
@@ -1251,7 +1251,7 @@ const Home = () => {
                                     <span className="old-price">$150</span>
                                     <span className="new-price">$100</span>
                                 </div>
-                                <a href="cart.html" className="add-to-cart">Add to Cart</a>
+                                <a href="/Cart" className="add-to-cart">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -1308,7 +1308,7 @@ const Home = () => {
                     <div className="col-lg-4 col-md-6">
                         <div className="single-blog-post">
                             <div className="post-image">
-                                <a href="single-blog-1.html">
+                                <a href="/Blog">
                                     <img src="assets/img/blog/img1.jpg" alt="image" />
                                 </a>
                                 <div className="date">
@@ -1318,8 +1318,8 @@ const Home = () => {
 
                             <div className="post-content">
                                 <span className="category">Ideas</span>
-                                <h3><a href="single-blog-1.html">The #1 eCommerce blog to grow your business</a></h3>
-                                <a href="single-blog-1.html" className="details-btn">Read Story</a>
+                                <h3><a href="/Blog">The #1 eCommerce blog to grow your business</a></h3>
+                                <a href="/Blog" className="details-btn">Read Story</a>
                             </div>
                         </div>
                     </div>
@@ -1327,15 +1327,15 @@ const Home = () => {
                     <div className="col-lg-4 col-md-6">
                         <div className="single-blog-post">
                             <div className="post-image">
-                                <a href="single-blog-1.html">
+                                <a href="/Blog">
                                     <img src="assets/img/blog/img2.jpg" alt="image" />
                                 </a>
                             </div>
 
                             <div className="post-content">
                                 <span className="category">Advice</span>
-                                <h3><a href="single-blog-1.html">Latest ecommerce trend: The rise of shoppable posts</a></h3>
-                                <a href="single-blog-1.html" className="details-btn">Read Story</a>
+                                <h3><a href="/Blog">Latest ecommerce trend: The rise of shoppable posts</a></h3>
+                                <a href="/Blog" className="details-btn">Read Story</a>
                             </div>
                         </div>
                     </div>
@@ -1343,15 +1343,15 @@ const Home = () => {
                     <div className="col-lg-4 col-md-6">
                         <div className="single-blog-post">
                             <div className="post-image">
-                                <a href="single-blog-1.html">
+                                <a href="/Blog">
                                     <img src="assets/img/blog/img3.jpg" alt="image" />
                                 </a>
                             </div>
 
                             <div className="post-content">
                                 <span className="category">Social</span>
-                                <h3><a href="single-blog-1.html">Building eCommerce wave: Social media shopping</a></h3>
-                                <a href="single-blog-1.html" className="details-btn">Read Story</a>
+                                <h3><a href="/Blog">Building eCommerce wave: Social media shopping</a></h3>
+                                <a href="/Blog" className="details-btn">Read Story</a>
                             </div>
                         </div>
                     </div>
