@@ -161,6 +161,7 @@ $(document).ready(function () {
 
     
     // Products Slides
+    $(document).ready(function () {  
     $('.products-slides').owlCarousel({
         loop: true,
         nav: true,
@@ -186,6 +187,7 @@ $(document).ready(function () {
                 items: 3,
             }
         }
+    })
     });
 
     // Instagram Slides

@@ -1,6 +1,8 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
+import Facility from '../Components/Facility'
+import Instragram from '../Components/Instragram'
 
 const OurProducts = () => {
     return (
@@ -121,7 +123,7 @@ const OurProducts = () => {
                                     </div>
 
                                     <div class="products-content">
-                                        <h3><a href="#">Long Sleeve Leopard T-Shirt</a></h3>
+                                        <h3><a href="/Productdetails">Long Sleeve Leopard T-Shirt</a></h3>
                                         <div class="price">
                                             <span class="old-price">$321</span>
                                             <span class="new-price">$250</span>
@@ -909,7 +911,8 @@ const OurProducts = () => {
                     </div>
                 </div>
                 {/* <!-- End Products Filter Modal Area -->`` */}
-
+<Facility />
+<Instragram />
             </>
             <Footer />
         </>

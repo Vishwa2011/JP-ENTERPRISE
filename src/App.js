@@ -13,6 +13,7 @@ import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
 import Compare from "./Pages/Compare";
 import Faq from "./Pages/Faq";
+import Productdetails from "./Pages/Productdetails";
 
 
 function App() {
@@ -58,6 +59,7 @@ function App() {
         <Route path="/Signup"  element={<Signup />}/>
         <Route path="/Compare"  element={<Compare />}/>
         <Route path="/Faq"  element={<Faq />}/>
+        <Route path="/Productdetails" element={<Productdetails/>}/>
 
      </Routes>
      <div class="go-top"><i class='bx bx-up-arrow-alt'></i></div>
