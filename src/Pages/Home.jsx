@@ -66,12 +66,7 @@ const Home = () => {
         </div>
         {/* <!-- End Main Banner Area --> */}
     </div>
-    <>
-      <Navbar />
-      <div>
-        
-      </div>
-    </>
+   
   )
 }
 
