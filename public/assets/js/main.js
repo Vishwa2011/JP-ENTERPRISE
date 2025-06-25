@@ -218,6 +218,7 @@ $(document).ready(function () {
     });
     
     // Partner Slides
+    $(document).ready(function () {  
     $('.partner-slides').owlCarousel({
         loop: true,
         nav: false,
@@ -242,7 +243,8 @@ $(document).ready(function () {
                 items: 7,
             }
         }
-    });
+    })
+     });
 
     // Offer Products Slides
 $(document).ready(function () {
@@ -333,6 +335,7 @@ $(document).ready(function () {
     });
 
     // Testimonials Slides
+    $(document).ready(function () { 
     $('.testimonials-slides').owlCarousel({
         loop: true,
         nav: false,
@@ -359,7 +362,8 @@ $(document).ready(function () {
                 items: 3,
             }
         }
-    });
+    })
+     });
 
     // Tabs
     (function ($) {
