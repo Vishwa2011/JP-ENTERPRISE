@@ -327,13 +327,13 @@ const Navbar = () => {
                                     </ul> */}
                                 </li>
 
-                                <li className="nav-item "><a href="#" className="nav-link">Our Products </a>
-                                    {/* <ul className="dropdown-menu">
-                                        <li className="nav-item">
-                                            <div className="container">
-                                                <div className="row justify-content-center">
-                                                    <div className="col">
-                                                        <h6 className="submenu-title">Shop Styles</h6>
+                                <li class="nav-item "><a href="/OurProducts" class="nav-link">Our Products </a>
+                                    {/* <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <div class="container">
+                                                <div class="row justify-content-center">
+                                                    <div class="col">
+                                                        <h6 class="submenu-title">Shop Styles</h6>
 
                                                         <ul className="megamenu-submenu">
                                                             <li><a href="products-left-sidebar.html">Left Sidebar</a></li>
@@ -814,13 +814,13 @@ const Navbar = () => {
                                     </ul> */}
                                 </li>
 
-                                <li className="nav-item "><a href="#" className="nav-link">Our Products </a>
-                                    {/* <ul className="dropdown-menu">
-                                        <li className="nav-item">
-                                            <div className="container">
-                                                <div className="row justify-content-center">
-                                                    <div className="col">
-                                                        <h6 className="submenu-title">Shop Styles</h6>
+                                <li class="nav-item "><a href="/OurProducts" class="nav-link">Our Products </a>
+                                    {/* <ul class="dropdown-menu">
+                                        <li class="nav-item">
+                                            <div class="container">
+                                                <div class="row justify-content-center">
+                                                    <div class="col">
+                                                        <h6 class="submenu-title">Shop Styles</h6>
 
                                                         <ul className="megamenu-submenu">
                                                             <li><a href="products-left-sidebar.html">Left Sidebar</a></li>

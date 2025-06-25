@@ -8,6 +8,7 @@ import Blog from "./Pages/Blog";
 import BlogDetails from "./Pages/BlogDetails";
 import Cart from "./Pages/Cart";
 import Checkout from "./Pages/Checkout";
+import OurProducts from "./Pages/OurProducts";
 
 
 function App() {
@@ -43,7 +44,7 @@ function App() {
         <Route path="/"  element={<Home />}/>
         <Route path="/Aboutus" element={<Aboutus/>} />
         <Route path="/Mice_problem"  element={<Mice_problem />}/>
-
+        <Route path="/OurProducts" element={<OurProducts/>}/>
         <Route path="/Contact"  element={<Contact />}/>
         <Route path="/Blog"  element={<Blog />}/>
         <Route path="/BlogDetails"  element={<BlogDetails />}/>
