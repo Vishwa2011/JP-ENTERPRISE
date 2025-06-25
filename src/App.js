@@ -3,6 +3,11 @@ import Home from "./Pages/Home";
 import React, { useEffect, useState } from "react";
 import Aboutus from "./Pages/Aboutus";
 import Mice_problem from "./Pages/Mice_problem";
+import Contact from "./Pages/Contact";
+import Blog from "./Pages/Blog";
+import BlogDetails from "./Pages/BlogDetails";
+import Cart from "./Pages/Cart";
+import Checkout from "./Pages/Checkout";
 
 
 function App() {
@@ -38,6 +43,13 @@ function App() {
         <Route path="/"  element={<Home />}/>
         <Route path="/Aboutus" element={<Aboutus/>} />
         <Route path="/Mice_problem"  element={<Mice_problem />}/>
+
+        <Route path="/Contact"  element={<Contact />}/>
+        <Route path="/Blog"  element={<Blog />}/>
+        <Route path="/BlogDetails"  element={<BlogDetails />}/>
+        <Route path="/Cart"  element={<Cart />}/>
+        <Route path="/Checkout"  element={<Checkout />}/>
+
      </Routes>
      <div class="go-top"><i class='bx bx-up-arrow-alt'></i></div>
     </>

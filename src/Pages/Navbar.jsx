@@ -77,43 +77,43 @@ const Navbar = () => {
             </div>
         </div>
  {/* <!-- Start Navbar Area --> */}
-        <div class="navbar-area">
-            <div class="xton-responsive-nav">
-                <div class="container">
-                    <div class="xton-responsive-menu mean-container" >
-                        <div class="logo">
+        <div className="navbar-area">
+            <div className="xton-responsive-nav">
+                <div className="container">
+                    <div className="xton-responsive-menu mean-container" >
+                        <div className="logo">
                             <a href="index.html">
-                                <img src="assets/img/logo.png" class="main-logo" alt="logo" />
-                                <img src="assets/img/white-logo.png" class="white-logo" alt="logo" />
+                                <img src="assets/img/logo.png" className="main-logo" alt="logo" />
+                                <img src="assets/img/white-logo.png" className="white-logo" alt="logo" />
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="xton-nav">
-                <div class="container-fluid">
-                    <nav class="navbar navbar-expand-md navbar-light">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="assets/img/logo.png" class="main-logo" alt="logo" />
-                            <img src="assets/img/white-logo.png" class="white-logo" alt="logo" />
+            <div className="xton-nav">
+                <div className="container-fluid">
+                    <nav className="navbar navbar-expand-md navbar-light">
+                        <a className="navbar-brand" href="index.html">
+                            <img src="assets/img/logo.png" className="main-logo" alt="logo" />
+                            <img src="assets/img/white-logo.png" className="white-logo" alt="logo" />
                         </a>
 
-                        <div class="collapse navbar-collapse mean-menu">
-                            <ul class="navbar-nav">
-                                <li class="nav-item"><a href="/" class="nav-link active">Home </a>
+                        <div className="collapse navbar-collapse mean-menu">
+                            <ul className="navbar-nav">
+                                <li className="nav-item"><a href="/" className="nav-link active">Home </a>
                                    
                                 </li>
 
-                                <li class="nav-item "><a href="/Aboutus" class="nav-link">About Us </a>
-                                    {/* <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <div class="container">
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <h6 class="submenu-title">Shop Styles</h6>
+                                <li className="nav-item "><a href="/Aboutus" className="nav-link">About Us </a>
+                                    {/* <ul className="dropdown-menu">
+                                        <li className="nav-item">
+                                            <div className="container">
+                                                <div className="row justify-content-center">
+                                                    <div className="col">
+                                                        <h6 className="submenu-title">Shop Styles</h6>
 
-                                                        <ul class="megamenu-submenu">
+                                                        <ul className="megamenu-submenu">
                                                             <li><a href="products-left-sidebar.html">Left Sidebar</a></li>
 
                                                             <li><a href="products-left-sidebar-with-categories.html">Left Sidebar With Categories</a></li>
@@ -130,10 +130,10 @@ const Navbar = () => {
                                                         </ul>
                                                     </div>
 
-                                                    <div class="col">
-                                                        <h6 class="submenu-title">Shop Styles 2</h6>
+                                                    <div className="col">
+                                                        <h6 className="submenu-title">Shop Styles 2</h6>
 
-                                                        <ul class="megamenu-submenu">
+                                                        <ul className="megamenu-submenu">
                                                             <li><a href="products-left-sidebar-2.html">Left Sidebar</a></li>
 
                                                             <li><a href="products-left-sidebar-with-categories-2.html">Left Sidebar With Categories</a></li>
@@ -150,10 +150,10 @@ const Navbar = () => {
                                                         </ul>
                                                     </div>
 
-                                                    <div class="col">
-                                                        <h6 class="submenu-title">Shop Styles 3</h6>
+                                                    <div className="col">
+                                                        <h6 className="submenu-title">Shop Styles 3</h6>
 
-                                                        <ul class="megamenu-submenu">
+                                                        <ul className="megamenu-submenu">
                                                             <li><a href="products-left-sidebar-3.html">Left Sidebar</a></li>
 
                                                             <li><a href="products-left-sidebar-with-categories-3.html">Left Sidebar With Categories</a></li>
@@ -170,10 +170,10 @@ const Navbar = () => {
                                                         </ul>
                                                     </div>
 
-                                                    <div class="col">
-                                                        <h6 class="submenu-title">Product Pages</h6>
+                                                    <div className="col">
+                                                        <h6 className="submenu-title">Product Pages</h6>
 
-                                                        <ul class="megamenu-submenu">
+                                                        <ul className="megamenu-submenu">
                                                             <li><a href="products-type-1.html">Default Style</a></li>
 
                                                             <li><a href="products-type-2.html">Thumbs List</a></li>
@@ -191,28 +191,28 @@ const Navbar = () => {
                                                     </div>
                                                 </div>
 
-                                                <div class="brand-slides owl-carousel owl-theme">
-                                                    <div class="brand-item">
+                                                <div className="brand-slides owl-carousel owl-theme">
+                                                    <div className="brand-item">
                                                         <a href="#"><img src="assets/img/brand/img1.png" alt="image" /></a>
                                                     </div>
                                 
-                                                    <div class="brand-item">
+                                                    <div className="brand-item">
                                                         <a href="#"><img src="assets/img/brand/img2.png" alt="image" /></a>
                                                     </div>
                                 
-                                                    <div class="brand-item">
+                                                    <div className="brand-item">
                                                         <a href="#"><img src="assets/img/brand/img3.png" alt="image" /></a>
                                                     </div>
                                 
-                                                    <div class="brand-item">
+                                                    <div className="brand-item">
                                                         <a href="#"><img src="assets/img/brand/img4.png" alt="image" /></a>
                                                     </div>
                                 
-                                                    <div class="brand-item">
+                                                    <div className="brand-item">
                                                         <a href="#"><img src="assets/img/brand/img5.png" alt="image" /></a>
                                                     </div>
                                 
-                                                    <div class="brand-item">
+                                                    <div className="brand-item">
                                                         <a href="#"><img src="assets/img/brand/img6.png" alt="image" /></a>
                                                     </div>
                                                 </div>
@@ -221,15 +221,15 @@ const Navbar = () => {
                                     </ul> */}
                                 </li>
 
-                                <li class="nav-item "><a href="/Mice_problem" class="nav-link">Mice Problem </a>
-                                    {/* <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <div class="container">
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <h6 class="submenu-title">Pages</h6>
+                                <li className="nav-item "><a href="/Mice_problem" className="nav-link">Mice Problem </a>
+                                    {/* <ul className="dropdown-menu">
+                                        <li className="nav-item">
+                                            <div className="container">
+                                                <div className="row justify-content-center">
+                                                    <div className="col">
+                                                        <h6 className="submenu-title">Pages</h6>
 
-                                                        <ul class="megamenu-submenu">
+                                                        <ul className="megamenu-submenu">
                                                             <li><a href="about.html">About Us</a></li>
 
                                                             <li><a href="customer-service.html">Customer Service</a></li>
@@ -250,10 +250,10 @@ const Navbar = () => {
                                                         </ul>
                                                     </div>
 
-                                                    <div class="col">
-                                                        <h6 class="submenu-title">Gallery</h6>
+                                                    <div className="col">
+                                                        <h6 className="submenu-title">Gallery</h6>
 
-                                                        <ul class="megamenu-submenu">
+                                                        <ul className="megamenu-submenu">
                                                             <li><a href="gallery-1.html">Grid (2 in Row)</a></li>
 
                                                             <li><a href="gallery-2.html">Grid (3 in Row)</a></li>
@@ -267,19 +267,19 @@ const Navbar = () => {
                                                             <li><a href="gallery-6.html">Masonry (4 in Row)</a></li>
                                                         </ul>
 
-                                                        <h6 class="submenu-title">My Account</h6>
+                                                        <h6 className="submenu-title">My Account</h6>
 
-                                                        <ul class="megamenu-submenu">
+                                                        <ul className="megamenu-submenu">
                                                             <li><a href="login.html">Login</a></li>
 
                                                             <li><a href="signup.html">Signup</a></li>
                                                         </ul>
                                                     </div>
 
-                                                    <div class="col">
-                                                        <h6 class="submenu-title">Categories</h6>
+                                                    <div className="col">
+                                                        <h6 className="submenu-title">Categories</h6>
 
-                                                        <ul class="megamenu-submenu">
+                                                        <ul className="megamenu-submenu">
                                                             <li><a href="categories-1.html">Categories (2 in Row)</a></li>
 
                                                             <li><a href="categories-2.html">Categories Fullwidth</a></li>
@@ -289,9 +289,9 @@ const Navbar = () => {
                                                             <li><a href="categories-4.html">Categories Full Width (3 in Row)</a></li>
                                                         </ul>
 
-                                                        <h6 class="submenu-title">Lookbook</h6>
+                                                        <h6 className="submenu-title">Lookbook</h6>
 
-                                                        <ul class="megamenu-submenu">
+                                                        <ul className="megamenu-submenu">
                                                             <li><a href="lookbook-1.html">Grid (3 in Row)</a></li>
 
                                                             <li><a href="lookbook-2.html">Grid Full Width (4 in Row)</a></li>
@@ -300,10 +300,10 @@ const Navbar = () => {
                                                         </ul>
                                                     </div>
 
-                                                    <div class="col">
-                                                        <h6 class="submenu-title">Shop</h6>
+                                                    <div className="col">
+                                                        <h6 className="submenu-title">Shop</h6>
 
-                                                        <ul class="megamenu-submenu">
+                                                        <ul className="megamenu-submenu">
                                                             <li><a href="cart.html">Cart</a></li>
 
                                                             <li><a href="checkout.html">Cehckout</a></li>
@@ -327,15 +327,15 @@ const Navbar = () => {
                                     </ul> */}
                                 </li>
 
-                                <li class="nav-item "><a href="#" class="nav-link">Our Products </a>
-                                    {/* <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <div class="container">
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <h6 class="submenu-title">Shop Styles</h6>
+                                <li className="nav-item "><a href="#" className="nav-link">Our Products </a>
+                                    {/* <ul className="dropdown-menu">
+                                        <li className="nav-item">
+                                            <div className="container">
+                                                <div className="row justify-content-center">
+                                                    <div className="col">
+                                                        <h6 className="submenu-title">Shop Styles</h6>
 
-                                                        <ul class="megamenu-submenu">
+                                                        <ul className="megamenu-submenu">
                                                             <li><a href="products-left-sidebar.html">Left Sidebar</a></li>
 
                                                             <li><a href="products-left-sidebar-with-categories.html">Left Sidebar With Categories</a></li>
@@ -352,10 +352,10 @@ const Navbar = () => {
                                                         </ul>
                                                     </div>
 
-                                                    <div class="col">
-                                                        <h6 class="submenu-title">Shop Styles 2</h6>
+                                                    <div className="col">
+                                                        <h6 className="submenu-title">Shop Styles 2</h6>
 
-                                                        <ul class="megamenu-submenu">
+                                                        <ul className="megamenu-submenu">
                                                             <li><a href="products-left-sidebar-2.html">Left Sidebar</a></li>
 
                                                             <li><a href="products-left-sidebar-with-categories-2.html">Left Sidebar With Categories</a></li>
@@ -372,10 +372,10 @@ const Navbar = () => {
                                                         </ul>
                                                     </div>
 
-                                                    <div class="col">
-                                                        <h6 class="submenu-title">Shop Styles 3</h6>
+                                                    <div className="col">
+                                                        <h6 className="submenu-title">Shop Styles 3</h6>
 
-                                                        <ul class="megamenu-submenu">
+                                                        <ul className="megamenu-submenu">
                                                             <li><a href="products-left-sidebar-3.html">Left Sidebar</a></li>
 
                                                             <li><a href="products-left-sidebar-with-categories-3.html">Left Sidebar With Categories</a></li>
@@ -392,27 +392,27 @@ const Navbar = () => {
                                                         </ul>
                                                     </div>
 
-                                                    <div class="col">
-                                                        <ul class="megamenu-submenu">
+                                                    <div className="col">
+                                                        <ul className="megamenu-submenu">
                                                             <li>
-                                                                <div class="aside-trending-products">
+                                                                <div className="aside-trending-products">
                                                                     <img src="assets/img/categories/img1.jpg" alt="image" />
 
-                                                                    <div class="category">
+                                                                    <div className="category">
                                                                         <h4>Top Trending</h4>
                                                                     </div>
 
-                                                                   <a href="products-right-sidebar.html" class="link-btn"></a>
+                                                                   <a href="products-right-sidebar.html" className="link-btn"></a>
                                                                 </div>
 
-                                                                <div class="aside-trending-products">
+                                                                <div className="aside-trending-products">
                                                                     <img src="assets/img/categories/img2.jpg" alt="image" />
 
-                                                                    <div class="category">
+                                                                    <div className="category">
                                                                         <h4>Popular Products</h4>
                                                                     </div>
 
-                                                                   <a href="products-right-sidebar.html" class="link-btn"></a>
+                                                                   <a href="products-right-sidebar.html" className="link-btn"></a>
                                                                 </div>
                                                             </li>
                                                         </ul>
@@ -423,15 +423,15 @@ const Navbar = () => {
                                     </ul> */}
                                 </li>
 
-                                <li class="nav-item "><a href="#" class="nav-link">Contact Us </a>
-                                    {/* <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <div class="container">
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <h6 class="submenu-title">Shop Styles</h6>
+                                <li className="nav-item "><a href="/Contact" className="nav-link">Contact Us </a>
+                                    {/* <ul className="dropdown-menu">
+                                        <li className="nav-item">
+                                            <div className="container">
+                                                <div className="row justify-content-center">
+                                                    <div className="col">
+                                                        <h6 className="submenu-title">Shop Styles</h6>
 
-                                                        <ul class="megamenu-submenu">
+                                                        <ul className="megamenu-submenu">
                                                             <li><a href="products-left-sidebar.html">Left Sidebar</a></li>
 
                                                             <li><a href="products-left-sidebar-with-categories.html">Left Sidebar With Categories</a></li>
@@ -448,10 +448,10 @@ const Navbar = () => {
                                                         </ul>
                                                     </div>
 
-                                                    <div class="col">
-                                                        <h6 class="submenu-title">Shop Styles 2</h6>
+                                                    <div className="col">
+                                                        <h6 className="submenu-title">Shop Styles 2</h6>
 
-                                                        <ul class="megamenu-submenu">
+                                                        <ul className="megamenu-submenu">
                                                             <li><a href="products-left-sidebar-2.html">Left Sidebar</a></li>
 
                                                             <li><a href="products-left-sidebar-with-categories-2.html">Left Sidebar With Categories</a></li>
@@ -468,10 +468,10 @@ const Navbar = () => {
                                                         </ul>
                                                     </div>
 
-                                                    <div class="col">
-                                                        <h6 class="submenu-title">Shop Styles 3</h6>
+                                                    <div className="col">
+                                                        <h6 className="submenu-title">Shop Styles 3</h6>
 
-                                                        <ul class="megamenu-submenu">
+                                                        <ul className="megamenu-submenu">
                                                             <li><a href="products-left-sidebar-3.html">Left Sidebar</a></li>
 
                                                             <li><a href="products-left-sidebar-with-categories-3.html">Left Sidebar With Categories</a></li>
@@ -488,27 +488,27 @@ const Navbar = () => {
                                                         </ul>
                                                     </div>
 
-                                                    <div class="col">
-                                                        <ul class="megamenu-submenu">
+                                                    <div className="col">
+                                                        <ul className="megamenu-submenu">
                                                             <li>
-                                                                <div class="aside-trending-products">
+                                                                <div className="aside-trending-products">
                                                                     <img src="assets/img/categories/img2.jpg" alt="image" />
 
-                                                                    <div class="category">
+                                                                    <div className="category">
                                                                         <h4>Popular Products</h4>
                                                                     </div>
 
-                                                                   <a href="products-right-sidebar.html" class="link-btn"></a>
+                                                                   <a href="products-right-sidebar.html" className="link-btn"></a>
                                                                 </div>
                                                                 
-                                                                <div class="aside-trending-products">
+                                                                <div className="aside-trending-products">
                                                                     <img src="assets/img/categories/img1.jpg" alt="image" />
 
-                                                                    <div class="category">
+                                                                    <div className="category">
                                                                         <h4>Top Trending</h4>
                                                                     </div>
 
-                                                                   <a href="products-right-sidebar.html" class="link-btn"></a>
+                                                                   <a href="products-right-sidebar.html" className="link-btn"></a>
                                                                 </div>
                                                             </li>
                                                         </ul>
@@ -519,27 +519,27 @@ const Navbar = () => {
                                     </ul> */}
                                 </li>
 
-                                <li class="nav-item"><a href="#" class="nav-link">Blog </a>
-                                    {/* <ul class="dropdown-menu">
-                                        <li class="nav-item"><a href="blog-1.html" class="nav-link">Grid (2 in Row)</a></li>
+                                <li className="nav-item"><a href="/Blog" className="nav-link">Blog </a>
+                                    {/* <ul className="dropdown-menu">
+                                        <li className="nav-item"><a href="blog-1.html" className="nav-link">Grid (2 in Row)</a></li>
 
-                                        <li class="nav-item"><a href="blog-2.html" class="nav-link">Grid (3 in Row)</a></li>
+                                        <li className="nav-item"><a href="blog-2.html" className="nav-link">Grid (3 in Row)</a></li>
 
-                                        <li class="nav-item"><a href="blog-3.html" class="nav-link">Grid (4 in Row)</a></li>
+                                        <li className="nav-item"><a href="blog-3.html" className="nav-link">Grid (4 in Row)</a></li>
 
-                                        <li class="nav-item"><a href="blog-4.html" class="nav-link">Grid (Full Width)</a></li>
+                                        <li className="nav-item"><a href="blog-4.html" className="nav-link">Grid (Full Width)</a></li>
 
-                                        <li class="nav-item"><a href="blog-5.html" class="nav-link">Right Sidebar</a></li>
+                                        <li className="nav-item"><a href="blog-5.html" className="nav-link">Right Sidebar</a></li>
 
-                                        <li class="nav-item"><a href="blog-6.html" class="nav-link">Masonry (3 in Row)</a></li>
+                                        <li className="nav-item"><a href="blog-6.html" className="nav-link">Masonry (3 in Row)</a></li>
 
-                                        <li class="nav-item"><a href="#" class="nav-link">Single Post <i class='bx bx-chevron-right'></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item"><a href="single-blog-1.html" class="nav-link">Default</a></li>
+                                        <li className="nav-item"><a href="#" className="nav-link">Single Post <i class='bx bx-chevron-right'></i></a>
+                                            <ul className="dropdown-menu">
+                                                <li className="nav-item"><a href="single-blog-1.html" className="nav-link">Default</a></li>
         
-                                                <li class="nav-item"><a href="single-blog-2.html" class="nav-link">With Video</a></li>
+                                                <li className="nav-item"><a href="single-blog-2.html" className="nav-link">With Video</a></li>
         
-                                                <li class="nav-item"><a href="single-blog-3.html" class="nav-link">With Image Slider</a></li>
+                                                <li className="nav-item"><a href="single-blog-3.html" className="nav-link">With Image Slider</a></li>
                                             </ul>
                                         </li>
                                     </ul> */}
@@ -547,24 +547,24 @@ const Navbar = () => {
                                 
                             </ul>
 
-                            <div class="others-option">
-                                <div class="option-item">
-                                    <div class="search-btn-box">
-                                        <i class="search-btn bx bx-search-alt"></i>
+                            <div className="others-option">
+                                <div className="option-item">
+                                    <div className="search-btn-box">
+                                        <i className="search-btn bx bx-search-alt"></i>
                                     </div>
                                 </div>
 
-                                <div class="option-item">
-                                    <div class="cart-btn">
+                                <div className="option-item">
+                                    <div className="cart-btn">
                                         <a href="#" data-bs-toggle="modal" data-bs-target="#shoppingCartModal"><i class='bx bx-shopping-bag'></i><span>0</span></a>
                                     </div>
                                 </div>
 
-                                <div class="option-item">
-                                    <div class="burger-menu" data-bs-toggle="modal" data-bs-target="#sidebarModal">
-                                        <span class="top-bar"></span>
-                                        <span class="middle-bar"></span>
-                                        <span class="bottom-bar"></span>
+                                <div className="option-item">
+                                    <div className="burger-menu" data-bs-toggle="modal" data-bs-target="#sidebarModal">
+                                        <span className="top-bar"></span>
+                                        <span className="middle-bar"></span>
+                                        <span className="bottom-bar"></span>
                                     </div>
                                 </div>
                             </div>
@@ -578,29 +578,29 @@ const Navbar = () => {
 
 
     {/* <!-- Start Sticky Navbar Area --> */}
-        <div class="navbar-area header-sticky">
-            <div class="xton-nav">
-                <div class="container-fluid">
-                    <nav class="navbar navbar-expand-md navbar-light">
-                        <a class="navbar-brand" href="index-4.html">
+        <div className="navbar-area header-sticky">
+            <div className="xton-nav">
+                <div className="container-fluid">
+                    <nav className="navbar navbar-expand-md navbar-light">
+                        <a className="navbar-brand" href="index-4.html">
                             <img src="assets/img/logo.png" alt="logo" />
                         </a>
 
-                        <div class="collapse navbar-collapse mean-menu">
-                       <ul class="navbar-nav">
-                                <li class="nav-item"><a href="/" class="nav-link active">Home </a>
+                        <div className="collapse navbar-collapse mean-menu">
+                       <ul className="navbar-nav">
+                                <li className="nav-item"><a href="/" className="nav-link active">Home </a>
                                    
                                 </li>
 
-                                <li class="nav-item "><a href="/Aboutus" class="nav-link">About Us </a>
-                                    {/* <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <div class="container">
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <h6 class="submenu-title">Shop Styles</h6>
+                                <li className="nav-item "><a href="/Aboutus" className="nav-link">About Us </a>
+                                    {/* <ul className="dropdown-menu">
+                                        <li className="nav-item">
+                                            <div className="container">
+                                                <div className="row justify-content-center">
+                                                    <div className="col">
+                                                        <h6 className="submenu-title">Shop Styles</h6>
 
-                                                        <ul class="megamenu-submenu">
+                                                        <ul className="megamenu-submenu">
                                                             <li><a href="products-left-sidebar.html">Left Sidebar</a></li>
 
                                                             <li><a href="products-left-sidebar-with-categories.html">Left Sidebar With Categories</a></li>
@@ -617,10 +617,10 @@ const Navbar = () => {
                                                         </ul>
                                                     </div>
 
-                                                    <div class="col">
-                                                        <h6 class="submenu-title">Shop Styles 2</h6>
+                                                    <div className="col">
+                                                        <h6 className="submenu-title">Shop Styles 2</h6>
 
-                                                        <ul class="megamenu-submenu">
+                                                        <ul className="megamenu-submenu">
                                                             <li><a href="products-left-sidebar-2.html">Left Sidebar</a></li>
 
                                                             <li><a href="products-left-sidebar-with-categories-2.html">Left Sidebar With Categories</a></li>
@@ -637,10 +637,10 @@ const Navbar = () => {
                                                         </ul>
                                                     </div>
 
-                                                    <div class="col">
-                                                        <h6 class="submenu-title">Shop Styles 3</h6>
+                                                    <div className="col">
+                                                        <h6 className="submenu-title">Shop Styles 3</h6>
 
-                                                        <ul class="megamenu-submenu">
+                                                        <ul className="megamenu-submenu">
                                                             <li><a href="products-left-sidebar-3.html">Left Sidebar</a></li>
 
                                                             <li><a href="products-left-sidebar-with-categories-3.html">Left Sidebar With Categories</a></li>
@@ -657,10 +657,10 @@ const Navbar = () => {
                                                         </ul>
                                                     </div>
 
-                                                    <div class="col">
-                                                        <h6 class="submenu-title">Product Pages</h6>
+                                                    <div className="col">
+                                                        <h6 className="submenu-title">Product Pages</h6>
 
-                                                        <ul class="megamenu-submenu">
+                                                        <ul className="megamenu-submenu">
                                                             <li><a href="products-type-1.html">Default Style</a></li>
 
                                                             <li><a href="products-type-2.html">Thumbs List</a></li>
@@ -678,28 +678,28 @@ const Navbar = () => {
                                                     </div>
                                                 </div>
 
-                                                <div class="brand-slides owl-carousel owl-theme">
-                                                    <div class="brand-item">
+                                                <div className="brand-slides owl-carousel owl-theme">
+                                                    <div className="brand-item">
                                                         <a href="#"><img src="assets/img/brand/img1.png" alt="image" /></a>
                                                     </div>
                                 
-                                                    <div class="brand-item">
+                                                    <div className="brand-item">
                                                         <a href="#"><img src="assets/img/brand/img2.png" alt="image" /></a>
                                                     </div>
                                 
-                                                    <div class="brand-item">
+                                                    <div className="brand-item">
                                                         <a href="#"><img src="assets/img/brand/img3.png" alt="image" /></a>
                                                     </div>
                                 
-                                                    <div class="brand-item">
+                                                    <div className="brand-item">
                                                         <a href="#"><img src="assets/img/brand/img4.png" alt="image" /></a>
                                                     </div>
                                 
-                                                    <div class="brand-item">
+                                                    <div className="brand-item">
                                                         <a href="#"><img src="assets/img/brand/img5.png" alt="image" /></a>
                                                     </div>
                                 
-                                                    <div class="brand-item">
+                                                    <div className="brand-item">
                                                         <a href="#"><img src="assets/img/brand/img6.png" alt="image" /></a>
                                                     </div>
                                                 </div>
@@ -708,15 +708,15 @@ const Navbar = () => {
                                     </ul> */}
                                 </li>
 
-                                <li class="nav-item "><a href="#" class="nav-link">Mice Problem </a>
-                                    {/* <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <div class="container">
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <h6 class="submenu-title">Pages</h6>
+                                <li className="nav-item "><a href="#" className="nav-link">Mice Problem </a>
+                                    {/* <ul className="dropdown-menu">
+                                        <li className="nav-item">
+                                            <div className="container">
+                                                <div className="row justify-content-center">
+                                                    <div className="col">
+                                                        <h6 className="submenu-title">Pages</h6>
 
-                                                        <ul class="megamenu-submenu">
+                                                        <ul className="megamenu-submenu">
                                                             <li><a href="about.html">About Us</a></li>
 
                                                             <li><a href="customer-service.html">Customer Service</a></li>
@@ -737,10 +737,10 @@ const Navbar = () => {
                                                         </ul>
                                                     </div>
 
-                                                    <div class="col">
-                                                        <h6 class="submenu-title">Gallery</h6>
+                                                    <div className="col">
+                                                        <h6 className="submenu-title">Gallery</h6>
 
-                                                        <ul class="megamenu-submenu">
+                                                        <ul className="megamenu-submenu">
                                                             <li><a href="gallery-1.html">Grid (2 in Row)</a></li>
 
                                                             <li><a href="gallery-2.html">Grid (3 in Row)</a></li>
@@ -754,19 +754,19 @@ const Navbar = () => {
                                                             <li><a href="gallery-6.html">Masonry (4 in Row)</a></li>
                                                         </ul>
 
-                                                        <h6 class="submenu-title">My Account</h6>
+                                                        <h6 className="submenu-title">My Account</h6>
 
-                                                        <ul class="megamenu-submenu">
+                                                        <ul className="megamenu-submenu">
                                                             <li><a href="login.html">Login</a></li>
 
                                                             <li><a href="signup.html">Signup</a></li>
                                                         </ul>
                                                     </div>
 
-                                                    <div class="col">
-                                                        <h6 class="submenu-title">Categories</h6>
+                                                    <div className="col">
+                                                        <h6 className="submenu-title">Categories</h6>
 
-                                                        <ul class="megamenu-submenu">
+                                                        <ul className="megamenu-submenu">
                                                             <li><a href="categories-1.html">Categories (2 in Row)</a></li>
 
                                                             <li><a href="categories-2.html">Categories Fullwidth</a></li>
@@ -776,9 +776,9 @@ const Navbar = () => {
                                                             <li><a href="categories-4.html">Categories Full Width (3 in Row)</a></li>
                                                         </ul>
 
-                                                        <h6 class="submenu-title">Lookbook</h6>
+                                                        <h6 className="submenu-title">Lookbook</h6>
 
-                                                        <ul class="megamenu-submenu">
+                                                        <ul className="megamenu-submenu">
                                                             <li><a href="lookbook-1.html">Grid (3 in Row)</a></li>
 
                                                             <li><a href="lookbook-2.html">Grid Full Width (4 in Row)</a></li>
@@ -787,10 +787,10 @@ const Navbar = () => {
                                                         </ul>
                                                     </div>
 
-                                                    <div class="col">
-                                                        <h6 class="submenu-title">Shop</h6>
+                                                    <div className="col">
+                                                        <h6 className="submenu-title">Shop</h6>
 
-                                                        <ul class="megamenu-submenu">
+                                                        <ul className="megamenu-submenu">
                                                             <li><a href="cart.html">Cart</a></li>
 
                                                             <li><a href="checkout.html">Cehckout</a></li>
@@ -814,15 +814,15 @@ const Navbar = () => {
                                     </ul> */}
                                 </li>
 
-                                <li class="nav-item "><a href="#" class="nav-link">Our Products </a>
-                                    {/* <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <div class="container">
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <h6 class="submenu-title">Shop Styles</h6>
+                                <li className="nav-item "><a href="#" className="nav-link">Our Products </a>
+                                    {/* <ul className="dropdown-menu">
+                                        <li className="nav-item">
+                                            <div className="container">
+                                                <div className="row justify-content-center">
+                                                    <div className="col">
+                                                        <h6 className="submenu-title">Shop Styles</h6>
 
-                                                        <ul class="megamenu-submenu">
+                                                        <ul className="megamenu-submenu">
                                                             <li><a href="products-left-sidebar.html">Left Sidebar</a></li>
 
                                                             <li><a href="products-left-sidebar-with-categories.html">Left Sidebar With Categories</a></li>
@@ -839,10 +839,10 @@ const Navbar = () => {
                                                         </ul>
                                                     </div>
 
-                                                    <div class="col">
-                                                        <h6 class="submenu-title">Shop Styles 2</h6>
+                                                    <div className="col">
+                                                        <h6 className="submenu-title">Shop Styles 2</h6>
 
-                                                        <ul class="megamenu-submenu">
+                                                        <ul className="megamenu-submenu">
                                                             <li><a href="products-left-sidebar-2.html">Left Sidebar</a></li>
 
                                                             <li><a href="products-left-sidebar-with-categories-2.html">Left Sidebar With Categories</a></li>
@@ -859,10 +859,10 @@ const Navbar = () => {
                                                         </ul>
                                                     </div>
 
-                                                    <div class="col">
-                                                        <h6 class="submenu-title">Shop Styles 3</h6>
+                                                    <div className="col">
+                                                        <h6 className="submenu-title">Shop Styles 3</h6>
 
-                                                        <ul class="megamenu-submenu">
+                                                        <ul className="megamenu-submenu">
                                                             <li><a href="products-left-sidebar-3.html">Left Sidebar</a></li>
 
                                                             <li><a href="products-left-sidebar-with-categories-3.html">Left Sidebar With Categories</a></li>
@@ -879,27 +879,27 @@ const Navbar = () => {
                                                         </ul>
                                                     </div>
 
-                                                    <div class="col">
-                                                        <ul class="megamenu-submenu">
+                                                    <div className="col">
+                                                        <ul className="megamenu-submenu">
                                                             <li>
-                                                                <div class="aside-trending-products">
+                                                                <div className="aside-trending-products">
                                                                     <img src="assets/img/categories/img1.jpg" alt="image" />
 
-                                                                    <div class="category">
+                                                                    <div className="category">
                                                                         <h4>Top Trending</h4>
                                                                     </div>
 
-                                                                   <a href="products-right-sidebar.html" class="link-btn"></a>
+                                                                   <a href="products-right-sidebar.html" className="link-btn"></a>
                                                                 </div>
 
-                                                                <div class="aside-trending-products">
+                                                                <div className="aside-trending-products">
                                                                     <img src="assets/img/categories/img2.jpg" alt="image" />
 
-                                                                    <div class="category">
+                                                                    <div className="category">
                                                                         <h4>Popular Products</h4>
                                                                     </div>
 
-                                                                   <a href="products-right-sidebar.html" class="link-btn"></a>
+                                                                   <a href="products-right-sidebar.html" className="link-btn"></a>
                                                                 </div>
                                                             </li>
                                                         </ul>
@@ -910,15 +910,15 @@ const Navbar = () => {
                                     </ul> */}
                                 </li>
 
-                                <li class="nav-item "><a href="#" class="nav-link">Contact Us </a>
-                                    {/* <ul class="dropdown-menu">
-                                        <li class="nav-item">
-                                            <div class="container">
-                                                <div class="row justify-content-center">
-                                                    <div class="col">
-                                                        <h6 class="submenu-title">Shop Styles</h6>
+                                <li className="nav-item "><a href="#" className="nav-link">Contact Us </a>
+                                    {/* <ul className="dropdown-menu">
+                                        <li className="nav-item">
+                                            <div className="container">
+                                                <div className="row justify-content-center">
+                                                    <div className="col">
+                                                        <h6 className="submenu-title">Shop Styles</h6>
 
-                                                        <ul class="megamenu-submenu">
+                                                        <ul className="megamenu-submenu">
                                                             <li><a href="products-left-sidebar.html">Left Sidebar</a></li>
 
                                                             <li><a href="products-left-sidebar-with-categories.html">Left Sidebar With Categories</a></li>
@@ -935,10 +935,10 @@ const Navbar = () => {
                                                         </ul>
                                                     </div>
 
-                                                    <div class="col">
-                                                        <h6 class="submenu-title">Shop Styles 2</h6>
+                                                    <div className="col">
+                                                        <h6 className="submenu-title">Shop Styles 2</h6>
 
-                                                        <ul class="megamenu-submenu">
+                                                        <ul className="megamenu-submenu">
                                                             <li><a href="products-left-sidebar-2.html">Left Sidebar</a></li>
 
                                                             <li><a href="products-left-sidebar-with-categories-2.html">Left Sidebar With Categories</a></li>
@@ -955,10 +955,10 @@ const Navbar = () => {
                                                         </ul>
                                                     </div>
 
-                                                    <div class="col">
-                                                        <h6 class="submenu-title">Shop Styles 3</h6>
+                                                    <div className="col">
+                                                        <h6 className="submenu-title">Shop Styles 3</h6>
 
-                                                        <ul class="megamenu-submenu">
+                                                        <ul className="megamenu-submenu">
                                                             <li><a href="products-left-sidebar-3.html">Left Sidebar</a></li>
 
                                                             <li><a href="products-left-sidebar-with-categories-3.html">Left Sidebar With Categories</a></li>
@@ -975,27 +975,27 @@ const Navbar = () => {
                                                         </ul>
                                                     </div>
 
-                                                    <div class="col">
-                                                        <ul class="megamenu-submenu">
+                                                    <div className="col">
+                                                        <ul className="megamenu-submenu">
                                                             <li>
-                                                                <div class="aside-trending-products">
+                                                                <div className="aside-trending-products">
                                                                     <img src="assets/img/categories/img2.jpg" alt="image" />
 
-                                                                    <div class="category">
+                                                                    <div className="category">
                                                                         <h4>Popular Products</h4>
                                                                     </div>
 
-                                                                   <a href="products-right-sidebar.html" class="link-btn"></a>
+                                                                   <a href="products-right-sidebar.html" className="link-btn"></a>
                                                                 </div>
                                                                 
-                                                                <div class="aside-trending-products">
+                                                                <div className="aside-trending-products">
                                                                     <img src="assets/img/categories/img1.jpg" alt="image" />
 
-                                                                    <div class="category">
+                                                                    <div className="category">
                                                                         <h4>Top Trending</h4>
                                                                     </div>
 
-                                                                   <a href="products-right-sidebar.html" class="link-btn"></a>
+                                                                   <a href="products-right-sidebar.html" className="link-btn"></a>
                                                                 </div>
                                                             </li>
                                                         </ul>
@@ -1006,27 +1006,27 @@ const Navbar = () => {
                                     </ul> */}
                                 </li>
 
-                                <li class="nav-item"><a href="#" class="nav-link">Blog </a>
-                                    {/* <ul class="dropdown-menu">
-                                        <li class="nav-item"><a href="blog-1.html" class="nav-link">Grid (2 in Row)</a></li>
+                                <li className="nav-item"><a href="#" className="nav-link">Blog </a>
+                                    {/* <ul className="dropdown-menu">
+                                        <li className="nav-item"><a href="blog-1.html" className="nav-link">Grid (2 in Row)</a></li>
 
-                                        <li class="nav-item"><a href="blog-2.html" class="nav-link">Grid (3 in Row)</a></li>
+                                        <li className="nav-item"><a href="blog-2.html" className="nav-link">Grid (3 in Row)</a></li>
 
-                                        <li class="nav-item"><a href="blog-3.html" class="nav-link">Grid (4 in Row)</a></li>
+                                        <li className="nav-item"><a href="blog-3.html" className="nav-link">Grid (4 in Row)</a></li>
 
-                                        <li class="nav-item"><a href="blog-4.html" class="nav-link">Grid (Full Width)</a></li>
+                                        <li className="nav-item"><a href="blog-4.html" className="nav-link">Grid (Full Width)</a></li>
 
-                                        <li class="nav-item"><a href="blog-5.html" class="nav-link">Right Sidebar</a></li>
+                                        <li className="nav-item"><a href="blog-5.html" className="nav-link">Right Sidebar</a></li>
 
-                                        <li class="nav-item"><a href="blog-6.html" class="nav-link">Masonry (3 in Row)</a></li>
+                                        <li className="nav-item"><a href="blog-6.html" className="nav-link">Masonry (3 in Row)</a></li>
 
-                                        <li class="nav-item"><a href="#" class="nav-link">Single Post <i class='bx bx-chevron-right'></i></a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item"><a href="single-blog-1.html" class="nav-link">Default</a></li>
+                                        <li className="nav-item"><a href="#" className="nav-link">Single Post <i class='bx bx-chevron-right'></i></a>
+                                            <ul className="dropdown-menu">
+                                                <li className="nav-item"><a href="single-blog-1.html" className="nav-link">Default</a></li>
         
-                                                <li class="nav-item"><a href="single-blog-2.html" class="nav-link">With Video</a></li>
+                                                <li className="nav-item"><a href="single-blog-2.html" className="nav-link">With Video</a></li>
         
-                                                <li class="nav-item"><a href="single-blog-3.html" class="nav-link">With Image Slider</a></li>
+                                                <li className="nav-item"><a href="single-blog-3.html" className="nav-link">With Image Slider</a></li>
                                             </ul>
                                         </li>
                                     </ul> */}
@@ -1034,24 +1034,24 @@ const Navbar = () => {
                                 
                             </ul>
 
-                            <div class="others-option">
-                                <div class="option-item">
-                                    <div class="search-btn-box">
-                                        <i class="search-btn bx bx-search-alt"></i>
+                            <div className="others-option">
+                                <div className="option-item">
+                                    <div className="search-btn-box">
+                                        <i className="search-btn bx bx-search-alt"></i>
                                     </div>
                                 </div>
 
-                                <div class="option-item">
-                                    <div class="cart-btn">
+                                <div className="option-item">
+                                    <div className="cart-btn">
                                         <a href="#" data-bs-toggle="modal" data-bs-target="#shoppingCartModal"><i class='bx bx-shopping-bag'></i><span>0</span></a>
                                     </div>
                                 </div>
 
-                                <div class="option-item">
-                                    <div class="burger-menu" data-bs-toggle="modal" data-bs-target="#sidebarModal">
-                                        <span class="top-bar"></span>
-                                        <span class="middle-bar"></span>
-                                        <span class="bottom-bar"></span>
+                                <div className="option-item">
+                                    <div className="burger-menu" data-bs-toggle="modal" data-bs-target="#sidebarModal">
+                                        <span className="top-bar"></span>
+                                        <span className="middle-bar"></span>
+                                        <span className="bottom-bar"></span>
                                     </div>
                                 </div>
                             </div>
@@ -1063,78 +1063,78 @@ const Navbar = () => {
         {/* <!-- End Header Area --> */}
 
            {/* <!-- Start Shopping Cart Modal --> */}
-        <div class="modal right fade shoppingCartModal" id="shoppingCartModal" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+        <div className="modal right fade shoppingCartModal" id="shoppingCartModal" tabindex="-1" role="dialog">
+            <div className="modal-dialog" role="document">
+                <div className="modal-content">
+                    <button type="button" className="close" data-bs-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true"><i class='bx bx-x'></i></span>
                     </button>
 
-                    <div class="modal-body">
+                    <div className="modal-body">
                         <h3>My Cart (3)</h3>
 
-                        <div class="products-cart-content">
-                            <div class="products-cart">
-                                <div class="products-image">
+                        <div className="products-cart-content">
+                            <div className="products-cart">
+                                <div className="products-image">
                                     <a href="#"><img src="assets/img/products/img1.jpg" alt="image" /></a>
                                 </div>
 
-                                <div class="products-content">
+                                <div className="products-content">
                                     <h3><a href="#">Long Sleeve Leopard T-Shirt</a></h3>
                                     <span>Blue / XS</span>
-                                    <div class="products-price">
+                                    <div className="products-price">
                                         <span>1</span>
                                         <span>x</span>
-                                        <span class="price">$250.00</span>
+                                        <span className="price">$250.00</span>
                                     </div>
-                                    <a href="#" class="remove-btn"><i class='bx bx-trash'></i></a>
+                                    <a href="#" className="remove-btn"><i class='bx bx-trash'></i></a>
                                 </div>
                             </div>
 
-                            <div class="products-cart">
-                                <div class="products-image">
+                            <div className="products-cart">
+                                <div className="products-image">
                                     <a href="#"><img src="assets/img/products/img2.jpg" alt="image" /></a>
                                 </div>
 
-                                <div class="products-content">
+                                <div className="products-content">
                                     <h3><a href="#">Causal V-Neck Soft Raglan</a></h3>
                                     <span>Blue / XS</span>
-                                    <div class="products-price">
+                                    <div className="products-price">
                                         <span>1</span>
                                         <span>x</span>
-                                        <span class="price">$200.00</span>
+                                        <span className="price">$200.00</span>
                                     </div>
-                                    <a href="#" class="remove-btn"><i class='bx bx-trash'></i></a>
+                                    <a href="#" className="remove-btn"><i class='bx bx-trash'></i></a>
                                 </div>
                             </div>
 
-                            <div class="products-cart">
-                                <div class="products-image">
+                            <div className="products-cart">
+                                <div className="products-image">
                                     <a href="#"><img src="assets/img/products/img3.jpg" alt="image" /></a>
                                 </div>
 
-                                <div class="products-content">
+                                <div className="products-content">
                                     <h3><a href="#">Hanes Men's Pullover</a></h3>
                                     <span>Blue / XS</span>
-                                    <div class="products-price">
+                                    <div className="products-price">
                                         <span>1</span>
                                         <span>x</span>
-                                        <span class="price">$200.00</span>
+                                        <span className="price">$200.00</span>
                                     </div>
-                                    <a href="#" class="remove-btn"><i class='bx bx-trash'></i></a>
+                                    <a href="#" className="remove-btn"><i class='bx bx-trash'></i></a>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="products-cart-subtotal">
+                        <div className="products-cart-subtotal">
                             <span>Subtotal</span>
 
-                            <span class="subtotal">$524.00</span>
+                            <span className="subtotal">$524.00</span>
                         </div>
 
-                        <div class="products-cart-btn">
-                            <a href="#" class="default-btn">Proceed to Checkout</a>
-                            <a href="#" class="optional-btn">View Shopping Cart</a>
+                        <div className="products-cart-btn">
+                            <a href="/Checkout" className="default-btn">Proceed to Checkout</a>
+                            <a href="/Cart" className="optional-btn">View Shopping Cart</a>
                         </div>
                     </div>
                 </div>
@@ -1142,40 +1142,40 @@ const Navbar = () => {
         </div>
         {/* <!-- End Shopping Cart Modal --> */}
           {/* <!-- Start Sidebar Modal --> */}
-        <div class="modal right fade sidebarModal" id="sidebarModal" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+        <div className="modal right fade sidebarModal" id="sidebarModal" tabindex="-1" role="dialog">
+            <div className="modal-dialog" role="document">
+                <div className="modal-content">
+                    <button type="button" className="close" data-bs-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true"><i class='bx bx-x'></i></span>
                     </button>
 
-                    <div class="modal-body">
-                        <div class="sidebar-about-content">
+                    <div className="modal-body">
+                        <div className="sidebar-about-content">
                             <h3>About The Store</h3>
 
-                            <div class="about-the-store">
+                            <div className="about-the-store">
                                 <p>One of the most popular on the web is shopping. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                 
-                                <ul class="sidebar-contact-info">
+                                <ul className="sidebar-contact-info">
                                     <li><i class='bx bx-map'></i> <a href="#" target="_blank">Wonder Street, USA, New York</a></li>
                                     <li><i class='bx bx-phone-call'></i> <a href="tel:+01321654214">+01 321 654 214</a></li>
                                     <li><i class='bx bx-envelope'></i> <a href="mailto:hello@xton.com">hello@xton.com</a></li>
                                 </ul>
                             </div>
 
-                            <ul class="social-link">
-                                <li><a href="https://www.facebook.com/" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                                <li><a href="https://twitter.com/login" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                                <li><a href="https://www.instagram.com/" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                                <li><a href="https://www.linkedin.com/login" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
-                                <li><a href="https://www.pinterest.com/" class="d-block" target="_blank"><i class='bx bxl-pinterest-alt'></i></a></li>
+                            <ul className="social-link">
+                                <li><a href="https://www.facebook.com/" className="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                                <li><a href="https://twitter.com/login" className="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                                <li><a href="https://www.instagram.com/" className="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                                <li><a href="https://www.linkedin.com/login" className="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
+                                <li><a href="https://www.pinterest.com/" className="d-block" target="_blank"><i class='bx bxl-pinterest-alt'></i></a></li>
                             </ul>
                         </div>
 
-                        <div class="sidebar-new-in-store">
+                        <div className="sidebar-new-in-store">
                             <h3>New In Store</h3>
 
-                            <ul class="products-list">
+                            <ul className="products-list">
                                 <li>
                                     <a href="products-one-row-2.html"><img src="assets/img/products/img1.jpg" alt="image" /></a>
                                 </li>
@@ -1194,7 +1194,7 @@ const Navbar = () => {
                             </ul>
 
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <a href="products-left-sidebar-with-categories-3.html" class="shop-now-btn">Shop Now</a>
+                            <a href="products-left-sidebar-with-categories-3.html" className="shop-now-btn">Shop Now</a>
                         </div>
                     </div>
                 </div>
@@ -1203,71 +1203,71 @@ const Navbar = () => {
         {/* <!-- End Sidebar Modal --> */}
 
          {/* <!-- Start Wishlist Modal --> */}
-        <div class="modal right fade shoppingWishlistModal" id="shoppingWishlistModal" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+        <div className="modal right fade shoppingWishlistModal" id="shoppingWishlistModal" tabindex="-1" role="dialog">
+            <div className="modal-dialog" role="document">
+                <div className="modal-content">
+                    <button type="button" className="close" data-bs-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true"><i class='bx bx-x'></i></span>
                     </button>
 
-                    <div class="modal-body">
+                    <div className="modal-body">
                         <h3>My Wish List (3)</h3>
 
-                        <div class="products-cart-content">
-                            <div class="products-cart">
-                                <div class="products-image">
+                        <div className="products-cart-content">
+                            <div className="products-cart">
+                                <div className="products-image">
                                     <a href="#"><img src="assets/img/products/img1.jpg" alt="image" /></a>
                                 </div>
 
-                                <div class="products-content">
+                                <div className="products-content">
                                     <h3><a href="#">Long Sleeve Leopard T-Shirt</a></h3>
                                     <span>Blue / XS</span>
-                                    <div class="products-price">
+                                    <div className="products-price">
                                         <span>1</span>
                                         <span>x</span>
-                                        <span class="price">$250.00</span>
+                                        <span className="price">$250.00</span>
                                     </div>
-                                    <a href="#" class="remove-btn"><i class='bx bx-trash'></i></a>
+                                    <a href="#" className="remove-btn"><i class='bx bx-trash'></i></a>
                                 </div>
                             </div>
 
-                            <div class="products-cart">
-                                <div class="products-image">
+                            <div className="products-cart">
+                                <div className="products-image">
                                     <a href="#"><img src="assets/img/products/img2.jpg" alt="image" /></a>
                                 </div>
 
-                                <div class="products-content">
+                                <div className="products-content">
                                     <h3><a href="#">Causal V-Neck Soft Raglan</a></h3>
                                     <span>Blue / XS</span>
-                                    <div class="products-price">
+                                    <div className="products-price">
                                         <span>1</span>
                                         <span>x</span>
-                                        <span class="price">$200.00</span>
+                                        <span className="price">$200.00</span>
                                     </div>
-                                    <a href="#" class="remove-btn"><i class='bx bx-trash'></i></a>
+                                    <a href="#" className="remove-btn"><i class='bx bx-trash'></i></a>
                                 </div>
                             </div>
 
-                            <div class="products-cart">
-                                <div class="products-image">
+                            <div className="products-cart">
+                                <div className="products-image">
                                     <a href="#"><img src="assets/img/products/img3.jpg" alt="image" /></a>
                                 </div>
 
-                                <div class="products-content">
+                                <div className="products-content">
                                     <h3><a href="#">Hanes Men's Pullover</a></h3>
                                     <span>Blue / XS</span>
-                                    <div class="products-price">
+                                    <div className="products-price">
                                         <span>1</span>
                                         <span>x</span>
-                                        <span class="price">$200.00</span>
+                                        <span className="price">$200.00</span>
                                     </div>
-                                    <a href="#" class="remove-btn"><i class='bx bx-trash'></i></a>
+                                    <a href="#" className="remove-btn"><i class='bx bx-trash'></i></a>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="products-cart-btn">
-                            <a href="#" class="optional-btn">View Shopping Cart</a>
+                        <div className="products-cart-btn">
+                            <a href="/Cart" className="optional-btn">View Shopping Cart</a>
                         </div>
                     </div>
                 </div>

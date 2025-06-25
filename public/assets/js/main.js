@@ -304,6 +304,7 @@ $(document).ready(function () {
     });
 
     // Input Plus & Minus Number JS
+      $(document).ready(function () { 
     $('.input-counter').each(function() {
         var spinner = jQuery(this),
         input = spinner.find('input[type="text"]'),
@@ -333,6 +334,7 @@ $(document).ready(function () {
             spinner.find("input").trigger("change");
         });
     });
+     });
 
     // Testimonials Slides
     $(document).ready(function () { 
