@@ -1,10 +1,49 @@
-import React from 'react'
+import { useEffect } from 'react';
+import $ from 'jquery';
 import Navbar from './Navbar'
 import Facility from '../Components/Facility'
 import Instragram from '../Components/Instragram'
 import Footer from './Footer'
 
 export default function Faq() {
+     useEffect(() => {
+    // Tabs
+    $('.tab ul.tabs').addClass('active').find('> li:eq(0)').addClass('current');
+    $('.tab ul.tabs li a').off('click').on('click', function (e) {
+      e.preventDefault();
+      const $tab = $(this).closest('.tab');
+      const index = $(this).closest('li').index();
+
+      $tab.find('ul.tabs > li').removeClass('current');
+      $(this).closest('li').addClass('current');
+
+      $tab.find('.tab-content .tabs-item').slideUp(0);
+      $tab.find('.tab-content .tabs-item').eq(index).slideDown(0);
+    });
+
+    // Accordion
+    $('.accordion').each(function () {
+      const $accordion = $(this);
+      $accordion.find('.accordion-title').off('click').on('click', function (e) {
+        e.preventDefault();
+
+        const $this = $(this);
+        $this.toggleClass('active');
+        $this.next('.accordion-content').slideToggle('fast');
+
+        $accordion
+          .find('.accordion-content')
+          .not($this.next())
+          .slideUp('fast');
+
+        $accordion
+          .find('.accordion-title')
+          .not($this)
+          .removeClass('active');
+      });
+    });
+  }, []);
+
   return (
     <div>
       <Navbar />
@@ -27,15 +66,15 @@ export default function Faq() {
             <div className="container">
                 <div className="tab faq-accordion-tab">
                     <ul className="tabs d-flex flex-wrap justify-content-center">
-                        <li><a href="#"><i class='bx bx-flag'></i> <span>Getting Started</span></a></li>
+                        <li><a href=""><i class='bx bx-flag'></i> <span>Getting Started</span></a></li>
                         
-                        <li><a href="#"><i class='bx bxs-badge-dollar'></i> <span>Pricing & Plans</span></a></li>
+                        <li><a href=""><i class='bx bxs-badge-dollar'></i> <span>Pricing & Plans</span></a></li>
 
-                        <li><a href="#"><i class='bx bx-shopping-bag'></i> <span>Sales Question</span></a></li>
+                        <li><a href=""><i class='bx bx-shopping-bag'></i> <span>Sales Question</span></a></li>
 
-                        <li><a href="#"><i class='bx bx-book-open'></i> <span>Usage Guides</span></a></li>
+                        <li><a href=""><i class='bx bx-book-open'></i> <span>Usage Guides</span></a></li>
 
-                        <li><a href="#"><i class='bx bx-info-circle'></i> <span>General Guide</span></a></li>
+                        <li><a href=""><i class='bx bx-info-circle'></i> <span>General Guide</span></a></li>
                     </ul>
 
                     <div className="tab-content">

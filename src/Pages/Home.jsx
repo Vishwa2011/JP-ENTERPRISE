@@ -18,12 +18,12 @@ const Home = () => {
                             <div className="row align-items-center justify-content-center">
                                 <div className="col-lg-6">
                                     <div className="main-banner-content">
-                                        <span className="sub-title">Limited Time Offer!</span>
-                                        <h1>Winter-Spring!</h1>
-                                        <p>Take 20% Off ‘Sale Must-Haves'</p>
+                                        <span className="sub-title">Protect Your Vehicle!</span>
+                                        <h1>Car Rat Repellent</h1>
+                                        <p>Keep your car safe from rat damage. 10% OFF – Limited Period Offer!</p>
                                         <div className="btn-box">
-                                            <a href="/OurProducts" className="default-btn">Shop Women's</a>
-                                            <a href="/OurProducts" className="optional-btn">Shop Men's</a>
+                                            <a href="/OurProducts" className="default-btn">Buy Now</a>
+                                            {/* <a href="/OurProducts" className="optional-btn">Shop Men's</a> */}
                                         </div>
                                     </div>
                                 </div>
@@ -47,12 +47,12 @@ const Home = () => {
                             <div className="row align-items-center justify-content-center">
                                 <div className="col-lg-6">
                                     <div className="main-banner-content">
-                                        <span className="sub-title">Exclusive Offer!</span>
-                                        <h1>Summer-Fashion!</h1>
-                                        <p>Leap year offer ‘Sale Must-Haves'</p>
+                                        <span className="sub-title">Protect Your Space!</span>
+                                        <h1>Say Goodbye to Rats</h1>
+                                        <p>Keep your home and office safe from wire-chewing rodents – Limited Offer!</p>
                                         <div className="btn-box">
-                                            <a href="/OurProducts" className="default-btn">Shop Women's</a>
-                                            <a href="/OurProducts" className="optional-btn">Shop Men's</a>
+                                            <a href="/OurProducts" className="default-btn">Buy Now</a>
+                                            {/* <a href="/OurProducts" className="optional-btn">Shop Men's</a> */}
                                         </div>
                                     </div>
                                 </div>

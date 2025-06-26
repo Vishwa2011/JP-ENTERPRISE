@@ -14,6 +14,10 @@ import Signup from "./Pages/Signup";
 import Compare from "./Pages/Compare";
 import Faq from "./Pages/Faq";
 import Productdetails from "./Pages/Productdetails";
+import PrivacyPolicy from "./Pages/PrivacyPolicy";
+import ShippingPolicy from "./Pages/ShippingPolicy";
+import ReturnPolicy from "./Pages/ReturnPolicy";
+import TermsandConditions from "./Pages/TermsandConditions";
 
 
 function App() {
@@ -32,6 +36,22 @@ function App() {
     setTheme(newTheme);
     localStorage.setItem("xton_theme", newTheme);
     document.documentElement.className = newTheme;
+  };
+
+    const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowButton(window.scrollY > 300);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
   return (
     <>
@@ -60,9 +80,27 @@ function App() {
         <Route path="/Compare"  element={<Compare />}/>
         <Route path="/Faq"  element={<Faq />}/>
         <Route path="/Productdetails" element={<Productdetails/>}/>
+        <Route path="/PrivacyPolicy" element={<PrivacyPolicy/>}/>
+        <Route path="/ShippingPolicy" element={<ShippingPolicy/>}/>
+        <Route path="/ReturnPolicy" element={<ReturnPolicy/>}/>
+        <Route path="/TermsandConditions" element={<TermsandConditions/>}/>
 
      </Routes>
      <div class="go-top"><i class='bx bx-up-arrow-alt'></i></div>
+         <div
+      className={`go-top ${showButton ? 'active' : ''}`}
+      onClick={scrollToTop}
+      style={{
+        position: 'fixed',
+        bottom: '0px',
+        right: '30px',
+        zIndex: 999,
+        cursor: 'pointer',
+        display: showButton ? 'block' : 'none'
+      }}
+    >
+      ↑
+    </div>
     </>
   );
 }

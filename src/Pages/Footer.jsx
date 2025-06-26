@@ -15,8 +15,9 @@ export default function Footer() {
                                 <p>One of the most popular on the web is shopping.</p>
                                 <ul className="footer-contact-info">
                                     <li><i class='bx bx-map'></i> <a href="#" target="_blank">Wonder Street, USA, New York</a></li>
-                                    <li><i class='bx bx-phone-call'></i> <a href="tel:+01321654214">+01 321 654 214</a></li>
-                                    <li><i class='bx bx-envelope'></i> <a href="mailto:hello@xton.com">hello@xton.com</a></li>
+                                    <li><i class='bx bx-phone-call'></i> <a href="tel:+919265407449">+91 9265407449</a></li>
+                                     <li><i class='bx bx-mobile'></i> <a href= "tel:+917622009263">+91 7622009263</a></li>
+                                    <li><i class='bx bx-envelope'></i> <a href="mailto:jpexport42@gmail.com">jpexport42@gmail.com</a></li>
                                 </ul>
                             </div>
 
@@ -50,11 +51,11 @@ export default function Footer() {
                             <h3>Policies</h3>
 
                             <ul className="customer-support">
-                                <li><a href="/Login">Privacy Policy</a></li>
-                                <li><a href="checkout.html">Shipping Policy</a></li>
-                                <li><a href="cart.html">Return Policy</a></li>
-                                <li><a href="faqs.html">Terms and Conditions</a></li>
-                                <li><a href="track-order.html">Track Order</a></li>
+                                <li><a href="/PrivacyPolicy">Privacy Policy</a></li>
+                                <li><a href="/ShippingPolicy">Shipping Policy</a></li>
+                                <li><a href="/ReturnPolicy">Return Policy</a></li>
+                                <li><a href="/TermsandConditions">Terms and Conditions</a></li>
+                                {/* <li><a href="">Track Order</a></li> */}
                             </ul>
                         </div>
                     </div>

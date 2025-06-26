@@ -54,7 +54,7 @@ const Aboutus = () => {
                 <div class="row align-items-center justify-content-center">
                     <div class="col-lg-6 col-md-12">
                         <div class="about-image">
-                            <img src="assets/img/about/img1.jpg" class="shadow" alt="image" />
+                            <img src="/assets/pics/about1.jpg" class="shadow" alt="image" />
                             <img src="assets/img/about/img2.jpg" class="shadow" alt="image" />
                         </div>
                     </div>

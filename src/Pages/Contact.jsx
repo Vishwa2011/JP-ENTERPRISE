@@ -33,9 +33,9 @@ export default function Contact() {
 
                             <ul className="contact-list">
                                 <li><i class='bx bx-map'></i> Location: <a href="#">Wonder Street, USA, New York</a></li>
-                                <li><i class='bx bx-phone-call'></i> Call Us: <a href="tel:+01321654214">+01 321 654 214</a></li>
-                                <li><i class='bx bx-envelope'></i> Email Us: <a href="mailto:hello@xton.com">hello@xton.com</a></li>
-                                <li><i class='bx bx-microphone'></i> Fax: <a href="tel:+123456789">+123456789</a></li>
+                                <li><i class='bx bx-phone-call'></i> Call Us: <a href="tel:+919265407449">+91 9265407449</a></li>
+                                <li><i class='bx bx-mobile'></i> Mobile Number: <a href= "tel:+917622009263">+91 7622009263</a></li>
+                                <li><i class='bx bx-envelope'></i> Email Us: <a href="mailto:jpexport42@gmail.com">jpexport42@gmail.com</a></li>
                             </ul>
 
                             <h3>Opening Hours:</h3>
