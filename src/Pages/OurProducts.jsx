@@ -13,7 +13,7 @@ const OurProducts = () => {
                 <div class="page-title-area">
                     <div class="container">
                         <div class="page-title-content">
-                            <h2>Women's</h2>
+                            <h2>Our Products</h2>
                             <ul>
                                 <li><a href="index.html">Home</a></li>
                                 <li>Products</li>
@@ -123,10 +123,10 @@ const OurProducts = () => {
                                     </div>
 
                                     <div class="products-content">
-                                        <h3><a href="/Productdetails">Long Sleeve Leopard T-Shirt</a></h3>
+                                        <h3><a href="/Productdetails">High-Powered Ultrasonic Rat Repellent for Gardens, Factories, and Warehouses.....</a></h3>
                                         <div class="price">
-                                            <span class="old-price">$321</span>
-                                            <span class="new-price">$250</span>
+                                            <span class="old-price">₹9999</span>
+                                            <span class="new-price">₹3331</span>
                                         </div>
                                         <div class="star-rating">
                                             <i class='bx bxs-star'></i>
@@ -181,10 +181,10 @@ const OurProducts = () => {
                                     </div>
 
                                     <div class="products-content">
-                                        <h3><a href="#">Causal V-Neck Soft Raglan</a></h3>
+                                        <h3><a href="/Productdetails">High-Frequency Ultrasonic Rat Repeller for Kitchen & Storage – 1500 Sq. Ft | Safe....</a></h3>
                                         <div class="price">
-                                            <span class="old-price">$210</span>
-                                            <span class="new-price">$200</span>
+                                            <span class="old-price">₹9999</span>
+                                            <span class="new-price">₹3429</span>
                                         </div>
                                         <div class="star-rating">
                                             <i class='bx bxs-star'></i>
@@ -237,10 +237,10 @@ const OurProducts = () => {
                                     </div>
 
                                     <div class="products-content">
-                                        <h3><a href="#">Hanes Men's Pullover</a></h3>
+                                        <h3><a href="/Productdetails">High-Frequency Ultrasonic Rat Repeller – Dual Indoor & Outdoor Use | 1500 Sq. Ft | Plug...</a></h3>
                                         <div class="price">
-                                            <span class="old-price">$210</span>
-                                            <span class="new-price">$200</span>
+                                            <span class="old-price">₹9999</span>
+                                            <span class="new-price">₹3331</span>
                                         </div>
                                         <div class="star-rating">
                                             <i class='bx bxs-star'></i>
