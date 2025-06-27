@@ -83,62 +83,6 @@ export default function Blog() {
                         </div>
                     </div>
 
-                    <div className="col-lg-4 col-md-6">
-                        <div className="single-blog-post">
-                            <div className="post-image">
-                                <a href="#">
-                                    <img src="assets/img/blog/img4.jpg" alt="image" />
-                                </a>
-                                <div className="date">
-                                    <span>January 29, 2024</span>
-                                </div>
-                            </div>
-
-                            <div className="post-content">
-                                <span className="category">Boy</span>
-                                <h3><a href="#">The best eCommerce blogs for online retailers</a></h3>
-                                <a href="/BlogDetails" className="details-btn">Read Story</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-4 col-md-6">
-                        <div className="single-blog-post">
-                            <div className="post-image">
-                                <a href="#">
-                                    <img src="assets/img/blog/img5.jpg" alt="image" />
-                                </a>
-                                <div className="date">
-                                    <span>January 29, 2024</span>
-                                </div>
-                            </div>
-
-                            <div className="post-content">
-                                <span className="category">Platform</span>
-                                <h3><a href="#">The best ecommerce platform for growing sales</a></h3>
-                                <a href="/BlogDetails" className="details-btn">Read Story</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-4 col-md-6">
-                        <div className="single-blog-post">
-                            <div className="post-image">
-                                <a href="#">
-                                    <img src="assets/img/blog/img6.jpg" alt="image" />
-                                </a>
-                                <div className="date">
-                                    <span>January 29, 2024</span>
-                                </div>
-                            </div>
-
-                            <div className="post-content">
-                                <span className="category">Shipping</span>
-                                <h3><a href="#">Shipping impacts your customer’s experience</a></h3>
-                                <a href="/BlogDetails" className="details-btn">Read Story</a>
-                            </div>
-                        </div>
-                    </div>
 
                     <div className="col-lg-12 col-md-12 col-sm-12">
                         <div className="pagination-area text-center">
