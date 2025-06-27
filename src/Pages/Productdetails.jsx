@@ -1,19 +1,57 @@
-import React from 'react'
+import { useEffect } from 'react';
+import $ from 'jquery';
 import Navbar from './Navbar'
 import Footer from './Footer'
 import Facility from '../Components/Facility'
 import Instragram from '../Components/Instragram'
 
 const Productdetails = () => {
+      useEffect(() => {
+        // Tabs
+        $('.tab ul.tabs').addClass('active').find('> li:eq(0)').addClass('current');
+        $('.tab ul.tabs li a').off('click').on('click', function (e) {
+          e.preventDefault();
+          const $tab = $(this).closest('.tab');
+          const index = $(this).closest('li').index();
+    
+          $tab.find('ul.tabs > li').removeClass('current');
+          $(this).closest('li').addClass('current');
+    
+          $tab.find('.tab-content .tabs-item').slideUp(0);
+          $tab.find('.tab-content .tabs-item').eq(index).slideDown(0);
+        });
+    
+        // Accordion
+        $('.accordion').each(function () {
+          const $accordion = $(this);
+          $accordion.find('.accordion-title').off('click').on('click', function (e) {
+            e.preventDefault();
+    
+            const $this = $(this);
+            $this.toggleClass('active');
+            $this.next('.accordion-content').slideToggle('fast');
+    
+            $accordion
+              .find('.accordion-content')
+              .not($this.next())
+              .slideUp('fast');
+    
+            $accordion
+              .find('.accordion-title')
+              .not($this)
+              .removeClass('active');
+          });
+        });
+      }, []);
   return (
     <>
       <Navbar />
       <div>
               {/* <!-- Start Page Title --> */}
-        <div class="page-title-area">
-            <div class="container">
-                <div class="page-title-content">
-                    <h2>Long Sleeve Leopard T-Shirt</h2>
+        <div className="page-title-area">
+            <div className="container">
+                <div className="page-title-content">
+                    <h2>Smart Ultrasonic Rat Repellent</h2>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li>Products Details</li>
@@ -24,56 +62,56 @@ const Productdetails = () => {
         {/* <!-- End Page Title --> */}
 
         {/* <!-- Start Product Details Area --> */}
-        <section class="product-details-area pt-100 pb-70">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-5 col-md-12">
-                        <div class="products-details-image">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="single-products-details-image">
+        <section className="product-details-area pt-100 pb-70">
+            <div className="container">
+                <div className="row justify-content-center">
+                    <div className="col-lg-5 col-md-12">
+                        <div className="products-details-image">
+                            <div className="row justify-content-center">
+                                <div className="col-lg-6 col-md-6">
+                                    <div className="single-products-details-image">
                                         <img src="assets/img/products/img1.jpg" alt="image" />
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="single-products-details-image">
+                                <div className="col-lg-6 col-md-6">
+                                    <div className="single-products-details-image">
                                         <img src="assets/img/products/img2.jpg" alt="image" />
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="single-products-details-image">
+                                <div className="col-lg-6 col-md-6">
+                                    <div className="single-products-details-image">
                                         <img src="assets/img/products/img5.jpg" alt="image" />
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="single-products-details-image">
+                                <div className="col-lg-6 col-md-6">
+                                    <div className="single-products-details-image">
                                         <img src="assets/img/products/img6.jpg" alt="image" />
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="single-products-details-image">
+                                <div className="col-lg-6 col-md-6">
+                                    <div className="single-products-details-image">
                                         <img src="assets/img/products/img9.jpg" alt="image" />
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="single-products-details-image">
+                                <div className="col-lg-6 col-md-6">
+                                    <div className="single-products-details-image">
                                         <img src="assets/img/products/img10.jpg" alt="image" />
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="single-products-details-image">
+                                <div className="col-lg-6 col-md-6">
+                                    <div className="single-products-details-image">
                                         <img src="assets/img/products/img12.jpg" alt="image" />
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6 col-md-6">
-                                    <div class="single-products-details-image">
+                                <div className="col-lg-6 col-md-6">
+                                    <div className="single-products-details-image">
                                         <img src="assets/img/products/img13.jpg" alt="image" />
                                     </div>
                                 </div>
@@ -81,81 +119,84 @@ const Productdetails = () => {
                         </div>
                     </div>
 
-                    <div class="col-lg-7 col-md-12">
-                        <div class="products-details-desc">
-                            <h3>Long Sleeve Leopard T-Shirt</h3>
+                    <div className="col-lg-7 col-md-12">
+                        <div className="products-details-desc">
+                            <h3>Smart Ultrasonic Rat Repellent for Commercial & Home Use | Safe & Silent Rodent Defense – 1500 Sq. Ft</h3>
 
-                            <div class="price">
-                                <span class="new-price">$250.00</span>
-                                <span class="old-price">$321.00</span>
+                            <div className="price">
+                                <span className="new-price">₹3331</span>
+                                <span className="old-price">₹9999</span>
                             </div>
-
-                            <div class="products-review">
-                                <div class="rating">
+                            <div className="products-review">
+                                <div className="rating">
                                     <i class='bx bx-star'></i>
                                     <i class='bx bx-star'></i>
                                     <i class='bx bx-star'></i>
                                     <i class='bx bx-star'></i>
                                     <i class='bx bx-star'></i>
                                 </div>
-                                <a href="#" class="rating-count">3 reviews</a>
+                                <a href="#" className="rating-count"> 3 ratings</a>
                             </div>
 
-                            <ul class="products-info">
-                                <li><span>Vendor:</span> <a href="#">Lereve</a></li>
-                                <li><span>Availability:</span> <a href="#">In stock (7 items)</a></li>
-                                <li><span>Products Type:</span> <a href="#">T-Shirt</a></li>
+                            <ul className="products-info">
+                                <li><span>Brand:</span> <a href="#">Generic</a></li>
+                                <li><span>Colour:</span> <a href="#">Black</a></li>
+                                <li><span>Style:</span> <a href="#">modern</a></li>
+                                <li><span>Material:</span> <a href="#">Metal</a></li>
+                                <li><span>Product Dimensions:</span> <a href="#">5L x 10W x 10H Centimeters</a></li>
+                                <li><span>Item Weight:</span> <a href="#">	750 Grams</a></li>
+                                <li><span>Number of Pieces:</span> <a href="#">1</a></li>
                             </ul>
 
-                            <div class="products-color-switch">
+                            <div className="products-color-switch">
                                 <span>Color:</span>
 
                                 <ul>
-                                    <li><a href="#" title="Black" class="color-black"></a></li>
-                                    <li><a href="#" title="White" class="color-white"></a></li>
-                                    <li class="active"><a href="#" title="Green" class="color-green"></a></li>
-                                    <li><a href="#" title="Yellow Green" class="color-yellowgreen"></a></li>
-                                    <li><a href="#" title="Teal" class="color-teal"></a></li>
+                                    <li><a href="#" title="Black" className="color-black"></a></li>
+                                    <li><a href="#" title="White" className="color-white"></a></li>
+                                    <li className="active"><a href="#" title="Green" className="color-green"></a></li>
+                                    <li><a href="#" title="Yellow Green" className="color-yellowgreen"></a></li>
+                                    <li><a href="#" title="Teal" className="color-teal"></a></li>
                                 </ul>
                             </div>
 
-                            <div class="products-size-wrapper">
+                            {/* <div className="products-size-wrapper">
                                 <span>Size:</span>
 
                                 <ul>
                                     <li><a href="#">XS</a></li>
-                                    <li class="active"><a href="#">S</a></li>
+                                    <li className="active"><a href="#">S</a></li>
                                     <li><a href="#">M</a></li>
                                     <li><a href="#">XL</a></li>
                                     <li><a href="#">XXL</a></li>
                                 </ul>
+                            </div> */}
+
+                            <div className="products-info-btn">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#sizeGuideModal"><i class='bx bx-crop'></i>Free Delivery</a>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#productsShippingModal"><i class='bx bxs-truck' ></i> 10 days Returnable</a>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#Securetransaction"><i class='bx bx-envelope'></i>Secure transaction</a>
                             </div>
 
-                            <div class="products-info-btn">
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#sizeGuideModal"><i class='bx bx-crop'></i> Size guide</a>
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#productsShippingModal"><i class='bx bxs-truck' ></i> Shipping</a>
-                                <a href="contact.html"><i class='bx bx-envelope'></i> Ask about this products</a>
-                            </div>
-
-                            <div class="products-add-to-cart">
-                                <div class="input-counter">
-                                    <span class="minus-btn"><i class='bx bx-minus'></i></span>
+                            <div className="products-add-to-cart">
+                                <div className="input-counter">
+                                    <span className="minus-btn"><i class='bx bx-minus'></i></span>
                                     <input type="text" value="1" />
-                                    <span class="plus-btn"><i class='bx bx-plus'></i></span>
+                                    <span className="plus-btn"><i class='bx bx-plus'></i></span>
                                 </div>
 
-                                <button type="submit" class="default-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                                <button type="submit" className="default-btn"><i className="fas fa-cart-plus"></i> Add to Cart</button>
                             </div>
 
-                            <div class="wishlist-compare-btn">
-                                <a href="#" class="optional-btn"><i class='bx bx-heart'></i> Add to Wishlist</a>
-                                <a href="#" class="optional-btn"><i class='bx bx-refresh'></i> Add to Compare</a>
+                            <div className="wishlist-compare-btn">
+                                <a href="#" className="optional-btn"><i class='bx bx-heart'></i> Add to Wishlist</a>
+                                <a href="#" className="optional-btn"><i class='bx bx-refresh'></i> Add to Compare</a>
                             </div>
 
-                            <div class="buy-checkbox-btn">
-                                <div class="item">
-                                    <input class="inp-cbx" id="cbx" type="checkbox" />
-                                    <label class="cbx" for="cbx">
+                            <div className="buy-checkbox-btn">
+                                <div className="item">
+                                    <input className="inp-cbx" id="cbx" type="checkbox" />
+                                    <label className="cbx" for="cbx">
                                         <span>
                                             <svg width="12px" height="10px" viewbox="0 0 12 10">
                                                 <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
@@ -165,177 +206,176 @@ const Productdetails = () => {
                                     </label>
                                 </div>
 
-                                <div class="item">
-                                    <a href="#" class="default-btn">Buy it now!</a>
+                                <div className="item">
+                                    <a href="#" className="default-btn">Buy it now!</a>
                                 </div>
                             </div>
 
-                            <div class="products-details-accordion">
-                                <ul class="accordion">
-                                    <li class="accordion-item">
-                                        <a class="accordion-title active" href="javascript:void(0)">
+                            <div className="products-details-accordion">
+                                <ul className="accordion">
+                                    <li className="accordion-item">
+                                        <a className="accordion-title active"  onClick={(e) => e.preventDefault()}>
                                             <i class='bx bx-chevron-down'></i>
                                             Description
                                         </a>
         
-                                        <div class="accordion-content show" style={{display:'none'}}>
-                                            <p>Design inspiration lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim.</p>
-
+                                        <div className="accordion-content show" >
+                                            
                                             <ul>
-                                                <li>Fabric 1: 100% Polyester</li>
-                                                <li>Fabric 2: 100% Polyester, Lining: 100% Polyester</li>
-                                                <li>Fabric 3: 75% Polyester, 20% Viscose, 5% Elastane</li>
+                                                <li>🔊 Advanced Ultrasonic Technology: Deters rodents with high-frequency soundwaves</li>
+                                                <li>🛡️ Silent & Safe Operation: Harmless to humans and pets</li>
+                                                <li>🏠 Perfect for Indoor Use: Ideal for kitchens, storerooms, and homes</li>
+                                                <li>⚡ Energy Efficient: Runs continuously with low power usage</li>
+                                                <li>🇮🇳 Made in India: Durable build & local warranty support</li>
                                             </ul>
                                         </div>
                                     </li>
 
-                                    <li class="accordion-item">
-                                        <a class="accordion-title" href="javascript:void(0)">
+                                    <li className="accordion-item">
+                                        <a className="accordion-title"  onClick={(e) => e.preventDefault()}>
                                             <i class='bx bx-chevron-down'></i>
                                             Additional information
                                         </a>
         
-                                        <div class="accordion-content">
-                                            <table class="table table-striped">
+                                        <div className="accordion-content">
+                                            <table className="table table-striped">
                                                 <tbody>
                                                     <tr>
-                                                        <td>Color:</td>
-                                                        <td>Blue, Purple, White</td>
+                                                        <td>Brand:</td>
+                                                        <td>Generic</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Size:</td>
-                                                        <td>20, 24</td>
+                                                        <td>Colour:</td>
+                                                        <td>Black</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Style:</td>
+                                                        <td>modern</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Material:</td>
-                                                        <td>100% Polyester</td>
+                                                        <td> Metal</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Height:</td>
-                                                        <td>180 cm - 5' 11”</td>
+                                                        <td>Product Dimensions:</td>
+                                                        <td>5L x 10W x 10H Centimeters</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Bust:</td>
-                                                        <td>83 cm - 32”</td>
+                                                        <td>Item Weight:</td>
+                                                        <td>750 Grams</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Waist:</td>
-                                                        <td>57 cm - 22”</td>
+                                                        <td>Number of Pieces:</td>
+                                                        <td> 1</td>
                                                     </tr>
-                                                    <tr>
-                                                        <td>Hips:</td>
-                                                        <td>88 cm - 35</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Shipping:</td>
-                                                        <td>Free</td>
-                                                    </tr>
+                                                    
                                                 </tbody>
                                             </table>
                                         </div>
                                     </li>
 
-                                    <li class="accordion-item">
-                                        <a class="accordion-title" href="javascript:void(0)">
-                                            <i class='bx bx-chevron-down'></i>
-                                            Reviews
-                                        </a>
-        
-                                        <div class="accordion-content">
-                                            <div class="products-review-form">
-                                                <h3>Customer Reviews</h3>
-            
-                                                <div class="review-title">
-                                                    <div class="rating">
-                                                        <i class='bx bxs-star'></i>
-                                                        <i class='bx bxs-star'></i>
-                                                        <i class='bx bxs-star'></i>
-                                                        <i class='bx bxs-star'></i>
-                                                        <i class='bx bx-star'></i>
-                                                    </div>
-                                                    <p>Based on 3 reviews</p>
-                                                    <a href="#" class="default-btn">Write a Review</a>
-                                                </div>
-            
-                                                <div class="review-comments">
-                                                    <div class="review-item">
-                                                        <div class="rating">
-                                                            <i class='bx bxs-star'></i>
-                                                            <i class='bx bxs-star'></i>
-                                                            <i class='bx bxs-star'></i>
-                                                            <i class='bx bxs-star'></i>
-                                                            <i class='bx bx-star'></i>
-                                                        </div>
-                                                        <h3>Good</h3>
-                                                        <span><strong>Admin</strong> on <strong>Sep 21, 2024</strong></span>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                                                    </div>
-            
-                                                    <div class="review-item">
-                                                        <div class="rating">
-                                                            <i class='bx bxs-star'></i>
-                                                            <i class='bx bxs-star'></i>
-                                                            <i class='bx bxs-star'></i>
-                                                            <i class='bx bxs-star'></i>
-                                                            <i class='bx bx-star'></i>
-                                                        </div>
-                                                        <h3>Good</h3>
-                                                        <span><strong>Admin</strong> on <strong>Sep 21, 2024</strong></span>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                                                    </div>
-            
-                                                    <div class="review-item">
-                                                        <div class="rating">
-                                                            <i class='bx bxs-star'></i>
-                                                            <i class='bx bxs-star'></i>
-                                                            <i class='bx bxs-star'></i>
-                                                            <i class='bx bxs-star'></i>
-                                                            <i class='bx bx-star'></i>
-                                                        </div>
-                                                        <h3>Good</h3>
-                                                        <span><strong>Admin</strong> on <strong>Sep 21, 2024</strong></span>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                                                    </div>
-                                                </div>
-            
-                                                <div class="review-form">
-                                                    <h3>Write a Review</h3>
-            
-                                                    <form>
-                                                        <div class="row justify-content-center">
-                                                            <div class="col-lg-6 col-md-6">
-                                                                <div class="form-group">
-                                                                    <input type="text" id="name" name="name" placeholder="Enter your name" class="form-control" />
-                                                                </div>
-                                                            </div>
-            
-                                                            <div class="col-lg-6 col-md-6">
-                                                                <div class="form-group">
-                                                                    <input type="email" id="email" name="email" placeholder="Enter your email" class="form-control" />
-                                                                </div>
-                                                            </div>
-            
-                                                            <div class="col-lg-12 col-md-12">
-                                                                <div class="form-group">
-                                                                    <input type="text" id="review-title" name="review-title" placeholder="Enter your review a title" class="form-control" />
-                                                                </div>
-                                                            </div>
-            
-                                                            <div class="col-lg-12 col-md-12">
-                                                                <div class="form-group">
-                                                                    <textarea name="review-body" id="review-body" cols="30" rows="6" placeholder="Write your comments here" class="form-control"></textarea>
-                                                                </div>
-                                                            </div>
-            
-                                                            <div class="col-lg-12 col-md-12">
-                                                                <button type="submit" class="default-btn">Submit Review</button>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
+                                   <li className="accordion-item">
+    <a className="accordion-title" onClick={(e) => e.preventDefault()}>
+        <i className='bx bx-chevron-down'></i>
+        Reviews
+    </a>
+
+    <div className="accordion-content">
+        <div className="products-review-form">
+            <h3>Customer Reviews</h3>
+
+            <div className="review-title">
+                <div className="rating">
+                    <i className='bx bxs-star'></i>
+                    <i className='bx bxs-star'></i>
+                    <i className='bx bxs-star'></i>
+                    <i className='bx bxs-star'></i>
+                    <i className='bx bx-star'></i>
+                </div>
+                <p>Based on 3 reviews</p>
+                <a href="#" className="default-btn">Write a Review</a>
+            </div>
+
+            <div className="review-comments">
+                <div className="review-item">
+                    <div className="rating">
+                        <i className='bx bxs-star'></i>
+                        <i className='bx bxs-star'></i>
+                        <i className='bx bxs-star'></i>
+                        <i className='bx bxs-star'></i>
+                        <i className='bx bx-star'></i>
+                    </div>
+                    <h3>Highly Effective!</h3>
+                    <span><strong>Ravi Patel</strong> on <strong>Jun 20, 2025</strong></span>
+                    <p>This rat repellent device worked wonders in my warehouse. I haven't seen a single rat since installation!</p>
+                </div>
+
+                <div className="review-item">
+                    <div className="rating">
+                        <i className='bx bxs-star'></i>
+                        <i className='bx bxs-star'></i>
+                        <i className='bx bxs-star'></i>
+                        <i className='bx bxs-star'></i>
+                        <i className='bx bx-star'></i>
+                    </div>
+                    <h3>Perfect for Home Use</h3>
+                    <span><strong>Pooja Desai</strong> on <strong>Jun 18, 2025</strong></span>
+                    <p>It keeps my kitchen completely rodent-free. Setup was easy and the build quality is top-notch.</p>
+                </div>
+
+                <div className="review-item">
+                    <div className="rating">
+                        <i className='bx bxs-star'></i>
+                        <i className='bx bxs-star'></i>
+                        <i className='bx bxs-star'></i>
+                        <i className='bx bxs-star'></i>
+                        <i className='bx bx-star'></i>
+                    </div>
+                    <h3>Great for Commercial Use</h3>
+                    <span><strong>Jignesh Shah</strong> on <strong>Jun 10, 2025</strong></span>
+                    <p>Installed it at our shop, and within days we noticed results. JP Enterprise delivers on quality!</p>
+                </div>
+            </div>
+
+            <div className="review-form">
+                <h3>Write a Review</h3>
+
+                <form>
+                    <div className="row justify-content-center">
+                        <div className="col-lg-6 col-md-6">
+                            <div className="form-group">
+                                <input type="text" id="name" name="name" placeholder="Enter your name" className="form-control" />
+                            </div>
+                        </div>
+
+                        <div className="col-lg-6 col-md-6">
+                            <div className="form-group">
+                                <input type="email" id="email" name="email" placeholder="Enter your email" className="form-control" />
+                            </div>
+                        </div>
+
+                        <div className="col-lg-12 col-md-12">
+                            <div className="form-group">
+                                <input type="text" id="review-title" name="review-title" placeholder="Enter your review title" className="form-control" />
+                            </div>
+                        </div>
+
+                        <div className="col-lg-12 col-md-12">
+                            <div className="form-group">
+                                <textarea name="review-body" id="review-body" cols="30" rows="6" placeholder="Write your experience with JP Enterprise's rat repellent product" className="form-control"></textarea>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-12 col-md-12">
+                            <button type="submit" className="default-btn">Submit Review</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</li>
+ 
                                 </ul>
                             </div>
                         </div>
@@ -343,44 +383,44 @@ const Productdetails = () => {
                 </div>
             </div>
 
-            <div class="related-products">
-                <div class="container">
-                    <div class="section-title">
-                        <span class="sub-title">Our Shop</span>
+            <div className="related-products">
+                <div className="container">
+                    <div className="section-title">
+                        <span className="sub-title">Our Shop</span>
                         <h2>Related Products</h2>
                     </div>
 
-                    <div class="products-slides owl-carousel owl-theme">
-                        <div class="single-products-box">
-                            <div class="products-image">
+                    <div className="products-slides owl-carousel owl-theme">
+                        <div className="single-products-box">
+                            <div className="products-image">
                                 <a href="#">
-                                    <img src="assets/img/products/img1.jpg" class="main-image" alt="image" />
-                                    <img src="assets/img/products/img-hover1.jpg" class="hover-image" alt="image"  />
+                                    <img src="assets/img/products/img1.jpg" className="main-image" alt="image" />
+                                    <img src="assets/img/products/img-hover1.jpg" className="hover-image" alt="image"  />
                                 </a>
 
-                                <div class="products-button">
+                                <div className="products-button">
                                     <ul>
                                         <li>
-                                            <div class="wishlist-btn">
+                                            <div className="wishlist-btn">
                                                <a href="#" data-bs-toggle="modal" data-bs-target="#shoppingWishlistModal">
                                                     <i class='bx bx-heart'></i>
-                                                    <span class="tooltip-label">Add to Wishlist</span>
+                                                    <span className="tooltip-label">Add to Wishlist</span>
                                                 </a>
                                             </div>
                                         </li>
                                         <li>
-                                            <div class="compare-btn">
+                                            <div className="compare-btn">
                                                 <a href="compare.html">
                                                     <i class='bx bx-refresh'></i>
-                                                    <span class="tooltip-label">Compare</span>
+                                                    <span className="tooltip-label">Compare</span>
                                                 </a>
                                             </div>
                                         </li>
                                         <li>
-                                            <div class="quick-view-btn">
+                                            <div className="quick-view-btn">
                                                 <a href="#" data-bs-toggle="modal" data-bs-target="#productsQuickView">
                                                     <i class='bx bx-search-alt'></i>
-                                                    <span class="tooltip-label">Quick View</span>
+                                                    <span className="tooltip-label">Quick View</span>
                                                 </a>
                                             </div>
                                         </li>
@@ -388,109 +428,109 @@ const Productdetails = () => {
                                 </div>
                             </div>
 
-                            <div class="products-content">
+                            <div className="products-content">
                                 <h3><a href="#">Long Sleeve Leopard T-Shirt</a></h3>
-                                <div class="price">
-                                    <span class="old-price">$321</span>
-                                    <span class="new-price">$250</span>
+                                <div className="price">
+                                    <span className="old-price">$321</span>
+                                    <span className="new-price">$250</span>
                                 </div>
-                                <div class="star-rating">
+                                <div className="star-rating">
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                 </div>
-                                <a href="cart.html" class="add-to-cart">Add to Cart</a>
+                                <a href="cart.html" className="add-to-cart">Add to Cart</a>
                             </div>
                         </div>
 
-                        <div class="single-products-box">
-                            <div class="products-image">
+                        <div className="single-products-box">
+                            <div className="products-image">
                                 <a href="#">
-                                    <img src="assets/img/products/img2.jpg" class="main-image" alt="image" />
-                                    <img src="assets/img/products/img-hover2.jpg" class="hover-image" alt="image" />
+                                    <img src="assets/img/products/img2.jpg" className="main-image" alt="image" />
+                                    <img src="assets/img/products/img-hover2.jpg" className="hover-image" alt="image" />
                                 </a>
 
-                                <div class="products-button">
+                                <div className="products-button">
                                     <ul>
                                         <li>
-                                            <div class="wishlist-btn">
+                                            <div className="wishlist-btn">
                                                <a href="#" data-bs-toggle="modal" data-bs-target="#shoppingWishlistModal">
                                                     <i class='bx bx-heart'></i>
-                                                    <span class="tooltip-label">Add to Wishlist</span>
+                                                    <span className="tooltip-label">Add to Wishlist</span>
                                                 </a>
                                             </div>
                                         </li>
                                         <li>
-                                            <div class="compare-btn">
+                                            <div className="compare-btn">
                                                 <a href="compare.html">
                                                     <i class='bx bx-refresh'></i>
-                                                    <span class="tooltip-label">Compare</span>
+                                                    <span className="tooltip-label">Compare</span>
                                                 </a>
                                             </div>
                                         </li>
                                         <li>
-                                            <div class="quick-view-btn">
+                                            <div className="quick-view-btn">
                                                 <a href="#" data-bs-toggle="modal" data-bs-target="#productsQuickView">
                                                     <i class='bx bx-search-alt'></i>
-                                                    <span class="tooltip-label">Quick View</span>
+                                                    <span className="tooltip-label">Quick View</span>
                                                 </a>
                                             </div>
                                         </li>
                                     </ul>
                                 </div>
 
-                                <div class="sale-tag">Sale!</div>
+                                <div className="sale-tag">Sale!</div>
                             </div>
 
-                            <div class="products-content">
+                            <div className="products-content">
                                 <h3><a href="#">Causal V-Neck Soft Raglan</a></h3>
-                                <div class="price">
-                                    <span class="old-price">$210</span>
-                                    <span class="new-price">$200</span>
+                                <div className="price">
+                                    <span className="old-price">$210</span>
+                                    <span className="new-price">$200</span>
                                 </div>
-                                <div class="star-rating">
+                                <div className="star-rating">
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                 </div>
-                                <a href="cart.html" class="add-to-cart">Add to Cart</a>
+                                <a href="cart.html" className="add-to-cart">Add to Cart</a>
                             </div>
                         </div>
 
-                        <div class="single-products-box">
-                            <div class="products-image">
+                        <div className="single-products-box">
+                            <div className="products-image">
                                 <a href="#">
-                                    <img src="assets/img/products/img3.jpg" class="main-image" alt="image" />
-                                    <img src="assets/img/products/img-hover3.jpg" class="hover-image" alt="image" />
+                                    <img src="assets/img/products/img3.jpg" className="main-image" alt="image" />
+                                    <img src="assets/img/products/img-hover3.jpg" className="hover-image" alt="image" />
                                 </a>
 
-                                <div class="products-button">
+                                <div className="products-button">
                                     <ul>
                                         <li>
-                                            <div class="wishlist-btn">
+                                            <div className="wishlist-btn">
                                                <a href="#" data-bs-toggle="modal" data-bs-target="#shoppingWishlistModal">
                                                     <i class='bx bx-heart'></i>
-                                                    <span class="tooltip-label">Add to Wishlist</span>
+                                                    <span className="tooltip-label">Add to Wishlist</span>
                                                 </a>
                                             </div>
                                         </li>
                                         <li>
-                                            <div class="compare-btn">
+                                            <div className="compare-btn">
                                                 <a href="compare.html">
                                                     <i class='bx bx-refresh'></i>
-                                                    <span class="tooltip-label">Compare</span>
+                                                    <span className="tooltip-label">Compare</span>
                                                 </a>
                                             </div>
                                         </li>
                                         <li>
-                                            <div class="quick-view-btn">
+                                            <div className="quick-view-btn">
                                                 <a href="#" data-bs-toggle="modal" data-bs-target="#productsQuickView">
                                                     <i class='bx bx-search-alt'></i>
-                                                    <span class="tooltip-label">Quick View</span>
+                                                    <span className="tooltip-label">Quick View</span>
                                                 </a>
                                             </div>
                                         </li>
@@ -498,53 +538,53 @@ const Productdetails = () => {
                                 </div>
                             </div>
 
-                            <div class="products-content">
+                            <div className="products-content">
                                 <h3><a href="#">Hanes Men's Pullover</a></h3>
-                                <div class="price">
-                                    <span class="old-price">$210</span>
-                                    <span class="new-price">$200</span>
+                                <div className="price">
+                                    <span className="old-price">$210</span>
+                                    <span className="new-price">$200</span>
                                 </div>
-                                <div class="star-rating">
+                                <div className="star-rating">
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                 </div>
-                                <a href="cart.html" class="add-to-cart">Add to Cart</a>
+                                <a href="cart.html" className="add-to-cart">Add to Cart</a>
                             </div>
                         </div>
 
-                        <div class="single-products-box">
-                            <div class="products-image">
+                        <div className="single-products-box">
+                            <div className="products-image">
                                 <a href="#">
-                                    <img src="assets/img/products/img4.jpg" class="main-image" alt="image" />
-                                    <img src="assets/img/products/img-hover4.jpg" class="hover-image" alt="image" />
+                                    <img src="assets/img/products/img4.jpg" className="main-image" alt="image" />
+                                    <img src="assets/img/products/img-hover4.jpg" className="hover-image" alt="image" />
                                 </a>
 
-                                <div class="products-button">
+                                <div className="products-button">
                                     <ul>
                                         <li>
-                                            <div class="wishlist-btn">
+                                            <div className="wishlist-btn">
                                                <a href="#" data-bs-toggle="modal" data-bs-target="#shoppingWishlistModal">
                                                     <i class='bx bx-heart'></i>
-                                                    <span class="tooltip-label">Add to Wishlist</span>
+                                                    <span className="tooltip-label">Add to Wishlist</span>
                                                 </a>
                                             </div>
                                         </li>
                                         <li>
-                                            <div class="compare-btn">
+                                            <div className="compare-btn">
                                                 <a href="compare.html">
                                                     <i class='bx bx-refresh'></i>
-                                                    <span class="tooltip-label">Compare</span>
+                                                    <span className="tooltip-label">Compare</span>
                                                 </a>
                                             </div>
                                         </li>
                                         <li>
-                                            <div class="quick-view-btn">
+                                            <div className="quick-view-btn">
                                                 <a href="#" data-bs-toggle="modal" data-bs-target="#productsQuickView">
                                                     <i class='bx bx-search-alt'></i>
-                                                    <span class="tooltip-label">Quick View</span>
+                                                    <span className="tooltip-label">Quick View</span>
                                                 </a>
                                             </div>
                                         </li>
@@ -552,52 +592,52 @@ const Productdetails = () => {
                                 </div>
                             </div>
 
-                            <div class="products-content">
+                            <div className="products-content">
                                 <h3><a href="#">Gildan Men's Crew T-Shirt</a></h3>
-                                <div class="price">
-                                    <span class="new-price">$150</span>
+                                <div className="price">
+                                    <span className="new-price">$150</span>
                                 </div>
-                                <div class="star-rating">
+                                <div className="star-rating">
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                 </div>
-                                <a href="cart.html" class="add-to-cart">Add to Cart</a>
+                                <a href="cart.html" className="add-to-cart">Add to Cart</a>
                             </div>
                         </div>
 
-                        <div class="single-products-box">
-                            <div class="products-image">
+                        <div className="single-products-box">
+                            <div className="products-image">
                                 <a href="#">
-                                    <img src="assets/img/products/img5.jpg" class="main-image" alt="image" /> 
-                                    <img src="assets/img/products/img-hover5.jpg" class="hover-image" alt="image" />
+                                    <img src="assets/img/products/img5.jpg" className="main-image" alt="image" /> 
+                                    <img src="assets/img/products/img-hover5.jpg" className="hover-image" alt="image" />
                                 </a>
 
-                                <div class="products-button">
+                                <div className="products-button">
                                     <ul>
                                         <li>
-                                            <div class="wishlist-btn">
+                                            <div className="wishlist-btn">
                                                <a href="#" data-bs-toggle="modal" data-bs-target="#shoppingWishlistModal">
                                                     <i class='bx bx-heart'></i>
-                                                    <span class="tooltip-label">Add to Wishlist</span>
+                                                    <span className="tooltip-label">Add to Wishlist</span>
                                                 </a>
                                             </div>
                                         </li>
                                         <li>
-                                            <div class="compare-btn">
+                                            <div className="compare-btn">
                                                 <a href="compare.html">
                                                     <i class='bx bx-refresh'></i>
-                                                    <span class="tooltip-label">Compare</span>
+                                                    <span className="tooltip-label">Compare</span>
                                                 </a>
                                             </div>
                                         </li>
                                         <li>
-                                            <div class="quick-view-btn">
+                                            <div className="quick-view-btn">
                                                 <a href="#" data-bs-toggle="modal" data-bs-target="#productsQuickView">
                                                     <i class='bx bx-search-alt'></i>
-                                                    <span class="tooltip-label">Quick View</span>
+                                                    <span className="tooltip-label">Quick View</span>
                                                 </a>
                                             </div>
                                         </li>
@@ -605,75 +645,75 @@ const Productdetails = () => {
                                 </div>
                             </div>
 
-                            <div class="products-content">
+                            <div className="products-content">
                                 <h3><a href="#">Yidarton Women's Comfy</a></h3>
-                                <div class="price">
-                                    <span class="new-price">$240</span>
+                                <div className="price">
+                                    <span className="new-price">$240</span>
                                 </div>
-                                <div class="star-rating">
+                                <div className="star-rating">
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                 </div>
-                                <a href="cart.html" class="add-to-cart">Add to Cart</a>
+                                <a href="cart.html" className="add-to-cart">Add to Cart</a>
                             </div>
                         </div>
 
-                        <div class="single-products-box">
-                            <div class="products-image">
+                        <div className="single-products-box">
+                            <div className="products-image">
                                 <a href="#">
-                                    <img src="assets/img/products/img6.jpg" class="main-image" alt="image" />
-                                    <img src="assets/img/products/img-hover6.jpg" class="hover-image" alt="image" />
+                                    <img src="assets/img/products/img6.jpg" className="main-image" alt="image" />
+                                    <img src="assets/img/products/img-hover6.jpg" className="hover-image" alt="image" />
                                 </a>
 
-                                <div class="products-button">
+                                <div className="products-button">
                                     <ul>
                                         <li>
-                                            <div class="wishlist-btn">
+                                            <div className="wishlist-btn">
                                                <a href="#" data-bs-toggle="modal" data-bs-target="#shoppingWishlistModal">
                                                     <i class='bx bx-heart'></i>
-                                                    <span class="tooltip-label">Add to Wishlist</span>
+                                                    <span className="tooltip-label">Add to Wishlist</span>
                                                 </a>
                                             </div>
                                         </li>
                                         <li>
-                                            <div class="compare-btn">
+                                            <div className="compare-btn">
                                                 <a href="compare.html">
                                                     <i class='bx bx-refresh'></i>
-                                                    <span class="tooltip-label">Compare</span>
+                                                    <span className="tooltip-label">Compare</span>
                                                 </a>
                                             </div>
                                         </li>
                                         <li>
-                                            <div class="quick-view-btn">
+                                            <div className="quick-view-btn">
                                                 <a href="#" data-bs-toggle="modal" data-bs-target="#productsQuickView">
                                                     <i class='bx bx-search-alt'></i>
-                                                    <span class="tooltip-label">Quick View</span>
+                                                    <span className="tooltip-label">Quick View</span>
                                                 </a>
                                             </div>
                                         </li>
                                     </ul>
                                 </div>
 
-                                <div class="new-tag">New!</div>
+                                <div className="new-tag">New!</div>
                             </div>
 
-                            <div class="products-content">
+                            <div className="products-content">
                                 <h3><a href="#">Womens Tops Color</a></h3>
-                                <div class="price">
-                                    <span class="old-price">$150</span>
-                                    <span class="new-price">$100</span>
+                                <div className="price">
+                                    <span className="old-price">$150</span>
+                                    <span className="new-price">$100</span>
                                 </div>
-                                <div class="star-rating">
+                                <div className="star-rating">
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
                                 </div>
-                                <a href="cart.html" class="add-to-cart">Add to Cart</a>
+                                <a href="cart.html" className="add-to-cart">Add to Cart</a>
                             </div>
                         </div>
                     </div>
@@ -685,6 +725,225 @@ const Productdetails = () => {
         <Instragram />
       </div>
       <Footer />
+
+       {/* <!-- Start Size Guide Modal Area --> */}
+        <div className="modal fade sizeGuideModal" id="sizeGuideModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div className="modal-dialog modal-dialog-centered" role="document">
+                <div className="modal-content">
+                    <button type="button" className="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i className="bx bx-x"></i></span>
+                    </button>
+
+                    <div className="modal-sizeguide">
+                        <h3>Free Delivery</h3>
+                        <p>The product is eligible for Free delivery.</p>
+
+                        {/* <div className="table-responsive">
+                            <table className="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Italian</th>
+                                        <th>Spanish</th>
+                                        <th>German</th>
+                                        <th>UK</th>
+                                        <th>US</th>
+                                        <th>Japanese</th>
+                                        <th>Chinese</th>
+                                        <th>Russian</th>
+                                        <th>Korean</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>34</td>
+                                        <td>30</td>
+                                        <td>28</td>
+                                        <td>4</td>
+                                        <td>00</td>
+                                        <td>3</td>
+                                        <td>155/75A</td>
+                                        <td>36</td>
+                                        <td>44</td>
+                                    </tr>
+                                    <tr>
+                                        <td>36</td>
+                                        <td>32</td>
+                                        <td>30</td>
+                                        <td>6</td>
+                                        <td>0</td>
+                                        <td>5</td>
+                                        <td>155/80A</td>
+                                        <td>38</td>
+                                        <td>44</td>
+                                    </tr>
+                                    <tr>
+                                        <td>38</td>
+                                        <td>34</td>
+                                        <td>32</td>
+                                        <td>8</td>
+                                        <td>2</td>
+                                        <td>7</td>
+                                        <td>160/84A</td>
+                                        <td>40</td>
+                                        <td>55</td>
+                                    </tr>
+                                    <tr>
+                                        <td>40</td>
+                                        <td>36</td>
+                                        <td>34</td>
+                                        <td>10</td>
+                                        <td>4</td>
+                                        <td>9</td>
+                                        <td>165/88A</td>
+                                        <td>42</td>
+                                        <td>55</td>
+                                    </tr>
+                                    <tr>
+                                        <td>42</td>
+                                        <td>38</td>
+                                        <td>36</td>
+                                        <td>12</td>
+                                        <td>6</td>
+                                        <td>11</td>
+                                        <td>170/92A</td>
+                                        <td>44</td>
+                                        <td>66</td>
+                                    </tr>
+                                    <tr>
+                                        <td>44</td>
+                                        <td>40</td>
+                                        <td>38</td>
+                                        <td>14</td>
+                                        <td>8</td>
+                                        <td>13</td>
+                                        <td>175/96A</td>
+                                        <td>46</td>
+                                        <td>66</td>
+                                    </tr>
+                                    <tr>
+                                        <td>46</td>
+                                        <td>42</td>
+                                        <td>40</td>
+                                        <td>16</td>
+                                        <td>10</td>
+                                        <td>15</td>
+                                        <td>170/98A</td>
+                                        <td>48</td>
+                                        <td>77</td>
+                                    </tr>
+                                    <tr>
+                                        <td>48</td>
+                                        <td>44</td>
+                                        <td>42</td>
+                                        <td>18</td>
+                                        <td>12</td>
+                                        <td>17</td>
+                                        <td>170/100B</td>
+                                        <td>50</td>
+                                        <td>77</td>
+                                    </tr>
+                                    <tr>
+                                        <td>50</td>
+                                        <td>46</td>
+                                        <td>44</td>
+                                        <td>20</td>
+                                        <td>14</td>
+                                        <td>19</td>
+                                        <td>175/100B</td>
+                                        <td>52</td>
+                                        <td>88</td>
+                                    </tr>
+                                    <tr>
+                                        <td>52</td>
+                                        <td>48</td>
+                                        <td>46</td>
+                                        <td>22</td>
+                                        <td>16</td>
+                                        <td>21</td>
+                                        <td>180/104B</td>
+                                        <td>54</td>
+                                        <td>88</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div> */}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {/* <!-- End Size Guide Modal Area --> */}
+         {/* <!-- Start Shipping Modal Area --> */}
+        <div className="modal fade productsShippingModal" id="productsShippingModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div className="modal-dialog modal-dialog-centered" role="document">
+                <div className="modal-content">
+                    <button type="button" className="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class='bx bx-x'></i></span>
+                    </button>
+
+                    <div className="shipping-content">
+                        <h3>10 days Returnable</h3>
+                       <div className="table-responsive">
+                            <table className="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Return Reason</th>
+                                        <th>Return Period</th>
+                                        <th>Return Policy</th>
+                                       
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>Physical Damage, <br />
+Defective, <br />
+Wrong and Missing Item</td>
+                                        <td>10 days from delivery</td>
+                                        <td>Full refund and replacement</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>Any other reason</td>
+                                        <td>10 days from delivery</td>
+                                        <td> delivery	Full refund</td>
+                                        
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h3>Return Instructions</h3>
+                        <ul>
+                            <li>Keep the item in its original condition and packaging along with MRP tag and accessories for a successful pick-up.</li>
+                            <li><a href="/ReturnPolicy">Read full returns policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {/* <!-- End Shipping Modal Area --> */}
+         {/* <!-- Start Shipping Modal Area --> */}
+        <div className="modal fade Securetransaction" id="Securetransaction" tabindex="-1" role="dialog" aria-hidden="true">
+            <div className="modal-dialog modal-dialog-centered" role="document">
+                <div className="modal-content">
+                    <button type="button" className="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class='bx bx-x'></i></span>
+                    </button>
+
+                    <div className="shipping-content">
+                        <h3>Your transaction is secure</h3>
+                        <ul>
+                            <li>We work hard to protect your security and privacy. Our payment security system encrypts your information during transmission. </li>
+                            <li> We don’t share your credit card details with third-party sellers, and we don’t sell your information to others.</li>
+                            
+                        </ul>
+
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        {/* <!-- End Shipping Modal Area --> */}
     </>
   )
 }

@@ -87,7 +87,7 @@ const OurProducts = () => {
                             <div class="col-lg-4 col-md-6 col-sm-6 products-col-item">
                                 <div class="single-products-box">
                                     <div class="products-image">
-                                        <a href="#">
+                                        <a href="/Productdetails">
                                             <img src="/assets/pics/rate.jpg" class="main-image" alt="image" />
                                             <img src="/assets/pics/speaker.jpg" class="hover-image" alt="image" />
                                         </a>
@@ -143,7 +143,7 @@ const OurProducts = () => {
                             <div class="col-lg-4 col-md-6 col-sm-6 products-col-item">
                                 <div class="single-products-box">
                                     <div class="products-image">
-                                        <a href="#">
+                                        <a href="/Productdetails">
                                             <img src="/assets/pics/rate.jpg" class="main-image" alt="image" />
                                             <img src="/assets/pics/speaker2.jpg" class="hover-image" alt="image" />
                                         </a>
@@ -201,7 +201,7 @@ const OurProducts = () => {
                             <div class="col-lg-4 col-md-6 col-sm-6 products-col-item">
                                 <div class="single-products-box">
                                     <div class="products-image">
-                                        <a href="#">
+                                        <a href="/Productdetails">
                                             <img src="/assets/pics/rate.jpg " class="main-image" alt="image" />
                                             <img src="/assets/pics/speaker 3.jpg" class="hover-image" alt="image" />
                                         </a>
