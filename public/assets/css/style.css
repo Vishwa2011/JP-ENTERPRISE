@@ -4158,11 +4158,11 @@ Offer CSS
   right: 0;
   bottom: 0;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: #000;
   margin: 2px;
 }
 .offer-products-slides.owl-theme .owl-dots .owl-dot:hover span, .offer-products-slides.owl-theme .owl-dots .owl-dot.active span {
-  border-color: #ffffff;
+  border-color: #000;
 }
 
 /*================================================

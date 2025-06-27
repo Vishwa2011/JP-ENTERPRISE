@@ -39,16 +39,16 @@ export default function Compare() {
                                     <div className="single-products-box">
                                         <div className="products-image">
                                             <a href="/Productdetails">
-                                                <img src="assets/img/products/img1.jpg" className="main-image" alt="image" />
-                                                <img src="assets/img/products/img-hover1.jpg" className="hover-image" alt="image" />
+                                                <img src="/assets/pics/rate.jpg" className="main-image" alt="image" />
+                                                <img src="/assets/pics/speaker.jpg" className="hover-image" alt="image" />
                                             </a>
                                         </div>
             
                                         <div className="products-content">
-                                            <h3><a href="/Productdetails">Long Sleeve Leopard T-Shirt</a></h3>
+                                            <h3><a href="/Productdetails">High-Powered Ultrasonic </a></h3>
                                             <div className="price">
-                                                <span className="old-price">$321</span>
-                                                <span className="new-price">$250</span>
+                                                <span className="old-price">₹9,999</span>
+                                                <span className="new-price">₹3,331</span>
                                             </div>
                                             <div className="star-rating">
                                                 <i class='bx bxs-star'></i>
@@ -70,16 +70,16 @@ export default function Compare() {
                                     <div className="single-products-box">
                                         <div className="products-image">
                                             <a href="/Productdetails">
-                                                <img src="assets/img/products/img2.jpg" className="main-image" alt="image" />
-                                                <img src="assets/img/products/img-hover2.jpg" className="hover-image" alt="image" />
+                                                <img src="/assets/pics/rate.jpg" className="main-image" alt="image" />
+                                                <img src="/assets/pics/speaker2.jpg" className="hover-image" alt="image" />
                                             </a>
                                         </div>
             
                                         <div className="products-content">
-                                            <h3><a href="/Productdetails">Causal V-Neck Soft Raglan</a></h3>
+                                            <h3><a href="/Productdetails">Smart Ultrasonic </a></h3>
                                             <div className="price">
-                                                <span className="old-price">$210</span>
-                                                <span className="new-price">$200</span>
+                                                <span className="old-price">₹9,999</span>
+                                                <span className="new-price">₹3,331</span>
                                             </div>
                                             <div className="star-rating">
                                                 <i class='bx bxs-star'></i>
@@ -101,16 +101,16 @@ export default function Compare() {
                                     <div className="single-products-box">
                                         <div className="products-image">
                                             <a href="/Productdetails">
-                                                <img src="assets/img/products/img3.jpg" className="main-image" alt="image" />
-                                                <img src="assets/img/products/img-hover3.jpg" className="hover-image" alt="image" />
+                                                <img src="/assets/pics/rate.jpg" className="main-image" alt="image" />
+                                                <img src="/assets/pics/speaker 3.jpg" className="hover-image" alt="image" />
                                             </a>
                                         </div>
             
                                         <div className="products-content">
-                                            <h3><a href="/Productdetails">Hanes Top Men's Pullover</a></h3>
-                                            <div className="price">
-                                                <span className="old-price">$210</span>
-                                                <span className="new-price">$200</span>
+                                            <h3><a href="/Productdetails">High-Frequency Ultrasonic </a></h3>
+                                             <div className="price">
+                                                <span className="old-price">₹9,999</span>
+                                                <span className="new-price">₹3,331</span>
                                             </div>
                                             <div className="star-rating">
                                                 <i class='bx bxs-star'></i>
@@ -126,24 +126,24 @@ export default function Compare() {
                             </tr>
 
                             <tr>
-                                <td>Collection</td>
-                                <td>Shirt, New Products, T-Shirt</td>
-                                <td>Shirt, New Products, T-Shirt</td>
-                                <td>Shirt, New Products, T-Shirt</td>
+                                <td>Brand</td>
+                                <td>Generic</td>
+                                <td>Generic</td>
+                                <td>Generic</td>
                             </tr>
 
                             <tr>
-                                <td>Availability</td>
-                                <td>In Stock</td>
-                                <td>In Stock</td>
-                                <td>In Stock</td>
+                                <td>Colour</td>
+                                <td>Black</td>
+                                <td>Black</td>
+                                <td>Black</td>
                             </tr>
 
                             <tr>
-                                <td>Material</td>
-                                <td>100% Polyester</td>
-                                <td>100% Polyester</td>
-                                <td>100% Polyester</td>
+                                <td>Style</td>
+                                <td>modern</td>
+                                <td>modern</td>
+                                <td>modern</td>
                             </tr>
 
                             <tr>
@@ -154,32 +154,20 @@ export default function Compare() {
                             </tr>
 
                             <tr>
-                                <td>SKU</td>
-                                <td>00105сd-1</td>
-                                <td>00105сd-1</td>
-                                <td>00105сd-1</td>
+                                <td>Dimensions</td>
+                                <td>5L x 10W x 10H Centimeters</td>
+                                <td>10L x 15W x 15H Centimeters</td>
+                                <td>15L x 15W x 15H Centimeters</td>
                             </tr>
 
                             <tr>
-                                <td>Color</td>
-                                <td>White</td>
-                                <td>Black</td>
-                                <td>Blue</td>
+                                <td>Item Weight</td>
+                                <td>650 Grams</td>
+                                <td>750 Grams</td>
+                                <td>850 Grams</td>
                             </tr>
 
-                            <tr>
-                                <td>Size</td>
-                                <td>20</td>
-                                <td>22</td>
-                                <td>XXL</td>
-                            </tr>
-
-                            <tr>
-                                <td>Barcode</td>
-                                <td>1234567890</td>
-                                <td>1234567890</td>
-                                <td>1234567890</td>
-                            </tr>
+                           
                         </tbody>
                     </table>
                 </div>
