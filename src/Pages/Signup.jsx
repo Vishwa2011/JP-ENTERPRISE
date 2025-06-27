@@ -58,7 +58,7 @@ export default function Signup() {
         </section>
         {/* <!-- End SignUP Area --> */}
       <Facility />
-      <Instragram />
+      {/* <Instragram /> */}
       <Footer />
     </div>
   )

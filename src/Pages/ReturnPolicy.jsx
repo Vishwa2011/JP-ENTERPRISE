@@ -41,7 +41,7 @@ export default function ReturnPolicy() {
       </section>
       {/* <!-- End Customer Service Area --> */}
       <Facility />
-      <Instragram />
+      {/* <Instragram /> */}
       <Footer />
     </div>
   )

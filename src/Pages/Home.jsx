@@ -660,7 +660,7 @@ const Home = () => {
         {/* <!-- End Blog Area --> */}
 
          {/* <!-- Start Instagram Area --> */}
-        <Instragram />
+        {/* <Instragram /> */}
         {/* <!-- End Instagram Area --> */}
 
 

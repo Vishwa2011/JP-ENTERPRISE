@@ -39,7 +39,7 @@ export default function TermsandConditions() {
       </section>
       {/* <!-- End Customer Service Area --> */}
       <Facility />
-      <Instragram />
+      {/* <Instragram /> */}
       <Footer />
     </div>
   )

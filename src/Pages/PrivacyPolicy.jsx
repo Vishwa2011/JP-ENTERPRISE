@@ -93,7 +93,7 @@ export default function PrivacyPolicy() {
       </section>
       {/* <!-- End Customer Service Area --> */}
       <Facility />
-      <Instragram />
+      {/* <Instragram /> */}
       <Footer />
     </div>
   );

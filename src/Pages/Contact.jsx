@@ -119,7 +119,7 @@ export default function Contact() {
         </div>
         {/* <!-- End Map --> */}
       <Facility />
-      <Instragram />
+      {/* <Instragram /> */}
       <Footer />
     </div>
   )

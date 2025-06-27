@@ -100,7 +100,7 @@ export default function Blog() {
         </section>
         {/* <!-- End Blog Area --> */}
       <Facility />
-      <Instragram />
+      {/* <Instragram /> */}
       <Footer />
     </div>
   )

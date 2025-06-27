@@ -70,49 +70,39 @@ const Productdetails = () => {
                             <div className="row justify-content-center">
                                 <div className="col-lg-6 col-md-6">
                                     <div className="single-products-details-image">
-                                        <img src="assets/img/products/img1.jpg" alt="image" />
+                                        <img src="/assets/pics/rate.jpg" alt="image" />
+                                    </div>
+                                </div>
+
+                             
+
+                                <div className="col-lg-6 col-md-6">
+                                    <div className="single-products-details-image">
+                                        <img src="/assets/pics/speaker 3.jpg" alt="image" />
                                     </div>
                                 </div>
 
                                 <div className="col-lg-6 col-md-6">
                                     <div className="single-products-details-image">
-                                        <img src="assets/img/products/img2.jpg" alt="image" />
+                                        <img src="/assets/pics/speaker2.jpg" alt="image" />
                                     </div>
                                 </div>
 
                                 <div className="col-lg-6 col-md-6">
                                     <div className="single-products-details-image">
-                                        <img src="assets/img/products/img5.jpg" alt="image" />
+                                        <img src="/assets/pics/PRDUCAT.jpg" alt="image" />
                                     </div>
                                 </div>
 
                                 <div className="col-lg-6 col-md-6">
                                     <div className="single-products-details-image">
-                                        <img src="assets/img/products/img6.jpg" alt="image" />
+                                        <img src="/assets/pics/PRODUCT2.webp" alt="image" />
                                     </div>
                                 </div>
 
-                                <div className="col-lg-6 col-md-6">
+                                  <div className="col-lg-6 col-md-6">
                                     <div className="single-products-details-image">
-                                        <img src="assets/img/products/img9.jpg" alt="image" />
-                                    </div>
-                                </div>
-
-                                <div className="col-lg-6 col-md-6">
-                                    <div className="single-products-details-image">
-                                        <img src="assets/img/products/img10.jpg" alt="image" />
-                                    </div>
-                                </div>
-
-                                <div className="col-lg-6 col-md-6">
-                                    <div className="single-products-details-image">
-                                        <img src="assets/img/products/img12.jpg" alt="image" />
-                                    </div>
-                                </div>
-
-                                <div className="col-lg-6 col-md-6">
-                                    <div className="single-products-details-image">
-                                        <img src="assets/img/products/img13.jpg" alt="image" />
+                                        <img src="/assets/pics/speaker.jpg" alt="image" />
                                     </div>
                                 </div>
                             </div>
@@ -394,8 +384,8 @@ const Productdetails = () => {
                         <div className="single-products-box">
                             <div className="products-image">
                                 <a href="#">
-                                    <img src="assets/img/products/img1.jpg" className="main-image" alt="image" />
-                                    <img src="assets/img/products/img-hover1.jpg" className="hover-image" alt="image"  />
+                                       <img src="/assets/pics/rate.jpg" className="main-image" alt="image" />
+                                    <img src="/assets/pics/speaker.jpg" className="hover-image" alt="image" />
                                 </a>
 
                                 <div className="products-button">
@@ -448,8 +438,8 @@ const Productdetails = () => {
                         <div className="single-products-box">
                             <div className="products-image">
                                 <a href="#">
-                                    <img src="assets/img/products/img2.jpg" className="main-image" alt="image" />
-                                    <img src="assets/img/products/img-hover2.jpg" className="hover-image" alt="image" />
+                                     <img src="/assets/pics/rate.jpg" className="main-image" alt="image" />
+                                    <img src="/assets/pics/speaker 3.jpg" className="hover-image" alt="image" />
                                 </a>
 
                                 <div className="products-button">
@@ -504,8 +494,8 @@ const Productdetails = () => {
                         <div className="single-products-box">
                             <div className="products-image">
                                 <a href="#">
-                                    <img src="assets/img/products/img3.jpg" className="main-image" alt="image" />
-                                    <img src="assets/img/products/img-hover3.jpg" className="hover-image" alt="image" />
+                                  <img src="/assets/pics/rate.jpg" className="main-image" alt="image" />
+                                    <img src="/assets/pics/speaker2.jpg" className="hover-image" alt="image" />
                                 </a>
 
                                 <div className="products-button">
@@ -558,8 +548,8 @@ const Productdetails = () => {
                         <div className="single-products-box">
                             <div className="products-image">
                                 <a href="#">
-                                    <img src="assets/img/products/img4.jpg" className="main-image" alt="image" />
-                                    <img src="assets/img/products/img-hover4.jpg" className="hover-image" alt="image" />
+                                   <img src="/assets/pics/rate.jpg" className="main-image" alt="image" />
+                                    <img src="/assets/pics/speaker.jpg" className="hover-image" alt="image" />
                                 </a>
 
                                 <div className="products-button">
@@ -611,8 +601,8 @@ const Productdetails = () => {
                         <div className="single-products-box">
                             <div className="products-image">
                                 <a href="#">
-                                    <img src="assets/img/products/img5.jpg" className="main-image" alt="image" /> 
-                                    <img src="assets/img/products/img-hover5.jpg" className="hover-image" alt="image" />
+                                          <img src="/assets/pics/rate.jpg" className="main-image" alt="image" />
+                                    <img src="/assets/pics/speaker 3.jpg" className="hover-image" alt="image" />
                                 </a>
 
                                 <div className="products-button">
@@ -664,8 +654,8 @@ const Productdetails = () => {
                         <div className="single-products-box">
                             <div className="products-image">
                                 <a href="#">
-                                    <img src="assets/img/products/img6.jpg" className="main-image" alt="image" />
-                                    <img src="assets/img/products/img-hover6.jpg" className="hover-image" alt="image" />
+                               <img src="/assets/pics/rate.jpg" className="main-image" alt="image" />
+                                    <img src="/assets/pics/speaker2.jpg" className="hover-image" alt="image" />
                                 </a>
 
                                 <div className="products-button">

@@ -142,7 +142,7 @@ export default function Cart() {
         </section>
         {/* <!-- End Cart Area --> */}
       <Facility />
-      <Instragram />
+      {/* <Instragram /> */}
       <Footer />
     </div>
   )

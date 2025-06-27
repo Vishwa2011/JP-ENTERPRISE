@@ -401,7 +401,7 @@ export default function BlogDetails() {
                             </section>
 
                             <section class="widget widget_tag_cloud">
-                                <h3 class="widget-title">Xton Tags</h3>
+                                <h3 class="widget-title">JP Enterprise Tags</h3>
 
                                 <div class="tagcloud">
                                     <a href="#"> Home-Safety <span class="tag-link-count"> (3)</span></a>
@@ -468,7 +468,7 @@ export default function BlogDetails() {
         </section>
         {/* <!-- End Blog Details Area --> */}
       <Facility />
-      <Instragram />
+      {/* <Instragram /> */}
       <Footer />
     </div>
   )

@@ -40,7 +40,7 @@ export default function ShippingPolicy() {
       </section>
       {/* <!-- End Customer Service Area --> */}
       <Facility />
-      <Instragram />
+      {/* <Instragram /> */}
       <Footer />
     </div>
   )

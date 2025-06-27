@@ -126,7 +126,7 @@ export default function Faq() {
                                         </a>
         
                                         <div className="accordion-content">
-                                            <p>Absolutely! Simply point your domain directly to your new Xton. You do not need to use a subdomain or any other temporary domain name placeholder.</p>
+                                            <p>Absolutely! Simply point your domain directly to your new jp . You do not need to use a subdomain or any other temporary domain name placeholder.</p>
                                         </div>
                                     </li>
 
@@ -192,7 +192,7 @@ export default function Faq() {
                                         </a>
         
                                         <div className="accordion-content">
-                                            <p>Absolutely! Simply point your domain directly to your new Xton. You do not need to use a subdomain or any other temporary domain name placeholder.</p>
+                                            <p>Absolutely! Simply point your domain directly to your new JP Enterprise. You do not need to use a subdomain or any other temporary domain name placeholder.</p>
                                         </div>
                                     </li>
 
@@ -258,7 +258,7 @@ export default function Faq() {
                                         </a>
         
                                         <div className="accordion-content">
-                                            <p>Absolutely! Simply point your domain directly to your new Xton. You do not need to use a subdomain or any other temporary domain name placeholder.</p>
+                                            <p>Absolutely! Simply point your domain directly to your new JP Enterprise. You do not need to use a subdomain or any other temporary domain name placeholder.</p>
                                         </div>
                                     </li>
 
@@ -324,7 +324,7 @@ export default function Faq() {
                                         </a>
         
                                         <div className="accordion-content">
-                                            <p>Absolutely! Simply point your domain directly to your new Xton. You do not need to use a subdomain or any other temporary domain name placeholder.</p>
+                                            <p>Absolutely! Simply point your domain directly to your new JP Enterprise. You do not need to use a subdomain or any other temporary domain name placeholder.</p>
                                         </div>
                                     </li>
 
@@ -390,7 +390,7 @@ export default function Faq() {
                                         </a>
         
                                         <div className="accordion-content">
-                                            <p>Absolutely! Simply point your domain directly to your new Xton. You do not need to use a subdomain or any other temporary domain name placeholder.</p>
+                                            <p>Absolutely! Simply point your domain directly to your new JP Enterprise. You do not need to use a subdomain or any other temporary domain name placeholder.</p>
                                         </div>
                                     </li>
 
@@ -413,7 +413,7 @@ export default function Faq() {
         </section>
         {/* <!-- End FAQ Area --> */}
       <Facility />
-      <Instragram />
+      {/* <Instragram /> */}
       <Footer />
     </div>
   )

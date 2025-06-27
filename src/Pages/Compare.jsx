@@ -175,7 +175,7 @@ export default function Compare() {
         </section>
         {/* <!-- End Compare Area --> */}
       <Facility />
-      <Instragram />
+      {/* <Instragram /> */}
       <Footer />
     </div>
   )

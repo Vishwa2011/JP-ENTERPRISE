@@ -7,7 +7,7 @@ export default function Instragram() {
         <div className="instagram-area">
             <div className="container-fluid">
                 <div className="instagram-title">
-                    <a href="#" target="_blank"><i class='bx bxl-instagram'></i> Follow us on @xton</a>
+                    <a href="#" target="_blank"><i class='bx bxl-instagram'></i> Follow us on @jp Enterprise</a>
                 </div>
 
                 <div className="instagram-slides owl-carousel owl-theme">

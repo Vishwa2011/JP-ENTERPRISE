@@ -345,7 +345,7 @@ export default function Checkout() {
       </section>
       {/* <!-- End Checkout Area --> */}
       <Facility />
-      <Instragram />
+      {/* <Instragram /> */}
       <Footer />
     </div>
   );

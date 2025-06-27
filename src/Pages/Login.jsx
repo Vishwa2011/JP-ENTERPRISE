@@ -62,7 +62,7 @@ export default function Login() {
         {/* <!-- End Login Area --> */}
 
       <Facility />
-      <Instragram />
+      {/* <Instragram /> */}
       <Footer />
     </div>
   )

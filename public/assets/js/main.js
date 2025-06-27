@@ -2,6 +2,7 @@
 	"use strict";
     
     // Search Popup JS
+    $(document).ready(function () {
     $(".others-option .search-btn").on("click", function(){
         $(".search-overlay").toggleClass("search-overlay-active");
     });
@@ -11,7 +12,7 @@
     $(".header-top-others-option .search-btn").on("click", function(){
         $(".search-overlay").toggleClass("search-overlay-active");
     });
-    
+      });
     // Mean Menu
     $('.mean-menu').meanmenu({
         meanScreenWidth: "991"
@@ -339,7 +340,7 @@ $(document).ready(function () {
      });
 
     // Testimonials Slides
-    $(document).ready(function () { 
+$(document).ready(function () { 
     $('.testimonials-slides').owlCarousel({
         loop: true,
         nav: false,
@@ -367,7 +368,7 @@ $(document).ready(function () {
             }
         }
     })
-     });
+      });
 
     // Tabs
      $(document).ready(function () {

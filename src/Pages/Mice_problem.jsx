@@ -81,7 +81,7 @@ export default function Mice_problem() {
         </section>
         {/* <!-- End Customer Service Area --> */}
       <Facility />
-      <Instragram />
+      {/* <Instragram /> */}
       <Footer />
     </div>
   )

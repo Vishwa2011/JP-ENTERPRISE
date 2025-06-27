@@ -81,7 +81,7 @@ export default function Footer() {
                 <div className="footer-bottom-area">
                     <div className="row align-items-center justify-content-center">
                         <div className="col-lg-6 col-md-6">
-                            <p>© Xton is Proudly Owned by <a href="https://hibootstrap.com/" target="_blank">HiBootstrap</a></p>
+                            <p>© JP Enterprise is Proudly Owned by    <a href="https://successinnovativetechnologiespvtltd.com/" target="_blank">  Success Innovative Technologies Private Limited </a></p>
                         </div>
 
                         <div className="col-lg-6 col-md-6">

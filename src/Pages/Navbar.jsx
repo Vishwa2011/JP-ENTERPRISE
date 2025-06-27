@@ -17,7 +17,7 @@ const Navbar = () => {
             <div className="row align-items-center justify-content-center">
               <div className="col-lg-4 col-md-12">
                 <ul className="header-contact-info">
-                  <li>Welcome to Xton</li>
+                  <li>Welcome to JP Enterprise</li>
                   <li>
                     Call: <a href="tel:+919265407449">+91 9265407449</a>
                   </li>
