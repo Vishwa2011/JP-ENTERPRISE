@@ -1294,25 +1294,25 @@ const Navbar = () => {
               </button>
 
               <div className="modal-body">
-                <h3>My Cart (3)</h3>
+                <h3>My Cart (2)</h3>
 
                 <div className="products-cart-content">
                   <div className="products-cart">
                     <div className="products-image">
                       <a href="#">
-                        <img src="assets/img/products/img1.jpg" alt="image" />
+                        <img src="/assets/pics/rate.jpg" alt="image" />
                       </a>
                     </div>
 
                     <div className="products-content">
                       <h3>
-                        <a href="#">Long Sleeve Leopard T-Shirt</a>
+                        <a href="#">High-Powered Ultrasonic Rat Repellent for Gardens, Factories, and Warehouses - Intense Noise for Effective Outdoor and Indoor Rat Deterrence</a>
                       </h3>
-                      <span>Blue / XS</span>
+                      <span>Brand: Generic</span>
                       <div className="products-price">
-                        <span>1</span>
-                        <span>x</span>
-                        <span className="price">$250.00</span>
+                        
+                        <span>-67% </span>
+                        <span className="price"> ₹3,331</span>
                       </div>
                       <a href="#" className="remove-btn">
                         <i className="bx bx-trash"></i>
@@ -1323,19 +1323,19 @@ const Navbar = () => {
                   <div className="products-cart">
                     <div className="products-image">
                       <a href="#">
-                        <img src="assets/img/products/img2.jpg" alt="image" />
+                        <img src="/assets/pics/rate.jpg" alt="image" />
                       </a>
                     </div>
 
                     <div className="products-content">
                       <h3>
-                        <a href="#">Causal V-Neck Soft Raglan</a>
+                        <a href="#">Smart Ultrasonic Rat Repellent for Commercial & Home Use | Safe & Silent Rodent Defense – 1500 Sq. Ft</a>
                       </h3>
-                      <span>Blue / XS</span>
+                      <span>Brand: Generic</span>
                       <div className="products-price">
-                        <span>1</span>
-                        <span>x</span>
-                        <span className="price">$200.00</span>
+                        
+                        <span>-67% </span>
+                        <span className="price"> ₹3,331</span>
                       </div>
                       <a href="#" className="remove-btn">
                         <i className="bx bx-trash"></i>
@@ -1343,34 +1343,13 @@ const Navbar = () => {
                     </div>
                   </div>
 
-                  <div className="products-cart">
-                    <div className="products-image">
-                      <a href="#">
-                        <img src="assets/img/products/img3.jpg" alt="image" />
-                      </a>
-                    </div>
-
-                    <div className="products-content">
-                      <h3>
-                        <a href="#">Hanes Men's Pullover</a>
-                      </h3>
-                      <span>Blue / XS</span>
-                      <div className="products-price">
-                        <span>1</span>
-                        <span>x</span>
-                        <span className="price">$200.00</span>
-                      </div>
-                      <a href="#" className="remove-btn">
-                        <i className="bx bx-trash"></i>
-                      </a>
-                    </div>
-                  </div>
+                 
                 </div>
 
                 <div className="products-cart-subtotal">
                   <span>Subtotal</span>
 
-                  <span className="subtotal">$524.00</span>
+                  <span className="subtotal">₹6,662.00</span>
                 </div>
 
                 <div className="products-cart-btn">
@@ -1549,25 +1528,25 @@ const Navbar = () => {
               </button>
 
               <div className="modal-body">
-                <h3>My Wish List (3)</h3>
+                <h3>My Wish List (2)</h3>
 
-                <div className="products-cart-content">
+                  <div className="products-cart-content">
                   <div className="products-cart">
                     <div className="products-image">
                       <a href="#">
-                        <img src="assets/img/products/img1.jpg" alt="image" />
+                        <img src="/assets/pics/rate.jpg" alt="image" />
                       </a>
                     </div>
 
                     <div className="products-content">
                       <h3>
-                        <a href="#">Long Sleeve Leopard T-Shirt</a>
+                        <a href="#">High-Powered Ultrasonic Rat Repellent for Gardens, Factories, and Warehouses - Intense Noise for Effective Outdoor and Indoor Rat Deterrence</a>
                       </h3>
-                      <span>Blue / XS</span>
+                      <span>Brand: Generic</span>
                       <div className="products-price">
-                        <span>1</span>
-                        <span>x</span>
-                        <span className="price">$250.00</span>
+                        
+                        <span>-67% </span>
+                        <span className="price"> ₹3,331</span>
                       </div>
                       <a href="#" className="remove-btn">
                         <i className="bx bx-trash"></i>
@@ -1578,19 +1557,19 @@ const Navbar = () => {
                   <div className="products-cart">
                     <div className="products-image">
                       <a href="#">
-                        <img src="assets/img/products/img2.jpg" alt="image" />
+                        <img src="/assets/pics/rate.jpg" alt="image" />
                       </a>
                     </div>
 
                     <div className="products-content">
                       <h3>
-                        <a href="#">Causal V-Neck Soft Raglan</a>
+                        <a href="#">Smart Ultrasonic Rat Repellent for Commercial & Home Use | Safe & Silent Rodent Defense – 1500 Sq. Ft</a>
                       </h3>
-                      <span>Blue / XS</span>
+                      <span>Brand: Generic</span>
                       <div className="products-price">
-                        <span>1</span>
-                        <span>x</span>
-                        <span className="price">$200.00</span>
+                        
+                        <span>-67% </span>
+                        <span className="price"> ₹3,331</span>
                       </div>
                       <a href="#" className="remove-btn">
                         <i className="bx bx-trash"></i>
@@ -1598,30 +1577,8 @@ const Navbar = () => {
                     </div>
                   </div>
 
-                  <div className="products-cart">
-                    <div className="products-image">
-                      <a href="#">
-                        <img src="assets/img/products/img3.jpg" alt="image" />
-                      </a>
-                    </div>
-
-                    <div className="products-content">
-                      <h3>
-                        <a href="#">Hanes Men's Pullover</a>
-                      </h3>
-                      <span>Blue / XS</span>
-                      <div className="products-price">
-                        <span>1</span>
-                        <span>x</span>
-                        <span className="price">$200.00</span>
-                      </div>
-                      <a href="#" className="remove-btn">
-                        <i className="bx bx-trash"></i>
-                      </a>
-                    </div>
-                  </div>
+                 
                 </div>
-
                 <div className="products-cart-btn">
                   <a href="/Cart" className="optional-btn">
                     View Shopping Cart
