@@ -28,9 +28,9 @@ export default function BlogDetails() {
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-md-12">
                         <div class="blog-details-desc">
-                            <div class="article-video">
-                                <iframe src="https://www.youtube.com/embed/bk7McNUjWgw"></iframe>
-                            </div>
+                         <div class="article-video">
+    <iframe src="https://www.youtube.com/embed/LRVyANxYMME" frameborder="0" allowfullscreen></iframe>
+</div>
 
                             <div class="article-content">
                                 <div class="entry-meta">
@@ -53,19 +53,19 @@ export default function BlogDetails() {
                                     </ul>
                                 </div>
 
-                                <h3>The #1 eCommerce blog to grow your business</h3>
+                                <h3>What is the RAT GUARD Ultrasonic Repeller?</h3>
 
-                                <p>Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quia non numquam eius modi tempora incidunt ut labore et dolore magnam dolor sit amet, consectetur adipisicing.</p>
+                               
 
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in  sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                                <p>RAT GUARD is a scientifically designed device that uses high-frequency sound waves to drive away rodents. These ultrasonic waves are inaudible to humans but unbearable to rats, making the space hostile for them without harming pets or humans.</p>
 
                                 <blockquote class="wp-block-quote">
-                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                    <p>"RAT GUARD – A smart German Technology ultrasonic device that protects your home, warehouse, and office from sneaky rats — without poison, without traps, and without hassle!"</p>
 
                                     <cite>Tom Cruise</cite>
                                 </blockquote>
 
-                                <p>Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quia non numquam eius modi tempora incidunt ut labore et dolore magnam dolor sit amet, consectetur adipisicing.</p>
+                                <p>"Say goodbye to toxic chemicals and messy traps — experience a safe, clean, and modern way to repel rats with RAT GUARD!"</p>
 
                                 <ul class="wp-block-gallery columns-3">
                                     <li class="blocks-gallery-item">
@@ -87,20 +87,22 @@ export default function BlogDetails() {
                                     </li>
                                 </ul>
 
-                                <h3>Four major elements that we offer:</h3>
+                                <h3>Four major benefits that we offer:</h3>
 
                                 <ul class="features-list">
-                                    <li><i class='bx bx-badge-check'></i> Scientific skills for getting a better result</li>
-                                    <li><i class='bx bx-badge-check'></i> Communication skills to getting in touch</li>
-                                    <li><i class='bx bx-badge-check'></i> A career overview opportunity available</li>
-                                    <li><i class='bx bx-badge-check'></i> A good work environment for work</li>
+                                    <li><i class='bx bx-badge-check'></i>Advanced ultrasonic technology to drive rats away effectively</li>
+                                    <li><i class='bx bx-badge-check'></i>  Wide area coverage — ideal for homes, shops, and warehouses</li>
+                                    <li><i class='bx bx-badge-check'></i>  Chemical-free solution that's safe for children and pets</li>
+                                    <li><i class='bx bx-badge-check'></i> Plug-and-play device with easy adjustable settings</li>
                                 </ul>
 
-                                <h3>Setting the mood with incense</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in  sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                                <h3>Protect your space without poison or traps</h3>
+                                <p>Rats don’t just cause a nuisance — they pose health and safety risks. The RAT GUARD ultrasonic repeller offers a smart and modern solution using high-frequency sound to drive rodents away, with zero chemicals or mess involved.
 
-                                <h3>The rise of marketing and why you need it</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+</p>
+
+                                <h3>Why German technology makes the difference</h3>
+                                <p>Equipped with high-precision German components, our device uses shifting frequency patterns that rats can’t adapt to. That means continuous protection without needing to reset or replace anything — simply plug it in and forget the rats forever.</p>
                             </div>
 
                             <div class="article-footer">
@@ -237,33 +239,7 @@ export default function BlogDetails() {
                                                     </div>
                                                 </article>
 
-                                                <ol class="children">
-                                                    <li class="comment">
-                                                        <article class="comment-body">
-                                                            <footer class="comment-meta">
-                                                                <div class="comment-author vcard">
-                                                                    <img src="assets/img/user3.jpg" class="avatar" alt="image" />
-                                                                    <b class="fn">Sarah Taylor</b>
-                                                                    <span class="says">says:</span>
-                                                                </div>
-                    
-                                                                <div class="comment-metadata">
-                                                                    <a href="#">
-                                                                        <span>April 24, 2024 at 10:59 am</span>
-                                                                    </a>
-                                                                </div>
-                                                            </footer>
-                    
-                                                            <div class="comment-content">
-                                                                <p>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
-                                                            </div>
-                    
-                                                            <div class="reply">
-                                                                <a href="#" class="comment-reply-link">Reply</a>
-                                                            </div>
-                                                        </article>
-                                                    </li>
-                                                </ol>
+                                             
                                             </li>
                                         </ol>
                                     </li>
