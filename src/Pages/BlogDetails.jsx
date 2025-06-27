@@ -70,19 +70,19 @@ export default function BlogDetails() {
                                 <ul class="wp-block-gallery columns-3">
                                     <li class="blocks-gallery-item">
                                         <figure>
-                                            <img src="assets/img/blog/img2.jpg" alt="image" />
+                                            <img src="/assets/pics/details1.jpg" alt="image" />
                                         </figure>
                                     </li>
 
                                     <li class="blocks-gallery-item">
                                         <figure>
-                                            <img src="assets/img/blog/img3.jpg" alt="image" />
+                                            <img src="/assets/pics/details2.jpg" alt="image" />
                                         </figure>
                                     </li>
 
                                     <li class="blocks-gallery-item">
                                         <figure>
-                                            <img src="assets/img/blog/img4.jpg" alt="image" />
+                                            <img src="/assets/pics/details3.jpg" alt="image" />
                                         </figure>
                                     </li>
                                 </ul>
@@ -109,9 +109,8 @@ export default function BlogDetails() {
                                 <div class="article-tags">
                                     <span><i class='bx bx-purchase-tag'></i></span>
 
-                                    <a href="#">Fashion</a>,
-                                    <a href="#">Games</a>,
-                                    <a href="#">Travel</a>
+                                    <a href="#">Home Safety, Pest Control, Smart Living</a>,
+                                 
                                 </div>
 
                                 <div class="article-share">
@@ -129,20 +128,20 @@ export default function BlogDetails() {
                                 <div class="author-profile-header"></div>
                                 <div class="author-profile">
                                     <div class="author-profile-title">
-                                        <img src="assets/img/user1.jpg" class="shadow-sm" alt="image" />
+                                        <img src="/assets/pics/profile.png" class="shadow-sm" alt="image" />
 
                                         <div class="author-profile-title-details d-flex justify-content-between">
                                             <div class="author-profile-details">
-                                                <h4>Chris Orwig</h4>
-                                                <span class="d-block">Photographer, Author, Writer</span>
+                                                <h4>Raj Mehta</h4>
+                                                <span class="d-block">Tech Writer, Gadget Reviewer, Home Safety Expert</span>
                                             </div>
 
                                             <div class="author-profile-raque-profile">
-                                                <a href="#" class="d-inline-block">View profile on Xton</a>
+                                                <a href="#" class="d-inline-block"> View profile on JP Enterprise </a>
                                             </div>
                                         </div>
                                     </div>
-                                    <p>Orwig is a celebrated photographer, author, and writer who brings passion to everything he does.</p>
+                                    <p>Raj Mehta is a passionate technology writer who specializes in reviewing innovative home safety gadgets. With a focus on chemical-free solutions, he helps people find smarter, safer ways to live pest-free.</p>
                                 </div>
                             </div>
 
@@ -151,12 +150,12 @@ export default function BlogDetails() {
                                     <div class="info-prev-link-wrapper">
                                         <a href="#">
                                             <span class="image-prev">
-                                                <img src="assets/img/blog/img5.jpg" alt="image" />
+                                                <img src="/assets/pics/pre.webp" alt="image" />
                                                 <span class="post-nav-title">Prev</span>
                                             </span>
         
                                             <span class="prev-link-info-wrapper">
-                                                <span class="prev-title">Latest ecommerce trend: The rise of shoppable posts</span>
+                                                <span class="prev-title"> 5 Signs Your Home Has a Hidden Rat Problem</span>
                                                 <span class="meta-wrapper">
                                                     <span class="date-post">January 21, 2024</span>
                                                 </span>
@@ -169,14 +168,14 @@ export default function BlogDetails() {
                                     <div class="info-next-link-wrapper">
                                         <a href="#">
                                             <span class="next-link-info-wrapper">
-                                                <span class="next-title">Building eCommerce wave: Social media shopping</span>
+                                                <span class="next-title">Why Ultrasonic Technology is the Future of Pest Control</span>
                                                 <span class="meta-wrapper">
                                                     <span class="date-post">January 19, 2024</span>
                                                 </span>
                                             </span>
         
                                             <span class="image-next">
-                                                <img src="assets/img/blog/img6.jpg" alt="image" />
+                                                <img src="/assets/pics/next.jpeg" alt="image" />
                                                 <span class="post-nav-title">Next</span>
                                             </span>
                                         </a>
@@ -192,7 +191,7 @@ export default function BlogDetails() {
                                         <article class="comment-body">
                                             <footer class="comment-meta">
                                                 <div class="comment-author vcard">
-                                                    <img src="assets/img/user1.jpg" class="avatar" alt="image" />
+                                                    <img src="/assets/pics/user.png" class="avatar" alt="image" />
                                                     <b class="fn">John Jones</b>
                                                     <span class="says">says:</span>
                                                 </div>
@@ -205,7 +204,7 @@ export default function BlogDetails() {
                                             </footer>
 
                                             <div class="comment-content">
-                                                <p>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
+                                                <p>I installed this machine in my warehouse and saw results within 5 days. No more rat noise or droppings. Highly recommended for anyone facing rodent issues.</p>
                                             </div>
 
                                             <div class="reply">
@@ -218,7 +217,7 @@ export default function BlogDetails() {
                                                 <article class="comment-body">
                                                     <footer class="comment-meta">
                                                         <div class="comment-author vcard">
-                                                            <img src="assets/img/user2.jpg" class="avatar" alt="image" />
+                                                            <img src="/assets/pics/user.png" class="avatar" alt="image" />
                                                             <b class="fn">Steven Smith</b>
                                                             <span class="says">says:</span>
                                                         </div>
@@ -231,7 +230,7 @@ export default function BlogDetails() {
                                                     </footer>
             
                                                     <div class="comment-content">
-                                                        <p>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
+                                                        <p>Love how silent it is! My kids and pets weren’t disturbed at all. No poison, no traps — just clean and safe. Perfect for homes.</p>
                                                     </div>
             
                                                     <div class="reply">
@@ -248,7 +247,7 @@ export default function BlogDetails() {
                                         <article class="comment-body">
                                             <footer class="comment-meta">
                                                 <div class="comment-author vcard">
-                                                    <img src="assets/img/user4.jpg" class="avatar" alt="image" />
+                                                    <img src="/assets/pics/user.png" class="avatar" alt="image" />
                                                     <b class="fn">John Doe</b>
                                                     <span class="says">says:</span>
                                                 </div>
@@ -261,7 +260,7 @@ export default function BlogDetails() {
                                             </footer>
 
                                             <div class="comment-content">
-                                                <p>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
+                                                <p>Earlier, I tried traps and sprays — nothing worked long-term. RAT GUARD is the only solution that actually worked without any side effects.</p>
                                             </div>
 
                                             <div class="reply">
@@ -274,7 +273,7 @@ export default function BlogDetails() {
                                                 <article class="comment-body">
                                                     <footer class="comment-meta">
                                                         <div class="comment-author vcard">
-                                                            <img src="assets/img/user1.jpg" class="avatar" alt="image" />
+                                                            <img src="/assets/pics/user.png" class="avatar" alt="image" />
                                                             <b class="fn">James Anderson</b>
                                                             <span class="says">says:</span>
                                                         </div>
@@ -287,7 +286,7 @@ export default function BlogDetails() {
                                                     </footer>
             
                                                     <div class="comment-content">
-                                                        <p>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
+                                                        <p>Love how silent it is! My kids and pets weren’t disturbed at all. No poison, no traps — just clean and safe. Perfect for homes.</p>
                                                     </div>
             
                                                     <div class="reply">
@@ -354,11 +353,11 @@ export default function BlogDetails() {
 
                                 <article class="item">
                                     <a href="#" class="thumb">
-                                        <span class="fullimage cover bg1" role="img"></span>
+                                        <img src='/assets/pics/post.jpeg' class="fullimage cover bg2"/>
                                     </a>
                                     <div class="info">
                                         <span>June 10, 2024</span>
-                                        <h4 class="title usmall"><a href="#">Top ecommerce conferences in 2024</a></h4>
+                                        <h4 class="title usmall"><a href="#">How to Keep Rats Out of Your Warehouse Without Chemicals</a></h4>
                                     </div>
 
                                     <div class="clear"></div>
@@ -366,11 +365,11 @@ export default function BlogDetails() {
 
                                 <article class="item">
                                     <a href="#" class="thumb">
-                                        <span class="fullimage cover bg2" role="img"></span>
+                                      <img src='/assets/pics/post2.jpeg' class="fullimage cover bg2"/>
                                     </a>
                                     <div class="info">
                                         <span>June 21, 2024</span>
-                                        <h4 class="title usmall"><a href="#">Introducing the 2024 bigCommerce partner</a></h4>
+                                        <h4 class="title usmall"><a href="#">Why Ultrasonic Rat Repellers Are Better Than Poison</a></h4>
                                     </div>
 
                                     <div class="clear"></div>
@@ -378,11 +377,11 @@ export default function BlogDetails() {
 
                                 <article class="item">
                                     <a href="#" class="thumb">
-                                        <span class="fullimage cover bg3" role="img"></span>
+                                          <img src='/assets/pics/post3.png' class="fullimage cover bg2"/>
                                     </a>
                                     <div class="info">
                                         <span>June 30, 2024</span>
-                                        <h4 class="title usmall"><a href="#">Best platforms for selling your products</a></h4>
+                                        <h4 class="title usmall"><a href="#">Top 5 Rat-Prone Areas in Indian Homes (And How to Protect Them)</a></h4>
                                     </div>
 
                                     <div class="clear"></div>
@@ -393,11 +392,11 @@ export default function BlogDetails() {
                                 <h3 class="widget-title">Categories</h3>
 
                                 <ul>
-                                    <li><a href="#">Design <span class="post-count">(03)</span></a></li>
-                                    <li><a href="#">Lifestyle <span class="post-count">(05)</span></a></li>
-                                    <li><a href="#">Script <span class="post-count">(10)</span></a></li>
-                                    <li><a href="#">Device <span class="post-count">(08)</span></a></li>
-                                    <li><a href="#">Tips <span class="post-count">(01)</span></a></li>
+                                    <li><a href="#"> Home Safety <span class="post-count">(03)</span></a></li>
+                                    <li><a href="#"> Pest Control <span class="post-count">(05)</span></a></li>
+                                    <li><a href="#">Smart Devices <span class="post-count">(10)</span></a></li>
+                                    <li><a href="#">Tips & Tricks <span class="post-count">(08)</span></a></li>
+                                    <li><a href="#">User Stories <span class="post-count">(01)</span></a></li>
                                 </ul>
                             </section>
 
@@ -405,14 +404,14 @@ export default function BlogDetails() {
                                 <h3 class="widget-title">Xton Tags</h3>
 
                                 <div class="tagcloud">
-                                    <a href="#">Business <span class="tag-link-count"> (3)</span></a>
-                                    <a href="#">Design <span class="tag-link-count"> (3)</span></a>
-                                    <a href="#">Xton <span class="tag-link-count"> (2)</span></a>
-                                    <a href="#">Fashion <span class="tag-link-count"> (2)</span></a>
-                                    <a href="#">Travel <span class="tag-link-count"> (1)</span></a>
-                                    <a href="#">Smart <span class="tag-link-count"> (1)</span></a>
-                                    <a href="#">Marketing <span class="tag-link-count"> (1)</span></a>
-                                    <a href="#">Tips <span class="tag-link-count"> (2)</span></a>
+                                    <a href="#"> Home-Safety <span class="tag-link-count"> (3)</span></a>
+                                    <a href="#">Rodent-Control <span class="tag-link-count"> (3)</span></a>
+                                    <a href="#">Ultrasonic-Tech <span class="tag-link-count"> (2)</span></a>
+                                    <a href="#">Chemical-Free <span class="tag-link-count"> (2)</span></a>
+                                    <a href="#"> Smart-Devices <span class="tag-link-count"> (1)</span></a>
+                                    <a href="#"> Warehouse-Protection <span class="tag-link-count"> (1)</span></a>
+                                    <a href="#">Pet-Friendly <span class="tag-link-count"> (1)</span></a>
+                                    <a href="#"> Prevention-Tips <span class="tag-link-count"> (2)</span></a>
                                 </div>
                             </section>
 
