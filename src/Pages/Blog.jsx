@@ -27,61 +27,61 @@ export default function Blog() {
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-lg-4 col-md-6">
-                        <div className="single-blog-post">
-                            <div className="post-image">
-                                <a href="#">
-                                    <img src="assets/img/blog/img1.jpg" alt="image" />
-                                </a>
-                                <div className="date">
-                                    <span>January 29, 2024</span>
-                                </div>
-                            </div>
+        <div className="single-blog-post">
+          <div className="post-image">
+            <a href="/Blog">
+              <img src="/assets/pics/Rat-in-Car.png" alt="Rat Infestation Prevention" />
+            </a>
+            <div className="date">
+              <span>June 20, 2025</span>
+            </div>
+          </div>
 
-                            <div className="post-content">
-                                <span className="category">Ideas</span>
-                                <h3><a href="#">The #1 eCommerce blog to grow your business</a></h3>
-                                <a href="/BlogDetails" className="details-btn">Read Story</a>
-                            </div>
-                        </div>
-                    </div>
+          <div className="post-content">
+            <span className="category">Awareness</span>
+            <h3><a href="/Blog">Top 5 Signs You May Have a Rat Problem</a></h3>
+            <a href="/BlogDetails" className="details-btn">Read Story</a>
+          </div>
+        </div>
+      </div>
 
-                    <div className="col-lg-4 col-md-6">
-                        <div className="single-blog-post">
-                            <div className="post-image">
-                                <a href="#">
-                                    <img src="assets/img/blog/img2.jpg" alt="image" />
-                                </a>
-                                <div className="date">
-                                    <span>January 29, 2024</span>
-                                </div>
-                            </div>
+      <div className="col-lg-4 col-md-6">
+        <div className="single-blog-post">
+          <div className="post-image">
+            <a href="/Blog">
+              <img src="/assets/pics/blog2.jpg" alt="Why Rat Repellent is Important" />
+            </a>
+             <div className="date">
+              <span>June 20, 2025</span>
+            </div>
+          </div>
 
-                            <div className="post-content">
-                                <span className="category">Advice</span>
-                                <h3><a href="#">Latest ecommerce trend: The rise of shoppable posts</a></h3>
-                                <a href="/BlogDetails" className="details-btn">Read Story</a>
-                            </div>
-                        </div>
-                    </div>
+          <div className="post-content">
+            <span className="category">Tips</span>
+            <h3><a href="/Blog">Why Every Office Needs a Rat Repellent Device</a></h3>
+            <a href="/BlogDetails" className="details-btn">Read Story</a>
+          </div>
+        </div>
+      </div>
 
-                    <div className="col-lg-4 col-md-6">
-                        <div className="single-blog-post">
-                            <div className="post-image">
-                                <a href="#">
-                                    <img src="assets/img/blog/img3.jpg" alt="image" />
-                                </a>
-                                <div className="date">
-                                    <span>January 29, 2024</span>
-                                </div>
-                            </div>
+      <div className="col-lg-4 col-md-6">
+        <div className="single-blog-post">
+          <div className="post-image">
+            <a href="/Blog">
+              <img src="/assets/pics/Rat-gnawing.png" alt="How ultrasonic repellers work" />
+            </a>
+             <div className="date">
+              <span>June 20, 2025</span>
+            </div>
+          </div>
 
-                            <div className="post-content">
-                                <span className="category">Social</span>
-                                <h3><a href="#">Building eCommerce wave: Social media shopping</a></h3>
-                                <a href="/BlogDetails" className="details-btn">Read Story</a>
-                            </div>
-                        </div>
-                    </div>
+          <div className="post-content">
+            <span className="category">Technology</span>
+            <h3><a href="/Blog">How Ultrasonic Rat Repellent Technology Works</a></h3>
+            <a href="/BlogDetails" className="details-btn">Read Story</a>
+          </div>
+        </div>
+      </div>
 
 
                     <div className="col-lg-12 col-md-12 col-sm-12">
