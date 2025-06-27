@@ -324,7 +324,7 @@ const Home = () => {
         </div>
 
         <div className="image">
-          <a href="/OurProducts"><img src="/assets/pics/post.jpg" alt="JP Enterprise new collection" /></a>
+          <a href="/OurProducts"><img src="/assets/pics/post.jpg" alt="JP Enterprise new collection" style={{border:"1px solid"}} /></a>
         </div>
       </div>
 
@@ -336,7 +336,7 @@ const Home = () => {
         </div>
 
         <div className="image">
-          <a href="/OurProducts"><img src="assets/img/offer/img2.jpg" alt="JP Enterprise popular products" /></a>
+          <a href="/OurProducts"><img src="/assets/pics/header2.jpg" alt="JP Enterprise popular products" style={{border:"1px solid"}}/></a>
         </div>
       </div>
 
@@ -348,7 +348,7 @@ const Home = () => {
         </div>
 
         <div className="image">
-          <a href="/OurProducts"><img src="assets/img/offer/img3.jpg" alt="JP Enterprise trending products" /></a>
+          <a href="/OurProducts"><img src="/assets/pics/header3.jpg" alt="JP Enterprise trending products" style={{border:"1px solid"}}/></a>
         </div>
       </div>
 
@@ -667,7 +667,7 @@ const Home = () => {
 
 
           {/* <!-- Start Wishlist Modal --> */}
-        <div className="modal right fade shoppingWishlistModal" id="shoppingWishlistModal" tabindex="-1" role="dialog">
+        {/* <div className="modal right fade shoppingWishlistModal" id="shoppingWishlistModal" tabindex="-1" role="dialog">
             <div className="modal-dialog" role="document">
                 <div className="modal-content">
                     <button type="button" className="close" data-bs-dismiss="modal" aria-label="Close">
@@ -736,7 +736,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> */}
         {/* <!-- End Wishlist Modal --> */}
          {/* <!-- Start QuickView Modal Area --> */}
         <div className="modal fade productsQuickView" id="productsQuickView" tabindex="-1" role="dialog" aria-hidden="true">
@@ -755,11 +755,11 @@ const Home = () => {
 
                         <div className="col-lg-6 col-md-6">
                             <div className="products-content">
-                                <h3><a href="#">Long Sleeve Leopard T-Shirt</a></h3>
+                                <h3><a href="#">High-Frequency Ultrasonic Rat Repeller – Dual Indoor & Outdoor Use | 1500 Sq. Ft | Plug & Play</a></h3>
 
-                                <div className="price">
-                                    <span className="old-price">$210.00</span>
-                                    <span className="new-price">$200.00</span>
+                                   <div className="price">
+                                    <span className="old-price">₹9,999</span>
+                                    <span className="new-price">₹3,429</span>
                                 </div>
 
                                 <div className="products-review">
@@ -770,13 +770,16 @@ const Home = () => {
                                         <i class='bx bxs-star'></i>
                                         <i class='bx bxs-star'></i>
                                     </div>
-                                    <a href="#" className="rating-count">3 reviews</a>
+                                    <a href="#" className="rating-count">3 ratings</a>
                                 </div>
 
                                 <ul className="products-info">
-                                    <li><span>Vendor:</span> <a href="#">Lereve</a></li>
-                                    <li><span>Availability:</span> <a href="#">In stock (7 items)</a></li>
-                                    <li><span>Products Type:</span> <a href="#">T-Shirt</a></li>
+                                    <li><span>Brand:</span> <a href="#">Generic</a></li>
+                                    <li><span>Style:</span> <a href="#">modern</a></li>
+                                    <li><span>Material:</span> <a href="#">	Metal</a></li>
+                                    <li><span>Product  <br />Dimensions:</span> <a href="">5L x 10W x 10H Centimeters</a></li>
+                                    <li><span>Item Weight:</span><a href="">750 Grams</a></li>
+                                    <li><span>Number of Pieces:</span><a href="">1</a></li>
                                 </ul>
 
                                 <div className="products-color-switch">
@@ -791,7 +794,7 @@ const Home = () => {
                                     </ul>
                                 </div>
 
-                                <div className="products-size-wrapper">
+                                {/* <div className="products-size-wrapper">
                                     <h4>Size:</h4>
 
                                     <ul>
@@ -801,12 +804,12 @@ const Home = () => {
                                         <li><a href="#">XL</a></li>
                                         <li><a href="#">XXL</a></li>
                                     </ul>
-                                </div>
+                                </div> */}
 
                                 <div className="products-add-to-cart">
                                     <div className="input-counter">
                                         <span className="minus-btn"><i class='bx bx-minus'></i></span>
-                                        <input type="text" value="1" />
+                                         <input type="text" value="1" min="1" max="10" />
                                         <span className="plus-btn"><i class='bx bx-plus'></i></span>
                                     </div>
 

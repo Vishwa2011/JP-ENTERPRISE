@@ -4158,11 +4158,11 @@ Offer CSS
   right: 0;
   bottom: 0;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: #000;
   margin: 2px;
 }
 .offer-products-slides.owl-theme .owl-dots .owl-dot:hover span, .offer-products-slides.owl-theme .owl-dots .owl-dot.active span {
-  border-color: #ffffff;
+  border-color: #000;
 }
 
 /*================================================
@@ -5929,7 +5929,7 @@ Modal CSS
 }
 
 .sizeGuideModal .modal-dialog {
-  max-width: 900px;
+  max-width: 600px;
   margin: 0 auto;
 }
 .sizeGuideModal .modal-content {
@@ -6057,6 +6057,73 @@ Modal CSS
   margin-bottom: 0;
 }
 
+
+/*  */
+.Securetransaction .modal-dialog {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.Securetransaction .modal-content {
+  border: none;
+  padding: 40px;
+  border-radius: 0;
+}
+.Securetransaction .modal-content button.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  outline: 0;
+  opacity: 1;
+  color: #000000;
+  transition: 0.5s;
+  line-height: 35px;
+  padding: 0;
+  margin: 0;
+  font-size: 25px;
+  width: 35px;
+  text-shadow: unset;
+  height: 35px;
+  border: none;
+  background-color: transparent;
+}
+.Securetransaction .modal-content button.close:hover {
+  background-color: red;
+  color: #ffffff;
+}
+.Securetransaction .modal-content .shipping-content h3 {
+  margin-bottom: 15px;
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.Securetransaction .modal-content .shipping-content h3:first-child {
+  margin-top: 0;
+}
+.Securetransaction .modal-content .shipping-content ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+.Securetransaction .modal-content .shipping-content ul li {
+  margin-bottom: 12px;
+  color: #777777;
+  position: relative;
+  padding-left: 13px;
+}
+.Securetransaction .modal-content .shipping-content ul li::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #f53f85;
+}
+.Securetransaction .modal-content .shipping-content ul li:last-child {
+  margin-bottom: 0;
+}
+/*  */
 .shoppingWishlistModal.modal.right .modal-dialog {
   position: fixed;
   margin: auto;

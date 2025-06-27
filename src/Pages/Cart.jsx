@@ -42,21 +42,21 @@ export default function Cart() {
                                 <tr>
                                     <td className="product-thumbnail">
                                         <a href="#">
-                                            <img src="assets/img/products/img1.jpg" alt="item" />
+                                            <img src="/assets/pics/rate.jpg" alt="item" />
                                         </a>
                                     </td>
 
                                     <td className="product-name">
-                                        <a href="#">Long Sleeve Leopard T-Shirt</a>
+                                        <a href="#">High-Powered Ultrasonic</a>
                                         <ul>
-                                            <li>Color: <span>Light Blue</span></li>
-                                            <li>Size: <span>XL</span></li>
-                                            <li>Material: <span>Cotton</span></li>
+                                            <li>Color: <span>Black</span></li>
+                                            <li>Brand: <span>Generic</span></li>
+                                            <li>Material: <span>Metal</span></li>
                                         </ul>
                                     </td>
 
                                     <td className="product-price">
-                                        <span className="unit-amount">$250.00</span>
+                                        <span className="unit-amount">₹3,331</span>
                                     </td>
 
                                     <td className="product-quantity">
@@ -68,30 +68,30 @@ export default function Cart() {
                                     </td>
 
                                     <td className="product-subtotal">
-                                        <span className="subtotal-amount">$250.00</span>
+                                        <span className="subtotal-amount">₹3,331</span>
 
                                         <a href="#" className="remove"><i class='bx bx-trash'></i></a>
                                     </td>
                                 </tr>
 
-                                <tr>
+                               <tr>
                                     <td className="product-thumbnail">
                                         <a href="#">
-                                            <img src="assets/img/products/img2.jpg" alt="item" />
+                                            <img src="/assets/pics/rate.jpg" alt="item" />
                                         </a>
                                     </td>
 
                                     <td className="product-name">
-                                        <a href="#">Causal V-Neck Soft Raglan</a>
+                                        <a href="#">Smart Ultrasonic </a>
                                         <ul>
-                                            <li>Color: <span>Light Blue</span></li>
-                                            <li>Size: <span>XL</span></li>
-                                            <li>Material: <span>Cotton</span></li>
+                                            <li>Color: <span>Black</span></li>
+                                            <li>Brand: <span>Generic</span></li>
+                                            <li>Material: <span>Metal</span></li>
                                         </ul>
                                     </td>
 
                                     <td className="product-price">
-                                        <span className="unit-amount">$200.00</span>
+                                        <span className="unit-amount">₹3,331</span>
                                     </td>
 
                                     <td className="product-quantity">
@@ -103,81 +103,13 @@ export default function Cart() {
                                     </td>
 
                                     <td className="product-subtotal">
-                                        <span className="subtotal-amount">$200.00</span>
+                                        <span className="subtotal-amount">₹3,331</span>
 
                                         <a href="#" className="remove"><i class='bx bx-trash'></i></a>
                                     </td>
                                 </tr>
 
-                                <tr>
-                                    <td className="product-thumbnail">
-                                        <a href="#">
-                                            <img src="assets/img/products/img3.jpg" alt="item" />
-                                        </a>
-                                    </td>
-
-                                    <td className="product-name">
-                                        <a href="#">Hanes Men's Pullover</a>
-                                        <ul>
-                                            <li>Color: <span>Light Blue</span></li>
-                                            <li>Size: <span>XL</span></li>
-                                            <li>Material: <span>Cotton</span></li>
-                                        </ul>
-                                    </td>
-
-                                    <td className="product-price">
-                                        <span className="unit-amount">$200.00</span>
-                                    </td>
-
-                                    <td className="product-quantity">
-                                        <div className="input-counter">
-                                            <span className="minus-btn"><i class='bx bx-minus'></i></span>
-                                            <input type="text" min="1" value="1" />
-                                            <span className="plus-btn"><i class='bx bx-plus'></i></span>
-                                        </div>
-                                    </td>
-
-                                    <td className="product-subtotal">
-                                        <span className="subtotal-amount">$200.00</span>
-
-                                        <a href="#" className="remove"><i class='bx bx-trash'></i></a>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td className="product-thumbnail">
-                                        <a href="#">
-                                            <img src="assets/img/products/img4.jpg" alt="item"  />
-                                        </a>
-                                    </td>
-
-                                    <td className="product-name">
-                                        <a href="#">Gildan Men's Crew T-Shirt</a>
-                                        <ul>
-                                            <li>Color: <span>Light Blue</span></li>
-                                            <li>Size: <span>XL</span></li>
-                                            <li>Material: <span>Cotton</span></li>
-                                        </ul>
-                                    </td>
-
-                                    <td className="product-price">
-                                        <span className="unit-amount">$150.00</span>
-                                    </td>
-
-                                    <td className="product-quantity">
-                                        <div className="input-counter">
-                                            <span className="minus-btn"><i class='bx bx-minus'></i></span>
-                                            <input type="text" min="1" value="1" />
-                                            <span className="plus-btn"><i class='bx bx-plus'></i></span>
-                                        </div>
-                                    </td>
-
-                                    <td className="product-subtotal">
-                                        <span className="subtotal-amount">$150.00</span>
-
-                                        <a href="#" className="remove"><i class='bx bx-trash'></i></a>
-                                    </td>
-                                </tr>
+                              
                             </tbody>
                         </table>
                     </div>
@@ -198,9 +130,9 @@ export default function Cart() {
                         <h3>Cart Totals</h3>
 
                         <ul>
-                            <li>Subtotal <span>$800.00</span></li>
-                            <li>Shipping <span>$30.00</span></li>
-                            <li>Total <span>$830.00</span></li>
+                            <li>Subtotal <span>₹3,331.00</span></li>
+                            <li>Shipping <span>₹300.00</span></li>
+                            <li>Total <span>₹3,631.00</span></li>
                         </ul>
                         
                         <a href="#" className="default-btn">Proceed to Checkout</a>
