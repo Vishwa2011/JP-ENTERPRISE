@@ -87,39 +87,59 @@ const Home = () => {
         </div>
         {/* <!-- End Main Banner Area --> */}
 
-        {/* <!-- Start Categories Banner Area --> */}
-        <section className="categories-banner-area pt-100 pb-70">
-            <div className="container">
-                <div className="row justify-content-center">
-                    <div className="col-lg-6 col-md-6 col-sm-6">
-                        <div className="single-categories-box">
-                            <img src="/assets/pics/rate1.jpg" alt="image" />
+      {/* section strt */}
 
-                            <div className="content ">
-                                <span>Don’t Miss Today</span>
-                                <h3>50% OFF</h3>
-                                <a href="/OurProducts" className="default-btn">Discover Now</a>
-                            </div>
-                            <a href="/OurProducts" className="link-btn"></a>
-                        </div>
-                    </div>
+      
+   <section className="bird-repellent-banner" style={{ padding: "50px 20px", background: "#fff" }}>
+      <div className="container" style={{ display: "flex", flexWrap: "wrap", alignItems: "center" }}>
+        {/* Left Content */}
+        <div className="left-content" style={{ flex: "1", minWidth: "300px" }}>
+          <h2 style={{ fontSize: "36px", fontWeight: "bold", lineHeight: "1.2" }}>
+            Tough on Rats,<span style={{ color: " rgb(245, 63, 133)",marginRight:'10px',marginLeft:"10px" }}>Easy for You</span>Reliable Rate Guards for Any Space
+          </h2>
+          <ul style={{ marginTop: "30px", listStyle: "none", padding: 0 }}>
+            {[
+              "No more chewed wires or droppings.",
+              "Works indoors and outdoors without hassle.",
+              "Safe for  warehouses, and shops.",
+              "Long-lasting protection with zero maintenance.",
+              "Blocks entry points and deters nesting.",
+              "Chemical-free and eco-friendly solution.",
+              "Easy to install, fits any space or corner.",
+            ].map((item, idx) => (
+              <li key={idx} style={{ marginBottom: "10px", fontSize: "18px" }}>
+                ✅ {item}
+              </li>
+            ))}
+          </ul>
+          <button
+            style={{
+              marginTop: "30px",
+              padding: "12px 24px",
+              backgroundColor: " rgb(245, 63, 133)",
+              color: "#fff",
+              border: "none",
+              borderRadius: "6px",
+              fontSize: "16px",
+              cursor: "pointer",
+            }}
+          >
+            Protect Your Space Today! →
+          </button>
+        </div>
 
-                    <div className="col-lg-6 col-md-6 col-sm-6">
-                        <div className="single-categories-box">
-                            <img src="/assets/pics/rate1.jpg" alt="image" />
+        {/* Right Image */}
+        <div className="right-image" style={{ flex: "1", minWidth: "300px", textAlign: "center", marginTop: "30px" }}>
+          <img
+            src="/assets/pics/swsw.png"
+            alt="Bird Repellent Device"
+            style={{ maxWidth: "100%", height: "auto", borderRadius: "10px" }}
+          />
+        </div>
+      </div>
+    </section>
 
-                            <div className="content">
-                                <span>New Collection</span>
-                                <h3>Need Now</h3>
-                                <a href="/OurProducts" className="default-btn">Discover Now</a>
-                            </div>
-                            <a href="/OurProducts" className="link-btn"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        {/* <!-- End Categories Banner Area --> */}
+      {/* section end */}
 
         {/* <!-- Start Products Area --> */}
         <section className="products-area pb-70">
@@ -376,7 +396,7 @@ const Home = () => {
 
 
           {/* <!-- Start Products Area --> */}
-        <section className="products-area pt-100 pb-70">
+        {/* <section className="products-area pt-100 pb-70">
             <div className="container">
                 <div className="section-title">
                     <span className="sub-title">See Our Collection</span>
@@ -563,7 +583,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> */}
         {/* <!-- End Products Area --> */}
 
          {/* <!-- Start Facility Area --> */}
@@ -607,6 +627,236 @@ const Home = () => {
             </div>
         </div>
         {/* <!-- End Brand Area --> */}
+
+             {/* <!-- Start Testimonials Area --> */}
+        <section className="testimonials-area ptb-100">
+          <div className="container">
+            <div className="section-title">
+              <span className="sub-title">Testimonials</span>
+              <h2>What Clients Says About Us</h2>
+            </div>
+
+            <div class="testimonials-slides owl-carousel owl-theme owl-loaded owl-drag">
+              <div class="owl-stage-outer">
+                <div
+                  class="owl-stage"
+                  style={{
+                    transition: "0.25s",
+                    width: "4420px",
+                    transform: "translate3d(-1326px, 0px, 0px)",
+                  }}
+                >
+                  <div
+                    class="owl-item cloned"
+                    style={{ width: "412px", marginRight: "30px" }}
+                  >
+                    <div class="single-testimonials-item">
+                      <p>
+                        “I was worried about rats damaging my car wires. After
+                        using JP Enterprise’s car repellent, it’s been
+                        completely safe.”
+                      </p>
+
+                      <div class="info">
+                        <img
+                          src="/assets/pics/user.png"
+                          class="shadow rounded-circle"
+                          alt="image"
+                        />
+                        <h3>Vivek Shah</h3>
+                        <span>Software Engineer</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item cloned"
+                    style={{ width: "412px", marginRight: "30px" }}
+                  >
+                    <div className="single-testimonials-item">
+                      <p>
+                        “This product worked wonderfully in our warehouse. We no
+                        longer see rodent droppings around the storage area.”
+                      </p>
+                      <div className="info">
+                        <img
+                          src="/assets/pics/user.png"
+                          className="shadow rounded-circle"
+                          alt="image"
+                        />
+                        <h3>Rina Mehta</h3>
+                        <span>Warehouse Manager</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item cloned"
+                    style={{ width: "412px", marginRight: "30px" }}
+                  >
+                    <div className="single-testimonials-item">
+                      <p>
+                        “Easy to install and very effective. I recommend it to
+                        anyone having issues with mice or rats in vehicles or
+                        homes.”
+                      </p>
+                      <div className="info">
+                        <img
+                          src="/assets/pics/user.png"
+                          className="shadow rounded-circle"
+                          alt="image"
+                        />
+                        <h3>Sagar Patel</h3>
+                        <span>Businessman</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item active"
+                    style={{ width: "412px", marginRight: "30px" }}
+                  >
+                    <div className="single-testimonials-item">
+                      <p>
+                        “Thanks to JP Enterprise, we’ve seen zero damage in our
+                        parking garage. The ultrasonic system works perfectly.”
+                      </p>
+                      <div className="info">
+                        <img
+                          src="/assets/pics/user.png"
+                          className="shadow rounded-circle"
+                          alt="image"
+                        />
+                        <h3>Neha Kothari</h3>
+                        <span>Hotel Owner</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item active center"
+                    style={{ width: "412px", marginRight: "30px" }}
+                  >
+                    <div className="single-testimonials-item">
+                      <p>
+                        “Affordable and highly efficient. No complaints so far
+                        after 3 months of usage. Totally recommended.”
+                      </p>
+                      <div className="info">
+                        <img
+                          src="/assets/pics/user.png"
+                          className="shadow rounded-circle"
+                          alt="image"
+                        />
+                        <h3>Pranav Desai</h3>
+                        <span>Homeowner</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item active"
+                    style={{ width: "412px", marginRight: "30px" }}
+                  >
+                    <div className="single-testimonials-item">
+                      <p>
+                        “Rats chewed my car wires twice before. After installing
+                        JP’s rat repellent, there’s been no issue at all.”
+                      </p>
+                      <div className="info">
+                        <img
+                          src="/assets/pics/user.png"
+                          className="shadow rounded-circle"
+                          alt="image"
+                        />
+                        <h3>Kajal Thakkar</h3>
+                        <span>Teacher</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item"
+                    style={{ width: "412px", marginRight: "30px" }}
+                  >
+                    <div className="single-testimonials-item">
+                      <p>
+                        “Impressed by the quick results. Also, their customer
+                        service is very helpful and friendly.”
+                      </p>
+                      <div className="info">
+                        <img
+                          src="/assets/pics/user.png"
+                          className="shadow rounded-circle"
+                          alt="image"
+                        />
+                        <h3>Jatin Bhatt</h3>
+                        <span>Auto Dealer</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item cloned"
+                    style={{ width: "412px", marginRight: "30px" }}
+                  >
+                    <div className="single-testimonials-item">
+                      <p>
+                        “We installed this for all our company cars. Every
+                        driver is happy with the peace of mind it provides.”
+                      </p>
+                      <div className="info">
+                        <img
+                          src="/assets/pics/user.png"
+                          className="shadow rounded-circle"
+                          alt="image"
+                        />
+                        <h3>Sheetal Gandhi</h3>
+                        <span>Fleet Manager</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item cloned"
+                    style={{ width: "412px", marginRight: "30px" }}
+                  >
+                    <div className="single-testimonials-item">
+                      <p>
+                        “Perfect for protecting garage and storerooms. The
+                        design is compact and blends in well.”
+                      </p>
+                      <div className="info">
+                        <img
+                          src="/assets/pics/user.png"
+                          className="shadow rounded-circle"
+                          alt="image"
+                        />
+                        <h3>Anand Joshi</h3>
+                        <span>Garage Owner</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="owl-nav disabled">
+                <button type="button" role="presentation" class="owl-prev">
+                  <i class="flaticon-left"></i>
+                </button>
+                <button type="button" role="presentation" class="owl-next">
+                  <i class="flaticon-right-arrow"></i>
+                </button>
+              </div>
+              <div class="owl-dots">
+                <button role="button" class="owl-dot">
+                  <span></span>
+                </button>
+                <button role="button" class="owl-dot active">
+                  <span></span>
+                </button>
+                <button role="button" class="owl-dot">
+                  <span></span>
+                </button>
+                <button role="button" class="owl-dot">
+                  <span></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* <!-- End Testimonials Area --> */}
 
          {/* <!-- Start Blog Area --> */}
       <section className="blog-area pt-100 pb-70">
@@ -674,6 +924,40 @@ const Home = () => {
 </section>
 
         {/* <!-- End Blog Area --> */}
+  {/* <!-- Start Categories Banner Area --> */}
+        <section className="categories-banner-area pt-100 pb-70">
+            <div className="container">
+                <div className="row justify-content-center">
+                    <div className="col-lg-6 col-md-6 col-sm-6">
+                        <div className="single-categories-box">
+                            <img src="/assets/pics/rate1.jpg" alt="image" />
+
+                            <div className="content ">
+                                <span>Don’t Miss Today</span>
+                                <h3>50% OFF</h3>
+                                <a href="/OurProducts" className="default-btn">Discover Now</a>
+                            </div>
+                            <a href="/OurProducts" className="link-btn"></a>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-6 col-md-6 col-sm-6">
+                        <div className="single-categories-box">
+                            <img src="/assets/pics/rate1.jpg" alt="image" />
+
+                            <div className="content">
+                                <span>New Collection</span>
+                                <h3>Need Now</h3>
+                                <a href="/OurProducts" className="default-btn">Discover Now</a>
+                            </div>
+                            <a href="/OurProducts" className="link-btn"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {/* <!-- End Categories Banner Area --> */}
+        
 
          {/* <!-- Start Instagram Area --> */}
         {/* <Instragram /> */}
