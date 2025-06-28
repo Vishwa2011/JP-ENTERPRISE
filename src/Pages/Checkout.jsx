@@ -48,40 +48,15 @@ export default function Checkout() {
                         </label>
 
                         <div className="select-box">
-                          {/* <select className="form-control" style={{display:'none'}}>
+                          <select className="form-control" >
                                                     <option>United Arab Emirates</option>
                                                     <option>China</option>
                                                     <option>United Kingdom</option>
                                                     <option>Germany</option>
                                                     <option>France</option>
                                                     <option>Japan</option>
-                                                </select> */}
-                          <div class="nice-select form-control " tabindex="0">
-                            <span class="current">United Arab Emirates</span>
-                            <ul class="list">
-                              <li
-                                data-value="United Arab Emirates"
-                                class="option selected focus"
-                              >
-                                United Arab Emirates
-                              </li>
-                              <li data-value="China" class="option">
-                                China
-                              </li>
-                              <li data-value="United Kingdom" class="option">
-                                United Kingdom
-                              </li>
-                              <li data-value="Germany" class="option">
-                                Germany
-                              </li>
-                              <li data-value="France" class="option">
-                                France
-                              </li>
-                              <li data-value="Japan" class="option">
-                                Japan
-                              </li>
-                            </ul>
-                          </div>
+                                                </select>
+                        
                         </div>
                       </div>
                     </div>
@@ -326,7 +301,7 @@ export default function Checkout() {
                       <p>
                         <input
                           type="radio"
-                          id="cash-on-delivery"
+                          id="ccc"
                           name="radio-group"
                         />
                         <label for="cash-on-delivery">Cash on Delivery</label>
