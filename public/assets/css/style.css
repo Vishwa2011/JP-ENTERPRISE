@@ -8686,3 +8686,11 @@ Go Top CSS
 .go-top:hover i {
   margin-top: -3px;
 }/*# sourceMappingURL=style.css.map */
+
+.new-price{
+   margin-right: 6px;
+  color: #f53f85;
+}
+.old-price{
+  margin-right: 6px;
+}

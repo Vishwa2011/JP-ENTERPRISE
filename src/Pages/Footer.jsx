@@ -14,7 +14,7 @@ export default function Footer() {
                             <div className="about-the-store">
                                 <p>One of the most popular on the web is shopping.</p>
                                 <ul className="footer-contact-info">
-                                    <li><i class='bx bx-map'></i> <a href="#" target="_blank">Wonder Street, USA, New York</a></li>
+                                    <li><i class='bx bx-map'></i> <a href="#" target="_blank">Surat , Gujarat 395004</a></li>
                                     <li><i class='bx bx-phone-call'></i> <a href="tel:+919265407449">+91 9265407449</a></li>
                                      <li><i class='bx bx-mobile'></i> <a href= "tel:+917622009263">+91 7622009263</a></li>
                                     <li><i class='bx bx-envelope'></i> <a href="mailto:jpexport42@gmail.com">jpexport42@gmail.com</a></li>
@@ -38,9 +38,10 @@ export default function Footer() {
                             <ul className="quick-links">
                                 <li><a href="/">Home</a></li>
                                 <li><a href="/Aboutus">About Us</a></li>
-                                <li><a href="/Contact">Contact</a></li>
                                 <li><a href="/Faq">FAQ</a></li>
+                                <li><a href="/Gallery">Gallery  </a></li>
                                 <li><a href="/Blog">Blog</a></li>
+                                <li><a href="/Contact">Contact</a></li>
                                
                             </ul>
                         </div>

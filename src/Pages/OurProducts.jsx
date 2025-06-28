@@ -101,8 +101,8 @@ const OurProducts = () => {
         <section className="products-area pt-100 pb-70">
           <div className="container">
             <div className="products-filter-options">
-              <div className="row align-items-center justify-content-center">
-                <div className="col-lg-4 col-md-4">
+              <div className="row align-items-center justify-content-end">
+                {/* <div className="col-lg-4 col-md-4">
                   <div className="d-lg-flex d-md-flex align-items-center">
                     <span className="sub-title">
                       <a
@@ -145,7 +145,7 @@ const OurProducts = () => {
 
                 <div className="col-lg-4 col-md-4">
                   <p>Showing 1 – 18 of 100</p>
-                </div>
+                </div> */}
 
                <div className="col-lg-4 col-md-4">
       <div className="products-ordering-list">
@@ -215,14 +215,14 @@ const OurProducts = () => {
                               </a>
                             </div>
                           </li>
-                          <li>
+                          {/* <li>
                             <div className="compare-btn">
                               <a href="/Compare">
                                 <i className="bx bx-refresh"></i>
                                 <span className="tooltip-label">Compare</span>
                               </a>
                             </div>
-                          </li>
+                          </li> */}
                           <li>
                             <div className="quick-view-btn">
                               <a
@@ -248,8 +248,8 @@ const OurProducts = () => {
                         <a href="/Productdetails">{product.name}</a>
                       </h3>
                       <div className="price">
-                        <span className="old-price">{product.oldPrice}</span>
                         <span className="new-price">{product.newPrice}</span>
+                        <span className="old-price">{product.oldPrice}</span>
                       </div>
                       <div className="star-rating">
                         <i className="bx bxs-star"></i>
@@ -258,7 +258,7 @@ const OurProducts = () => {
                         <i className="bx bxs-star"></i>
                         <i className="bx bxs-star"></i>
                       </div>
-                      <a href="/Cart" className="add-to-cart">
+                      <a href="/Cart" className="add-to-cart ">
                         Add to Cart
                       </a>
                     </div>
@@ -613,8 +613,8 @@ const OurProducts = () => {
                     </h3>
 
                     <div className="price">
-                      <span className="old-price">₹9,999</span>
                       <span className="new-price">₹3,429</span>
+                      <span className="old-price">₹9,999</span>
                     </div>
 
                     <div className="products-review">
@@ -732,8 +732,8 @@ const OurProducts = () => {
                         </span>
                       </div>
 
-                      <button type="submit" className="default-btn">
-                        Add to Cart
+                      <button type="submit" className="default-btn ">
+                        <a href="/Cart" >Add to Cart</a>
                       </button>
                     </div>
 

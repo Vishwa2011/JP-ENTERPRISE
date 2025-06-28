@@ -18,6 +18,7 @@ import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import ShippingPolicy from "./Pages/ShippingPolicy";
 import ReturnPolicy from "./Pages/ReturnPolicy";
 import TermsandConditions from "./Pages/TermsandConditions";
+import Gallery from "./Pages/Gallery";
 
 
 function App() {
@@ -84,6 +85,7 @@ function App() {
         <Route path="/ShippingPolicy" element={<ShippingPolicy/>}/>
         <Route path="/ReturnPolicy" element={<ReturnPolicy/>}/>
         <Route path="/TermsandConditions" element={<TermsandConditions/>}/>
+        <Route path="/Gallery" element={<Gallery/>}/>
 
      </Routes>
      <div class="go-top"><i class='bx bx-up-arrow-alt'></i></div>

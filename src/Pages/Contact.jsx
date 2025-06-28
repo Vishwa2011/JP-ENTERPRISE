@@ -32,7 +32,7 @@ export default function Contact() {
                             <p>Have a question? You may find an answer in our <a href="#">FAQs</a>. But you can also contact us.</p>
 
                             <ul className="contact-list">
-                                <li><i class='bx bx-map'></i> Location: <a href="#">Wonder Street, USA, New York</a></li>
+                                <li><i class='bx bx-map'></i> Location: <a href="#">Surat , Gujarat 395004</a></li>
                                 <li><i class='bx bx-phone-call'></i> Call Us: <a href="tel:+919265407449">+91 9265407449</a></li>
                                 <li><i class='bx bx-mobile'></i> Mobile Number: <a href= "tel:+917622009263">+91 7622009263</a></li>
                                 <li><i class='bx bx-envelope'></i> Email Us: <a href="mailto:jpexport42@gmail.com">jpexport42@gmail.com</a></li>

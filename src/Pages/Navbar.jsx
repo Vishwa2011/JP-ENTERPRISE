@@ -17,7 +17,7 @@ const Navbar = () => {
             <div className="row align-items-center justify-content-center">
               <div className="col-lg-4 col-md-12">
                 <ul className="header-contact-info">
-                  <li>Welcome to JP Enterprise</li>
+                  {/* <li>Welcome to JP Enterprise</li> */}
                   <li>
                     Call: <a href="tel:+919265407449">+91 9265407449</a>
                   </li>
@@ -99,23 +99,24 @@ const Navbar = () => {
                 </ul>
               </div>
 
-              <div className="col-lg-4 col-md-12">
-                <div className="top-header-discount-info">
-                  <p>
-                    <strong>50% OFF</strong> all new collections!{" "}
-                    <a href="#">Discover Now!</a>
-                  </p>
-                </div>
-              </div>
+             <div className="col-lg-4 col-md-12">
+  <div className="top-header-discount-info">
+    <marquee>
+      <p>
+        <strong>50% OFF</strong> all new collections! <a href="#">Discover Now!</a>
+      </p>
+    </marquee>
+  </div>
+</div>
 
               <div className="col-lg-4 col-md-12">
                 <ul className="header-top-menu">
-                  <li>
+                  {/* <li>
                     <a href="/Login">
                       <i className="bx bxs-user"></i> My Account
                     </a>
-                  </li>
-                  <li>
+                  </li> */}
+                  {/* <li>
                     <a
                       href="#"
                       data-bs-toggle="modal"
@@ -128,7 +129,8 @@ const Navbar = () => {
                     <a href="/Compare">
                       <i className="bx bx-shuffle"></i> Compare
                     </a>
-                  </li>
+                  </li> */}
+                  
                   <li>
                     <a href="/Login">
                       <i className="bx bx-log-in"></i> Login
@@ -142,7 +144,17 @@ const Navbar = () => {
                       <i className="search-btn bx bx-search-alt"></i>
                     </div>
                   </div>
-
+    <div className="option-item">
+                      <div className="cart-btn">
+                     <a
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#shoppingWishlistModal"
+                    >
+                      <i className="bx bx-heart"></i> 
+                    </a>
+                      </div>
+                    </div>
                   <div className="option-item">
                     <div className="cart-btn">
                       <a
@@ -155,11 +167,25 @@ const Navbar = () => {
                       </a>
                     </div>
                   </div>
+
+                     <div className="option-item">
+                      <div className="cart-btn">
+                    <a href="/Login">
+                      <i className="bx bxs-user"></i> 
+                    </a>
+                      </div>
+                    </div>
+
                 </ul>
               </div>
             </div>
           </div>
         </div>
+
+
+
+
+
         {/* <!-- Start Navbar Area --> */}
         <div className="navbar-area">
           <div className="xton-responsive-nav">
@@ -391,9 +417,9 @@ const Navbar = () => {
 
                     <li className="nav-item ">
 
-                      <NavLink to="/Mice_problem" className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
+                      {/* <NavLink to="/Mice_problem" className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
                         Mice Problem
-                      </NavLink>
+                      </NavLink> */}
                       {/* <ul className="dropdown-menu">
                                         <li className="nav-item">
                                             <div className="container">
@@ -600,7 +626,37 @@ const Navbar = () => {
                                         </li>
                                     </ul> */}
                     </li>
+                        <li className="nav-item">
+                      {/* <a href="/Blog" className="nav-link">
+                        Blog{" "}
+                      </a> */}
+                      <NavLink to="/Blog" className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
+                        Blog
+                      </NavLink>
+                      {/* <ul className="dropdown-menu">
+                                        <li className="nav-item"><a href="blog-1.html" className="nav-link">Grid (2 in Row)</a></li>
 
+                                        <li className="nav-item"><a href="blog-2.html" className="nav-link">Grid (3 in Row)</a></li>
+
+                                        <li className="nav-item"><a href="blog-3.html" className="nav-link">Grid (4 in Row)</a></li>
+
+                                        <li className="nav-item"><a href="blog-4.html" className="nav-link">Grid (Full Width)</a></li>
+
+                                        <li className="nav-item"><a href="blog-5.html" className="nav-link">Right Sidebar</a></li>
+
+                                        <li className="nav-item"><a href="blog-6.html" className="nav-link">Masonry (3 in Row)</a></li>
+
+                                        <li className="nav-item"><a href="#" className="nav-link">Single Post <i class='bx bx-chevron-right'></i></a>
+                                            <ul className="dropdown-menu">
+                                                <li className="nav-item"><a href="single-blog-1.html" className="nav-link">Default</a></li>
+        
+                                                <li className="nav-item"><a href="single-blog-2.html" className="nav-link">With Video</a></li>
+        
+                                                <li className="nav-item"><a href="single-blog-3.html" className="nav-link">With Image Slider</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul> */}
+                    </li>
                     <li className="nav-item ">
                       {/* <a href="/Contact" className="nav-link">
                         Contact Us{" "}
@@ -703,37 +759,7 @@ const Navbar = () => {
                                     </ul> */}
                     </li>
 
-                    <li className="nav-item">
-                      {/* <a href="/Blog" className="nav-link">
-                        Blog{" "}
-                      </a> */}
-                      <NavLink to="/Blog" className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
-                        Blog
-                      </NavLink>
-                      {/* <ul className="dropdown-menu">
-                                        <li className="nav-item"><a href="blog-1.html" className="nav-link">Grid (2 in Row)</a></li>
-
-                                        <li className="nav-item"><a href="blog-2.html" className="nav-link">Grid (3 in Row)</a></li>
-
-                                        <li className="nav-item"><a href="blog-3.html" className="nav-link">Grid (4 in Row)</a></li>
-
-                                        <li className="nav-item"><a href="blog-4.html" className="nav-link">Grid (Full Width)</a></li>
-
-                                        <li className="nav-item"><a href="blog-5.html" className="nav-link">Right Sidebar</a></li>
-
-                                        <li className="nav-item"><a href="blog-6.html" className="nav-link">Masonry (3 in Row)</a></li>
-
-                                        <li className="nav-item"><a href="#" className="nav-link">Single Post <i class='bx bx-chevron-right'></i></a>
-                                            <ul className="dropdown-menu">
-                                                <li className="nav-item"><a href="single-blog-1.html" className="nav-link">Default</a></li>
-        
-                                                <li className="nav-item"><a href="single-blog-2.html" className="nav-link">With Video</a></li>
-        
-                                                <li className="nav-item"><a href="single-blog-3.html" className="nav-link">With Image Slider</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul> */}
-                    </li>
+                  
                   </ul>
 
                   <div className="others-option">
@@ -742,7 +768,17 @@ const Navbar = () => {
                         <i className="search-btn bx bx-search-alt"></i>
                       </div>
                     </div>
-
+                            <div className="option-item">
+                      <div className="cart-btn">
+                     <a
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#shoppingWishlistModal"
+                    >
+                      <i className="bx bx-heart"></i> 
+                    </a>
+                      </div>
+                    </div>
                     <div className="option-item">
                       <div className="cart-btn">
                         <a
@@ -755,7 +791,13 @@ const Navbar = () => {
                         </a>
                       </div>
                     </div>
-
+ <div className="option-item">
+                      <div className="cart-btn">
+                    <a href="/Login">
+                      <i className="bx bxs-user"></i> 
+                    </a>
+                      </div>
+                    </div>
                     <div className="option-item">
                       <div
                         className="burger-menu"
@@ -767,6 +809,7 @@ const Navbar = () => {
                         <span className="bottom-bar"></span>
                       </div>
                     </div>
+                    
                   </div>
                 </div>
               </nav>
@@ -932,9 +975,9 @@ const Navbar = () => {
                       {/* <a href="/Mice_problem" className="nav-link">
                         Mice Problem{" "}
                       </a> */}
-                      <NavLink to="/Mice_problem" className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
+                      {/* <NavLink to="/Mice_problem" className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
                         Mice Problem
-                      </NavLink>
+                      </NavLink> */}
                       {/* <ul className="dropdown-menu">
                                         <li className="nav-item">
                                             <div className="container">
@@ -1141,7 +1184,37 @@ const Navbar = () => {
                                         </li>
                                     </ul> */}
                     </li>
+  <li className="nav-item">
+                      {/* <a href="/Blog" className="nav-link">
+                        Blog{" "}
+                      </a> */}
+                      <NavLink to="/Blog" className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
+                        Blog
+                      </NavLink>
+                      {/* <ul className="dropdown-menu">
+                                        <li className="nav-item"><a href="blog-1.html" className="nav-link">Grid (2 in Row)</a></li>
 
+                                        <li className="nav-item"><a href="blog-2.html" className="nav-link">Grid (3 in Row)</a></li>
+
+                                        <li className="nav-item"><a href="blog-3.html" className="nav-link">Grid (4 in Row)</a></li>
+
+                                        <li className="nav-item"><a href="blog-4.html" className="nav-link">Grid (Full Width)</a></li>
+
+                                        <li className="nav-item"><a href="blog-5.html" className="nav-link">Right Sidebar</a></li>
+
+                                        <li className="nav-item"><a href="blog-6.html" className="nav-link">Masonry (3 in Row)</a></li>
+
+                                        <li className="nav-item"><a href="#" className="nav-link">Single Post <i class='bx bx-chevron-right'></i></a>
+                                            <ul className="dropdown-menu">
+                                                <li className="nav-item"><a href="single-blog-1.html" className="nav-link">Default</a></li>
+        
+                                                <li className="nav-item"><a href="single-blog-2.html" className="nav-link">With Video</a></li>
+        
+                                                <li className="nav-item"><a href="single-blog-3.html" className="nav-link">With Image Slider</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul> */}
+                    </li>
                     <li className="nav-item ">
                       {/* <a href="/Contact" className="nav-link">
                         Contact Us{" "}
@@ -1244,43 +1317,27 @@ const Navbar = () => {
                                     </ul> */}
                     </li>
 
-                    <li className="nav-item">
-                      {/* <a href="/Blog" className="nav-link">
-                        Blog{" "}
-                      </a> */}
-                      <NavLink to="/Blog" className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
-                        Blog
-                      </NavLink>
-                      {/* <ul className="dropdown-menu">
-                                        <li className="nav-item"><a href="blog-1.html" className="nav-link">Grid (2 in Row)</a></li>
-
-                                        <li className="nav-item"><a href="blog-2.html" className="nav-link">Grid (3 in Row)</a></li>
-
-                                        <li className="nav-item"><a href="blog-3.html" className="nav-link">Grid (4 in Row)</a></li>
-
-                                        <li className="nav-item"><a href="blog-4.html" className="nav-link">Grid (Full Width)</a></li>
-
-                                        <li className="nav-item"><a href="blog-5.html" className="nav-link">Right Sidebar</a></li>
-
-                                        <li className="nav-item"><a href="blog-6.html" className="nav-link">Masonry (3 in Row)</a></li>
-
-                                        <li className="nav-item"><a href="#" className="nav-link">Single Post <i class='bx bx-chevron-right'></i></a>
-                                            <ul className="dropdown-menu">
-                                                <li className="nav-item"><a href="single-blog-1.html" className="nav-link">Default</a></li>
-        
-                                                <li className="nav-item"><a href="single-blog-2.html" className="nav-link">With Video</a></li>
-        
-                                                <li className="nav-item"><a href="single-blog-3.html" className="nav-link">With Image Slider</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul> */}
-                    </li>
+                  
                   </ul>
 
+
                   <div className="others-option">
-                    <div className="option-item">
+                    {/* <div className="option-item">
                       <div className="search-btn-box">
                         <i className="search-btn bx bx-search-alt"></i>
+                      </div>
+                    </div> */}
+
+
+                        <div className="option-item">
+                      <div className="cart-btn">
+                     <a
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#shoppingWishlistModal"
+                    >
+                      <i className="bx bx-heart"></i> 
+                    </a>
                       </div>
                     </div>
 
@@ -1296,7 +1353,13 @@ const Navbar = () => {
                         </a>
                       </div>
                     </div>
-
+ <div className="option-item">
+                      <div className="cart-btn">
+                    <a href="/Login">
+                      <i className="bx bxs-user"></i> 
+                    </a>
+                      </div>
+                    </div>
                     <div className="option-item">
                       <div
                         className="burger-menu"
@@ -1465,7 +1528,7 @@ const Navbar = () => {
                       <li>
                         <i className="bx bx-map"></i>{" "}
                         <a href="#" target="_blank">
-                          Wonder Street, USA, New York
+                          Surat , Gujarat 395004
                         </a>
                       </li>
                       <li>
@@ -1539,7 +1602,7 @@ const Navbar = () => {
                       </a>
                     </li>
 
-                    <li>
+                    {/* <li>
                       <a href="/">
                         <img src="/assets/pics/rate.jpg" alt="image" />
                       </a>
@@ -1549,7 +1612,7 @@ const Navbar = () => {
                       <a href="/">
                         <img src="/assets/pics/rate.jpg" alt="image" />
                       </a>
-                    </li>
+                    </li> */}
 
 
                   </ul>
@@ -1559,9 +1622,9 @@ const Navbar = () => {
                     and abroad, we aim to offer safe, eco-friendly, and effective pest
                     control products at affordable prices.
                   </p>
-                  <a href="/OurProducts" className="shop-now-btn">
+                  {/* <a href="/OurProducts" className="shop-now-btn">
                     Shop Now
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>

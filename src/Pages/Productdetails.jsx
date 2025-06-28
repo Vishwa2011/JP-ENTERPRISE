@@ -177,7 +177,7 @@ const Productdetails = () => {
                     </li>
                   </ul>
 
-                  <div className="products-color-switch">
+                  {/* <div className="products-color-switch">
                     <span>Color:</span>
 
                     <ul>
@@ -201,7 +201,7 @@ const Productdetails = () => {
                         <a href="#" title="Teal" className="color-teal"></a>
                       </li>
                     </ul>
-                  </div>
+                  </div> */}
 
                   {/* <div className="products-size-wrapper">
                                 <span>Size:</span>
@@ -215,7 +215,7 @@ const Productdetails = () => {
                                 </ul>
                             </div> */}
 
-                  <div className="products-info-btn">
+                  <div className="products-info-btn mt-2">
                     <a
                       href="#"
                       data-bs-toggle="modal"
@@ -254,23 +254,26 @@ const Productdetails = () => {
       </span>
     </div>
 
-                    <button type="submit" className="default-btn">
+                    <button type="submit" className="default-btn " style={{marginRight:"10px"}}>
                      <i className="fas fa-cart-plus"></i> Add to Cart
                     </button>
+                      <a href="#" className="optional-btn">
+                      <i className="bx bx-heart"></i>
+                    </a>
                   </div>
 
-                  <div className="wishlist-compare-btn">
+                  {/* <div className="wishlist-compare-btn">
                     <a href="#" className="optional-btn">
                       <i className="bx bx-heart"></i> Add to Wishlist
                     </a>
                     <a href="/Compare" className="optional-btn">
                       <i className="bx bx-refresh"></i> Add to Compare
                     </a>
-                  </div>
+                  </div> */}
 
                   <div className="buy-checkbox-btn">
                     <div className="item">
-                      <input className="inp-cbx" id="cbx" type="checkbox" />
+                      <input className="inp-cbx" id="cbx" type="checkbox" checked/>
                       <label className="cbx" for="cbx">
                         <span>
                           <svg width="12px" height="10px" viewbox="0 0 12 10">
@@ -573,14 +576,14 @@ const Productdetails = () => {
                             </a>
                           </div>
                         </li>
-                        <li>
+                        {/* <li>
                           <div className="compare-btn">
                             <a href="/Compare">
                               <i className="bx bx-refresh"></i>
                               <span className="tooltip-label">Compare</span>
                             </a>
                           </div>
-                        </li>
+                        </li> */}
                         <li>
                           <div className="quick-view-btn">
                             <a
@@ -652,14 +655,14 @@ const Productdetails = () => {
                             </a>
                           </div>
                         </li>
-                        <li>
+                        {/* <li>
                           <div className="compare-btn">
                             <a href="/Compare">
                               <i className="bx bx-refresh"></i>
                               <span className="tooltip-label">Compare</span>
                             </a>
                           </div>
-                        </li>
+                        </li> */}
                         <li>
                           <div className="quick-view-btn">
                             <a
@@ -733,14 +736,14 @@ const Productdetails = () => {
                             </a>
                           </div>
                         </li>
-                        <li>
+                        {/* <li>
                           <div className="compare-btn">
                             <a href="/Compare">
                               <i className="bx bx-refresh"></i>
                               <span className="tooltip-label">Compare</span>
                             </a>
                           </div>
-                        </li>
+                        </li> */}
                         <li>
                           <div className="quick-view-btn">
                             <a
@@ -812,14 +815,14 @@ const Productdetails = () => {
                             </a>
                           </div>
                         </li>
-                        <li>
+                        {/* <li>
                           <div className="compare-btn">
                             <a href="/Compare">
                               <i className="bx bx-refresh"></i>
                               <span className="tooltip-label">Compare</span>
                             </a>
                           </div>
-                        </li>
+                        </li> */}
                         <li>
                           <div className="quick-view-btn">
                             <a
@@ -888,14 +891,14 @@ const Productdetails = () => {
                             </a>
                           </div>
                         </li>
-                        <li>
+                        {/* <li>
                           <div className="compare-btn">
                             <a href="/Compare">
                               <i className="bx bx-refresh"></i>
                               <span className="tooltip-label">Compare</span>
                             </a>
                           </div>
-                        </li>
+                        </li> */}
                         <li>
                           <div className="quick-view-btn">
                             <a
@@ -964,14 +967,14 @@ const Productdetails = () => {
                             </a>
                           </div>
                         </li>
-                        <li>
+                        {/* <li>
                           <div className="compare-btn">
                             <a href="/Compare">
                               <i className="bx bx-refresh"></i>
                               <span className="tooltip-label">Compare</span>
                             </a>
                           </div>
-                        </li>
+                        </li> */}
                         <li>
                           <div className="quick-view-btn">
                             <a
@@ -1064,7 +1067,7 @@ const Productdetails = () => {
                                     <li><span>Number of Pieces:</span><a href="">1</a></li>
                                 </ul>
 
-                                <div className="products-color-switch">
+                                {/* <div className="products-color-switch">
                                     <h4>Color:</h4>
 
                                     <ul>
@@ -1074,7 +1077,7 @@ const Productdetails = () => {
                                         <li><a href="#" data-bs-toggle="tooltip" data-placement="top" title="Yellow Green" className="color-yellowgreen"></a></li>
                                         <li><a href="#" data-bs-toggle="tooltip" data-placement="top" title="Teal" className="color-teal"></a></li>
                                     </ul>
-                                </div>
+                                </div> */}
 
                                 {/* <div className="products-size-wrapper">
                                     <h4>Size:</h4>
