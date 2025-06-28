@@ -166,19 +166,20 @@ const Navbar = () => {
             <div className="container">
               <div className="xton-responsive-menu mean-container">
                 <div className="logo">
-                  <a href="/">
-                    <img
-                      src="/assets/pics/jp.logo.png"
-                      className="main-logo"
-                      alt="logo"
-                       style={{width:'130px' , height:'75px'}}
-                    />
-                    <img
-                      src="assets/img/white-logo.png"
-                      className="white-logo"
-                      alt="logo"
-                    />
-                  </a>
+                   <a className="navbar-brand" href="/">
+                  <img
+                    src="/assets/pics/jp.logo.png"
+                    className="main-logo"
+                    alt="logo"
+                    style={{width:'130px' , height:'75px'}}
+                  />
+                  <img
+                    src="/assets/pics/jp white.png"
+                    className="white-logo"
+                    alt="logo"
+                    style={{width:'120px' , height:'45px'}}
+                  />
+                </a>
                 </div>
               </div>
             </div>
@@ -195,9 +196,10 @@ const Navbar = () => {
                     style={{width:'130px' , height:'75px'}}
                   />
                   <img
-                    src="assets/img/white-logo.png"
+                    src="/assets/pics/jp white.png"
                     className="white-logo"
                     alt="logo"
+                    style={{width:'120px' , height:'45px'}}
                   />
                 </a>
 
@@ -726,8 +728,19 @@ const Navbar = () => {
           <div className="xton-nav">
             <div className="container-fluid">
               <nav className="navbar navbar-expand-md navbar-light">
-                <a className="navbar-brand" href="/">
-                  <img src="/assets/pics/jp.logo.png" alt="logo"  style={{width:'130px' , height:'75px'}} />
+                 <a className="navbar-brand" href="/">
+                  <img
+                    src="/assets/pics/jp.logo.png"
+                    className="main-logo"
+                    alt="logo"
+                    style={{width:'130px' , height:'75px'}}
+                  />
+                  <img
+                    src="/assets/pics/jp white.png"
+                    className="white-logo"
+                    alt="logo"
+                    style={{width:'120px' , height:'45px'}}
+                  />
                 </a>
 
                 <div className="collapse navbar-collapse mean-menu">

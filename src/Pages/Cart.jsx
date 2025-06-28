@@ -1,10 +1,25 @@
-import React from 'react'
+import { useState  } from "react";
 import Navbar from './Navbar'
 import Facility from '../Components/Facility'
-import Instragram from '../Components/Instragram'
+// import Instragram from '../Components/Instragram'
 import Footer from './Footer'
 
 export default function Cart() {
+          const [count, setCount] = useState(1);
+      const min = 1;
+      const max = 999;
+    
+      const handleDecrement = () => {
+        if (count > min) {
+          setCount(count - 1);
+        }
+      };
+    
+      const handleIncrement = () => {
+        if (count < max) {
+          setCount(count + 1);
+        }
+      };
   return (
     <div>
       <Navbar />
@@ -61,10 +76,18 @@ export default function Cart() {
 
                                     <td className="product-quantity">
                                         <div className="input-counter">
-                                            <span className="minus-btn"><i class='bx bx-minus'></i></span>
-                                            <input type="text" min="1" value="1" />
-                                            <span className="plus-btn"><i class='bx bx-plus'></i></span>
-                                        </div>
+      <span className="minus-btn" onClick={handleDecrement}>
+        <i className="bx bx-minus"></i>
+      </span>
+      <input
+        type="text"
+        value={count}
+        readOnly
+      />
+      <span className="plus-btn" onClick={handleIncrement}>
+        <i className="bx bx-plus"></i>
+      </span>
+    </div>
                                     </td>
 
                                     <td className="product-subtotal">
@@ -95,11 +118,19 @@ export default function Cart() {
                                     </td>
 
                                     <td className="product-quantity">
-                                        <div className="input-counter">
-                                            <span className="minus-btn"><i class='bx bx-minus'></i></span>
-                                            <input type="text" min="1" value="1" />
-                                            <span className="plus-btn"><i class='bx bx-plus'></i></span>
-                                        </div>
+                                       <div className="input-counter">
+      <span className="minus-btn" onClick={handleDecrement}>
+        <i className="bx bx-minus"></i>
+      </span>
+      <input
+        type="text"
+        value={count}
+        readOnly
+      />
+      <span className="plus-btn" onClick={handleIncrement}>
+        <i className="bx bx-plus"></i>
+      </span>
+    </div>
                                     </td>
 
                                     <td className="product-subtotal">

@@ -1,11 +1,27 @@
+import { useEffect,useState  } from "react";
 import Navbar from "./Navbar"
 import Footer from "./Footer"
-import Instragram from "../Components/Instragram"
+// import Instragram from "../Components/Instragram"
 import Facility from "../Components/Facility"
 
 
 
 const Home = () => {
+          const [count, setCount] = useState(1);
+      const min = 1;
+      const max = 10;
+    
+      const handleDecrement = () => {
+        if (count > min) {
+          setCount(count - 1);
+        }
+      };
+    
+      const handleIncrement = () => {
+        if (count < max) {
+          setCount(count + 1);
+        }
+      };
   return (
     <div>
       <Navbar />
@@ -807,11 +823,19 @@ const Home = () => {
                                 </div> */}
 
                                 <div className="products-add-to-cart">
-                                    <div className="input-counter">
-                                        <span className="minus-btn"><i class='bx bx-minus'></i></span>
-                                         <input type="text" value="1" min="1" max="10" />
-                                        <span className="plus-btn"><i class='bx bx-plus'></i></span>
-                                    </div>
+                                   <div className="input-counter">
+      <span className="minus-btn" onClick={handleDecrement}>
+        <i className="bx bx-minus"></i>
+      </span>
+      <input
+        type="text"
+        value={count}
+        readOnly
+      />
+      <span className="plus-btn" onClick={handleIncrement}>
+        <i className="bx bx-plus"></i>
+      </span>
+    </div>
 
                                     <button type="submit" className="default-btn">Add to Cart</button>
                                 </div>

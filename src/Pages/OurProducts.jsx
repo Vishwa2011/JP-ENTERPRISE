@@ -1,10 +1,25 @@
-import React from 'react'
+import { useState  } from "react";
 import Navbar from './Navbar'
 import Footer from './Footer'
 import Facility from '../Components/Facility'
-import Instragram from '../Components/Instragram'
+// import Instragram from '../Components/Instragram'
 
 const OurProducts = () => {
+             const [count, setCount] = useState(1);
+          const min = 1;
+          const max = 10;
+        
+          const handleDecrement = () => {
+            if (count > min) {
+              setCount(count - 1);
+            }
+          };
+        
+          const handleIncrement = () => {
+            if (count < max) {
+              setCount(count + 1);
+            }
+          };
     return (
         <>
             <Navbar />
@@ -15,7 +30,7 @@ const OurProducts = () => {
                         <div class="page-title-content">
                             <h2>Our Products</h2>
                             <ul>
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="/">Home</a></li>
                                 <li>Products</li>
                             </ul>
                         </div>
@@ -135,7 +150,7 @@ const OurProducts = () => {
                                             <i class='bx bxs-star'></i>
                                             <i class='bx bxs-star'></i>
                                         </div>
-                                        <a href="cart.html" class="add-to-cart">Add to Cart</a>
+                                        <a href="/Cart" class="add-to-cart">Add to Cart</a>
                                     </div>
                                 </div>
                             </div>
@@ -193,7 +208,7 @@ const OurProducts = () => {
                                             <i class='bx bxs-star'></i>
                                             <i class='bx bxs-star'></i>
                                         </div>
-                                        <a href="cart.html" class="add-to-cart">Add to Cart</a>
+                                        <a href="/Cart" class="add-to-cart">Add to Cart</a>
                                     </div>
                                 </div>
                             </div>
@@ -249,7 +264,7 @@ const OurProducts = () => {
                                             <i class='bx bxs-star'></i>
                                             <i class='bx bxs-star'></i>
                                         </div>
-                                        <a href="cart.html" class="add-to-cart">Add to Cart</a>
+                                        <a href="/Cart" class="add-to-cart">Add to Cart</a>
                                     </div>
                                 </div>
                             </div>
@@ -398,7 +413,7 @@ const OurProducts = () => {
                                                 <h3>Top Trending</h3>
                                                 <span>Spring/Summer 2024 Collection</span>
                                             </div>
-                                            <a href="products-right-sidebar.html" class="link-btn"></a>
+                                            <a href="/" class="link-btn"></a>
                                         </div>
                                     </div>
                                 </div>
@@ -409,7 +424,7 @@ const OurProducts = () => {
                 {/* <!-- End Products Filter Modal Area -->`` */}
                  {/* <!-- Start QuickView Modal Area --> */}
         <div className="modal fade productsQuickView" id="productsQuickView" tabindex="-1" role="dialog" aria-hidden="true">
-            <div className="modal-dialog modal-dialog-centered" role="document">
+          <div className="modal-dialog modal-dialog-centered" role="document">
                 <div className="modal-content">
                     <button type="button" className="close" data-bs-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true"><i class='bx bx-x'></i></span>
@@ -418,17 +433,17 @@ const OurProducts = () => {
                     <div className="row align-items-center justify-content-center">
                         <div className="col-lg-6 col-md-6">
                             <div className="products-image">
-                                <img src="assets/img/quick-view-img.jpg" alt="image" />
+                                <img src="/assets/pics/rate1.jpg" alt="image" />
                             </div>
                         </div>
 
                         <div className="col-lg-6 col-md-6">
                             <div className="products-content">
-                                <h3><a href="#">Long Sleeve Leopard T-Shirt</a></h3>
+                                <h3><a href="#">High-Frequency Ultrasonic Rat Repeller – Dual Indoor & Outdoor Use | 1500 Sq. Ft | Plug & Play</a></h3>
 
-                                <div className="price">
-                                    <span className="old-price">$210.00</span>
-                                    <span className="new-price">$200.00</span>
+                                   <div className="price">
+                                    <span className="old-price">₹9,999</span>
+                                    <span className="new-price">₹3,429</span>
                                 </div>
 
                                 <div className="products-review">
@@ -439,13 +454,16 @@ const OurProducts = () => {
                                         <i class='bx bxs-star'></i>
                                         <i class='bx bxs-star'></i>
                                     </div>
-                                    <a href="#" className="rating-count">3 reviews</a>
+                                    <a href="#" className="rating-count">3 ratings</a>
                                 </div>
 
                                 <ul className="products-info">
-                                    <li><span>Vendor:</span> <a href="#">Lereve</a></li>
-                                    <li><span>Availability:</span> <a href="#">In stock (7 items)</a></li>
-                                    <li><span>Products Type:</span> <a href="#">T-Shirt</a></li>
+                                    <li><span>Brand:</span> <a href="#">Generic</a></li>
+                                    <li><span>Style:</span> <a href="#">modern</a></li>
+                                    <li><span>Material:</span> <a href="#">	Metal</a></li>
+                                    <li><span>Product  <br />Dimensions:</span> <a href="">5L x 10W x 10H Centimeters</a></li>
+                                    <li><span>Item Weight:</span><a href="">750 Grams</a></li>
+                                    <li><span>Number of Pieces:</span><a href="">1</a></li>
                                 </ul>
 
                                 <div className="products-color-switch">
@@ -460,7 +478,7 @@ const OurProducts = () => {
                                     </ul>
                                 </div>
 
-                                <div className="products-size-wrapper">
+                                {/* <div className="products-size-wrapper">
                                     <h4>Size:</h4>
 
                                     <ul>
@@ -470,14 +488,22 @@ const OurProducts = () => {
                                         <li><a href="#">XL</a></li>
                                         <li><a href="#">XXL</a></li>
                                     </ul>
-                                </div>
+                                </div> */}
 
                                 <div className="products-add-to-cart">
-                                    <div className="input-counter">
-                                        <span className="minus-btn"><i class='bx bx-minus'></i></span>
-                                        <input type="text" value="1" />
-                                        <span className="plus-btn"><i class='bx bx-plus'></i></span>
-                                    </div>
+                                   <div className="input-counter">
+      <span className="minus-btn" onClick={handleDecrement}>
+        <i className="bx bx-minus"></i>
+      </span>
+      <input
+        type="text"
+        value={count}
+        readOnly
+      />
+      <span className="plus-btn" onClick={handleIncrement}>
+        <i className="bx bx-plus"></i>
+      </span>
+    </div>
 
                                     <button type="submit" className="default-btn">Add to Cart</button>
                                 </div>
