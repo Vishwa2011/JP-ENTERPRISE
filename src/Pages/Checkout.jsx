@@ -229,24 +229,24 @@ export default function Checkout() {
                       <tbody>
                         <tr>
                           <td className="product-name">
-                            <a href="#">Long Sleeve Leopard T-Shirt</a>
+                            <a href="#">rat repellent machine</a>
                           </td>
 
                           <td className="product-total">
-                            <span className="subtotal-amount">$250.00</span>
+                            <span className="subtotal-amount">3341</span>
                           </td>
                         </tr>
 
                         <tr>
                           <td className="product-name">
-                            <a href="#">Causal V-Neck Soft Raglan</a>
+                            <a href="#">rat repellent machine</a>
                           </td>
 
                           <td className="product-total">
-                            <span className="subtotal-amount">$200.00</span>
+                            <span className="subtotal-amount">3421</span>
                           </td>
                         </tr>
-
+{/* 
                         <tr>
                           <td className="product-name">
                             <a href="#">Book Divas</a>
@@ -265,7 +265,7 @@ export default function Checkout() {
                           <td className="product-total">
                             <span className="subtotal-amount">$200.00</span>
                           </td>
-                        </tr>
+                        </tr> */}
 
                         <tr>
                           <td className="order-subtotal">
@@ -274,7 +274,7 @@ export default function Checkout() {
 
                           <td className="order-subtotal-price">
                             <span className="order-subtotal-amount">
-                              $800.00
+                              6762
                             </span>
                           </td>
                         </tr>
@@ -285,7 +285,7 @@ export default function Checkout() {
                           </td>
 
                           <td className="shipping-price">
-                            <span>$30.00</span>
+                            <span>300.00</span>
                           </td>
                         </tr>
 
@@ -295,7 +295,7 @@ export default function Checkout() {
                           </td>
 
                           <td className="product-subtotal">
-                            <span className="subtotal-amount">$830.00</span>
+                            <span className="subtotal-amount">6762</span>
                           </td>
                         </tr>
                       </tbody>
