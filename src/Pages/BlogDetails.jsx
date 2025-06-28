@@ -415,7 +415,7 @@ export default function BlogDetails() {
                                 </div>
                             </section>
 
-                            <section class="widget widget_instagram">
+                            {/* <section class="widget widget_instagram">
                                 <h3 class="widget-title">Instagram</h3>
 
                                 <ul>
@@ -450,7 +450,7 @@ export default function BlogDetails() {
                                         </a>
                                     </li>
                                 </ul>
-                            </section>
+                            </section> */}
 
                             <section class="widget widget_contact">
                                 <div class="text">
