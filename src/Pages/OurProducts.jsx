@@ -1,484 +1,715 @@
-import { useState  } from "react";
-import Navbar from './Navbar'
-import Footer from './Footer'
-import Facility from '../Components/Facility'
+import { useState } from "react";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import Facility from "../Components/Facility";
 // import Instragram from '../Components/Instragram'
 
 const OurProducts = () => {
-             const [count, setCount] = useState(1);
-          const min = 1;
-          const max = 10;
-        
-          const handleDecrement = () => {
-            if (count > min) {
-              setCount(count - 1);
-            }
-          };
-        
-          const handleIncrement = () => {
-            if (count < max) {
-              setCount(count + 1);
-            }
-          };
-    return (
-        <>
-            <Navbar />
-            <>
-                {/* <!-- Start Page Title --> */}
-                <div class="page-title-area">
-                    <div class="container">
-                        <div class="page-title-content">
-                            <h2>Our Products</h2>
-                            <ul>
-                                <li><a href="/">Home</a></li>
-                                <li>Products</li>
-                            </ul>
-                        </div>
+      const options = [
+    "Sort by Price: Low to High",
+    "Default Sorting",
+    "Sort by Popularity",
+    "Sort by Average Rating",
+    "Sort by Latest",
+    "Sort by Price: High to Low",
+  ];
+
+  const [selectedOption, setSelectedOption] = useState(options[0]);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOptionClick = (option) => {
+    setSelectedOption(option);
+    setIsOpen(false);
+  };
+  const productsData = [
+    {
+      id: 1,
+      name: "High-Powered Ultrasonic Rat Repellent for Gardens, Factories, and Warehouses.....",
+      image1: "/assets/pics/rate.jpg",
+      image2: "/assets/pics/speaker.jpg",
+      oldPrice: "₹9999",
+      newPrice: "₹3331",
+      sale: false,
+    },
+    {
+      id: 2,
+      name: "High-Frequency Ultrasonic Rat Repeller for Kitchen & Storage – 1500 Sq. Ft | Safe....",
+      image1: "/assets/pics/rate.jpg",
+      image2: "/assets/pics/speaker2.jpg",
+      oldPrice: "₹9999",
+      newPrice: "₹3429",
+      sale: true,
+    },
+    {
+      id: 3,
+      name: "High-Frequency Ultrasonic Rat Repeller – Dual Indoor & Outdoor Use | 1500 Sq. Ft | Plug...",
+      image1: "/assets/pics/rate.jpg",
+      image2: "/assets/pics/speaker 3.jpg",
+      oldPrice: "₹9999",
+      newPrice: "₹3331",
+      sale: false,
+    },
+  ];
+  const [view, setView] = useState("products-col-three"); // default view
+
+  const handleViewChange = (viewClass) => {
+    setView(viewClass);
+  };
+
+  const viewButtons = [
+    { class: "products-col-two", label: "icon-view-two" },
+    { class: "products-col-three", label: "icon-view-three" },
+    { class: "products-col-four", label: "icon-view-four" },
+    { class: "products-row-view", label: "view-grid-switch" },
+  ];
+  const [count, setCount] = useState(1);
+  const min = 1;
+  const max = 10;
+
+  const handleDecrement = () => {
+    if (count > min) {
+      setCount(count - 1);
+    }
+  };
+
+  const handleIncrement = () => {
+    if (count < max) {
+      setCount(count + 1);
+    }
+  };
+  return (
+    <>
+      <Navbar />
+      <>
+        {/* <!-- Start Page Title --> */}
+        <div class="page-title-area">
+          <div class="container">
+            <div class="page-title-content">
+              <h2>Our Products</h2>
+              <ul>
+                <li>
+                  <a href="/">Home</a>
+                </li>
+                <li>Products</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        {/* <!-- End Page Title --> */}
+
+        {/* <!-- Start Products Area --> */}
+        <section className="products-area pt-100 pb-70">
+          <div className="container">
+            <div className="products-filter-options">
+              <div className="row align-items-center justify-content-center">
+                <div className="col-lg-4 col-md-4">
+                  <div className="d-lg-flex d-md-flex align-items-center">
+                    <span className="sub-title">
+                      <a
+                        href="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#productsFilterModal"
+                      >
+                        <i className="bx bx-filter-alt"></i> Filter
+                      </a>
+                    </span>
+
+                    <span className="sub-title d-none d-lg-block d-md-block">
+                      View:
+                    </span>
+
+                    <div className="view-list-row d-none d-lg-block d-md-block">
+                      <div className="view-column">
+                        {viewButtons.map(({ class: viewClass, label }) => (
+                          <a
+                            key={label}
+                            href="#"
+                            className={`${label} ${
+                              view === viewClass ? "active" : ""
+                            }`}
+                            onClick={(e) => {
+                              e.preventDefault();
+                              handleViewChange(viewClass);
+                            }}
+                          >
+                            <span></span>
+                            <span></span>
+                            {label.includes("three") && <span></span>}
+                            {label.includes("four") && <span></span>}
+                          </a>
+                        ))}
+                      </div>
                     </div>
+                  </div>
                 </div>
-                {/* <!-- End Page Title --> */}
 
-                {/* <!-- Start Products Area --> */}
-                <section class="products-area pt-100 pb-70">
-                    <div class="container">
-                        <div class="products-filter-options">
-                            <div class="row align-items-center justify-content-center">
-                                <div class="col-lg-4 col-md-4">
-                                    <div class="d-lg-flex d-md-flex align-items-center">
-                                        <span class="sub-title"><a href="#" data-bs-toggle="modal" data-bs-target="#productsFilterModal"><i class='bx bx-filter-alt'></i> Filter</a></span>
+                <div className="col-lg-4 col-md-4">
+                  <p>Showing 1 – 18 of 100</p>
+                </div>
 
-                                        <span class="sub-title d-none d-lg-block d-md-block">View:</span>
+               <div className="col-lg-4 col-md-4">
+      <div className="products-ordering-list">
+        <div
+          className={`nice-select ${isOpen ? "open" : ""}`}
+          tabIndex={0}
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <span className="current">{selectedOption}</span>
+          <ul className="list">
+            {options.map((option) => (
+              <li
+                key={option}
+                data-value={option}
+                className={`option ${
+                  selectedOption === option ? "selected focus" : ""
+                }`}
+                onClick={(e) => {
+                  e.stopPropagation(); // prevent dropdown from closing before selection
+                  handleOptionClick(option);
+                }}
+              >
+                {option}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+              </div>
+            </div>
 
-                                        <div class="view-list-row d-none d-lg-block d-md-block">
-                                            <div class="view-column">
-                                                <a href="#" class="icon-view-two">
-                                                    <span></span>
-                                                    <span></span>
-                                                </a>
+            <div id="products-collections-filter" className={`row ${view}`}>
+              {productsData.map((product) => (
+                <div
+                  key={product.id}
+                  className="col-lg-4 col-md-6 col-sm-6 products-col-item"
+                >
+                  <div className="single-products-box">
+                    <div className="products-image">
+                      <a href="/Productdetails">
+                        <img
+                          src={product.image1}
+                          className="main-image"
+                          alt="image"
+                        />
+                        <img
+                          src={product.image2}
+                          className="hover-image"
+                          alt="image"
+                        />
+                      </a>
 
-                                                <a href="#" class="icon-view-three active">
-                                                    <span></span>
-                                                    <span></span>
-                                                    <span></span>
-                                                </a>
-
-                                                <a href="#" class="icon-view-four">
-                                                    <span></span>
-                                                    <span></span>
-                                                    <span></span>
-                                                    <span></span>
-                                                </a>
-
-                                                <a href="#" class="view-grid-switch">
-                                                    <span></span>
-                                                    <span></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-md-4">
-                                    <p>Showing 1 – 18 of 100</p>
-                                </div>
-
-                                <div class="col-lg-4 col-md-4">
-                                    <div class="products-ordering-list">
-                                        <select style={{ display: 'none' }}>
-                                            <option>Sort by Price: Low to High</option>
-                                            <option>Default Sorting</option>
-                                            <option>Sort by Popularity</option>
-                                            <option>Sort by Average Rating</option>
-                                            <option>Sort by Latest</option>
-                                            <option>Sort by Price: High to Low</option>
-                                        </select>
-                                        <div class="nice-select" tabindex="0"><span class="current">Sort by Price: Low to High</span><ul class="list"><li data-value="Sort by Price: Low to High" class="option selected focus">Sort by Price: Low to High</li><li data-value="Default Sorting" class="option">Default Sorting</li><li data-value="Sort by Popularity" class="option">Sort by Popularity</li><li data-value="Sort by Average Rating" class="option">Sort by Average Rating</li><li data-value="Sort by Latest" class="option">Sort by Latest</li><li data-value="Sort by Price: High to Low" class="option">Sort by Price: High to Low</li></ul></div>
-                                    </div>
-                                </div>
+                      <div className="products-button">
+                        <ul>
+                          <li>
+                            <div className="wishlist-btn">
+                              <a
+                                href="#"
+                                data-bs-toggle="modal"
+                                data-bs-target="#shoppingWishlistModal"
+                              >
+                                <i className="bx bx-heart"></i>
+                                <span className="tooltip-label">
+                                  Add to Wishlist
+                                </span>
+                              </a>
                             </div>
-                        </div>
-
-                        <div id="products-collections-filter" class="row">
-                            <div class="col-lg-4 col-md-6 col-sm-6 products-col-item">
-                                <div class="single-products-box">
-                                    <div class="products-image">
-                                        <a href="/Productdetails">
-                                            <img src="/assets/pics/rate.jpg" class="main-image" alt="image" />
-                                            <img src="/assets/pics/speaker.jpg" class="hover-image" alt="image" />
-                                        </a>
-
-                                        <div class="products-button">
-                                            <ul>
-                                                <li>
-                                                    <div class="wishlist-btn">
-                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#shoppingWishlistModal">
-                                                            <i class='bx bx-heart'></i>
-                                                            <span class="tooltip-label">Add to Wishlist</span>
-                                                        </a>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="compare-btn">
-                                                        <a href="/Compare">
-                                                            <i class='bx bx-refresh'></i>
-                                                            <span class="tooltip-label">Compare</span>
-                                                        </a>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="quick-view-btn">
-                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#productsQuickView">
-                                                            <i class='bx bx-search-alt'></i>
-                                                            <span class="tooltip-label">Quick View</span>
-                                                        </a>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <div class="products-content">
-                                        <h3><a href="/Productdetails">High-Powered Ultrasonic Rat Repellent for Gardens, Factories, and Warehouses.....</a></h3>
-                                        <div class="price">
-                                            <span class="old-price">₹9999</span>
-                                            <span class="new-price">₹3331</span>
-                                        </div>
-                                        <div class="star-rating">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                        </div>
-                                        <a href="/Cart" class="add-to-cart">Add to Cart</a>
-                                    </div>
-                                </div>
+                          </li>
+                          <li>
+                            <div className="compare-btn">
+                              <a href="/Compare">
+                                <i className="bx bx-refresh"></i>
+                                <span className="tooltip-label">Compare</span>
+                              </a>
                             </div>
-
-                            <div class="col-lg-4 col-md-6 col-sm-6 products-col-item">
-                                <div class="single-products-box">
-                                    <div class="products-image">
-                                        <a href="/Productdetails">
-                                            <img src="/assets/pics/rate.jpg" class="main-image" alt="image" />
-                                            <img src="/assets/pics/speaker2.jpg" class="hover-image" alt="image" />
-                                        </a>
-
-                                        <div class="products-button">
-                                            <ul>
-                                                <li>
-                                                    <div class="wishlist-btn">
-                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#shoppingWishlistModal">
-                                                            <i class='bx bx-heart'></i>
-                                                            <span class="tooltip-label">Add to Wishlist</span>
-                                                        </a>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="compare-btn">
-                                                        <a href="/Compare">
-                                                            <i class='bx bx-refresh'></i>
-                                                            <span class="tooltip-label">Compare</span>
-                                                        </a>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="quick-view-btn">
-                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#productsQuickView">
-                                                            <i class='bx bx-search-alt'></i>
-                                                            <span class="tooltip-label">Quick View</span>
-                                                        </a>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="sale-tag">Sale!</div>
-                                    </div>
-
-                                    <div class="products-content">
-                                        <h3><a href="/Productdetails">High-Frequency Ultrasonic Rat Repeller for Kitchen & Storage – 1500 Sq. Ft | Safe....</a></h3>
-                                        <div class="price">
-                                            <span class="old-price">₹9999</span>
-                                            <span class="new-price">₹3429</span>
-                                        </div>
-                                        <div class="star-rating">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                        </div>
-                                        <a href="/Cart" class="add-to-cart">Add to Cart</a>
-                                    </div>
-                                </div>
+                          </li>
+                          <li>
+                            <div className="quick-view-btn">
+                              <a
+                                href="#"
+                                data-bs-toggle="modal"
+                                data-bs-target="#productsQuickView"
+                              >
+                                <i className="bx bx-search-alt"></i>
+                                <span className="tooltip-label">
+                                  Quick View
+                                </span>
+                              </a>
                             </div>
+                          </li>
+                        </ul>
+                      </div>
 
-                            <div class="col-lg-4 col-md-6 col-sm-6 products-col-item">
-                                <div class="single-products-box">
-                                    <div class="products-image">
-                                        <a href="/Productdetails">
-                                            <img src="/assets/pics/rate.jpg " class="main-image" alt="image" />
-                                            <img src="/assets/pics/speaker 3.jpg" class="hover-image" alt="image" />
-                                        </a>
-
-                                        <div class="products-button">
-                                            <ul>
-                                                <li>
-                                                    <div class="wishlist-btn">
-                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#shoppingWishlistModal">
-                                                            <i class='bx bx-heart'></i>
-                                                            <span class="tooltip-label">Add to Wishlist</span>
-                                                        </a>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="compare-btn">
-                                                        <a href="/Compare">
-                                                            <i class='bx bx-refresh'></i>
-                                                            <span class="tooltip-label">Compare</span>
-                                                        </a>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="quick-view-btn">
-                                                        <a href="#" data-bs-toggle="modal" data-bs-target="#productsQuickView">
-                                                            <i class='bx bx-search-alt'></i>
-                                                            <span class="tooltip-label">Quick View</span>
-                                                        </a>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <div class="products-content">
-                                        <h3><a href="/Productdetails">High-Frequency Ultrasonic Rat Repeller – Dual Indoor & Outdoor Use | 1500 Sq. Ft | Plug...</a></h3>
-                                        <div class="price">
-                                            <span class="old-price">₹9999</span>
-                                            <span class="new-price">₹3331</span>
-                                        </div>
-                                        <div class="star-rating">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                        </div>
-                                        <a href="/Cart" class="add-to-cart">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                          
-                        </div>
-
-                        <div class="pagination-area text-center">
-                            <a href="#" class="prev page-numbers"><i class='bx bx-chevron-left'></i></a>
-                            <span class="page-numbers current" aria-current="page">1</span>
-                            <a href="#" class="page-numbers">2</a>
-                            <a href="#" class="page-numbers">3</a>
-                            <a href="#" class="page-numbers">4</a>
-                            <a href="#" class="page-numbers">5</a>
-                            <a href="#" class="next page-numbers"><i class='bx bx-chevron-right'></i></a>
-                        </div>
+                      {product.sale && <div className="sale-tag">Sale!</div>}
                     </div>
-                </section>
-                {/* <!-- End Products Area --> */}
 
-                {/* <!-- Start Products Filter Modal Area --> */}
-                <div class="modal left fade productsFilterModal" id="productsFilterModal" tabindex="-1" role="dialog">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true"><i class='bx bx-x'></i> Close</span>
-                            </button>
+                    <div className="products-content">
+                      <h3>
+                        <a href="/Productdetails">{product.name}</a>
+                      </h3>
+                      <div className="price">
+                        <span className="old-price">{product.oldPrice}</span>
+                        <span className="new-price">{product.newPrice}</span>
+                      </div>
+                      <div className="star-rating">
+                        <i className="bx bxs-star"></i>
+                        <i className="bx bxs-star"></i>
+                        <i className="bx bxs-star"></i>
+                        <i className="bx bxs-star"></i>
+                        <i className="bx bxs-star"></i>
+                      </div>
+                      <a href="/Cart" className="add-to-cart">
+                        Add to Cart
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
 
-                            <div class="modal-body">
-                                <div class="woocommerce-widget-area">
-                                    <div class="woocommerce-widget filter-list-widget">
-                                        <h3 class="woocommerce-widget-title">Current Selection</h3>
+            <div className="pagination-area text-center">
+              <a href="#" className="prev page-numbers">
+                <i className="bx bx-chevron-left"></i>
+              </a>
+              <span className="page-numbers current" aria-current="page">
+                1
+              </span>
+              <a href="#" className="page-numbers">
+                2
+              </a>
+              <a href="#" className="page-numbers">
+                3
+              </a>
+              <a href="#" className="page-numbers">
+                4
+              </a>
+              <a href="#" className="page-numbers">
+                5
+              </a>
+              <a href="#" className="next page-numbers">
+                <i className="bx bx-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+        {/* <!-- End Products Area --> */}
 
-                                        <div class="selected-filters-wrap-list">
-                                            <ul>
-                                                <li><a href="#"><i class='bx bx-x'></i> 44</a></li>
-                                                <li><a href="#"><i class='bx bx-x'></i> XI</a></li>
-                                                <li><a href="#"><i class='bx bx-x'></i> Clothing</a></li>
-                                                <li><a href="#"><i class='bx bx-x'></i> Shoes</a></li>
-                                            </ul>
+        {/* <!-- Start Products Filter Modal Area --> */}
+        <div
+          class="modal left fade productsFilterModal"
+          id="productsFilterModal"
+          tabindex="-1"
+          role="dialog"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <button
+                type="button"
+                class="close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">
+                  <i class="bx bx-x"></i> Close
+                </span>
+              </button>
 
-                                            <a href="#" class="delete-selected-filters"><i class='bx bx-trash'></i> <span>Clear All</span></a>
-                                        </div>
-                                    </div>
+              <div class="modal-body">
+                <div class="woocommerce-widget-area">
+                  <div class="woocommerce-widget filter-list-widget">
+                    <h3 class="woocommerce-widget-title">Current Selection</h3>
 
-                                    <div class="woocommerce-widget collections-list-widget">
-                                        <h3 class="woocommerce-widget-title">Collections</h3>
+                    <div class="selected-filters-wrap-list">
+                      <ul>
+                        <li>
+                          <a href="#">
+                            <i class="bx bx-x"></i> Rat Repellent
+                          </a>
+                        </li>
+                      </ul>
 
-                                        <ul class="collections-list-row">
-                                            <li><a href="#">Men's</a></li>
-                                            <li class="active"><a href="#" class="active">Women’s</a></li>
-                                            <li><a href="#">Clothing</a></li>
-                                            <li><a href="#">Shoes</a></li>
-                                            <li><a href="#">Accessories</a></li>
-                                            <li><a href="#">Uncategorized</a></li>
-                                        </ul>
-                                    </div>
+                      <a href="#" class="delete-selected-filters">
+                        <i class="bx bx-trash"></i> <span>Clear All</span>
+                      </a>
+                    </div>
+                  </div>
 
-                                    <div class="woocommerce-widget price-list-widget">
-                                        <h3 class="woocommerce-widget-title">Price</h3>
+                  <div class="woocommerce-widget collections-list-widget">
+                    <h3 class="woocommerce-widget-title">Material</h3>
 
-                                        <div class="collection-filter-by-price">
-                                            <span class="irs irs--flat js-irs-0">
-                                                <span class="irs">
-                                                    <span class="irs-line" tabindex="0">
-                                                    </span>
-                                                    <span className="irs-min" style={{ visibility: "hidden" }}>0</span>
-                                                    <span className="irs-max" style={{ visibility: "hidden" }}>1 055</span>
-                                                    <span className="irs-from" style={{ visibility: "visible", left: "-0.932692%" }}>0</span>
-                                                    <span className="irs-to" style={{ visibility: "visible", left: "91.149%" }}>1 055</span>
-                                                    <span className="irs-single" style={{ visibility: "hidden", left: "41.1731%" }}>0 — 1 055</span>
+                    <ul class="collections-list-row">
+                      <li>
+                        <a href="#">Metal</a>
+                      </li>
+                      <li class="active">
+                        <a href="#" class="active">
+                          Plastic / Polymer
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#"> Essential Oils </a>
+                      </li>
+                      <li>
+                        <a href="#"> Electronic Components </a>
+                      </li>
+                      {/* <li><a href="#">Accessories</a></li>
+                                            <li><a href="#">Uncategorized</a></li> */}
+                    </ul>
+                  </div>
 
-                                                    <span className="irs-grid"></span>
-                                                    <span className="irs-bar" style={{ cursor: "ew-resize", left: "2.46154%", width: "95.0769%" }}></span>
-                                                    <span className="irs-shadow shadow-from" style={{ display: "none" }}></span>
-                                                    <span className="irs-shadow shadow-to" style={{ display: "none" }}></span>
+                  <div class="woocommerce-widget price-list-widget">
+                    <h3 class="woocommerce-widget-title">Price</h3>
 
-                                                    <span className="irs-handle from" style={{ left: "0%" }}>
-                                                        <i></i><i></i><i></i>
-                                                    </span>
+                    <div class="collection-filter-by-price">
+                      <span class="irs irs--flat js-irs-0">
+                        <span class="irs">
+                          <span class="irs-line" tabindex="0"></span>
+                          <span
+                            className="irs-min"
+                            style={{ visibility: "hidden" }}
+                          >
+                            0
+                          </span>
+                          <span
+                            className="irs-max"
+                            style={{ visibility: "hidden" }}
+                          >
+                            1 055
+                          </span>
+                          <span
+                            className="irs-from"
+                            style={{
+                              visibility: "visible",
+                              left: "-0.932692%",
+                            }}
+                          >
+                            0
+                          </span>
+                          <span
+                            className="irs-to"
+                            style={{ visibility: "visible", left: "91.149%" }}
+                          >
+                            1 055
+                          </span>
+                          <span
+                            className="irs-single"
+                            style={{ visibility: "hidden", left: "41.1731%" }}
+                          >
+                            0 — 1 055
+                          </span>
 
-                                                    <span className="irs-handle to" style={{ left: "95.0769%" }}>
-                                                        <i></i><i></i><i></i>
-                                                    </span>
-                                                </span>
-                                            </span>
-                                            <input class="js-range-of-price irs-hidden-input" type="text" data-min="0" data-max="1055" name="filter_by_price" data-step="10" tabindex="-1" readonly="" />
-                                        </div>
-                                    </div>
+                          <span className="irs-grid"></span>
+                          <span
+                            className="irs-bar"
+                            style={{
+                              cursor: "ew-resize",
+                              left: "2.46154%",
+                              width: "95.0769%",
+                            }}
+                          ></span>
+                          <span
+                            className="irs-shadow shadow-from"
+                            style={{ display: "none" }}
+                          ></span>
+                          <span
+                            className="irs-shadow shadow-to"
+                            style={{ display: "none" }}
+                          ></span>
 
-                                    <div class="woocommerce-widget size-list-widget">
-                                        <h3 class="woocommerce-widget-title">Size</h3>
+                          <span
+                            className="irs-handle from"
+                            style={{ left: "0%" }}
+                          >
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                          </span>
 
-                                        <ul class="size-list-row">
-                                            <li><a href="#">20</a></li>
-                                            <li><a href="#">24</a></li>
-                                            <li class="active"><a href="#">36</a></li>
-                                            <li><a href="#">30</a></li>
-                                            <li><a href="#">XS</a></li>
-                                            <li><a href="#">S</a></li>
-                                            <li><a href="#">M</a></li>
-                                            <li><a href="#">L</a></li>
-                                            <li><a href="#">L</a></li>
-                                            <li><a href="#">XL</a></li>
-                                        </ul>
-                                    </div>
+                          <span
+                            className="irs-handle to"
+                            style={{ left: "95.0769%" }}
+                          >
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                          </span>
+                        </span>
+                      </span>
+                      <input
+                        class="js-range-of-price irs-hidden-input"
+                        type="text"
+                        data-min="0"
+                        data-max="1055"
+                        name="filter_by_price"
+                        data-step="10"
+                        tabindex="-1"
+                        readonly=""
+                      />
+                    </div>
+                  </div>
 
-                                    <div class="woocommerce-widget color-list-widget">
-                                        <h3 class="woocommerce-widget-title">Color</h3>
+                  <div class="woocommerce-widget size-list-widget">
+                    <h3 class="woocommerce-widget-title">Size</h3>
 
-                                        <ul class="color-list-row">
-                                            <li class="active"><a href="#" title="Black" class="color-black"></a></li>
-                                            <li><a href="#" title="Red" class="color-red"></a></li>
-                                            <li><a href="#" title="Yellow" class="color-yellow"></a></li>
-                                            <li><a href="#" title="White" class="color-white"></a></li>
-                                            <li><a href="#" title="Blue" class="color-blue"></a></li>
-                                            <li><a href="#" title="Green" class="color-green"></a></li>
-                                            <li><a href="#" title="Yellow Green" class="color-yellowgreen"></a></li>
-                                            <li><a href="#" title="Pink" class="color-pink"></a></li>
-                                            <li><a href="#" title="Violet" class="color-violet"></a></li>
-                                            <li><a href="#" title="Blue Violet" class="color-blueviolet"></a></li>
-                                            <li><a href="#" title="Lime" class="color-lime"></a></li>
-                                            <li><a href="#" title="Plum" class="color-plum"></a></li>
-                                            <li><a href="#" title="Teal" class="color-teal"></a></li>
-                                        </ul>
-                                    </div>
+                    <ul class="size-list-row">
+                      <li>
+                        <a href="#">20</a>
+                      </li>
+                      <li>
+                        <a href="#">24</a>
+                      </li>
+                      <li class="active">
+                        <a href="#">36</a>
+                      </li>
+                      <li>
+                        <a href="#">30</a>
+                      </li>
+                      <li>
+                        <a href="#">XS</a>
+                      </li>
+                      <li>
+                        <a href="#">S</a>
+                      </li>
+                      <li>
+                        <a href="#">M</a>
+                      </li>
+                      <li>
+                        <a href="#">L</a>
+                      </li>
+                      <li>
+                        <a href="#">L</a>
+                      </li>
+                      <li>
+                        <a href="#">XL</a>
+                      </li>
+                    </ul>
+                  </div>
 
-                                    <div class="woocommerce-widget brands-list-widget">
-                                        <h3 class="woocommerce-widget-title">Brands</h3>
+                  <div class="woocommerce-widget color-list-widget">
+                    <h3 class="woocommerce-widget-title">Color</h3>
 
-                                        <ul class="brands-list-row">
-                                            <li><a href="#">Gucci</a></li>
-                                            <li><a href="#">Virgil Abloh</a></li>
-                                            <li><a href="#">Balenciaga</a></li>
-                                            <li class="active"><a href="#">Moncler</a></li>
+                    <ul class="color-list-row">
+                      <li class="active">
+                        <a href="#" title="Black" class="color-black"></a>
+                      </li>
+                      <li>
+                        <a href="#" title="Red" class="color-red"></a>
+                      </li>
+                      <li>
+                        <a href="#" title="Yellow" class="color-yellow"></a>
+                      </li>
+                      <li>
+                        <a href="#" title="White" class="color-white"></a>
+                      </li>
+                      <li>
+                        <a href="#" title="Blue" class="color-blue"></a>
+                      </li>
+                      <li>
+                        <a href="#" title="Green" class="color-green"></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          title="Yellow Green"
+                          class="color-yellowgreen"
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" title="Pink" class="color-pink"></a>
+                      </li>
+                      <li>
+                        <a href="#" title="Violet" class="color-violet"></a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          title="Blue Violet"
+                          class="color-blueviolet"
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" title="Lime" class="color-lime"></a>
+                      </li>
+                      <li>
+                        <a href="#" title="Plum" class="color-plum"></a>
+                      </li>
+                      <li>
+                        <a href="#" title="Teal" class="color-teal"></a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="woocommerce-widget brands-list-widget">
+                    <h3 class="woocommerce-widget-title">Brands</h3>
+
+                    <ul class="brands-list-row">
+                      <li>
+                        <a href="#">Generic</a>
+                      </li>
+                      <li>
+                        <a href="#">TrustBasket</a>
+                      </li>
+                      <li>
+                        <a href="#">Rodexit</a>
+                      </li>
+                      {/* <li class="active"><a href="#">Moncler</a></li>
                                             <li><a href="#">Fendi</a></li>
-                                            <li><a href="#">Versace</a></li>
-                                        </ul>
-                                    </div>
+                                            <li><a href="#">Versace</a></li> */}
+                    </ul>
+                  </div>
 
-                                    <div class="woocommerce-widget aside-trending-widget">
-                                        <div class="aside-trending-products">
-                                            <img src="assets/img/offer-bg.jpg" alt="image" />
+                  <div class="woocommerce-widget aside-trending-widget">
+                    <div class="aside-trending-products">
+                      <img src="/assets/pics/blogdetails.jpg" alt="image" />
 
-                                            <div class="category">
-                                                <h3>Top Trending</h3>
-                                                <span>Spring/Summer 2024 Collection</span>
-                                            </div>
-                                            <a href="/" class="link-btn"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                      <div class="category">
+                        <h3>Top Trending</h3>
+                        {/* <span>Spring/Summer 2024 Collection</span> */}
+                      </div>
+                      <a href="/" class="link-btn"></a>
                     </div>
+                  </div>
                 </div>
-                {/* <!-- End Products Filter Modal Area -->`` */}
-                 {/* <!-- Start QuickView Modal Area --> */}
-        <div className="modal fade productsQuickView" id="productsQuickView" tabindex="-1" role="dialog" aria-hidden="true">
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* <!-- End Products Filter Modal Area -->`` */}
+        {/* <!-- Start QuickView Modal Area --> */}
+        <div
+          className="modal fade productsQuickView"
+          id="productsQuickView"
+          tabindex="-1"
+          role="dialog"
+          aria-hidden="true"
+        >
           <div className="modal-dialog modal-dialog-centered" role="document">
-                <div className="modal-content">
-                    <button type="button" className="close" data-bs-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class='bx bx-x'></i></span>
-                    </button>
+            <div className="modal-content">
+              <button
+                type="button"
+                className="close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">
+                  <i class="bx bx-x"></i>
+                </span>
+              </button>
 
-                    <div className="row align-items-center justify-content-center">
-                        <div className="col-lg-6 col-md-6">
-                            <div className="products-image">
-                                <img src="/assets/pics/rate1.jpg" alt="image" />
-                            </div>
-                        </div>
+              <div className="row align-items-center justify-content-center">
+                <div className="col-lg-6 col-md-6">
+                  <div className="products-image">
+                    <img src="/assets/pics/rate1.jpg" alt="image" />
+                  </div>
+                </div>
 
-                        <div className="col-lg-6 col-md-6">
-                            <div className="products-content">
-                                <h3><a href="#">High-Frequency Ultrasonic Rat Repeller – Dual Indoor & Outdoor Use | 1500 Sq. Ft | Plug & Play</a></h3>
+                <div className="col-lg-6 col-md-6">
+                  <div className="products-content">
+                    <h3>
+                      <a href="#">
+                        High-Frequency Ultrasonic Rat Repeller – Dual Indoor &
+                        Outdoor Use | 1500 Sq. Ft | Plug & Play
+                      </a>
+                    </h3>
 
-                                   <div className="price">
-                                    <span className="old-price">₹9,999</span>
-                                    <span className="new-price">₹3,429</span>
-                                </div>
+                    <div className="price">
+                      <span className="old-price">₹9,999</span>
+                      <span className="new-price">₹3,429</span>
+                    </div>
 
-                                <div className="products-review">
-                                    <div className="rating">
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                    </div>
-                                    <a href="#" className="rating-count">3 ratings</a>
-                                </div>
+                    <div className="products-review">
+                      <div className="rating">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                      </div>
+                      <a href="#" className="rating-count">
+                        3 ratings
+                      </a>
+                    </div>
 
-                                <ul className="products-info">
-                                    <li><span>Brand:</span> <a href="#">Generic</a></li>
-                                    <li><span>Style:</span> <a href="#">modern</a></li>
-                                    <li><span>Material:</span> <a href="#">	Metal</a></li>
-                                    <li><span>Product  <br />Dimensions:</span> <a href="">5L x 10W x 10H Centimeters</a></li>
-                                    <li><span>Item Weight:</span><a href="">750 Grams</a></li>
-                                    <li><span>Number of Pieces:</span><a href="">1</a></li>
-                                </ul>
+                    <ul className="products-info">
+                      <li>
+                        <span>Brand:</span> <a href="#">Generic</a>
+                      </li>
+                      <li>
+                        <span>Style:</span> <a href="#">modern</a>
+                      </li>
+                      <li>
+                        <span>Material:</span> <a href="#"> Metal</a>
+                      </li>
+                      <li>
+                        <span>
+                          Product <br />
+                          Dimensions:
+                        </span>{" "}
+                        <a href="">5L x 10W x 10H Centimeters</a>
+                      </li>
+                      <li>
+                        <span>Item Weight:</span>
+                        <a href="">750 Grams</a>
+                      </li>
+                      <li>
+                        <span>Number of Pieces:</span>
+                        <a href="">1</a>
+                      </li>
+                    </ul>
 
-                                <div className="products-color-switch">
-                                    <h4>Color:</h4>
+                    <div className="products-color-switch">
+                      <h4>Color:</h4>
 
-                                    <ul>
-                                        <li><a href="#" data-bs-toggle="tooltip" data-placement="top" title="Black" className="color-black"></a></li>
-                                        <li><a href="#" data-bs-toggle="tooltip" data-placement="top" title="White" className="color-white"></a></li>
-                                        <li><a href="#" data-bs-toggle="tooltip" data-placement="top" title="Green" className="color-green"></a></li>
-                                        <li><a href="#" data-bs-toggle="tooltip" data-placement="top" title="Yellow Green" className="color-yellowgreen"></a></li>
-                                        <li><a href="#" data-bs-toggle="tooltip" data-placement="top" title="Teal" className="color-teal"></a></li>
-                                    </ul>
-                                </div>
+                      <ul>
+                        <li>
+                          <a
+                            href="#"
+                            data-bs-toggle="tooltip"
+                            data-placement="top"
+                            title="Black"
+                            className="color-black"
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            data-bs-toggle="tooltip"
+                            data-placement="top"
+                            title="White"
+                            className="color-white"
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            data-bs-toggle="tooltip"
+                            data-placement="top"
+                            title="Green"
+                            className="color-green"
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            data-bs-toggle="tooltip"
+                            data-placement="top"
+                            title="Yellow Green"
+                            className="color-yellowgreen"
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            data-bs-toggle="tooltip"
+                            data-placement="top"
+                            title="Teal"
+                            className="color-teal"
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
 
-                                {/* <div className="products-size-wrapper">
+                    {/* <div className="products-size-wrapper">
                                     <h4>Size:</h4>
 
                                     <ul>
@@ -490,38 +721,38 @@ const OurProducts = () => {
                                     </ul>
                                 </div> */}
 
-                                <div className="products-add-to-cart">
-                                   <div className="input-counter">
-      <span className="minus-btn" onClick={handleDecrement}>
-        <i className="bx bx-minus"></i>
-      </span>
-      <input
-        type="text"
-        value={count}
-        readOnly
-      />
-      <span className="plus-btn" onClick={handleIncrement}>
-        <i className="bx bx-plus"></i>
-      </span>
-    </div>
+                    <div className="products-add-to-cart">
+                      <div className="input-counter">
+                        <span className="minus-btn" onClick={handleDecrement}>
+                          <i className="bx bx-minus"></i>
+                        </span>
+                        <input type="text" value={count} readOnly />
+                        <span className="plus-btn" onClick={handleIncrement}>
+                          <i className="bx bx-plus"></i>
+                        </span>
+                      </div>
 
-                                    <button type="submit" className="default-btn">Add to Cart</button>
-                                </div>
-
-                                <a href="#" className="view-full-info">View Full Info</a>
-                            </div>
-                        </div>
+                      <button type="submit" className="default-btn">
+                        Add to Cart
+                      </button>
                     </div>
+
+                    <a href="#" className="view-full-info">
+                      View Full Info
+                    </a>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
         {/* <!-- End QuickView Modal Area --> */}
-<Facility />
-{/* <Instragram /> */}
-            </>
-            <Footer />
-        </>
-    )
-}
+        <Facility />
+        {/* <Instragram /> */}
+      </>
+      <Footer />
+    </>
+  );
+};
 
-export default OurProducts
+export default OurProducts;

@@ -1404,8 +1404,9 @@ const Navbar = () => {
 
                   <div className="about-the-store">
                     <p>
-                      One of the most popular on the web is shopping. Lorem
-                      ipsum dolor sit amet, consectetur adipiscing elit.
+                        At JP Enterprise, we specialize in providing advanced rat repellent
+    solutions designed to protect your vehicles, homes, and commercial
+    spaces from rodent damage.
                     </p>
 
                     <ul className="sidebar-contact-info">
@@ -1482,33 +1483,29 @@ const Navbar = () => {
                   <ul className="products-list">
                     <li>
                       <a href="/">
-                        <img src="assets/img/products/img1.jpg" alt="image" />
+                        <img src="/assets/pics/rate.jpg" alt="image" />
                       </a>
                     </li>
 
                     <li>
                       <a href="/">
-                        <img src="assets/img/products/img2.jpg" alt="image" />
+                        <img src="/assets/pics/rate.jpg" alt="image" />
                       </a>
                     </li>
 
                     <li>
                       <a href="/">
-                        <img src="assets/img/products/img3.jpg" alt="image" />
+                        <img src="/assets/pics/rate.jpg" alt="image" />
                       </a>
                     </li>
 
-                    <li>
-                      <a href="/">
-                        <img src="assets/img/products/img4.jpg" alt="image" />
-                      </a>
-                    </li>
+                  
                   </ul>
 
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                    With over a decade of experience and satisfied customers across India
+    and abroad, we aim to offer safe, eco-friendly, and effective pest
+    control products at affordable prices.
                   </p>
                   <a href="/OurProducts" className="shop-now-btn">
                     Shop Now

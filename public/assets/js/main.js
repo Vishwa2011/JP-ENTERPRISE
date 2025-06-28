@@ -416,7 +416,6 @@ $(document).ready(function () {
 
 
     // Products Filter Options
-    
     $(function(){
         $(".icon-view-one").on("click", function(e){
             e.preventDefault();
