@@ -9,8 +9,6 @@ const Aboutus = () => {
     <>
       <Navbar />
       <div>
-      
-
         {/* <!-- Start Page Title --> */}
         <div className="page-title-area">
           <div className="container">
@@ -69,65 +67,105 @@ const Aboutus = () => {
 
                   <div className="features-text">
                     <h5>
-                      <i className="bx bx-shield-quarter"></i> Trusted by Thousands
-                      Across India
+                      <i className="bx bx-shield-quarter"></i> Trusted by
+                      Thousands Across India
                     </h5>
                     <p>
                       We deliver hassle-free service and quality rat control
                       solutions right to your doorstep, with support you can
                       count on.
                     </p>
-                  </div>  
+                  </div>
                 </div>
               </div>
             </div>
 
             <div className="about-inner-area">
-  <div className="row justify-content-center">
-    <div className="col-lg-4 col-md-6 col-sm-6">
-      <div className="about-text">
-        <h3>Our Story</h3>
-        <p>Founded with a mission to protect homes, vehicles, and businesses from rodent damage.</p>
+              <div className="row justify-content-center">
+                <div className="col-lg-4 col-md-6 col-sm-6">
+                  <div className="about-text">
+                    <h3>Our Story</h3>
+                    <p>
+                      Founded with a mission to protect homes, vehicles, and
+                      businesses from rodent damage.
+                    </p>
 
-        <ul className="features-list">
-          <li><i className="bx bx-check"></i> Trusted Rat Repellent Brand</li>
-          <li><i className="bx bx-check"></i> Advanced Ultrasonic Technology</li>
-          <li><i className="bx bx-check"></i> Safe for Humans & Pets</li>
-          <li><i className="bx bx-check"></i> Proven Results Across India</li>
-        </ul>
-      </div>
-    </div>
+                    <ul className="features-list">
+                      <li>
+                        <i className="bx bx-check"></i> Trusted Rat Repellent
+                        Brand
+                      </li>
+                      <li>
+                        <i className="bx bx-check"></i> Advanced Ultrasonic
+                        Technology
+                      </li>
+                      <li>
+                        <i className="bx bx-check"></i> Safe for Humans & Pets
+                      </li>
+                      <li>
+                        <i className="bx bx-check"></i> Proven Results Across
+                        India
+                      </li>
+                    </ul>
+                  </div>
+                </div>
 
-    <div className="col-lg-4 col-md-6 col-sm-6">
-      <div className="about-text">
-        <h3>Our Values</h3>
-        <p>We believe in safe, eco-friendly, and effective solutions to everyday pest problems.</p>
+                <div className="col-lg-4 col-md-6 col-sm-6">
+                  <div className="about-text">
+                    <h3>Our Values</h3>
+                    <p>
+                      We believe in safe, eco-friendly, and effective solutions
+                      to everyday pest problems.
+                    </p>
 
-        <ul className="features-list">
-          <li><i className="bx bx-check"></i> Quality Without Compromise</li>
-          <li><i className="bx bx-check"></i> Customer Satisfaction First</li>
-          <li><i className="bx bx-check"></i> Innovation & Reliability</li>
-          <li><i className="bx bx-check"></i> Clean & Safe Environments</li>
-        </ul>
-      </div>
-    </div>
+                    <ul className="features-list">
+                      <li>
+                        <i className="bx bx-check"></i> Quality Without
+                        Compromise
+                      </li>
+                      <li>
+                        <i className="bx bx-check"></i> Customer Satisfaction
+                        First
+                      </li>
+                      <li>
+                        <i className="bx bx-check"></i> Innovation & Reliability
+                      </li>
+                      <li>
+                        <i className="bx bx-check"></i> Clean & Safe
+                        Environments
+                      </li>
+                    </ul>
+                  </div>
+                </div>
 
-    <div className="col-lg-4 col-md-6 col-sm-6">
-      <div className="about-text">
-        <h3>Our Promise</h3>
-        <p>We’re committed to keeping your space rodent-free—safely and effectively.</p>
+                <div className="col-lg-4 col-md-6 col-sm-6">
+                  <div className="about-text">
+                    <h3>Our Promise</h3>
+                    <p>
+                      We’re committed to keeping your space rodent-free—safely
+                      and effectively.
+                    </p>
 
-        <ul className="features-list">
-          <li><i className="bx bx-check"></i> Easy Installation</li>
-          <li><i className="bx bx-check"></i> Long-lasting Protection</li>
-          <li><i className="bx bx-check"></i> Efficient Customer Support</li>
-          <li><i className="bx bx-check"></i> 100% Satisfaction Guarantee</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
+                    <ul className="features-list">
+                      <li>
+                        <i className="bx bx-check"></i> Easy Installation
+                      </li>
+                      <li>
+                        <i className="bx bx-check"></i> Long-lasting Protection
+                      </li>
+                      <li>
+                        <i className="bx bx-check"></i> Efficient Customer
+                        Support
+                      </li>
+                      <li>
+                        <i className="bx bx-check"></i> 100% Satisfaction
+                        Guarantee
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         {/* <!-- End About Area --> */}
@@ -203,55 +241,289 @@ const Aboutus = () => {
         {/* <!-- End Partner Area --> */}
 
         {/* <!-- Start Testimonials Area --> */}
-    <section className="testimonials-area ptb-100">
-            <div className="container">
-                <div className="section-title">
-                    <span className="sub-title">Testimonials</span>
-                    <h2>What Clients Says About Us</h2>
-                </div>
-
-                <div className="testimonials-slides owl-carousel owl-theme">
-                    <div className="single-testimonials-item">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-
-                        <div className="info">
-                            <img src="assets/img/user1.jpg" className="shadow rounded-circle" alt="image" />
-                            <h3>John Smith</h3>
-                            <span>Student</span>
-                        </div>
-                    </div>
-
-                    <div className="single-testimonials-item">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-
-                        <div className="info">
-                            <img src="assets/img/user2.jpg" className="shadow rounded-circle" alt="image" />
-                            <h3>Sarah Taylor</h3>
-                            <span>Student</span>
-                        </div>
-                    </div>
-
-                    <div className="single-testimonials-item">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-
-                        <div className="info">
-                            <img src="assets/img/user3.jpg" className="shadow rounded-circle" alt="image" />
-                            <h3>David Warner</h3>
-                            <span>Student</span>
-                        </div>
-                    </div>
-
-                    <div className="single-testimonials-item">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-
-                        <div className="info">
-                            <img src="assets/img/user4.jpg" className="shadow rounded-circle" alt="image" />
-                            <h3>James Anderson</h3>
-                            <span>Student</span>
-                        </div>
-                    </div>
-                </div>
+        <section className="testimonials-area ptb-100">
+          <div className="container">
+            <div className="section-title">
+              <span className="sub-title">Testimonials</span>
+              <h2>What Clients Says About Us</h2>
             </div>
+
+            <div class="testimonials-slides owl-carousel owl-theme owl-loaded owl-drag">
+              <div class="owl-stage-outer">
+                <div
+                  class="owl-stage"
+                  style={{
+                    transition: "0.25s",
+                    width: "4420px",
+                    transform: "translate3d(-1326px, 0px, 0px)",
+                  }}
+                >
+                  <div
+                    class="owl-item cloned"
+                    style={{ width: "412px", marginRight: "30px" }}
+                  >
+                    <div class="single-testimonials-item">
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </p>
+
+                      <div class="info">
+                        <img
+                          src="assets/img/user2.jpg"
+                          class="shadow rounded-circle"
+                          alt="image"
+                        />
+                        <h3>Sarah Taylor</h3>
+                        <span>Student</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item cloned"
+                    style={{ width: "412px", marginRight: "30px" }}
+                  >
+                    <div class="single-testimonials-item">
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </p>
+
+                      <div class="info">
+                        <img
+                          src="assets/img/user3.jpg"
+                          class="shadow rounded-circle"
+                          alt="image"
+                        />
+                        <h3>David Warner</h3>
+                        <span>Student</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item cloned"
+                    style={{ width: "412px", marginRight: "30px" }}
+                  >
+                    <div class="single-testimonials-item">
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </p>
+
+                      <div class="info">
+                        <img
+                          src="assets/img/user4.jpg"
+                          class="shadow rounded-circle"
+                          alt="image"
+                        />
+                        <h3>James Anderson</h3>
+                        <span>Student</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item active"
+                    style={{ width: "412px", marginRight: "30px" }}
+                  >
+                    <div class="single-testimonials-item">
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </p>
+
+                      <div class="info">
+                        <img
+                          src="assets/img/user1.jpg"
+                          class="shadow rounded-circle"
+                          alt="image"
+                        />
+                        <h3>John Smith</h3>
+                        <span>Student</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item active center"
+                    style={{ width: "412px", marginRight: "30px" }}
+                  >
+                    <div class="single-testimonials-item">
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </p>
+
+                      <div class="info">
+                        <img
+                          src="assets/img/user2.jpg"
+                          class="shadow rounded-circle"
+                          alt="image"
+                        />
+                        <h3>Sarah Taylor</h3>
+                        <span>Student</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item active"
+                    style={{ width: "412px", marginRight: "30px" }}
+                  >
+                    <div class="single-testimonials-item">
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </p>
+
+                      <div class="info">
+                        <img
+                          src="assets/img/user3.jpg"
+                          class="shadow rounded-circle"
+                          alt="image"
+                        />
+                        <h3>David Warner</h3>
+                        <span>Student</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item"
+                    style={{ width: "412px", marginRight: "30px" }}
+                  >
+                    <div class="single-testimonials-item">
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </p>
+
+                      <div class="info">
+                        <img
+                          src="assets/img/user4.jpg"
+                          class="shadow rounded-circle"
+                          alt="image"
+                        />
+                        <h3>James Anderson</h3>
+                        <span>Student</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item cloned"
+                    style={{ width: "412px", marginRight: "30px" }}
+                  >
+                    <div class="single-testimonials-item">
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </p>
+
+                      <div class="info">
+                        <img
+                          src="assets/img/user1.jpg"
+                          class="shadow rounded-circle"
+                          alt="image"
+                        />
+                        <h3>John Smith</h3>
+                        <span>Student</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item cloned"
+                    style={{ width: "412px", marginRight: "30px" }}
+                  >
+                    <div class="single-testimonials-item">
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </p>
+
+                      <div class="info">
+                        <img
+                          src="assets/img/user2.jpg"
+                          class="shadow rounded-circle"
+                          alt="image"
+                        />
+                        <h3>Sarah Taylor</h3>
+                        <span>Student</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="owl-item cloned"
+                    style={{ width: "412px", marginRight: "30px" }}
+                  >
+                    <div class="single-testimonials-item">
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book.
+                      </p>
+
+                      <div class="info">
+                        <img
+                          src="assets/img/user3.jpg"
+                          class="shadow rounded-circle"
+                          alt="image"
+                        />
+                        <h3>David Warner</h3>
+                        <span>Student</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="owl-nav disabled">
+                <button type="button" role="presentation" class="owl-prev">
+                  <i class="flaticon-left"></i>
+                </button>
+                <button type="button" role="presentation" class="owl-next">
+                  <i class="flaticon-right-arrow"></i>
+                </button>
+              </div>
+              <div class="owl-dots">
+                <button role="button" class="owl-dot">
+                  <span></span>
+                </button>
+                <button role="button" class="owl-dot active">
+                  <span></span>
+                </button>
+                <button role="button" class="owl-dot">
+                  <span></span>
+                </button>
+                <button role="button" class="owl-dot">
+                  <span></span>
+                </button>
+              </div>
+            </div>
+          </div>
         </section>
         {/* <!-- End Testimonials Area --> */}
 
