@@ -8,7 +8,7 @@ const Navbar = () => {
     const el = document.getElementById(section);
     if (el) el.scrollIntoView({ behavior: "smooth" });
   };
-  
+
   return (
     <>
       <div>
@@ -21,7 +21,7 @@ const Navbar = () => {
                   <li>
                     Call: <a href="tel:+919265407449">+91 9265407449</a>
                   </li>
-                   
+
                   <li>
                     <div className="dropdown language-switcher d-inline-block">
                       <button
@@ -165,21 +165,73 @@ const Navbar = () => {
           <div className="xton-responsive-nav">
             <div className="container">
               <div className="xton-responsive-menu mean-container">
+
+
+
+                <div class="mean-bar">
+                  <a href="#nav" class="meanmenu-reveal"  style={{right:0,left:'auto'}}><span><span><span></span></span></span></a>
+                  <nav class="mean-nav">
+                  <ul class="navbar-nav" style={{display:'none'}}>
+                    <li class="nav-item"><a href="#" class="nav-link">Home <i class="bx bx-chevron-down"></i></a>
+                 
+                   </li>
+
+                    <li class="nav-item megamenu"><a href="#" class="nav-link active">Shop <i class="bx bx-chevron-down"></i></a>
+                    
+                  </li>
+
+                    <li class="nav-item megamenu"><a href="#" class="nav-link">Pages <i class="bx bx-chevron-down"></i></a>
+                   </li>
+
+                    <li class="nav-item megamenu"><a href="#" class="nav-link">Women's <i class="bx bx-chevron-down"></i></a>
+                </li>
+
+                    <li class="nav-item megamenu"><a href="#" class="nav-link">Men's <i class="bx bx-chevron-down"></i></a>
+                  </li>
+
+                    <li class="nav-item"><a href="#" class="nav-link">Blog <i class="bx bx-chevron-down"></i></a>
+                      </li>
+                  </ul>
+
+                  <div class="others-option">
+                    <div class="option-item">
+                      <div class="search-btn-box">
+                        <i class="search-btn bx bx-search-alt"></i>
+                      </div>
+                    </div>
+
+                    <div class="option-item">
+                      <div class="cart-btn">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#shoppingCartModal"><i class="bx bx-shopping-bag"></i><span>0</span></a>
+                      </div>
+                    </div>
+
+                    <div class="option-item">
+                      <div class="burger-menu" data-bs-toggle="modal" data-bs-target="#sidebarModal">
+                        <span class="top-bar"></span>
+                        <span class="middle-bar"></span>
+                        <span class="bottom-bar"></span>
+                      </div>
+                    </div>
+                  </div>
+                </nav></div>
+
+
                 <div className="logo">
-                   <a className="navbar-brand" href="/">
-                  <img
-                    src="/assets/pics/jp.logo.png"
-                    className="main-logo"
-                    alt="logo"
-                    style={{width:'130px' , height:'75px'}}
-                  />
-                  <img
-                    src="/assets/pics/jp white.png"
-                    className="white-logo"
-                    alt="logo"
-                    style={{width:'120px' , height:'45px'}}
-                  />
-                </a>
+                  <a className="navbar-brand" href="/">
+                    <img
+                      src="/assets/pics/jp.logo.png"
+                      className="main-logo"
+                      alt="logo"
+                      style={{ width: '130px', height: '75px' }}
+                    />
+                    <img
+                      src="/assets/pics/jp white.png"
+                      className="white-logo"
+                      alt="logo"
+                      style={{ width: '120px', height: '45px' }}
+                    />
+                  </a>
                 </div>
               </div>
             </div>
@@ -193,13 +245,13 @@ const Navbar = () => {
                     src="/assets/pics/jp.logo.png"
                     className="main-logo"
                     alt="logo"
-                    style={{width:'130px' , height:'75px'}}
+                    style={{ width: '130px', height: '75px' }}
                   />
                   <img
                     src="/assets/pics/jp white.png"
                     className="white-logo"
                     alt="logo"
-                    style={{width:'120px' , height:'45px'}}
+                    style={{ width: '120px', height: '45px' }}
                   />
                 </a>
 
@@ -218,7 +270,7 @@ const Navbar = () => {
                     </li>
 
                     <li className="nav-item">
-                      <NavLink to="/Aboutus" className={({ isActive }) => `nav-link${isActive ? " active" : ""}` }>
+                      <NavLink to="/Aboutus" className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
                         About Us
                       </NavLink>
 
@@ -338,9 +390,9 @@ const Navbar = () => {
                     </li>
 
                     <li className="nav-item ">
-                     
-                        <NavLink to="/Mice_problem" className={({ isActive }) => `nav-link${isActive ? " active" : ""}` }>
-                         Mice Problem
+
+                      <NavLink to="/Mice_problem" className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
+                        Mice Problem
                       </NavLink>
                       {/* <ul className="dropdown-menu">
                                         <li className="nav-item">
@@ -451,8 +503,8 @@ const Navbar = () => {
                       {/* <a href="/OurProducts" className="nav-link">
                         Our Products{" "}
                       </a> */}
-                      <NavLink to="/OurProducts" className={({ isActive }) => `nav-link${isActive ? " active" : ""}` }>
-                         Our Products
+                      <NavLink to="/OurProducts" className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
+                        Our Products
                       </NavLink>
                       {/* <ul className="dropdown-menu">
                                         <li className="nav-item">
@@ -553,8 +605,8 @@ const Navbar = () => {
                       {/* <a href="/Contact" className="nav-link">
                         Contact Us{" "}
                       </a> */}
-                       <NavLink to="/Contact" className={({ isActive }) => `nav-link${isActive ? " active" : ""}` }>
-                         Contact Us
+                      <NavLink to="/Contact" className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
+                        Contact Us
                       </NavLink>
                       {/* <ul className="dropdown-menu">
                                         <li className="nav-item">
@@ -655,8 +707,8 @@ const Navbar = () => {
                       {/* <a href="/Blog" className="nav-link">
                         Blog{" "}
                       </a> */}
-                       <NavLink to="/Blog" className={({ isActive }) => `nav-link${isActive ? " active" : ""}` }>
-                         Blog
+                      <NavLink to="/Blog" className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
+                        Blog
                       </NavLink>
                       {/* <ul className="dropdown-menu">
                                         <li className="nav-item"><a href="blog-1.html" className="nav-link">Grid (2 in Row)</a></li>
@@ -728,18 +780,18 @@ const Navbar = () => {
           <div className="xton-nav">
             <div className="container-fluid">
               <nav className="navbar navbar-expand-md navbar-light">
-                 <a className="navbar-brand" href="/">
+                <a className="navbar-brand" href="/">
                   <img
                     src="/assets/pics/jp.logo.png"
                     className="main-logo"
                     alt="logo"
-                    style={{width:'130px' , height:'75px'}}
+                    style={{ width: '130px', height: '75px' }}
                   />
                   <img
                     src="/assets/pics/jp white.png"
                     className="white-logo"
                     alt="logo"
-                    style={{width:'120px' , height:'45px'}}
+                    style={{ width: '120px', height: '45px' }}
                   />
                 </a>
 
@@ -749,8 +801,8 @@ const Navbar = () => {
                       {/* <a href="/" className="nav-link active">
                         Home{" "}
                       </a> */}
-                       <NavLink to="/" className={({ isActive }) => `nav-link${isActive ? " active" : ""}` }>
-                         Home
+                      <NavLink to="/" className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
+                        Home
                       </NavLink>
                     </li>
 
@@ -758,8 +810,8 @@ const Navbar = () => {
                       {/* <a href="/Aboutus" className="nav-link">
                         About Us{" "}
                       </a> */}
-                      <NavLink to="/Aboutus" className={({ isActive }) => `nav-link${isActive ? " active" : ""}` }>
-                          About Us
+                      <NavLink to="/Aboutus" className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
+                        About Us
                       </NavLink>
                       {/* <ul className="dropdown-menu">
                                         <li className="nav-item">
@@ -880,8 +932,8 @@ const Navbar = () => {
                       {/* <a href="/Mice_problem" className="nav-link">
                         Mice Problem{" "}
                       </a> */}
-                      <NavLink to="/Mice_problem" className={({ isActive }) => `nav-link${isActive ? " active" : ""}` }>
-                         Mice Problem
+                      <NavLink to="/Mice_problem" className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
+                        Mice Problem
                       </NavLink>
                       {/* <ul className="dropdown-menu">
                                         <li className="nav-item">
@@ -992,8 +1044,8 @@ const Navbar = () => {
                       {/* <a href="/OurProducts" className="nav-link">
                         Our Products{" "}
                       </a> */}
-                      <NavLink to="/OurProducts" className={({ isActive }) => `nav-link${isActive ? " active" : ""}` }>
-                         Our Products
+                      <NavLink to="/OurProducts" className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
+                        Our Products
                       </NavLink>
                       {/* <ul className="dropdown-menu">
                                         <li className="nav-item">
@@ -1094,8 +1146,8 @@ const Navbar = () => {
                       {/* <a href="/Contact" className="nav-link">
                         Contact Us{" "}
                       </a> */}
-                      <NavLink to="/Contact" className={({ isActive }) => `nav-link${isActive ? " active" : ""}` }>
-                         Contact Us
+                      <NavLink to="/Contact" className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
+                        Contact Us
                       </NavLink>
                       {/* <ul className="dropdown-menu">
                                         <li className="nav-item">
@@ -1196,8 +1248,8 @@ const Navbar = () => {
                       {/* <a href="/Blog" className="nav-link">
                         Blog{" "}
                       </a> */}
-                       <NavLink to="/Blog" className={({ isActive }) => `nav-link${isActive ? " active" : ""}` }>
-                         Blog
+                      <NavLink to="/Blog" className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
+                        Blog
                       </NavLink>
                       {/* <ul className="dropdown-menu">
                                         <li className="nav-item"><a href="blog-1.html" className="nav-link">Grid (2 in Row)</a></li>
@@ -1265,25 +1317,25 @@ const Navbar = () => {
         {/* <!-- End Header Area --> */}
         {/* <!-- Start Search Overlay --> */}
         <div className="search-overlay">
-            <div className="d-table">
-                <div className="d-table-cell">
-                    <div className="search-overlay-layer"></div>
-                    <div className="search-overlay-layer"></div>
-                    <div className="search-overlay-layer"></div>
-                    
-                    <div className="search-overlay-close">
-                        <span className="search-overlay-close-line"></span>
-                        <span className="search-overlay-close-line"></span>
-                    </div>
+          <div className="d-table">
+            <div className="d-table-cell">
+              <div className="search-overlay-layer"></div>
+              <div className="search-overlay-layer"></div>
+              <div className="search-overlay-layer"></div>
 
-                    <div className="search-overlay-form">
-                        <form>
-                            <input type="text" className="input-search" placeholder="Search here..." />
-                            <button type="submit"><i class='bx bx-search-alt'></i></button>
-                        </form>
-                    </div>
-                </div>
+              <div className="search-overlay-close">
+                <span className="search-overlay-close-line"></span>
+                <span className="search-overlay-close-line"></span>
+              </div>
+
+              <div className="search-overlay-form">
+                <form>
+                  <input type="text" className="input-search" placeholder="Search here..." />
+                  <button type="submit"><i class='bx bx-search-alt'></i></button>
+                </form>
+              </div>
             </div>
+          </div>
         </div>
         {/* <!-- End Search Overlay --> */}
         {/* <!-- Start Shopping Cart Modal --> */}
@@ -1323,7 +1375,7 @@ const Navbar = () => {
                       </h3>
                       <span>Brand: Generic</span>
                       <div className="products-price">
-                        
+
                         <span>-67% </span>
                         <span className="price"> ₹3,331</span>
                       </div>
@@ -1346,7 +1398,7 @@ const Navbar = () => {
                       </h3>
                       <span>Brand: Generic</span>
                       <div className="products-price">
-                        
+
                         <span>-67% </span>
                         <span className="price"> ₹3,331</span>
                       </div>
@@ -1356,7 +1408,7 @@ const Navbar = () => {
                     </div>
                   </div>
 
-                 
+
                 </div>
 
                 <div className="products-cart-subtotal">
@@ -1404,9 +1456,9 @@ const Navbar = () => {
 
                   <div className="about-the-store">
                     <p>
-                        At JP Enterprise, we specialize in providing advanced rat repellent
-    solutions designed to protect your vehicles, homes, and commercial
-    spaces from rodent damage.
+                      At JP Enterprise, we specialize in providing advanced rat repellent
+                      solutions designed to protect your vehicles, homes, and commercial
+                      spaces from rodent damage.
                     </p>
 
                     <ul className="sidebar-contact-info">
@@ -1420,7 +1472,7 @@ const Navbar = () => {
                         <i className="bx bx-phone-call"></i>{" "}
                         <a href="tel:+919265407449">+91 9265407449</a>
                       </li>
-                       <li><i class='bx bx-mobile'></i> <a href= "tel:+917622009263">+91 7622009263</a></li>
+                      <li><i class='bx bx-mobile'></i> <a href="tel:+917622009263">+91 7622009263</a></li>
                       <li>
                         <i className="bx bx-envelope"></i>{" "}
                         <a href="mailto:jpexport42@gmail.com">jpexport42@gmail.com</a>
@@ -1499,13 +1551,13 @@ const Navbar = () => {
                       </a>
                     </li>
 
-                  
+
                   </ul>
 
                   <p>
                     With over a decade of experience and satisfied customers across India
-    and abroad, we aim to offer safe, eco-friendly, and effective pest
-    control products at affordable prices.
+                    and abroad, we aim to offer safe, eco-friendly, and effective pest
+                    control products at affordable prices.
                   </p>
                   <a href="/OurProducts" className="shop-now-btn">
                     Shop Now
@@ -1540,7 +1592,7 @@ const Navbar = () => {
               <div className="modal-body">
                 <h3>My Wish List (2)</h3>
 
-                  <div className="products-cart-content">
+                <div className="products-cart-content">
                   <div className="products-cart">
                     <div className="products-image">
                       <a href="#">
@@ -1554,7 +1606,7 @@ const Navbar = () => {
                       </h3>
                       <span>Brand: Generic</span>
                       <div className="products-price">
-                        
+
                         <span>-67% </span>
                         <span className="price"> ₹3,331</span>
                       </div>
@@ -1577,7 +1629,7 @@ const Navbar = () => {
                       </h3>
                       <span>Brand: Generic</span>
                       <div className="products-price">
-                        
+
                         <span>-67% </span>
                         <span className="price"> ₹3,331</span>
                       </div>
@@ -1587,7 +1639,7 @@ const Navbar = () => {
                     </div>
                   </div>
 
-                 
+
                 </div>
                 <div className="products-cart-btn">
                   <a href="/Cart" className="optional-btn">
