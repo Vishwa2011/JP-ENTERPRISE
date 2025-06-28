@@ -581,27 +581,27 @@ const Home = () => {
                 
                 <div className="brand-slides owl-carousel owl-theme">
                     <div className="brand-item">
-                        <a href="#"><img src="assets/img/brand/img1.png" alt="image" /></a>
+                        <a href="#"><img src="/assets/pics/brand1.png" alt="image" /></a>
                     </div>
 
                     <div className="brand-item">
-                        <a href="#"><img src="assets/img/brand/img2.png" alt="image" /></a>
+                        <a href="#"><img src="/assets/pics/brand2.png" alt="image" /></a>
                     </div>
 
                     <div className="brand-item">
-                        <a href="#"><img src="assets/img/brand/img3.png" alt="image" /></a>
+                        <a href="#"><img src="/assets/pics/brand3.png" alt="image" /></a>
                     </div>
 
                     <div className="brand-item">
-                        <a href="#"><img src="assets/img/brand/img4.png" alt="image" /></a>
+                        <a href="#"><img src="/assets/pics/brand4.png" alt="image" /></a>
                     </div>
 
                     <div className="brand-item">
-                        <a href="#"><img src="assets/img/brand/img5.png" alt="image" /></a>
+                        <a href="#"><img src="/assets/pics/brand5.png" alt="image" /></a>
                     </div>
 
                     <div className="brand-item">
-                        <a href="#"><img src="assets/img/brand/img6.png" alt="image" /></a>
+                        <a href="#"><img src="/assets/pics/brand6.png" alt="image" /></a>
                     </div>
                 </div>
             </div>

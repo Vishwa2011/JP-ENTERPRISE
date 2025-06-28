@@ -300,10 +300,8 @@ const OurProducts = () => {
 
                                         <div class="selected-filters-wrap-list">
                                             <ul>
-                                                <li><a href="#"><i class='bx bx-x'></i> 44</a></li>
-                                                <li><a href="#"><i class='bx bx-x'></i> XI</a></li>
-                                                <li><a href="#"><i class='bx bx-x'></i> Clothing</a></li>
-                                                <li><a href="#"><i class='bx bx-x'></i> Shoes</a></li>
+                                                <li><a href="#"><i class='bx bx-x'></i> Rat Repellent</a></li>
+                                             
                                             </ul>
 
                                             <a href="#" class="delete-selected-filters"><i class='bx bx-trash'></i> <span>Clear All</span></a>
@@ -311,15 +309,15 @@ const OurProducts = () => {
                                     </div>
 
                                     <div class="woocommerce-widget collections-list-widget">
-                                        <h3 class="woocommerce-widget-title">Collections</h3>
+                                        <h3 class="woocommerce-widget-title">Material</h3>
 
                                         <ul class="collections-list-row">
-                                            <li><a href="#">Men's</a></li>
-                                            <li class="active"><a href="#" class="active">Women’s</a></li>
-                                            <li><a href="#">Clothing</a></li>
-                                            <li><a href="#">Shoes</a></li>
-                                            <li><a href="#">Accessories</a></li>
-                                            <li><a href="#">Uncategorized</a></li>
+                                            <li><a href="#">Metal</a></li>
+                                            <li class="active"><a href="#" class="active">Plastic / Polymer</a></li>
+                                            <li><a href="#"> Essential Oils </a></li>
+                                            <li><a href="#"> Electronic Components </a></li>
+                                            {/* <li><a href="#">Accessories</a></li>
+                                            <li><a href="#">Uncategorized</a></li> */}
                                         </ul>
                                     </div>
 
@@ -396,22 +394,22 @@ const OurProducts = () => {
                                         <h3 class="woocommerce-widget-title">Brands</h3>
 
                                         <ul class="brands-list-row">
-                                            <li><a href="#">Gucci</a></li>
-                                            <li><a href="#">Virgil Abloh</a></li>
-                                            <li><a href="#">Balenciaga</a></li>
-                                            <li class="active"><a href="#">Moncler</a></li>
+                                            <li><a href="#">Generic</a></li>
+                                            <li><a href="#">TrustBasket</a></li>
+                                            <li><a href="#">Rodexit</a></li>
+                                            {/* <li class="active"><a href="#">Moncler</a></li>
                                             <li><a href="#">Fendi</a></li>
-                                            <li><a href="#">Versace</a></li>
+                                            <li><a href="#">Versace</a></li> */}
                                         </ul>
                                     </div>
 
                                     <div class="woocommerce-widget aside-trending-widget">
                                         <div class="aside-trending-products">
-                                            <img src="assets/img/offer-bg.jpg" alt="image" />
+                                            <img src="/assets/pics/blogdetails.jpg" alt="image" />
 
                                             <div class="category">
                                                 <h3>Top Trending</h3>
-                                                <span>Spring/Summer 2024 Collection</span>
+                                                {/* <span>Spring/Summer 2024 Collection</span> */}
                                             </div>
                                             <a href="/" class="link-btn"></a>
                                         </div>
