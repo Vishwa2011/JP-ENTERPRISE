@@ -264,21 +264,19 @@ const Aboutus = () => {
                   >
                     <div class="single-testimonials-item">
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book.
+                        “I was worried about rats damaging my car wires. After
+                        using JP Enterprise’s car repellent, it’s been
+                        completely safe.”
                       </p>
 
                       <div class="info">
                         <img
-                          src="assets/img/user2.jpg"
+                          src="/assets/pics/user.png"
                           class="shadow rounded-circle"
                           alt="image"
                         />
-                        <h3>Sarah Taylor</h3>
-                        <span>Student</span>
+                        <h3>Vivek Shah</h3>
+                        <span>Software Engineer</span>
                       </div>
                     </div>
                   </div>
@@ -286,23 +284,19 @@ const Aboutus = () => {
                     class="owl-item cloned"
                     style={{ width: "412px", marginRight: "30px" }}
                   >
-                    <div class="single-testimonials-item">
+                    <div className="single-testimonials-item">
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book.
+                        “This product worked wonderfully in our warehouse. We no
+                        longer see rodent droppings around the storage area.”
                       </p>
-
-                      <div class="info">
+                      <div className="info">
                         <img
-                          src="assets/img/user3.jpg"
-                          class="shadow rounded-circle"
+                          src="/assets/pics/user.png"
+                          className="shadow rounded-circle"
                           alt="image"
                         />
-                        <h3>David Warner</h3>
-                        <span>Student</span>
+                        <h3>Rina Mehta</h3>
+                        <span>Warehouse Manager</span>
                       </div>
                     </div>
                   </div>
@@ -310,23 +304,20 @@ const Aboutus = () => {
                     class="owl-item cloned"
                     style={{ width: "412px", marginRight: "30px" }}
                   >
-                    <div class="single-testimonials-item">
+                    <div className="single-testimonials-item">
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book.
+                        “Easy to install and very effective. I recommend it to
+                        anyone having issues with mice or rats in vehicles or
+                        homes.”
                       </p>
-
-                      <div class="info">
+                      <div className="info">
                         <img
-                          src="assets/img/user4.jpg"
-                          class="shadow rounded-circle"
+                          src="/assets/pics/user.png"
+                          className="shadow rounded-circle"
                           alt="image"
                         />
-                        <h3>James Anderson</h3>
-                        <span>Student</span>
+                        <h3>Sagar Patel</h3>
+                        <span>Businessman</span>
                       </div>
                     </div>
                   </div>
@@ -334,23 +325,19 @@ const Aboutus = () => {
                     class="owl-item active"
                     style={{ width: "412px", marginRight: "30px" }}
                   >
-                    <div class="single-testimonials-item">
+                    <div className="single-testimonials-item">
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book.
+                        “Thanks to JP Enterprise, we’ve seen zero damage in our
+                        parking garage. The ultrasonic system works perfectly.”
                       </p>
-
-                      <div class="info">
+                      <div className="info">
                         <img
-                          src="assets/img/user1.jpg"
-                          class="shadow rounded-circle"
+                          src="/assets/pics/user.png"
+                          className="shadow rounded-circle"
                           alt="image"
                         />
-                        <h3>John Smith</h3>
-                        <span>Student</span>
+                        <h3>Neha Kothari</h3>
+                        <span>Hotel Owner</span>
                       </div>
                     </div>
                   </div>
@@ -358,23 +345,19 @@ const Aboutus = () => {
                     class="owl-item active center"
                     style={{ width: "412px", marginRight: "30px" }}
                   >
-                    <div class="single-testimonials-item">
+                    <div className="single-testimonials-item">
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book.
+                        “Affordable and highly efficient. No complaints so far
+                        after 3 months of usage. Totally recommended.”
                       </p>
-
-                      <div class="info">
+                      <div className="info">
                         <img
-                          src="assets/img/user2.jpg"
-                          class="shadow rounded-circle"
+                          src="/assets/pics/user.png"
+                          className="shadow rounded-circle"
                           alt="image"
                         />
-                        <h3>Sarah Taylor</h3>
-                        <span>Student</span>
+                        <h3>Pranav Desai</h3>
+                        <span>Homeowner</span>
                       </div>
                     </div>
                   </div>
@@ -382,23 +365,19 @@ const Aboutus = () => {
                     class="owl-item active"
                     style={{ width: "412px", marginRight: "30px" }}
                   >
-                    <div class="single-testimonials-item">
+                    <div className="single-testimonials-item">
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book.
+                        “Rats chewed my car wires twice before. After installing
+                        JP’s rat repellent, there’s been no issue at all.”
                       </p>
-
-                      <div class="info">
+                      <div className="info">
                         <img
-                          src="assets/img/user3.jpg"
-                          class="shadow rounded-circle"
+                          src="/assets/pics/user.png"
+                          className="shadow rounded-circle"
                           alt="image"
                         />
-                        <h3>David Warner</h3>
-                        <span>Student</span>
+                        <h3>Kajal Thakkar</h3>
+                        <span>Teacher</span>
                       </div>
                     </div>
                   </div>
@@ -406,23 +385,19 @@ const Aboutus = () => {
                     class="owl-item"
                     style={{ width: "412px", marginRight: "30px" }}
                   >
-                    <div class="single-testimonials-item">
+                    <div className="single-testimonials-item">
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book.
+                        “Impressed by the quick results. Also, their customer
+                        service is very helpful and friendly.”
                       </p>
-
-                      <div class="info">
+                      <div className="info">
                         <img
-                          src="assets/img/user4.jpg"
-                          class="shadow rounded-circle"
+                          src="/assets/pics/user.png"
+                          className="shadow rounded-circle"
                           alt="image"
                         />
-                        <h3>James Anderson</h3>
-                        <span>Student</span>
+                        <h3>Jatin Bhatt</h3>
+                        <span>Auto Dealer</span>
                       </div>
                     </div>
                   </div>
@@ -430,23 +405,19 @@ const Aboutus = () => {
                     class="owl-item cloned"
                     style={{ width: "412px", marginRight: "30px" }}
                   >
-                    <div class="single-testimonials-item">
+                    <div className="single-testimonials-item">
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book.
+                        “We installed this for all our company cars. Every
+                        driver is happy with the peace of mind it provides.”
                       </p>
-
-                      <div class="info">
+                      <div className="info">
                         <img
-                          src="assets/img/user1.jpg"
-                          class="shadow rounded-circle"
+                          src="/assets/pics/user.png"
+                          className="shadow rounded-circle"
                           alt="image"
                         />
-                        <h3>John Smith</h3>
-                        <span>Student</span>
+                        <h3>Sheetal Gandhi</h3>
+                        <span>Fleet Manager</span>
                       </div>
                     </div>
                   </div>
@@ -454,47 +425,19 @@ const Aboutus = () => {
                     class="owl-item cloned"
                     style={{ width: "412px", marginRight: "30px" }}
                   >
-                    <div class="single-testimonials-item">
+                    <div className="single-testimonials-item">
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book.
+                        “Perfect for protecting garage and storerooms. The
+                        design is compact and blends in well.”
                       </p>
-
-                      <div class="info">
+                      <div className="info">
                         <img
-                          src="assets/img/user2.jpg"
-                          class="shadow rounded-circle"
+                          src="/assets/pics/user.png"
+                          className="shadow rounded-circle"
                           alt="image"
                         />
-                        <h3>Sarah Taylor</h3>
-                        <span>Student</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="owl-item cloned"
-                    style={{ width: "412px", marginRight: "30px" }}
-                  >
-                    <div class="single-testimonials-item">
-                      <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book.
-                      </p>
-
-                      <div class="info">
-                        <img
-                          src="assets/img/user3.jpg"
-                          class="shadow rounded-circle"
-                          alt="image"
-                        />
-                        <h3>David Warner</h3>
-                        <span>Student</span>
+                        <h3>Anand Joshi</h3>
+                        <span>Garage Owner</span>
                       </div>
                     </div>
                   </div>
