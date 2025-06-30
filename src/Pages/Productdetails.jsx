@@ -80,7 +80,7 @@ const Productdetails = () => {
           </div>
         </div>
         {/* <!-- End Page Title --> */}
-
+      
         {/* <!-- Start Product Details Area --> */}
         <section className="product-details-area pt-100 pb-70">
           <div className="container">

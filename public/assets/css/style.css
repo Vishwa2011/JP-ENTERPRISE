@@ -6941,7 +6941,7 @@ Cart CSS
   overflow: hidden;
 }
 .cart-table table tbody tr td.product-subtotal .subtotal-amount {
-  color: #000000;
+  color: #f53f85;
   font-weight: 600;
 }
 .cart-table table tbody tr td.product-subtotal .remove {
@@ -6999,7 +6999,7 @@ Cart CSS
   color: #000000;
 }
 .cart-table table tbody tr td .unit-amount {
-  color: #000000;
+  color: #f53f85;
   font-weight: 600;
 }
 

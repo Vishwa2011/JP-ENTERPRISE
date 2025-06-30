@@ -732,9 +732,9 @@ const OurProducts = () => {
                         </span>
                       </div>
 
-                      <button type="submit" className="default-btn ">
-                        <a href="/Cart" >Add to Cart</a>
-                      </button>
+                      <a href="/Cart" > <button type="submit" className="default-btn ">
+                       Add to Cart
+                      </button></a>
                     </div>
 
                     <a href="#" className="view-full-info">
