@@ -8689,7 +8689,7 @@ Go Top CSS
 
 .new-price{
    margin-right: 6px;
-  color: #f53f85;
+  color: #f53f85 !important;
 }
 .old-price{
   margin-right: 6px;

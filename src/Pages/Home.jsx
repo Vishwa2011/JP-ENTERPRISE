@@ -168,14 +168,14 @@ const Home = () => {
                                                 </a>
                                             </div>
                                         </li>
-                                        <li>
+                                        {/* <li>
                                             <div className="compare-btn">
                                                 <a href="/Compare">
                                                     <i class='bx bx-refresh'></i>
                                                     <span className="tooltip-label">Compare</span>
                                                 </a>
                                             </div>
-                                        </li>
+                                        </li> */}
                                         <li>
                                             <div className="quick-view-btn">
                                                 <a href="#" data-bs-toggle="modal" data-bs-target="#productsQuickView">
@@ -202,8 +202,8 @@ const Home = () => {
                                     <i class='bx bxs-star'></i>
                                 </div>
                                 <div className="price">
-                                    <span className="old-price">₹9,999</span>
                                     <span className="new-price">₹3,331</span>
+                                    <span className="old-price">₹9,999</span>
                                 </div>
                                 <a href="/Cart" className="add-to-cart">Add to Cart</a>
                             </div>
@@ -235,14 +235,14 @@ const Home = () => {
                                                 </a>
                                             </div>
                                         </li>
-                                        <li>
+                                        {/* <li>
                                             <div className="compare-btn">
                                                 <a href="/Compare">
                                                     <i class='bx bx-refresh'></i>
                                                     <span className="tooltip-label">Compare</span>
                                                 </a>
                                             </div>
-                                        </li>
+                                        </li> */}
                                         <li>
                                             <div className="quick-view-btn">
                                                 <a href="#" data-bs-toggle="modal" data-bs-target="#productsQuickView">
@@ -269,8 +269,8 @@ const Home = () => {
                                     <i class='bx bxs-star'></i>
                                 </div>
                                 <div className="price">
-                                    <span className="old-price">₹9,999</span>
                                     <span className="new-price">₹3,429</span>
+                                    <span className="old-price">₹9,999</span>
                                 </div>
                                 <a href="/Cart" className="add-to-cart">Add to Cart</a>
                             </div>
@@ -295,14 +295,14 @@ const Home = () => {
                                                 </a>
                                             </div>
                                         </li>
-                                        <li>
+                                        {/* <li>
                                             <div className="compare-btn">
                                                 <a href="/Compare">
                                                     <i class='bx bx-refresh'></i>
                                                     <span className="tooltip-label">Compare</span>
                                                 </a>
                                             </div>
-                                        </li>
+                                        </li> */}
                                         <li>
                                             <div className="quick-view-btn">
                                                 <a href="#" data-bs-toggle="modal" data-bs-target="#productsQuickView">
@@ -327,8 +327,8 @@ const Home = () => {
                                     <i class='bx bxs-star'></i>
                                 </div>
                                 <div className="price">
-                                    <span className="old-price">₹9,999</span>
                                     <span className="new-price">₹3,331</span>
+                                    <span className="old-price">₹9,999</span>
                                 </div>
                                 <a href="/Cart" className="add-to-cart">Add to Cart</a>
                             </div>
@@ -1058,8 +1058,8 @@ const Home = () => {
                                 <h3><a href="#">High-Frequency Ultrasonic Rat Repeller – Dual Indoor & Outdoor Use | 1500 Sq. Ft | Plug & Play</a></h3>
 
                                    <div className="price">
-                                    <span className="old-price">₹9,999</span>
                                     <span className="new-price">₹3,429</span>
+                                    <span className="old-price">₹9,999</span>
                                 </div>
 
                                 <div className="products-review">

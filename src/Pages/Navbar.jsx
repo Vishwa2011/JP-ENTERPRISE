@@ -1439,8 +1439,8 @@ const Navbar = () => {
                       <span>Brand: Generic</span>
                       <div className="products-price">
 
+                        <span className="price new-price"> ₹3,331</span>
                         <span>-67% </span>
-                        <span className="price"> ₹3,331</span>
                       </div>
                       <a href="#" className="remove-btn">
                         <i className="bx bx-trash"></i>
@@ -1462,8 +1462,8 @@ const Navbar = () => {
                       <span>Brand: Generic</span>
                       <div className="products-price">
 
+                        <span className="price new-price" > ₹3,331</span>
                         <span>-67% </span>
-                        <span className="price"> ₹3,331</span>
                       </div>
                       <a href="#" className="remove-btn">
                         <i className="bx bx-trash"></i>
@@ -1670,8 +1670,8 @@ const Navbar = () => {
                       <span>Brand: Generic</span>
                       <div className="products-price">
 
+                        <span className="price new-price"> ₹3,331</span>
                         <span>-67% </span>
-                        <span className="price"> ₹3,331</span>
                       </div>
                       <a href="#" className="remove-btn">
                         <i className="bx bx-trash"></i>
@@ -1693,8 +1693,8 @@ const Navbar = () => {
                       <span>Brand: Generic</span>
                       <div className="products-price">
 
+                        <span className="price new-price"> ₹3,331</span>
                         <span>-67% </span>
-                        <span className="price"> ₹3,331</span>
                       </div>
                       <a href="#" className="remove-btn">
                         <i className="bx bx-trash"></i>
