@@ -7,6 +7,7 @@ import Facility from "../Components/Facility"
 
 
 
+
 const Home = () => {
           const [count, setCount] = useState(1);
       const min = 1;
@@ -87,6 +88,9 @@ const Home = () => {
             </div>
         </div>
         {/* <!-- End Main Banner Area --> */}
+
+
+        
 
       {/* section strt */}
 
@@ -396,6 +400,8 @@ const Home = () => {
         {/* <!-- End Offer Products Area --> */}
 
 
+
+
           {/* <!-- Start Products Area --> */}
         {/* <section className="products-area pt-100 pb-70">
             <div className="container">
@@ -597,7 +603,7 @@ const Home = () => {
         <div className="brand-area ptb-70">
             <div className="container">
                 <div className="section-title">
-                    <h2>Shop By Brand</h2>
+                    <h2>We are Deal With</h2>
                 </div>
                 
                 <div className="brand-slides owl-carousel owl-theme">
@@ -925,35 +931,95 @@ const Home = () => {
 </section>
 
         {/* <!-- End Blog Area --> */}
+
+
+{/* why choose start */}
+
+
+
+
+<section class="section">
+  <h2 style={{color:'rgb(245, 63, 133)',marginBottom:'10px'}}>Why Choose Ratguard? </h2>
+  <p style={{display:'flex',justifyContent:'center',color:'#000',fontSize:'20px',marginBottom:'35px'}}>"Because your space deserves a smarter, safer, and cruelty-free rodent solution."</p>
+  <div class="offer-grid">
+    <div class="offer-card" style={{padding:'41px 20px'}}>
+      <h3 style={{color:'rgb(245, 63, 133)',marginBottom:'20px'}}>Pure Protection, Zero Chemicals</h3>
+      <p>Safe for you, your pets, and tough on rodents.</p>
+    </div>
+    <div class="offer-card" style={{padding:'41px 20px'}}>
+      <h3 style={{color:'rgb(245, 63, 133)',marginBottom:'20px'}}>Power-Smart Performance</h3>
+      <p>Round-the-clock defense with minimal energy use.</p>
+    </div>
+    <div class="offer-card" style={{padding:'41px 20px'}}>
+      <h3 style={{color:'rgb(245, 63, 133)',marginBottom:'20px'}}>Safe for All, Harmful to None</h3>
+      <p>Targets only rodents — keeping your loved ones completely safe.</p>
+    </div>
+    <div class="offer-card" style={{padding:'41px 20px'}}>
+      <h3 style={{color:'rgb(245, 63, 133)',marginBottom:'20px'}}>Invest Once, Protect Always</h3>
+      <p>No refills, no fuss—just plug in and enjoy lifelong protection.</p>
+    </div>
+  
+  </div>
+</section>
+ {/* why choose end */}
+
   {/* <!-- Start Categories Banner Area --> */}
         <section className="categories-banner-area pt-100 pb-70">
             <div className="container">
                 <div className="row justify-content-center">
+                 <div className="col-lg-6 col-md-6 col-sm-6">
+  <div className="single-categories-box">
+
+    {/* Embedded YouTube Video with inline CSS for 16:9 aspect ratio */}
+    <div style={{ position: 'relative', paddingTop: '56.25%', height: 0, overflow: 'hidden' }}>
+      <iframe
+        src="https://www.youtube.com/embed/LRVyANxYMME?rel=0&showinfo=0"
+        title="YouTube video"
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          border: '0'
+        }}
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+
+   
+
+  </div>
+</div>
+
+
                     <div className="col-lg-6 col-md-6 col-sm-6">
-                        <div className="single-categories-box">
-                            <img src="/assets/pics/rate1.jpg" alt="image" />
+  <div className="single-categories-box">
 
-                            <div className="content ">
-                                <span>Don’t Miss Today</span>
-                                <h3>50% OFF</h3>
-                                <a href="/OurProducts" className="default-btn">Discover Now</a>
-                            </div>
-                            <a href="/OurProducts" className="link-btn"></a>
-                        </div>
-                    </div>
+    {/* Embedded YouTube Video with inline CSS for 16:9 aspect ratio */}
+    <div style={{ position: 'relative', paddingTop: '56.25%', height: 0, overflow: 'hidden' }}>
+      <iframe
+        src="https://www.youtube.com/embed/LRVyANxYMME?rel=0&showinfo=0"
+        title="YouTube video"
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          border: '0'
+        }}
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
 
-                    <div className="col-lg-6 col-md-6 col-sm-6">
-                        <div className="single-categories-box">
-                            <img src="/assets/pics/rate1.jpg" alt="image" />
 
-                            <div className="content">
-                                <span>New Collection</span>
-                                <h3>Need Now</h3>
-                                <a href="/OurProducts" className="default-btn">Discover Now</a>
-                            </div>
-                            <a href="/OurProducts" className="link-btn"></a>
-                        </div>
-                    </div>
+   
+  </div>
+</div>
+
                 </div>
             </div>
         </section>

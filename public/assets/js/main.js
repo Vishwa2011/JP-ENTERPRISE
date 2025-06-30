@@ -191,6 +191,57 @@ $(document).ready(function () {
     })
     });
 
+
+     anime({
+      targets: '.card',
+      opacity: [0, 1],
+      scale: [0.9, 1],
+      translateY: [50, 0],
+      delay: anime.stagger(200),
+      duration: 1200,
+      easing: 'easeOutElastic(1, .8)'
+    });
+
+    // Canvas particle background
+    const canvas = document.getElementById('bgCanvas');
+    const ctx = canvas.getContext('2d');
+    let width, height;
+    let particles = [];
+
+    function resize() {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    }
+    window.addEventListener('resize', resize);
+    resize();
+
+    for (let i = 0; i < 60; i++) {
+      particles.push({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        r: Math.random() * 2 + 1,
+        dx: (Math.random() - 0.5) * 0.5,
+        dy: (Math.random() - 0.5) * 0.5
+      });
+    }
+
+    function animate() {
+      ctx.clearRect(0, 0, width, height);
+      for (let p of particles) {
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = '#00ffc3';
+        ctx.fill();
+        p.x += p.dx;
+        p.y += p.dy;
+
+        if (p.x < 0 || p.x > width) p.dx *= -1;
+        if (p.y < 0 || p.y > height) p.dy *= -1;
+      }
+      requestAnimationFrame(animate);
+    }
+    animate();
+
     // Instagram Slides
     $(document).ready(function () {
     $('.instagram-slides').owlCarousel({
