@@ -4379,7 +4379,7 @@ Brand CSS
 .brand-item a img {
   width: auto !important;
   display: inline-block !important;
-  opacity: 0.5;
+  /* opacity: 0.5; */
   transition: 0.5s;
 }
 .brand-item a:hover img {
