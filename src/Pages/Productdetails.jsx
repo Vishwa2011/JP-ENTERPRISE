@@ -706,7 +706,7 @@ const Productdetails = () => {
                 </div>
 
                 <div className="single-products-box">
-                  <div className="products-image">
+                  <div className="products-image " >
                     <a href="#">
                       <img
                         src="/assets/pics/rate.jpg"

@@ -221,8 +221,8 @@ const OurProducts = () => {
                                 <i className="bx bx-refresh"></i>
                                 <span className="tooltip-label">Compare</span>
                               </a>
-                            </div>
-                          </li> */}
+                            </div>     
+                          </li> */}    
                           <li>
                             <div className="quick-view-btn">
                               <a
