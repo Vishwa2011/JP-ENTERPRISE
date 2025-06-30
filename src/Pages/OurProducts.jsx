@@ -322,7 +322,7 @@ const OurProducts = () => {
                     <div class="selected-filters-wrap-list">
                       <ul>
                         <li>
-                          <a href="#">
+                          <a href="#" >
                             <i class="bx bx-x"></i> Rat Repellent
                           </a>
                         </li>
