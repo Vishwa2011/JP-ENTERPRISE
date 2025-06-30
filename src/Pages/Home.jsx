@@ -169,8 +169,6 @@ const Home = () => {
         {/* <!-- End Main Banner Area --> */}
 
 
-        
-
       {/* section strt */}
 
       
@@ -432,6 +430,49 @@ const Home = () => {
         {/* <!-- End Products Area --> */}
 
 
+<div class="container py-5" style={{paddingBottom:'100px'}}>
+  <div class="text-center mb-4">
+    <span class="text-uppercase  fw-semibold" style={{color:'rgb(245, 63, 133)'}}>Smart Choice for Safety</span>
+    <h2>Proven solutions for a rodent-free life.</h2>
+  </div>
+
+  <div class="row g-4">
+    {/* <!-- Box 1 --> */}
+    <div class="col-md-4">
+      <div class="bg-light rounded-4 p-4 shadow d-flex gap-3" style={{backgroundColor:'#f1f8f5'}} >
+        <i class="fa-solid fa-shield" style={{fontSize:'34px',paddingTop:'13px',color:'rgb(245, 63, 133)'}}></i>
+        <div style={{borderLeft:'3px solid rgb(245, 63, 133)',paddingLeft:'10px'}}>
+          <h3 class="h5 fw-bold mb-2" style={{fontSize:'29px',marginBottom:'11px'}}>Rodent Shield</h3>
+          <p class="text-muted" style={{fontSize:'17px'}}>Guards your home and vehicle.</p>
+        </div>
+      </div>
+    </div>
+
+    {/* <!-- Box 2 --> */}
+    <div class="col-md-4">
+      <div class="bg-light rounded-4 p-4 shadow d-flex gap-3" style={{backgroundColor:'#f1f8f5'}} >
+        <i class="fa-solid fa-helmet-safety" style={{fontSize:'34px',paddingTop:'13px',color:'rgb(245, 63, 133)'}}></i>
+        <div style={{borderLeft:'3px solid rgb(245, 63, 133)',paddingLeft:'10px'}}>
+          <h3 class="h5 fw-bold mb-2" style={{fontSize:'29px',marginBottom:'11px'}}>Natural & Safe</h3>
+          <p class="text-muted" style={{fontSize:'17px'}}>Gentle on people and pets.</p>
+        </div>
+      </div>
+    </div>
+
+    {/* <!-- Box 3 --> */}
+    <div class="col-md-4">
+      <div class="bg-light rounded-4 p-4 shadow d-flex gap-3" style={{backgroundColor:'#f1f8f5'}} >
+        <i class="fa-solid fa-hands-holding-circle" style={{fontSize:'34px',paddingTop:'13px',color:'rgb(245, 63, 133)'}}></i>
+        <div style={{borderLeft:'3px solid rgb(245, 63, 133)',paddingLeft:'10px'}}>
+          <h3 class="h5 fw-bold mb-2" style={{fontSize:'29px',marginBottom:'11px'}}>Lasting Protection</h3>
+          <p class="text-muted" style={{fontSize:'17px'}}>Works long after application.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        
         {/*  */}
 
           <div className="container-fluid py-5">
@@ -1084,24 +1125,31 @@ const Home = () => {
 
 
 <section class="section">
-  <h2 style={{color:'rgb(245, 63, 133)',marginBottom:'10px'}}>Why Choose Ratguard? </h2>
-  <p style={{display:'flex',justifyContent:'center',color:'#000',fontSize:'20px',marginBottom:'35px'}}>"Because your space deserves a smarter, safer, and cruelty-free rodent solution."</p>
+
+
+
+    <div className="about-content text-center mb-4">
+          <span className="sub-title">Why Choose Ratguard? </span>
+          <h2 style={{color:'#000'}}>
+        Smarter safety, no harm done.
+          </h2>
+        </div>
   <div class="offer-grid">
-    <div class="offer-card" style={{padding:'41px 20px'}}>
-      <h3 style={{color:'rgb(245, 63, 133)',marginBottom:'20px'}}>Pure Protection, Zero Chemicals</h3>
-      <p>Safe for you, your pets, and tough on rodents.</p>
+    <div class="offer-card" style={{padding:'41px 20px',background:'#F9F9F9'}}>
+      <h3 style={{color:'rgb(245, 63, 133)',marginBottom:'20px',fontWeight:'700'}}>Pure Protection, Zero Chemicals</h3>
+      <p style={{color:'#000'}}>Safe for you, your pets, and tough on rodents.</p>
     </div>
-    <div class="offer-card" style={{padding:'41px 20px'}}>
-      <h3 style={{color:'rgb(245, 63, 133)',marginBottom:'20px'}}>Power-Smart Performance</h3>
-      <p>Round-the-clock defense with minimal energy use.</p>
+    <div class="offer-card" style={{padding:'41px 20px',background:'#F9F9F9'}}>
+      <h3 style={{color:'rgb(245, 63, 133)',marginBottom:'20px',fontWeight:'700'}}>Power-Smart Performance</h3>
+      <p style={{color:'#000'}}>Round-the-clock defense with minimal energy use.</p>
     </div>
-    <div class="offer-card" style={{padding:'41px 20px'}}>
-      <h3 style={{color:'rgb(245, 63, 133)',marginBottom:'20px'}}>Safe for All, Harmful to None</h3>
-      <p>Targets only rodents — keeping your loved ones completely safe.</p>
+    <div class="offer-card" style={{padding:'41px 20px',background:'#F9F9F9'}}>
+      <h3 style={{color:'rgb(245, 63, 133)',marginBottom:'20px',fontWeight:'700'}}>Safe for All, Harmful to None</h3>
+      <p style={{color:'#000'}}>Targets only rodents — keeping your loved ones completely safe.</p>
     </div>
-    <div class="offer-card" style={{padding:'41px 20px'}}>
-      <h3 style={{color:'rgb(245, 63, 133)',marginBottom:'20px'}}>Invest Once, Protect Always</h3>
-      <p>No refills, no fuss—just plug in and enjoy lifelong protection.</p>
+    <div class="offer-card" style={{padding:'41px 20px',background:'#F9F9F9'}}>
+      <h3 style={{color:'rgb(245, 63, 133)',marginBottom:'20px',fontWeight:'700'}}>Invest Once, Protect Always</h3>
+      <p style={{color:'#000'}}>No refills, no fuss—just plug in and enjoy lifelong protection.</p>
     </div>
   
   </div>
