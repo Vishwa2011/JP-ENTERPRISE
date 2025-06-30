@@ -112,7 +112,7 @@ const Navbar = () => {
               <div className="col-lg-4 col-md-12">
                 <ul className="header-top-menu">
                   {/* <li>
-                    <a href="/Login">
+                    <a href="/MyAccount">
                       <i className="bx bxs-user"></i> My Account
                     </a>
                   </li> */}
@@ -170,7 +170,7 @@ const Navbar = () => {
 
                      <div className="option-item">
                       <div className="cart-btn">
-                    <a href="/Login">
+                    <a href="/MyAccount">
                       <i className="bx bxs-user"></i> 
                     </a>
                       </div>
@@ -793,7 +793,7 @@ const Navbar = () => {
                     </div>
  <div className="option-item">
                       <div className="cart-btn">
-                    <a href="/Login">
+                    <a href="/MyAccount">
                       <i className="bx bxs-user"></i> 
                     </a>
                       </div>
@@ -1354,8 +1354,8 @@ const Navbar = () => {
                       </div>
                     </div>
  <div className="option-item">
-                      <div className="cart-btn">
-                    <a href="/Login">
+                      <div className="cart-btn" >
+                    <a href="/MyAccount">
                       <i className="bx bxs-user"></i> 
                     </a>
                       </div>
