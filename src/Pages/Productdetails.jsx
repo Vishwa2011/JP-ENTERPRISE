@@ -85,6 +85,8 @@ const Productdetails = () => {
         <section className="product-details-area pt-100 pb-70">
           <div className="container">
             <div className="row justify-content-center">
+
+              
               <div className="col-lg-5 col-md-12">
                 <div className="products-details-image">
                   <div className="row justify-content-center">
