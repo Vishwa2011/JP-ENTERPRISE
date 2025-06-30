@@ -8694,3 +8694,55 @@ Go Top CSS
 .old-price{
   margin-right: 6px;
 }
+.section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #00bcd4;
+}
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.offer-card {
+  background: #1c1c1c;
+  padding: 30px 20px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #2c2c2c;
+}
+
+.offer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 188, 212, 0.2);
+}
+
+.offer-card h3 {
+  color: #00bcd4;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.offer-card p {
+  font-size: 1rem;
+  color: #d0d0d0;
+}
+
+@media (max-width: 600px) {
+  .section h2 {
+    font-size: 2rem;
+  }
+
+  .offer-card {
+    padding: 20px 15px;
+  }
+}
