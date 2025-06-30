@@ -2,12 +2,152 @@ import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Facility from "../Components/Facility";
-import Instragram from "../Components/Instragram";
+import {
+  FaBolt,
+  FaTools,
+  FaShieldAlt,
+  FaLeaf,
+  FaTint,
+  FaPowerOff,
+  FaLightbulb,
+  FaBatteryHalf,
+  FaClock,
+  FaFlag,
+  FaCheckCircle,
+  FaCogs,
+} from "react-icons/fa";
 
+const featuresLeft = [
+  {
+    icon: <FaBolt size={24} className="text-danger" />,
+    title: "Power Surge Protection",
+    desc: "Safeguards your device from voltage spikes.",
+  },
+  {
+    icon: <FaTools size={24} className="text-primary" />,
+    title: "Advanced Engineering",
+    desc: "Built with next-gen circuitry for maximum performance.",
+  },
+  {
+    icon: <FaCogs size={24} className="text-success" />,
+    title: "Easy Setup",
+    desc: "Quick 2-step installation process.",
+  },
+  {
+    icon: <FaLeaf size={24} className="text-success" />,
+    title: "Eco-Friendly Design",
+    desc: "Safe for pets, humans, and the environment.",
+  },
+  {
+    icon: <FaTint size={24} className="text-info" />,
+    title: "Water Resistant",
+    desc: "Operates even in harsh weather conditions.",
+  },
+  {
+    icon: <FaShieldAlt size={24} className="text-secondary" />,
+    title: "Non-Lethal Technology",
+    desc: "Repels threats without harm.",
+  },
+];
+
+const featuresRight = [
+  {
+    icon: <FaPowerOff size={24} className="text-danger" />,
+    title: "Touch Activation",
+    desc: "Enable or disable with a simple touch.",
+  },
+  {
+    icon: <FaLightbulb size={24} className="text-warning" />,
+    title: "Dual LED Indicators",
+    desc: "Bright status display with energy-saving LEDs.",
+  },
+  {
+    icon: <FaBatteryHalf size={24} className="text-info" />,
+    title: "Low Power Consumption",
+    desc: "Consumes 20% less energy than previous models.",
+  },
+  {
+    icon: <FaClock size={24} className="text-primary" />,
+    title: "24/7 Active Protection",
+    desc: "Runs non-stop for full-time defense.",
+  },
+  {
+    icon: <FaFlag size={24} className="text-danger" />,
+    title: "Made in India",
+    desc: "Proudly designed and manufactured locally.",
+  },
+  {
+    icon: <FaCheckCircle size={24} className="text-success" />,
+    title: "1 Year Warranty",
+    desc: "Coverage against all manufacturing defects.",
+  },
+];
 const Aboutus = () => {
   return (
     <>
       <Navbar />
+      <div className="container-fluid py-5">
+        <div className="about-content text-center mb-4">
+          <span className="sub-title">Advanced Ultrasonic Defense System</span>
+          <h4>
+            Keep rodents away from your car with next-gen, maintenance-free
+            technology by JP Enterprise.
+          </h4>
+        </div>
+        <div className="row align-items-center d-flex justify-content-center">
+          {/* Left features */}
+          <div className="col-lg-4 col-md-6 mb-4 mb-lg-0 featuresLeft">
+            {featuresLeft.map((item, i) => (
+              <div className="card border-0 mb-3 shadow-sm" key={i}>
+                <div className="card-body d-flex">
+                  <div className="me-3 d-flex align-items-center">
+                    {item.icon}
+                  </div>
+                  <div>
+                    <h6 className="mb-1 fw-bold">{item.title}</h6>
+                    <p className="mb-0 small text-muted">{item.desc}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Center Image & Button */}
+          <div className="col-lg-4 col-md-12 text-center">
+            <div>
+              <img
+                src="/assets/pics/rate.jpg"
+                alt="Product"
+                className="img-fluid float-animation"
+                style={{ maxHeight: "420px" }}
+              />
+            </div>
+            <div>
+              <a href="/OurProducts" className="default-btn mt-4 px-4">
+                BUY NOW
+              </a>
+            </div>
+          </div>
+
+          {/* Right features */}
+          <div className="col-lg-4 col-md-6 mt-4 mt-lg-0 featuresRight">
+            {featuresRight.map((item, i) => (
+              <div className="card border-0 mb-3 shadow-sm" key={i}>
+                <div className="card-body d-flex">
+                  <div className="me-3 d-flex align-items-center">
+                    {item.icon}
+                  </div>
+                  <div>
+                    <h6 className="mb-1 fw-bold">{item.title}</h6>
+                    <p className="mb-0 small text-muted">{item.desc}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
       <div>
         {/* <!-- Start Page Title --> */}
         <div className="page-title-area">
@@ -239,8 +379,6 @@ const Aboutus = () => {
           </div>
         </div> */}
         {/* <!-- End Partner Area --> */}
-
-   
 
         <Facility />
         {/* <Instragram /> */}

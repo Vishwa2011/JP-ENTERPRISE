@@ -1,12 +1,56 @@
-import { useEffect,useState  } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import $ from "jquery";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Facility from "../Components/Facility";
 // import Instragram from "../Components/Instragram";
-
+const images = [
+  "/assets/pics/rate.jpg" ,
+  "/assets/pics/speaker 3.jpg",
+  "/assets/pics/speaker2.jpg",
+  "/assets/pics/PRDUCAT.jpg",
+  "/assets/pics/PRODUCT2.webp",
+  "/assets/pics/speaker.jpg" 
+];
 const Productdetails = () => {
-      const [count, setCount] = useState(1);
+ const [imgId, setImgId] = useState(1);
+  const showcaseRef = useRef(null);
+  const zoomRef = useRef(null);
+  const [zoomStyles, setZoomStyles] = useState({});
+  const [isZoomVisible, setIsZoomVisible] = useState(false);
+
+  const slideImage = () => {
+    const displayWidth = showcaseRef.current?.children[0].clientWidth;
+    if (displayWidth && showcaseRef.current) {
+      showcaseRef.current.style.transform = `translateX(${
+        -(imgId - 1) * displayWidth
+      }px)`;
+    }
+  };
+
+  useEffect(() => {
+    slideImage();
+    window.addEventListener("resize", slideImage);
+    return () => window.removeEventListener("resize", slideImage);
+  }, [imgId]);
+
+  const handleMouseMove = (e) => {
+    const { left, top, width, height } =
+      e.currentTarget.getBoundingClientRect();
+    const x = e.clientX - left;
+    const y = e.clientY - top;
+    const bgX = (x / width) * 100;
+    const bgY = (y / height) * 100;
+
+    setZoomStyles({
+      backgroundImage: `url(${images[imgId - 1]})`,
+      backgroundPosition: `${bgX}% ${bgY}%`,
+      display: "block",
+      top: y - 100,
+      left: x + 20,
+    });
+  };
+  const [count, setCount] = useState(1);
   const min = 1;
   const max = 10;
 
@@ -21,7 +65,7 @@ const Productdetails = () => {
       setCount(count + 1);
     }
   };
-  
+
   useEffect(() => {
     // Tabs
     $(".tab ul.tabs").addClass("active").find("> li:eq(0)").addClass("current");
@@ -80,54 +124,48 @@ const Productdetails = () => {
           </div>
         </div>
         {/* <!-- End Page Title --> */}
-      
+
         {/* <!-- Start Product Details Area --> */}
         <section className="product-details-area pt-100 pb-70">
           <div className="container">
             <div className="row justify-content-center">
-
-              
               <div className="col-lg-5 col-md-12">
-                <div className="products-details-image">
-                  <div className="row justify-content-center">
-                    <div className="col-lg-6 col-md-6">
-                      <div className="single-products-details-image">
-                        <img src="/assets/pics/rate.jpg" alt="image" />
-                      </div>
-                    </div>
+      <div className="product-imgs">
+        <div
+          className="img-display zoom-container"
+          onMouseMove={handleMouseMove}
+          onMouseEnter={() => setIsZoomVisible(true)}
+          onMouseLeave={() => setIsZoomVisible(false)}
+        >
+          <div className="img-showcase" ref={showcaseRef}>
+            {images.map((src, index) => (
+              <img key={index} src={src} alt={`shoe ${index + 1}`} />
+            ))}
+          </div>
 
-                    <div className="col-lg-6 col-md-6">
-                      <div className="single-products-details-image">
-                        <img src="/assets/pics/speaker 3.jpg" alt="image" />
-                      </div>
-                    </div>
+          {isZoomVisible && (
+            <div className="zoom-lens" style={zoomStyles}></div>
+          )}
+        </div>
 
-                    <div className="col-lg-6 col-md-6">
-                      <div className="single-products-details-image">
-                        <img src="/assets/pics/speaker2.jpg" alt="image" />
-                      </div>
-                    </div>
-
-                    <div className="col-lg-6 col-md-6">
-                      <div className="single-products-details-image">
-                        <img src="/assets/pics/PRDUCAT.jpg" alt="image" />
-                      </div>
-                    </div>
-
-                    <div className="col-lg-6 col-md-6">
-                      <div className="single-products-details-image">
-                        <img src="/assets/pics/PRODUCT2.webp" alt="image" />
-                      </div>
-                    </div>
-
-                    <div className="col-lg-6 col-md-6">
-                      <div className="single-products-details-image">
-                        <img src="/assets/pics/speaker.jpg" alt="image" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div className="img-select">
+          {images.map((src, index) => (
+            <div className="img-item" key={index}>
+              <button
+                onClick={() => setImgId(index + 1)}
+                style={{
+                  border: "none",
+                  background: "transparent",
+                  padding: 0,
+                }}
+              >
+                <img src={src} alt={`shoe thumb ${index + 1}`} />
+              </button>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
 
               <div className="col-lg-7 col-md-12">
                 <div className="products-details-desc">
@@ -243,23 +281,23 @@ const Productdetails = () => {
 
                   <div className="products-add-to-cart">
                     <div className="input-counter">
-      <span className="minus-btn" onClick={handleDecrement}>
-        <i className="bx bx-minus"></i>
-      </span>
-      <input
-        type="text"
-        value={count}
-        readOnly
-      />
-      <span className="plus-btn" onClick={handleIncrement}>
-        <i className="bx bx-plus"></i>
-      </span>
-    </div>
+                      <span className="minus-btn" onClick={handleDecrement}>
+                        <i className="bx bx-minus"></i>
+                      </span>
+                      <input type="text" value={count} readOnly />
+                      <span className="plus-btn" onClick={handleIncrement}>
+                        <i className="bx bx-plus"></i>
+                      </span>
+                    </div>
 
-                    <button type="submit" className="default-btn " style={{marginRight:"10px"}}>
-                     <i className="fas fa-cart-plus"></i> Add to Cart
+                    <button
+                      type="submit"
+                      className="default-btn "
+                      style={{ marginRight: "10px" }}
+                    >
+                      <i className="fas fa-cart-plus"></i> Add to Cart
                     </button>
-                      <a href="#" className="optional-btn">
+                    <a href="#" className="optional-btn">
                       <i className="bx bx-heart"></i>
                     </a>
                   </div>
@@ -275,7 +313,12 @@ const Productdetails = () => {
 
                   <div className="buy-checkbox-btn">
                     <div className="item">
-                      <input className="inp-cbx" id="cbx" type="checkbox" checked/>
+                      <input
+                        className="inp-cbx"
+                        id="cbx"
+                        type="checkbox"
+                        checked
+                      />
                       <label className="cbx" for="cbx">
                         <span>
                           <svg width="12px" height="10px" viewbox="0 0 12 10">
@@ -610,8 +653,8 @@ const Productdetails = () => {
                       </a>
                     </h3>
                     <div className="price">
-                      <span className="old-price">₹9999</span>
                       <span className="new-price">₹3429</span>
+                      <span className="old-price">₹9999</span>
                     </div>
                     <div className="star-rating">
                       <i className="bx bxs-star"></i>
@@ -691,8 +734,8 @@ const Productdetails = () => {
                       </a>
                     </h3>
                     <div className="price">
-                      <span className="old-price">₹9999</span>
                       <span className="new-price">₹3429</span>
+                      <span className="old-price">₹9999</span>
                     </div>
                     <div className="star-rating">
                       <i className="bx bxs-star"></i>
@@ -708,7 +751,7 @@ const Productdetails = () => {
                 </div>
 
                 <div className="single-products-box">
-                  <div className="products-image " >
+                  <div className="products-image ">
                     <a href="#">
                       <img
                         src="/assets/pics/rate.jpg"
@@ -770,8 +813,8 @@ const Productdetails = () => {
                       </a>
                     </h3>
                     <div className="price">
-                      <span className="old-price">₹9999</span>
                       <span className="new-price">₹3429</span>
+                      <span className="old-price">₹9999</span>
                     </div>
                     <div className="star-rating">
                       <i className="bx bxs-star"></i>
@@ -843,12 +886,15 @@ const Productdetails = () => {
 
                   <div className="products-content">
                     <h3>
-                      <a href="#">High-Frequency Ultrasonic Rat Repeller for Kitchen & Storage – 1500 Sq. Ft | Safe....</a>
+                      <a href="#">
+                        High-Frequency Ultrasonic Rat Repeller for Kitchen &
+                        Storage – 1500 Sq. Ft | Safe....
+                      </a>
                     </h3>
-                   <div className="price">
-                                            <span className="old-price">₹9999</span>
-                                            <span className="new-price">₹3429</span>
-                                        </div>
+                    <div className="price">
+                      <span className="new-price">₹3429</span>
+                      <span className="old-price">₹9999</span>
+                    </div>
                     <div className="star-rating">
                       <i className="bx bxs-star"></i>
                       <i className="bx bxs-star"></i>
@@ -919,12 +965,15 @@ const Productdetails = () => {
 
                   <div className="products-content">
                     <h3>
-                      <a href="#">High-Frequency Ultrasonic Rat Repeller – Dual Indoor & Outdoor Use | 1500 Sq. Ft | Plug...</a>
+                      <a href="#">
+                        High-Frequency Ultrasonic Rat Repeller – Dual Indoor &
+                        Outdoor Use | 1500 Sq. Ft | Plug...
+                      </a>
                     </h3>
-                  <div className="price">
-                                            <span className="old-price">₹9999</span>
-                                            <span className="new-price">₹3429</span>
-                                        </div>
+                    <div className="price">
+                      <span className="new-price">₹3429</span>
+                      <span className="old-price">₹9999</span>
+                    </div>
                     <div className="star-rating">
                       <i className="bx bxs-star"></i>
                       <i className="bx bxs-star"></i>
@@ -997,12 +1046,15 @@ const Productdetails = () => {
 
                   <div className="products-content">
                     <h3>
-                      <a href="#">High-Powered Ultrasonic Rat Repellent for Gardens, Factories, and Warehouses.....</a>
+                      <a href="#">
+                        High-Powered Ultrasonic Rat Repellent for Gardens,
+                        Factories, and Warehouses.....
+                      </a>
                     </h3>
                     <div className="price">
-                                            <span className="old-price">₹9999</span>
-                                            <span className="new-price">₹3429</span>
-                                        </div>
+                      <span className="new-price">₹3429</span>
+                      <span className="old-price">₹9999</span>
+                    </div>
                     <div className="star-rating">
                       <i className="bx bxs-star"></i>
                       <i className="bx bxs-star"></i>
@@ -1025,51 +1077,89 @@ const Productdetails = () => {
       </div>
       <Footer />
 
-     {/* <!-- Start QuickView Modal Area --> */}
-        <div className="modal fade productsQuickView" id="productsQuickView" tabindex="-1" role="dialog" aria-hidden="true">
-             <div className="modal-dialog modal-dialog-centered" role="document">
-                <div className="modal-content">
-                    <button type="button" className="close" data-bs-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><i class='bx bx-x'></i></span>
-                    </button>
+      {/* <!-- Start QuickView Modal Area --> */}
+      <div
+        className="modal fade productsQuickView"
+        id="productsQuickView"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-dialog-centered" role="document">
+          <div className="modal-content">
+            <button
+              type="button"
+              className="close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">
+                <i class="bx bx-x"></i>
+              </span>
+            </button>
 
-                    <div className="row align-items-center justify-content-center">
-                        <div className="col-lg-6 col-md-6">
-                            <div className="products-image">
-                                <img src="/assets/pics/rate1.jpg" alt="image" />
-                            </div>
-                        </div>
+            <div className="row align-items-center justify-content-center">
+              <div className="col-lg-6 col-md-6">
+                <div className="products-image">
+                  <img src="/assets/pics/rate1.jpg" alt="image" />
+                </div>
+              </div>
 
-                        <div className="col-lg-6 col-md-6">
-                            <div className="products-content">
-                                <h3><a href="#">High-Frequency Ultrasonic Rat Repeller – Dual Indoor & Outdoor Use | 1500 Sq. Ft | Plug & Play</a></h3>
+              <div className="col-lg-6 col-md-6">
+                <div className="products-content">
+                  <h3>
+                    <a href="#">
+                      High-Frequency Ultrasonic Rat Repeller – Dual Indoor &
+                      Outdoor Use | 1500 Sq. Ft | Plug & Play
+                    </a>
+                  </h3>
 
-                                   <div className="price">
-                                    <span className="old-price">₹9,999</span>
-                                    <span className="new-price">₹3,429</span>
-                                </div>
+                  <div className="price">
+                    <span className="new-price">₹3,429</span>
+                    <span className="old-price">₹9,999</span>
+                  </div>
 
-                                <div className="products-review">
-                                    <div className="rating">
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                    </div>
-                                    <a href="#" className="rating-count">3 ratings</a>
-                                </div>
+                  <div className="products-review">
+                    <div className="rating">
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                    </div>
+                    <a href="#" className="rating-count">
+                      3 ratings
+                    </a>
+                  </div>
 
-                                <ul className="products-info">
-                                    <li><span>Brand:</span> <a href="#">Generic</a></li>
-                                    <li><span>Style:</span> <a href="#">modern</a></li>
-                                    <li><span>Material:</span> <a href="#">	Metal</a></li>
-                                    <li><span>Product  <br />Dimensions:</span> <a href="">5L x 10W x 10H Centimeters</a></li>
-                                    <li><span>Item Weight:</span><a href="">750 Grams</a></li>
-                                    <li><span>Number of Pieces:</span><a href="">1</a></li>
-                                </ul>
+                  <ul className="products-info">
+                    <li>
+                      <span>Brand:</span> <a href="#">Generic</a>
+                    </li>
+                    <li>
+                      <span>Style:</span> <a href="#">modern</a>
+                    </li>
+                    <li>
+                      <span>Material:</span> <a href="#"> Metal</a>
+                    </li>
+                    <li>
+                      <span>
+                        Product <br />
+                        Dimensions:
+                      </span>{" "}
+                      <a href="">5L x 10W x 10H Centimeters</a>
+                    </li>
+                    <li>
+                      <span>Item Weight:</span>
+                      <a href="">750 Grams</a>
+                    </li>
+                    <li>
+                      <span>Number of Pieces:</span>
+                      <a href="">1</a>
+                    </li>
+                  </ul>
 
-                                {/* <div className="products-color-switch">
+                  {/* <div className="products-color-switch">
                                     <h4>Color:</h4>
 
                                     <ul>
@@ -1081,7 +1171,7 @@ const Productdetails = () => {
                                     </ul>
                                 </div> */}
 
-                                {/* <div className="products-size-wrapper">
+                  {/* <div className="products-size-wrapper">
                                     <h4>Size:</h4>
 
                                     <ul>
@@ -1093,24 +1183,32 @@ const Productdetails = () => {
                                     </ul>
                                 </div> */}
 
-                                <div className="products-add-to-cart">
-                                    <div className="input-counter">
-                                        <span className="minus-btn"><i class='bx bx-minus'></i></span>
-                                         <input type="text" value="1" min="1" max="10" />
-                                        <span className="plus-btn"><i class='bx bx-plus'></i></span>
-                                    </div>
-
-                                    <button type="submit" className="default-btn">Add to Cart</button>
-                                </div>
-
-                                <a href="#" className="view-full-info">View Full Info</a>
-                            </div>
-                        </div>
+                  <div className="products-add-to-cart">
+                    <div className="input-counter">
+                      <span className="minus-btn">
+                        <i class="bx bx-minus"></i>
+                      </span>
+                      <input type="text" value="1" min="1" max="10" />
+                      <span className="plus-btn">
+                        <i class="bx bx-plus"></i>
+                      </span>
                     </div>
+
+                    <button type="submit" className="default-btn">
+                      Add to Cart
+                    </button>
+                  </div>
+
+                  <a href="#" className="view-full-info">
+                    View Full Info
+                  </a>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-        {/* <!-- End QuickView Modal Area --> */}
+      </div>
+      {/* <!-- End QuickView Modal Area --> */}
       {/* <!-- Start Size Guide Modal Area --> */}
       <div
         className="modal fade sizeGuideModal"
