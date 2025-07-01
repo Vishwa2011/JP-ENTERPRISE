@@ -22,6 +22,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination ,EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+
+
 const testimonials = [
     {
       name: "Vivek Shah",
@@ -168,7 +170,7 @@ const Home = () => {
                   <div className="col-lg-6">
                     <div className="banner-image">
                       <div className="circle"></div>
-                      <img src="/assets/pics/bg1.png" alt="image" />
+                      <img src="/assets/pics/bbb.png" alt="image" />
                     </div>
                   </div>
                 </div>
@@ -202,7 +204,7 @@ const Home = () => {
                   <div className="col-lg-6">
                     <div className="banner-image">
                       <div className="circle"></div>
-                      <img src="/assets/pics/rat-in-kitchen.jpg" alt="image" />
+                      <img src="/assets/pics/machine2.png" alt="image" />
                     </div>
                   </div>
                 </div>
@@ -217,7 +219,7 @@ const Home = () => {
 
       <section
         className="bird-repellent-banner"
-        style={{ padding: "50px 20px", background: "#fff" }}
+        style={{ padding: "100px 20px", background: "#fff" }}
       >
         <div
           className="container"
@@ -793,7 +795,7 @@ const Home = () => {
             <div className="single-offer-products d-flex flex-column flex-md-row align-items-center justify-content-between">
               <div className="content">
                 <h3>
-                  <a href="/OurProducts">Best-Selling Rat Guards</a>
+                  <a href="/OurProducts">Best-Selling jp enterprise</a>
                 </h3>
                 <p>
                   Join thousands of satisfied customers using our best-rated
@@ -807,7 +809,7 @@ const Home = () => {
               <div className="image">
                 <a href="/OurProducts">
                   <img
-                    src="/assets/pics/banner2 (1).png"
+                    src="/assets/pics/baners.png"
                     alt="JP Enterprise popular products"
                     style={{ border: "1px solid" }}
                   />
@@ -834,7 +836,7 @@ const Home = () => {
               <div className="image">
                 <a href="/OurProducts">
                   <img
-                    src="/assets/pics/header3.jpg"
+                    src="/assets/pics/bg3.png"
                     alt="JP Enterprise trending products"
                     style={{ border: "1px solid" }}
                   />
@@ -1200,6 +1202,9 @@ const Home = () => {
                       alt="Why Rat Repellent is Important"
                     />
                   </a>
+                    <div className="date">
+                    <span>June 20, 2025</span>
+                  </div>
                 </div>
 
                 <div className="post-content">
@@ -1225,6 +1230,9 @@ const Home = () => {
                       alt="How ultrasonic repellers work"
                     />
                   </a>
+                    <div className="date">
+                    <span>June 20, 2025</span>
+                  </div>
                 </div>
 
                 <div className="post-content">
@@ -1575,6 +1583,7 @@ const Home = () => {
         </div>
       </div>
       {/* <!-- End QuickView Modal Area --> */}
+      
 
       <Footer />
     </div>

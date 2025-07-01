@@ -53,19 +53,19 @@ export default function BlogDetails() {
                                     </ul>
                                 </div>
 
-                                <h3>What is the RAT GUARD Ultrasonic Repeller?</h3>
+                                <h3>What is the jp enterprise Ultrasonic Repeller?</h3>
 
                                
 
-                                <p>RAT GUARD is a scientifically designed device that uses high-frequency sound waves to drive away rodents. These ultrasonic waves are inaudible to humans but unbearable to rats, making the space hostile for them without harming pets or humans.</p>
+                                <p>jp enterprise is a scientifically designed device that uses high-frequency sound waves to drive away rodents. These ultrasonic waves are inaudible to humans but unbearable to rats, making the space hostile for them without harming pets or humans.</p>
 
                                 <blockquote class="wp-block-quote">
-                                    <p>"RAT GUARD – A smart German Technology ultrasonic device that protects your home, warehouse, and office from sneaky rats — without poison, without traps, and without hassle!"</p>
+                                    <p>"jp enterprise – A smart German Technology ultrasonic device that protects your home, warehouse, and office from sneaky rats — without poison, without traps, and without hassle!"</p>
 
                                     <cite>Tom Cruise</cite>
                                 </blockquote>
 
-                                <p>"Say goodbye to toxic chemicals and messy traps — experience a safe, clean, and modern way to repel rats with RAT GUARD!"</p>
+                                <p>"Say goodbye to toxic chemicals and messy traps — experience a safe, clean, and modern way to repel rats with jp enterprise!"</p>
 
                                 <ul class="wp-block-gallery columns-3">
                                     <li class="blocks-gallery-item">
@@ -97,7 +97,7 @@ export default function BlogDetails() {
                                 </ul>
 
                                 <h3>Protect your space without poison or traps</h3>
-                                <p>Rats don’t just cause a nuisance — they pose health and safety risks. The RAT GUARD ultrasonic repeller offers a smart and modern solution using high-frequency sound to drive rodents away, with zero chemicals or mess involved.
+                                <p>Rats don’t just cause a nuisance — they pose health and safety risks. The jp enterprise ultrasonic repeller offers a smart and modern solution using high-frequency sound to drive rodents away, with zero chemicals or mess involved.
 
 </p>
 
@@ -260,7 +260,7 @@ export default function BlogDetails() {
                                             </footer>
 
                                             <div class="comment-content">
-                                                <p>Earlier, I tried traps and sprays — nothing worked long-term. RAT GUARD is the only solution that actually worked without any side effects.</p>
+                                                <p>Earlier, I tried traps and sprays — nothing worked long-term.jp enterprise  is the only solution that actually worked without any side effects.</p>
                                             </div>
 
                                             <div class="reply">
