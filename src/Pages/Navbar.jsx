@@ -168,81 +168,114 @@ const Navbar = () => {
 
         {/* <!-- Start Navbar Area --> */}
         <div className="navbar-area">
+          {/* mobile view  */}
+          <div className="xton-responsive-nav">
+            <div className="container">
+              <div className="xton-responsive-menu">
+                <div
+                  className="logo"
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    width: "100%",
+                  }}
+                >
+                  <div>
+                    <a className="navbar-brand" href="/">
+                      <img
+                        src="/assets/pics/jp.logo.png"
+                        className="main-logo"
+                        alt="logo"
+                        style={{ width: "130px", height: "75px" }}
+                      />
+                      <img
+                        src="/assets/pics/jp white.png"
+                        className="white-logo"
+                        alt="logo"
+                        style={{ width: "120px", height: "45px" }}
+                      />
+                    </a>
+                  </div>
 
-      {/* mobile view  */}
-         <div className="xton-responsive-nav">
-        <div className="container">
-          <div className="xton-responsive-menu">
-            <div
-              className="logo"
-              style={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                width: '100%',
-              }}
-            >
-              <div>
-                <a className="navbar-brand" href="/">
-                  <img
-                    src="/assets/pics/jp.logo.png"
-                    className="main-logo"
-                    alt="logo"
-                    style={{ width: '130px', height: '75px' }}
-                  />
-                  <img
-                    src="/assets/pics/jp white.png"
-                    className="white-logo"
-                    alt="logo"
-                    style={{ width: '120px', height: '45px' }}
-                  />
-                </a>
-              </div>
+                  {/* Toggle Button */}
+                  <div
+                    className="toggle-mean-bar "
+                    style={{ textAlign: "end" }}
+                    onClick={toggleMeanMenu}
+                  >
+                    <i
+                      className="fa-solid fa-bars"
+                      style={{
+                        fontSize: "25px",
+                        lineHeight: "3",
+                        cursor: "pointer",
+                      }}
+                    ></i>
 
-              {/* Toggle Button */}
-              <div className="toggle-mean-bar " style={{textAlign:'end'}} onClick={toggleMeanMenu}>
-                <i
-                  className="fa-solid fa-bars"
-                  style={{ fontSize: '25px', lineHeight: '3', cursor: 'pointer' }}
-                ></i>
-
-                {/* Mean Bar Dropdown */}
+                    {/* Mean Bar Dropdown */}
+                  </div>
+                </div>
               </div>
             </div>
+            <div className={`mean-bar ${isMenuOpen ? "show" : ""}`}>
+              <nav className="mean-nav">
+                <ul className="navbar-nav">
+                  <li className="nav-item">
+                    <NavLink
+                      to="/"
+                      end
+                      className={({ isActive }) =>
+                        `nav-link${isActive ? " active" : ""}`
+                      }
+                    >
+                      Home
+                    </NavLink>
+                  </li>
+                  <li className="nav-item">
+                    <NavLink
+                      to="/Aboutus"
+                      className={({ isActive }) =>
+                        `nav-link${isActive ? " active" : ""}`
+                      }
+                    >
+                      About Us
+                    </NavLink>
+                  </li>
+                  <li className="nav-item">
+                    <NavLink
+                      to="/OurProducts"
+                      className={({ isActive }) =>
+                        `nav-link${isActive ? " active" : ""}`
+                      }
+                    >
+                      Our Products
+                    </NavLink>
+                  </li>
+                  <li className="nav-item">
+                    <NavLink
+                      to="/Blog"
+                      className={({ isActive }) =>
+                        `nav-link${isActive ? " active" : ""}`
+                      }
+                    >
+                      Blog
+                    </NavLink>
+                  </li>
+                  <li className="nav-item">
+                    <NavLink
+                      to="/Contact"
+                      className={({ isActive }) =>
+                        `nav-link${isActive ? " active" : ""}`
+                      }
+                    >
+                      Contact Us
+                    </NavLink>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
-        </div>
-                <div className={`mean-bar ${isMenuOpen ? 'show' : ''}`}>
-                 <nav className="mean-nav">
-  <ul className="navbar-nav">
-    <li className="nav-item">
-      <NavLink to="/" end className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
-        Home
-      </NavLink>
-    </li>
-    <li className="nav-item">
-      <NavLink to="/Aboutus" className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
-        About Us
-      </NavLink>
-    </li>
-    <li className="nav-item">
-      <NavLink to="/OurProducts" className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
-        Our Products
-      </NavLink>
-    </li>
-    <li className="nav-item">
-      <NavLink to="/Blog" className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
-        Blog
-      </NavLink>
-    </li>
-    <li className="nav-item">
-      <NavLink to="/Contact" className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
-        Contact Us
-      </NavLink>
-    </li>
-  </ul>
-</nav>
-                </div>
-      </div>
-               {/* laptop view  */}
+          {/* laptop view  */}
           <div className="xton-nav">
             <div className="container-fluid">
               <nav className="navbar navbar-expand-md navbar-light">
@@ -274,28 +307,131 @@ const Navbar = () => {
                         Home
                       </NavLink>
                     </li>
-
                     <li className="nav-item">
-                      <NavLink
-                        to="/Aboutus"
-                        className={({ isActive }) =>
-                          `nav-link${isActive ? " active" : ""}`
-                        }
-                      >
-                        About Us
-                      </NavLink>
+                      <a href="" className="nav-link ">
+                        About Us <i className="bx bx-chevron-down"></i>
+                      </a>
+                      <ul className="dropdown-menu">
+                        <li className="nav-item">
+                          <NavLink
+                            to="/Aboutus"
+                            className={({ isActive }) =>
+                              `nav-link${isActive ? " active" : ""}`
+                            }
+                          >
+                            About Us
+                          </NavLink>
+                        </li>
+                        <li className="nav-item">
+                          <NavLink
+                            to="/Mission"
+                            className={({ isActive }) =>
+                              `nav-link${isActive ? " active" : ""}`
+                            }
+                          >
+                            Mission
+                          </NavLink>
+                        </li>
+                        <li className="nav-item">
+                          <NavLink
+                            to="/Aboutus"
+                            className={({ isActive }) =>
+                              `nav-link${isActive ? " active" : ""}`
+                            }
+                          >
+                            Vision
+                          </NavLink>
+                        </li>
+                        <li className="nav-item">
+                          <NavLink
+                            to="/Aboutus"
+                            className={({ isActive }) =>
+                              `nav-link${isActive ? " active" : ""}`
+                            }
+                          >
+                            Our Team
+                          </NavLink>
+                        </li>
+                      </ul>
                     </li>
 
-                    <li className="nav-item ">
-                      <NavLink
-                        to="/OurProducts"
-                        className={({ isActive }) =>
-                          `nav-link${isActive ? " active" : ""}`
-                        }
-                      >
-                        Our Products
-                      </NavLink>
+                    <li class="nav-item megamenu">
+                      <a href="" class="nav-link">
+                        Our Products <i class="bx bx-chevron-down"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li class="nav-item">
+                          <div class="container">
+                            <div class="row justify-content-start">
+                              <div class="col-4">
+                                <h6 class="submenu-title">Our Products</h6>
+
+                                <ul class="megamenu-submenu">
+                                  <li>
+                                    <NavLink
+                                      to="/OurProducts"
+                                      className={({ isActive }) =>
+                                        `nav-link${isActive ? " active" : ""}`
+                                      }
+                                    >
+                                      Rat Guard
+                                    </NavLink>
+                                  </li>
+                                </ul>
+                              </div>
+
+                              <div class="col-4">
+                                <ul class="megamenu-submenu">
+                                  <li>
+                                    {" "}
+                                    <div class="aside-trending-products">
+                                      <img
+                                        src="/assets/pics/navimg1.jpg"
+                                        alt="image"
+                                      />
+
+                                      <div class="category">
+                                        <h4>Top Trending</h4>
+                                      </div>
+
+                                      <a
+                                        href="/"
+                                        class="link-btn"
+                                      ></a>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+
+                              <div class="col-4">
+                                <ul class="megamenu-submenu">
+                                  <li>
+                                    {" "}
+                                    <div class="aside-trending-products">
+                                      <img
+                                        src="/assets/pics/navimg2.jpg"
+                                        alt="image"
+                                      />
+
+                                      <div class="category">
+                                        <h4>Popular Products</h4>
+                                      </div>
+
+                                      <a
+                                        href="/"
+                                        class="link-btn"
+                                      ></a>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
                     </li>
+
+                  
                     <li className="nav-item">
                       <NavLink
                         to="/Blog"
@@ -304,6 +440,16 @@ const Navbar = () => {
                         }
                       >
                         Blog
+                      </NavLink>
+                    </li>
+                      <li className="nav-item ">
+                      <NavLink
+                        to="/Contact"
+                        className={({ isActive }) =>
+                          `nav-link${isActive ? " active" : ""}`
+                        }
+                      >
+                        Warranty
                       </NavLink>
                     </li>
                     <li className="nav-item ">
@@ -316,6 +462,7 @@ const Navbar = () => {
                         Contact Us
                       </NavLink>
                     </li>
+                    
                   </ul>
 
                   <div className="others-option">
@@ -405,28 +552,130 @@ const Navbar = () => {
                         Home
                       </NavLink>
                     </li>
-
-                    <li className="nav-item ">
-                      <NavLink
-                        to="/Aboutus"
-                        className={({ isActive }) =>
-                          `nav-link${isActive ? " active" : ""}`
-                        }
-                      >
-                        About Us
-                      </NavLink>
+                    <li className="nav-item">
+                      <a href="" className="nav-link ">
+                        About Us <i className="bx bx-chevron-down"></i>
+                      </a>
+                      <ul className="dropdown-menu">
+                        <li className="nav-item">
+                          <NavLink
+                            to="/Aboutus"
+                            className={({ isActive }) =>
+                              `nav-link${isActive ? " active" : ""}`
+                            }
+                          >
+                            About Us
+                          </NavLink>
+                        </li>
+                        <li className="nav-item">
+                          <NavLink
+                            to="/Mission"
+                            className={({ isActive }) =>
+                              `nav-link${isActive ? " active" : ""}`
+                            }
+                          >
+                            Mission
+                          </NavLink>
+                        </li>
+                        <li className="nav-item">
+                          <NavLink
+                            to="/Aboutus"
+                            className={({ isActive }) =>
+                              `nav-link${isActive ? " active" : ""}`
+                            }
+                          >
+                            Vision
+                          </NavLink>
+                        </li>
+                        <li className="nav-item">
+                          <NavLink
+                            to="/Aboutus"
+                            className={({ isActive }) =>
+                              `nav-link${isActive ? " active" : ""}`
+                            }
+                          >
+                            Our Team
+                          </NavLink>
+                        </li>
+                      </ul>
                     </li>
 
-                    <li className="nav-item ">
-                      <NavLink
-                        to="/OurProducts"
-                        className={({ isActive }) =>
-                          `nav-link${isActive ? " active" : ""}`
-                        }
-                      >
-                        Our Products
-                      </NavLink>
+                     <li class="nav-item megamenu">
+                      <a href="" class="nav-link">
+                        Our Products <i class="bx bx-chevron-down"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li class="nav-item">
+                          <div class="container">
+                            <div class="row justify-content-start">
+                              <div class="col-4">
+                                <h6 class="submenu-title">Our Products</h6>
+
+                                <ul class="megamenu-submenu">
+                                  <li>
+                                    <NavLink
+                                      to="/OurProducts"
+                                      className={({ isActive }) =>
+                                        `nav-link${isActive ? " active" : ""}`
+                                      }
+                                    >
+                                      Rat Guard
+                                    </NavLink>
+                                  </li>
+                                </ul>
+                              </div>
+
+                              <div class="col-4">
+                                <ul class="megamenu-submenu">
+                                  <li>
+                                    {" "}
+                                    <div class="aside-trending-products">
+                                      <img
+                                        src="/assets/pics/navimg1.jpg"
+                                        alt="image"
+                                      />
+
+                                      <div class="category">
+                                        <h4>Top Trending</h4>
+                                      </div>
+
+                                      <a
+                                        href="/"
+                                        class="link-btn"
+                                      ></a>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+
+                              <div class="col-4">
+                                <ul class="megamenu-submenu">
+                                  <li>
+                                    {" "}
+                                    <div class="aside-trending-products">
+                                      <img
+                                        src="/assets/pics/navimg2.jpg"
+                                        alt="image"
+                                      />
+
+                                      <div class="category">
+                                        <h4>Popular Products</h4>
+                                      </div>
+
+                                      <a
+                                        href="/"
+                                        class="link-btn"
+                                      ></a>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
                     </li>
+
                     <li className="nav-item">
                       <NavLink
                         to="/Blog"
@@ -435,6 +684,16 @@ const Navbar = () => {
                         }
                       >
                         Blog
+                      </NavLink>
+                    </li>
+                     <li className="nav-item ">
+                      <NavLink
+                        to="/Contact"
+                        className={({ isActive }) =>
+                          `nav-link${isActive ? " active" : ""}`
+                        }
+                      >
+                        Warranty
                       </NavLink>
                     </li>
                     <li className="nav-item ">
@@ -447,6 +706,7 @@ const Navbar = () => {
                         Contact Us
                       </NavLink>
                     </li>
+                   
                   </ul>
 
                   <div className="others-option">
@@ -520,7 +780,7 @@ const Navbar = () => {
                     placeholder="Search here..."
                   />
                   <button type="submit">
-                    <i class="bx bx-search-alt"></i>
+                    <i className="bx bx-search-alt"></i>
                   </button>
                 </form>
               </div>
@@ -666,7 +926,7 @@ const Navbar = () => {
                         <a href="tel:+919265407449">+91 9265407449</a>
                       </li>
                       <li>
-                        <i class="bx bx-mobile"></i>{" "}
+                        <i className="bx bx-mobile"></i>{" "}
                         <a href="tel:+917622009263">+91 7622009263</a>
                       </li>
                       <li>

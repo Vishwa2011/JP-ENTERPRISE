@@ -22,6 +22,7 @@ import TermsandConditions from "./Pages/TermsandConditions";
 import Gallery from "./Pages/Gallery";
 import MyAccount from "./Pages/MyAccount";
 import Video from "./Pages/Video";
+import Mission from "./Pages/Mission";
 
 
 function App() {
@@ -97,6 +98,7 @@ function App() {
         <Route path="/Gallery" element={<Gallery/>}/>
         <Route path="/MyAccount" element={<MyAccount/>}/>
         <Route path="/Video" element={<Video/>}/>
+        <Route path="/Mission" element={<Mission/>}/>
 
      </Routes>
      <div class="go-top"><i class='bx bx-up-arrow-alt'></i></div>
