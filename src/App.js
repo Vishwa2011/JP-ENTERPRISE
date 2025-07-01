@@ -20,6 +20,7 @@ import ReturnPolicy from "./Pages/ReturnPolicy";
 import TermsandConditions from "./Pages/TermsandConditions";
 import Gallery from "./Pages/Gallery";
 import MyAccount from "./Pages/MyAccount";
+import Video from "./Pages/Video";
 
 
 function App() {
@@ -57,7 +58,7 @@ function App() {
   };
   return (
     <>
-     <div className="switch-box">
+     {/* <div className="switch-box">
       <label className="switch">
         <input
           type="checkbox"
@@ -66,7 +67,7 @@ function App() {
         />
         <span className="slider round"></span>
       </label>
-    </div>
+    </div> */}
      <Routes>
         <Route path="/"  element={<Home />}/>
         <Route path="/Aboutus" element={<Aboutus/>} />
@@ -88,6 +89,7 @@ function App() {
         <Route path="/TermsandConditions" element={<TermsandConditions/>}/>
         <Route path="/Gallery" element={<Gallery/>}/>
         <Route path="/MyAccount" element={<MyAccount/>}/>
+        <Route path="/Video" element={<Video/>}/>
 
      </Routes>
      <div class="go-top"><i class='bx bx-up-arrow-alt'></i></div>

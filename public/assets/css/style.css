@@ -8694,6 +8694,7 @@ Go Top CSS
 .old-price{
   margin-right: 6px;
 }
+
 .section {
   padding: 60px 20px;
   max-width: 1200px;
@@ -8704,7 +8705,17 @@ Go Top CSS
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 40px;
-  color: #00bcd4;
+  color: #000;
+}
+
+.sub-title {
+  display: block;
+  font-size: 1rem;
+  color: #f53f85;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  /* letter-spacing: 1px; */
 }
 
 .offer-grid {
@@ -8714,40 +8725,49 @@ Go Top CSS
 }
 
 .offer-card {
-  background: #1c1c1c;
-  padding: 30px 20px;
-  border-radius: 12px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid #2c2c2c;
+  background: #f9f9f9;
+  padding: 40px 25px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  border: 1px solid #ececec;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
 }
 
 .offer-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 188, 212, 0.2);
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(245, 63, 133, 0.15);
+}
+
+.offer-card i {
+  font-size: 40px;
+  color: #f53f85;
+  margin-bottom: 20px;
 }
 
 .offer-card h3 {
-  color: #00bcd4;
-  font-size: 1.5rem;
+  color: #f53f85;
+  font-size: 1.4rem;
+  font-weight: 700;
   margin-bottom: 15px;
 }
-
+.offer-card:hover i {
+  color: #000;
+  transition: color 0.3s ease;
+}
 .offer-card p {
   font-size: 1rem;
-  color: #d0d0d0;
+  color: #333;
 }
 
 @media (max-width: 600px) {
   .section h2 {
     font-size: 2rem;
   }
-
-  .offer-card {
-    padding: 20px 15px;
-  }
 }
 
 
+/*  */
 
 
  .product-imgs img{
@@ -9137,4 +9157,12 @@ Go Top CSS
 
 .track-btn:hover {
   background-color: #e12b72;
+}
+.shield {
+  transition: all 0.3s ease-in-out;
+}
+
+.shield:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
 }
