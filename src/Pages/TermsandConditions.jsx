@@ -30,9 +30,9 @@ export default function TermsandConditions() {
   <div className="customer-service-content">
   <h3 className="p-0">Terms and Conditions – JP Enterprise</h3>
   <ul>
-    <li>📜 By accessing our website, you agree to follow all terms and conditions outlined here.</li>
-    <li>⚖️ JP Enterprise reserves the right to update or modify these terms at any time without prior notice.</li>
-    <li>🛠️ Unauthorized use, reproduction, or distribution of our content or products is strictly prohibited.</li>
+    <li> By accessing our website, you agree to follow all terms and conditions outlined here.</li>
+    <li> JP Enterprise reserves the right to update or modify these terms at any time without prior notice.</li>
+    <li> Unauthorized use, reproduction, or distribution of our content or products is strictly prohibited.</li>
   </ul>
 </div>
         </div>

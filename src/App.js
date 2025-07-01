@@ -22,8 +22,8 @@ import TermsandConditions from "./Pages/TermsandConditions";
 import Gallery from "./Pages/Gallery";
 import MyAccount from "./Pages/MyAccount";
 import Video from "./Pages/Video";
+import { FaWhatsapp } from 'react-icons/fa'; 
 import Mission from "./Pages/Mission";
-
 
 function App() {
    const { pathname } = useLocation();
@@ -101,6 +101,15 @@ function App() {
         <Route path="/Mission" element={<Mission/>}/>
 
      </Routes>
+
+      <a 
+       href="https://wa.me/919265407449"
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="whatsapp-button"
+    >
+      <FaWhatsapp size={40} />
+    </a>
      <div class="go-top"><i class='bx bx-up-arrow-alt'></i></div>
          <div
       className={`go-top ${showButton ? 'active' : ''}`}

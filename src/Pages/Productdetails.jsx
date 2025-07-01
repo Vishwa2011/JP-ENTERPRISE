@@ -297,8 +297,16 @@ const Productdetails = () => {
                     >
                       <i className="fas fa-cart-plus"></i> Add to Cart
                     </button>
-                    <a href="#" className="optional-btn">
+                    <a href="#" className="optional-btn"  style={{ marginRight: "10px" }}>
                       <i className="bx bx-heart"></i>
+                    </a>
+                     <a
+  href="https://wa.me/919265407449"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="optional"
+>
+                      <i class="fa-brands fa-whatsapp"></i>
                     </a>
                   </div>
 
@@ -350,19 +358,19 @@ const Productdetails = () => {
                         <div className="accordion-content show">
                           <ul>
                             <li>
-                              🔊 Advanced Ultrasonic Technology: Deters rodents
+                               Advanced Ultrasonic Technology: Deters rodents
                               with high-frequency soundwaves
                             </li>
                             <li>
-                              🛡️ Silent & Safe Operation: Harmless to humans and
+                               Silent & Safe Operation: Harmless to humans and
                               pets
                             </li>
                             <li>
-                              🏠 Perfect for Indoor Use: Ideal for kitchens,
+                               Perfect for Indoor Use: Ideal for kitchens,
                               storerooms, and homes
                             </li>
                             <li>
-                              ⚡ Energy Efficient: Runs continuously with low
+                               Energy Efficient: Runs continuously with low
                               power usage
                             </li>
                             <li>
@@ -585,7 +593,7 @@ const Productdetails = () => {
           <div className="related-products">
             <div className="container">
               <div className="section-title">
-                <span className="sub-title">Our Shop</span>
+             
                 <h2>Related Products</h2>
               </div>
 
