@@ -24,6 +24,7 @@ import MyAccount from "./Pages/MyAccount";
 import Video from "./Pages/Video";
 import { FaWhatsapp } from 'react-icons/fa'; 
 import Mission from "./Pages/Mission";
+import Warranty from "./Pages/Warranty";
 
 import Vision from "./Pages/Vision";
 import DigitalCourse from "./Pages/DigitalCourse";
@@ -100,8 +101,9 @@ function App() {
         <Route path="/Gallery" element={<Gallery/>}/>
         <Route path="/MyAccount" element={<MyAccount/>}/>
         <Route path="/Video" element={<Video/>}/>
-        <Route path="/Mission" element={<Mission/>}/>      
-
+        <Route path="/Mission" element={<Mission/>}/>
+        <Route path="/Warranty" element={<Warranty />}/>
+  <Route path="/Mission" element={<Mission/>}/>    
      
         <Route path="/Vision" element={<Vision/>}/>
         <Route path="/DigitalCourse" element={<DigitalCourse/>}/>

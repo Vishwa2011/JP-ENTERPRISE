@@ -261,6 +261,16 @@ const Navbar = () => {
                       Blog
                     </NavLink>
                   </li>
+                     <li className="nav-item ">
+                      <NavLink
+                        to="/Warranty"
+                        className={({ isActive }) =>
+                          `nav-link${isActive ? " active" : ""}`
+                        }
+                      >
+                        Warranty
+                      </NavLink>
+                    </li>
                   <li className="nav-item">
                     <NavLink
                       to="/Contact"
@@ -444,7 +454,7 @@ const Navbar = () => {
                     </li>
                       <li className="nav-item ">
                       <NavLink
-                        to="/Contact"
+                        to="/Warranty"
                         className={({ isActive }) =>
                           `nav-link${isActive ? " active" : ""}`
                         }
@@ -688,7 +698,7 @@ const Navbar = () => {
                     </li>
                      <li className="nav-item ">
                       <NavLink
-                        to="/Contact"
+                        to="/Warranty"
                         className={({ isActive }) =>
                           `nav-link${isActive ? " active" : ""}`
                         }
