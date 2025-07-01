@@ -24,6 +24,7 @@ import MyAccount from "./Pages/MyAccount";
 import Video from "./Pages/Video";
 import { FaWhatsapp } from 'react-icons/fa'; 
 import Mission from "./Pages/Mission";
+import Warranty from "./Pages/Warranty";
 
 function App() {
    const { pathname } = useLocation();
@@ -99,6 +100,7 @@ function App() {
         <Route path="/MyAccount" element={<MyAccount/>}/>
         <Route path="/Video" element={<Video/>}/>
         <Route path="/Mission" element={<Mission/>}/>
+        <Route path="/Warranty" element={<Warranty />}/>
 
      </Routes>
 
