@@ -31,15 +31,11 @@ export default function Mission() {
               <div className="col-lg-6 col-md-12">
                 <div className="about-image">
                   <img
-                    src="/assets/pics/about1.jpg"
+                    src="/assets/pics/mission.jpg"
                     className="shadow"
                     alt="image"
                   />
-                  <img
-                    src="/assets/pics/about (1).png"
-                    className="shadow"
-                    alt="image"
-                  />
+                
                 </div>
               </div>
 

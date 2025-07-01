@@ -334,7 +334,7 @@ const Navbar = () => {
                         </li>
                         <li className="nav-item">
                           <NavLink
-                            to="/Aboutus"
+                            to="/Vision"
                             className={({ isActive }) =>
                               `nav-link${isActive ? " active" : ""}`
                             }
@@ -579,7 +579,7 @@ const Navbar = () => {
                         </li>
                         <li className="nav-item">
                           <NavLink
-                            to="/Aboutus"
+                            to="/Vision"
                             className={({ isActive }) =>
                               `nav-link${isActive ? " active" : ""}`
                             }
