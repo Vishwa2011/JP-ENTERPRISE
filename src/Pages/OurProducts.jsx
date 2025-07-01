@@ -24,7 +24,7 @@ const OurProducts = () => {
   const productsData = [
     {
       id: 1,
-      name: "High-Powered Ultrasonic Rat Repellent for Gardens, Factories, and Warehouses.....",
+      name: "High-Powered Ultrasonic Rat Repellent for Gardens, Factories, and Warehouses - Intense Noise for Effective Outdoor and Indoor Rat Deterrence",
       image1: "/assets/pics/rate.jpg",
       image2: "/assets/pics/speaker.jpg",
       oldPrice: "₹9999",
@@ -33,16 +33,25 @@ const OurProducts = () => {
     },
     {
       id: 2,
-      name: "High-Frequency Ultrasonic Rat Repeller for Kitchen & Storage – 1500 Sq. Ft | Safe....",
+      name: "Smart Ultrasonic Rat Repellent for Commercial & Home Use | Safe & Silent Rodent Defense – 1500 Sq. Ft",
       image1: "/assets/pics/rate.jpg",
       image2: "/assets/pics/speaker2.jpg",
       oldPrice: "₹9999",
-      newPrice: "₹3429",
+      newPrice: "₹3331",
       sale: true,
     },
     {
       id: 3,
-      name: "High-Frequency Ultrasonic Rat Repeller – Dual Indoor & Outdoor Use | 1500 Sq. Ft | Plug...",
+      name: "High-Frequency Ultrasonic Rat Repeller for Kitchen & Storage – 1500 Sq. Ft | Safe, Silent & Made in India",
+      image1: "/assets/pics/rate.jpg",
+      image2: "/assets/pics/speaker 3.jpg",
+      oldPrice: "₹9999",
+      newPrice: "₹3331",
+      sale: false,
+    },
+     {
+      id: 4,
+      name: "High-Frequency Ultrasonic Rat Repeller – Dual Indoor & Outdoor Use | 1500 Sq. Ft | Plug & Play",
       image1: "/assets/pics/rate.jpg",
       image2: "/assets/pics/speaker 3.jpg",
       oldPrice: "₹9999",

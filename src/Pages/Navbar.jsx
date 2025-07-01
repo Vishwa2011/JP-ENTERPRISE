@@ -1,6 +1,11 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMeanMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   const [activeLink, setActiveLink] = useState("home");
 
   const handleClick = (section) => {
@@ -17,7 +22,6 @@ const Navbar = () => {
             <div className="row align-items-center justify-content-center">
               <div className="col-lg-4 col-md-12">
                 <ul className="header-contact-info">
-             
                   <li>
                     Call: <a href="tel:+919265407449">+91 9265407449</a>
                   </li>
@@ -164,30 +168,81 @@ const Navbar = () => {
 
         {/* <!-- Start Navbar Area --> */}
         <div className="navbar-area">
-          <div className="xton-responsive-nav">
-            <div className="container">
-              <div className="xton-responsive-menu ">
-             
-                <div className="logo">
-                  <a className="navbar-brand" href="/">
-                    <img
-                      src="/assets/pics/jp.logo.png"
-                      className="main-logo"
-                      alt="logo"
-                      style={{ width: "130px", height: "75px" }}
-                    />
-                    <img
-                      src="/assets/pics/jp white.png"
-                      className="white-logo"
-                      alt="logo"
-                      style={{ width: "120px", height: "45px" }}
-                    />
-                  </a>
-                </div>
+
+      {/* mobile view  */}
+         <div className="xton-responsive-nav">
+        <div className="container">
+          <div className="xton-responsive-menu">
+            <div
+              className="logo"
+              style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                width: '100%',
+              }}
+            >
+              <div>
+                <a className="navbar-brand" href="/">
+                  <img
+                    src="/assets/pics/jp.logo.png"
+                    className="main-logo"
+                    alt="logo"
+                    style={{ width: '130px', height: '75px' }}
+                  />
+                  <img
+                    src="/assets/pics/jp white.png"
+                    className="white-logo"
+                    alt="logo"
+                    style={{ width: '120px', height: '45px' }}
+                  />
+                </a>
+              </div>
+
+              {/* Toggle Button */}
+              <div className="toggle-mean-bar " style={{textAlign:'end'}} onClick={toggleMeanMenu}>
+                <i
+                  className="fa-solid fa-bars"
+                  style={{ fontSize: '25px', lineHeight: '3', cursor: 'pointer' }}
+                ></i>
+
+                {/* Mean Bar Dropdown */}
               </div>
             </div>
           </div>
-
+        </div>
+                <div className={`mean-bar ${isMenuOpen ? 'show' : ''}`}>
+                 <nav className="mean-nav">
+  <ul className="navbar-nav">
+    <li className="nav-item">
+      <NavLink to="/" end className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
+        Home
+      </NavLink>
+    </li>
+    <li className="nav-item">
+      <NavLink to="/Aboutus" className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
+        About Us
+      </NavLink>
+    </li>
+    <li className="nav-item">
+      <NavLink to="/OurProducts" className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
+        Our Products
+      </NavLink>
+    </li>
+    <li className="nav-item">
+      <NavLink to="/Blog" className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
+        Blog
+      </NavLink>
+    </li>
+    <li className="nav-item">
+      <NavLink to="/Contact" className={({ isActive }) => `nav-link${isActive ? " active" : ""}`}>
+        Contact Us
+      </NavLink>
+    </li>
+  </ul>
+</nav>
+                </div>
+      </div>
+               {/* laptop view  */}
           <div className="xton-nav">
             <div className="container-fluid">
               <nav className="navbar navbar-expand-md navbar-light">

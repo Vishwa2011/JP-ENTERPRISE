@@ -329,7 +329,7 @@ export default function Checkout() {
                           type="radio"
                           id="direct-bank-transfer"
                           name="radio-group"
-                          checked
+                          
                         />
                         <label for="direct-bank-transfer">
                           Direct Bank Transfer

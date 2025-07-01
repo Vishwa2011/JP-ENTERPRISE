@@ -8,14 +8,7 @@ const images = [
   { src: "/assets/pics/speaker.jpg", alt: "Image 02" },
   { src: "/assets/pics/speaker2.jpg", alt: "Image 03" },
   { src: "/assets/pics/speaker 3.jpg", alt: "Image 04" },
-  { src: "https://picsum.photos/id/14/1000/1000", alt: "Image 05" },
-  { src: "https://picsum.photos/id/15/1000/1000", alt: "Image 06" },
-  { src: "https://picsum.photos/id/16/1000/1000", alt: "Image 07" },
-  { src: "https://picsum.photos/id/17/1000/1000", alt: "Image 08" },
-  { src: "https://picsum.photos/id/18/1000/1000", alt: "Image 09" },
-  { src: "https://picsum.photos/id/25/1000/1000", alt: "Image 10" },
-  { src: "https://picsum.photos/id/29/1000/1000", alt: "Image 11" },
-  { src: "https://picsum.photos/id/46/1000/1000", alt: "Image 12" },
+
 ];
 
 export default function Gallery() {

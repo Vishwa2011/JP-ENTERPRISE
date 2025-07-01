@@ -9166,4 +9166,36 @@ Go Top CSS
   transform: translateY(-8px);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
 }
- 
+ .mean-bar {
+  display: none;
+  background-color: white;
+  padding: 10px;
+  border-top: 1px solid #eee;
+}
+
+.mean-bar.show {
+  display: block;
+}
+.mean-bar ul li{
+  border-bottom: 1px solid #0000001c;
+}
+
+.mean-bar .nav-link {
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: block;
+  font-size: 15px !important;
+  font-weight: 700;
+}
+
+.mean-bar .nav-link:hover {
+  color: #f53f85;
+  padding-left: 10px;
+}
+
+.mean-bar .nav-link.active {
+  color: #f53f85;
+  font-weight: 600;
+}
