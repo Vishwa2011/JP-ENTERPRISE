@@ -19,7 +19,7 @@ import {
   FaCogs,
 } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay, Pagination ,EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 const testimonials = [
@@ -140,6 +140,7 @@ const Home = () => {
   return (
     <div>
       <Navbar />
+    
       {/* <!-- Start Main Banner Area --> */}
       <div className="home-slides-three owl-carousel owl-theme">
         <div className="hero-banner">
@@ -747,13 +748,22 @@ const Home = () => {
       {/*  */}
 
       {/* <!-- Start Offer Products Area --> */}
-      <section
-        className="offer-products-area"
-        style={{ paddingBottom: "100px" }}
-      >
-        <div className="container">
-          <div className="offer-products-slides owl-carousel owl-theme">
-            <div className="single-offer-products">
+       <section className="offer-products-area" style={{ paddingBottom: "100px" }}>
+      <div className="container">
+        <Swiper
+          modules={[Autoplay, Pagination, EffectFade]}
+          spaceBetween={30}
+          slidesPerView={1}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          effect="fade"
+          pagination={{ clickable: true }}
+          loop={true}
+        >
+          <SwiperSlide>
+            <div className="single-offer-products d-flex flex-column flex-md-row align-items-center justify-content-between">
               <div className="content">
                 <h3>
                   <a href="/OurProducts">Latest Rat Repellent Devices</a>
@@ -777,8 +787,10 @@ const Home = () => {
                 </a>
               </div>
             </div>
+          </SwiperSlide>
 
-            <div className="single-offer-products">
+          <SwiperSlide>
+            <div className="single-offer-products d-flex flex-column flex-md-row align-items-center justify-content-between">
               <div className="content">
                 <h3>
                   <a href="/OurProducts">Best-Selling Rat Guards</a>
@@ -802,8 +814,10 @@ const Home = () => {
                 </a>
               </div>
             </div>
+          </SwiperSlide>
 
-            <div className="single-offer-products">
+          <SwiperSlide>
+            <div className="single-offer-products d-flex flex-column flex-md-row align-items-center justify-content-between">
               <div className="content">
                 <h3>
                   <a href="/OurProducts">Top Trending Devices</a>
@@ -827,9 +841,10 @@ const Home = () => {
                 </a>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
+          </SwiperSlide>
+        </Swiper>
+      </div>
+    </section>
 
       {/* <!-- End Offer Products Area --> */}
 
