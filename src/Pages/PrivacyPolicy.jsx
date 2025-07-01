@@ -36,13 +36,13 @@ export default function PrivacyPolicy() {
               you visit our website.
             </p>
 
-            <h5>🔐 Your Privacy Matters</h5>
+            <h5> Your Privacy Matters</h5>
             <p>
               We respect your privacy and ensure that your data is handled with
               the highest standards of confidentiality.
             </p>
 
-            <h5>📦 Information Collection</h5>
+            <h5> Information Collection</h5>
             <p>
               We may collect personal information such as your name, email
               address, contact number, and shipping address when you:
@@ -53,7 +53,7 @@ export default function PrivacyPolicy() {
               <li>Subscribe to our newsletter</li>
             </ul>
 
-            <h5>🔒 How We Use Your Information</h5>
+            <h5> How We Use Your Information</h5>
             <p>Your information is used to:</p>
             <ul className='mb-3'>
               <li>Process orders and transactions</li>
@@ -65,27 +65,27 @@ export default function PrivacyPolicy() {
               </li>
             </ul>
 
-            <h5>🚫 No Third-Party Sharing</h5>
+            <h5> No Third-Party Sharing</h5>
             <p>
               We do not sell, rent, or share your personal information with
               third parties for marketing purposes.
             </p>
 
-            <h5>🔐 Secure Transactions</h5>
+            <h5> Secure Transactions</h5>
             <p>
               All transactions on JP Enterprise are protected with SSL
               encryption and processed through trusted and secure payment
               gateways.
             </p>
 
-            <h5>📧 Contact Us</h5>
+            <h5> Contact Us</h5>
             <p>
               If you have any questions or concerns about your data, feel free
               to contact us at:
             </p>
             <ul>
               <li>
-                ✉️ Email: <a href="">jpexport42@gmail.com</a>
+                 Email: <a href="">jpexport42@gmail.com</a>
               </li>
             </ul>
           </div>

@@ -30,10 +30,10 @@ export default function ShippingPolicy() {
          <div className="customer-service-content">
   <h3 className="p-0">Shipping Policy – JP Enterprise</h3>
   <ul>
-    <li>🚚 We provide complimentary shipping on all orders across India.</li>
-    <li>📍 Orders are typically delivered within 5–7 working days, based on your location.</li>
-    <li>📦 A tracking ID will be shared with you via email once your order is dispatched.</li>
-    <li>🌍 Please note, we do not offer international shipping at this time.</li>
+    <li> We provide complimentary shipping on all orders across India.</li>
+    <li> Orders are typically delivered within 5–7 working days, based on your location.</li>
+    <li> A tracking ID will be shared with you via email once your order is dispatched.</li>
+    <li> Please note, we do not offer international shipping at this time.</li>
   </ul>
 </div>
         </div>

@@ -30,10 +30,10 @@ export default function ReturnPolicy() {
       <div className="customer-service-content">
   <h3 className="p-0">Return Policy – JP Enterprise</h3>
   <ul>
-    <li>🛡️ We offer a 7-day hassle-free return policy for all eligible products.</li>
-    <li>📦 Items must be unused and returned in their original packaging to qualify.</li>
-    <li>💸 Refunds are initiated within 7–10 business days after receiving the returned item.</li>
-    <li>📧 For return requests, please contact us at jpexport42@gmail.com.</li>
+    <li> We offer a 7-day hassle-free return policy for all eligible products.</li>
+    <li> Items must be unused and returned in their original packaging to qualify.</li>
+    <li> Refunds are initiated within 7–10 business days after receiving the returned item.</li>
+    <li> For return requests, please contact us at jpexport42@gmail.com.</li>
   </ul>
 </div>
 

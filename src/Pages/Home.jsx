@@ -259,7 +259,9 @@ const Home = () => {
                   key={idx}
                   style={{ marginBottom: "10px", fontSize: "18px" }}
                 >
-                  ✅ {item}
+                  
+                  <i class="fa-regular fa-circle-check" style={{color:'rgb(245, 63, 133)',marginRight:'10px'}}></i>
+                  {item}
                 </li>
               ))}
             </ul>
@@ -569,8 +571,9 @@ const Home = () => {
         </div>
       </section>
       {/* <!-- End Products Area --> */}
-
-      <div class="container " style={{ paddingBottom: "135px" }}>
+<div style={{ background:'#f4f4f4'}}>
+   
+      <div class="container " style={{ paddingBottom: "100px",paddingTop:'65px'}}>
         <div class="text-center mb-4">
           <span
             class="text-uppercase  fw-semibold"
@@ -682,10 +685,11 @@ const Home = () => {
           </div>
         </div>
       </div>
+</div>
 
       {/*  */}
 
-      <div className="container-fluid " style={{paddingBottom:'135px'}} >
+      <div className="container-fluid " style={{paddingBottom:'135px',paddingTop:'100px'}} >
         <div className="about-content text-center mb-4">
           <span className="sub-title">Advanced Ultrasonic Defense System</span>
           <h2>
@@ -1254,8 +1258,9 @@ const Home = () => {
       {/* <!-- End Blog Area --> */}
 
       {/* why choose start */}
+<div style={{background:'#f4f4f4'}}>
 
-      <section className="section">
+      <section className="section" >
         <div className="about-content text-center mb-4">
           <span className="sub-title">Why Choose Us?</span>
           <h2>Smarter safety, no harm done.</h2>
@@ -1291,6 +1296,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+</div>
 
       {/* why choose end */}
 
