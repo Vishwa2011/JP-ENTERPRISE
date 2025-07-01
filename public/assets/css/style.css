@@ -9158,6 +9158,93 @@ Go Top CSS
 .track-btn:hover {
   background-color: #e12b72;
 }
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .account-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .account-sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .account-sidebar ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .account-sidebar li {
+    flex: 1 1 45%;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+
+  .account-content {
+    padding-left: 0;
+  }
+
+  .tracking-box {
+    padding: 20px;
+  }
+
+  .tracking-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .profile-box input,
+  .profile-box textarea,
+  .tracking-form input,
+  .tracking-form textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .view-btn,
+  .track-btn {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .account-sidebar li {
+    flex: 1 1 100%;
+  }
+
+  .account-content table {
+    font-size: 12px;
+  }
+
+  .account-content th,
+  .account-content td {
+    padding: 8px 4px;
+  }
+
+  .tracking-box {
+    max-width: 100%;
+  }
+
+  .profile-pic {
+    width: 80px;
+    height: 80px;
+  }
+
+  .tracking-title {
+    font-size: 18px;
+  }
+}
+
+/*  */
 .shield {
   transition: all 0.3s ease-in-out;
 }
