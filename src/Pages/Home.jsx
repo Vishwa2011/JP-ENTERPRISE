@@ -155,8 +155,7 @@ const Home = () => {
                       <span className="sub-title">Protect Your Vehicle!</span>
                       <h1>Car Rat Repellent</h1>
                       <p>
-                        Keep your car safe from rat damage. 10% OFF – Limited
-                        Period Offer!
+                     Protect your warehouse and office wiring from rat damage. Get 10% OFF – Limited Period Offer!
                       </p>
                       <div className="btn-box">
                         <a href="/OurProducts" className="default-btn">
