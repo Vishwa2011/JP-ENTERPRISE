@@ -1044,51 +1044,55 @@ const Home = () => {
       {/* <!-- End Facility Area --> */}
 
       {/* <!-- Start Brand Area --> */}
-      <div className="brand-area ptb-70">
-        <div className="container">
-          <div className="section-title">
-            <h2>We are Deal With</h2>
-          </div>
-
-          <div className="brand-slides owl-carousel owl-theme">
-            <div className="brand-item">
-              <a href="#">
-                <img src="/assets/pics/brand1.png" alt="image" />
-              </a>
-            </div>
-
-            <div className="brand-item">
-              <a href="#">
-                <img src="/assets/pics/brand2.png" alt="image" />
-              </a>
-            </div>
-
-            <div className="brand-item">
-              <a href="#">
-                <img src="/assets/pics/brand3.png" alt="image" />
-              </a>
-            </div>
-
-            <div className="brand-item">
-              <a href="#">
-                <img src="/assets/pics/brand4.png" alt="image" />
-              </a>
-            </div>
-
-            <div className="brand-item">
-              <a href="#">
-                <img src="/assets/pics/brand5.png" alt="image" />
-              </a>
-            </div>
-
-            <div className="brand-item">
-              <a href="#">
-                <img src="/assets/pics/brand6.png" alt="image" />
-              </a>
-            </div>
-          </div>
+     <div className="brand-area ptb-70">
+      <div className="container">
+        <div className="section-title">
+          <h2>We are Deal With</h2>
         </div>
+
+        <Swiper
+          modules={[Autoplay]}
+          spaceBetween={30}
+          slidesPerView={2}
+          loop={true}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+          breakpoints={{
+            640: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+            },
+            1024: {
+              slidesPerView: 5,
+              spaceBetween: 40,
+            },
+          }}
+        >
+          {[
+            "/assets/pics/brand1.png",
+            "/assets/pics/brand2.png",
+            "/assets/pics/brand3.png",
+            "/assets/pics/brand4.png",
+            "/assets/pics/brand5.png",
+            "/assets/pics/brand6.png",
+          ].map((img, i) => (
+            <SwiperSlide key={i}>
+              <div className="brand-item">
+                <a href="#">
+                  <img src={img} alt={`brand${i + 1}`} />
+                </a>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
+    </div>
       {/* <!-- End Brand Area --> */}
 
       {/* <!-- Start Testimonials Area --> */}
