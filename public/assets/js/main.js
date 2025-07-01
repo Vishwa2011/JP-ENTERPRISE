@@ -302,9 +302,6 @@ $(document).ready(function () {
 
     // Offer Products Slides
 $(document).ready(function () {
-
-
-    
     $('.offer-products-slides').owlCarousel({
         loop: true,
         nav: false,

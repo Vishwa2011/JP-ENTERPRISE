@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
+import { useLocation } from 'react-router-dom';
 import React, { useEffect, useState } from "react";
 import Aboutus from "./Pages/Aboutus";
 import Mice_problem from "./Pages/Mice_problem";
@@ -24,6 +25,12 @@ import Video from "./Pages/Video";
 
 
 function App() {
+   const { pathname } = useLocation();
+
+  useEffect(() => {
+    // Scroll to top on route change
+    window.scrollTo(0, 0);
+  }, [pathname]);
     const [theme, setTheme] = useState("theme-light");
 
   // Load theme from localStorage on mount
