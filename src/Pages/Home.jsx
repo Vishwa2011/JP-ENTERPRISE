@@ -168,7 +168,7 @@ const Home = () => {
                   <div className="col-lg-6">
                     <div className="banner-image">
                       <div className="circle"></div>
-                      <img src="/assets/pics/header1.jpg" alt="image" />
+                      <img src="/assets/pics/bg1.png" alt="image" />
                     </div>
                   </div>
                 </div>
@@ -569,7 +569,7 @@ const Home = () => {
       </section>
       {/* <!-- End Products Area --> */}
 
-      <div class="container py-5" style={{ paddingBottom: "100px" }}>
+      <div class="container " style={{ paddingBottom: "135px" }}>
         <div class="text-center mb-4">
           <span
             class="text-uppercase  fw-semibold"
@@ -684,7 +684,7 @@ const Home = () => {
 
       {/*  */}
 
-      <div className="container-fluid py-5">
+      <div className="container-fluid " style={{paddingBottom:'135px'}} >
         <div className="about-content text-center mb-4">
           <span className="sub-title">Advanced Ultrasonic Defense System</span>
           <h2>
@@ -780,7 +780,7 @@ const Home = () => {
               <div className="image">
                 <a href="/OurProducts">
                   <img
-                    src="/assets/pics/post.jpg"
+                    src="/assets/pics/Say Goodbye to Rodents!.png"
                     alt="JP Enterprise new collection"
                     style={{ border: "1px solid" }}
                   />
@@ -807,7 +807,7 @@ const Home = () => {
               <div className="image">
                 <a href="/OurProducts">
                   <img
-                    src="/assets/pics/header2.jpg"
+                    src="/assets/pics/banner2 (1).png"
                     alt="JP Enterprise popular products"
                     style={{ border: "1px solid" }}
                   />
@@ -1070,7 +1070,7 @@ const Home = () => {
             },
             1024: {
               slidesPerView: 5,
-              spaceBetween: 40,
+              spaceBetween: 60,
             },
           }}
         >
@@ -1083,7 +1083,7 @@ const Home = () => {
             "/assets/pics/brand6.png",
           ].map((img, i) => (
             <SwiperSlide key={i}>
-              <div className="brand-item">
+              <div className="brand-item" style={{width:'150px'}} >
                 <a href="#">
                   <img src={img} alt={`brand${i + 1}`} />
                 </a>
