@@ -195,8 +195,7 @@ const Warranty = () => {
                      <div className="col-lg-7 col-md-12">
                        <div className="products-details-desc">
                          <h3>
-                           Smart Ultrasonic Rat Repellent for Commercial & Home Use |
-                           Safe & Silent Rodent Defense – 1500 Sq. Ft
+                           Smart Ultrasonic Rat Repellent
                          </h3>
        
                       
