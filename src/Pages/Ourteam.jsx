@@ -31,327 +31,308 @@ const Ourteam = () => {
                         <div class="products-slides owl-carousel owl-theme">
                             <div class="single-products-box">
                                 <div class="products-image">
-                                    <a href="products-type-5.html">
-                                        <img src="assets/img/products/img1.jpg" class="main-image" alt="image" />
-                                        <img src="assets/img/products/img-hover1.jpg" class="hover-image" alt="image" />
+                                    <a >
+                                        <img src="/assets/pics/teamslider1.jpg" class="main-image" alt="image" />
+                                        <img src="/assets/pics/teamslider1.jpg" class="hover-image" alt="image" />
                                     </a>
     
-                                    <div class="products-button">
+                                      <div class="products-button">
                                         <ul>
-                                            <li>
-                                                <div class="wishlist-btn">
-                                                    <a href="#">
-                                                        <i class='bx bx-heart'></i>
-                                                        <span class="tooltip-label">Add to Wishlist</span>
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="compare-btn">
-                                                    <a href="#">
-                                                        <i class='bx bx-refresh'></i>
-                                                        <span class="tooltip-label">Compare</span>
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="quick-view-btn">
-                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#productsQuickView">
-                                                        <i class='bx bx-search-alt'></i>
-                                                        <span class="tooltip-label">Quick View</span>
-                                                    </a>
-                                                </div>
-                                            </li>
+                                           <li>
+  <div class="wishlist-btn">
+    <a href="https://www.facebook.com/login" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-facebook"></i>
+      <span class="tooltip-label">Facebook</span>
+    </a>
+  </div>
+</li>
+
+                                        <li>
+  <div class="compare-btn">
+    <a href="https://www.instagram.com/accounts/login/" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-instagram"></i>
+      <span class="tooltip-label">Instagram</span>
+    </a>
+  </div>
+</li>
+
+                                         <li>
+  <div class="quick-view-btn">
+    <a href="https://www.linkedin.com/login" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-linkedin"></i>
+      <span class="tooltip-label">LinkedIn</span>
+    </a>
+  </div>
+</li>
+
                                         </ul>
                                     </div>
                                 </div>
     
                                 <div class="products-content">
-                                    <h3><a href="products-type-5.html">Long Sleeve Leopard T-Shirt</a></h3>
+                                    <h3><a href="products-type-5.html">Vishal Bhatt</a></h3>
                                     <div class="price">
-                                        <span class="old-price">$321</span>
-                                        <span class="new-price">$250</span>
+                                       
+                                        <span class="new-price">Legal Advisor</span>
                                     </div>
-                                    <div class="star-rating">
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                    </div>
-                                    <a href="cart.html" class="add-to-cart">Add to Cart</a>
+                                    
+                                    <a href="cart.html" class="add-to-cart">Legal Advisor</a>
                                 </div>
                             </div>
 
                             <div class="single-products-box">
                                 <div class="products-image">
-                                    <a href="products-type-5.html">
-                                        <img src="assets/img/products/img2.jpg" class="main-image" alt="image" />
-                                        <img src="assets/img/products/img-hover2.jpg" class="hover-image" alt="image" />
+                                    <a >
+                                        <img src="/assets/pics/teamslide2.jpg" class="main-image" alt="image" />
+                                        <img src="/assets/pics/teamslide2.jpg" class="hover-image" alt="image" />
                                     </a>
     
                                     <div class="products-button">
                                         <ul>
-                                            <li>
-                                                <div class="wishlist-btn">
-                                                    <a href="#">
-                                                        <i class='bx bx-heart'></i>
-                                                        <span class="tooltip-label">Add to Wishlist</span>
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="compare-btn">
-                                                    <a href="#">
-                                                        <i class='bx bx-refresh'></i>
-                                                        <span class="tooltip-label">Compare</span>
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="quick-view-btn">
-                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#productsQuickView">
-                                                        <i class='bx bx-search-alt'></i>
-                                                        <span class="tooltip-label">Quick View</span>
-                                                    </a>
-                                                </div>
-                                            </li>
+                                           <li>
+  <div class="wishlist-btn">
+    <a href="https://www.facebook.com/login" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-facebook"></i>
+      <span class="tooltip-label">Facebook</span>
+    </a>
+  </div>
+</li>
+
+                                        <li>
+  <div class="compare-btn">
+    <a href="https://www.instagram.com/accounts/login/" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-instagram"></i>
+      <span class="tooltip-label">Instagram</span>
+    </a>
+  </div>
+</li>
+
+                                         <li>
+  <div class="quick-view-btn">
+    <a href="https://www.linkedin.com/login" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-linkedin"></i>
+      <span class="tooltip-label">LinkedIn</span>
+    </a>
+  </div>
+</li>
+
                                         </ul>
                                     </div>
     
-                                    <div class="sale-tag">Sale!</div>
                                 </div>
     
                                 <div class="products-content">
-                                    <h3><a href="products-type-5.html">Causal V-Neck Soft Raglan</a></h3>
+                                    <h3><a href="products-type-5.html">Nayan Modi</a></h3>
                                     <div class="price">
-                                        <span class="old-price">$210</span>
-                                        <span class="new-price">$200</span>
+                                    
+                                        <span class="new-price">General Manager</span>
                                     </div>
-                                    <div class="star-rating">
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                    </div>
-                                    <a href="cart.html" class="add-to-cart">Add to Cart</a>
+                                
+                                    <a href="cart.html" class="add-to-cart">General Manager</a>
                                 </div>
                             </div>
 
                             <div class="single-products-box">
                                 <div class="products-image">
-                                    <a href="products-type-5.html">
-                                        <img src="assets/img/products/img3.jpg" class="main-image" alt="image" />
-                                        <img src="assets/img/products/img-hover3.jpg" class="hover-image" alt="image" />
+                                    <a >
+                                        <img src="/assets/pics/teamslide3.jpg" class="main-image" alt="image" />
+                                        <img src="/assets/pics/teamslide3.jpg" class="hover-image" alt="image" />
                                     </a>
     
-                                    <div class="products-button">
+                                       <div class="products-button">
                                         <ul>
-                                            <li>
-                                                <div class="wishlist-btn">
-                                                    <a href="#">
-                                                        <i class='bx bx-heart'></i>
-                                                        <span class="tooltip-label">Add to Wishlist</span>
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="compare-btn">
-                                                    <a href="#">
-                                                        <i class='bx bx-refresh'></i>
-                                                        <span class="tooltip-label">Compare</span>
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="quick-view-btn">
-                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#productsQuickView">
-                                                        <i class='bx bx-search-alt'></i>
-                                                        <span class="tooltip-label">Quick View</span>
-                                                    </a>
-                                                </div>
-                                            </li>
+                                           <li>
+  <div class="wishlist-btn">
+    <a href="https://www.facebook.com/login" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-facebook"></i>
+      <span class="tooltip-label">Facebook</span>
+    </a>
+  </div>
+</li>
+
+                                        <li>
+  <div class="compare-btn">
+    <a href="https://www.instagram.com/accounts/login/" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-instagram"></i>
+      <span class="tooltip-label">Instagram</span>
+    </a>
+  </div>
+</li>
+
+                                         <li>
+  <div class="quick-view-btn">
+    <a href="https://www.linkedin.com/login" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-linkedin"></i>
+      <span class="tooltip-label">LinkedIn</span>
+    </a>
+  </div>
+</li>
+
                                         </ul>
                                     </div>
                                 </div>
     
                                 <div class="products-content">
-                                    <h3><a href="products-type-5.html">Hanes Men's Pullover</a></h3>
+                                    <h3><a href="products-type-5.html">Priya Patel</a></h3>
                                     <div class="price">
-                                        <span class="old-price">$210</span>
-                                        <span class="new-price">$200</span>
+                                       
+                                        <span class="new-price">Web Designer</span>
                                     </div>
-                                    <div class="star-rating">
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                    </div>
-                                    <a href="cart.html" class="add-to-cart">Add to Cart</a>
+                                   
+                                    <a href="cart.html" class="add-to-cart">Web Designer</a>
                                 </div>
                             </div>
 
                             <div class="single-products-box">
                                 <div class="products-image">
-                                    <a href="products-type-5.html">
-                                        <img src="assets/img/products/img4.jpg" class="main-image" alt="image" />
-                                        <img src="assets/img/products/img-hover4.jpg" class="hover-image" alt="image" />
+                                    <a >
+                                        <img src="/assets/pics/teamslide4.jpg" class="main-image" alt="image" />
+                                        <img src="/assets/pics/teamslide4.jpg" class="hover-image" alt="image" />
                                     </a>
-    
-                                    <div class="products-button">
+       <div class="products-button">
                                         <ul>
-                                            <li>
-                                                <div class="wishlist-btn">
-                                                    <a href="#">
-                                                        <i class='bx bx-heart'></i>
-                                                        <span class="tooltip-label">Add to Wishlist</span>
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="compare-btn">
-                                                    <a href="#">
-                                                        <i class='bx bx-refresh'></i>
-                                                        <span class="tooltip-label">Compare</span>
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="quick-view-btn">
-                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#productsQuickView">
-                                                        <i class='bx bx-search-alt'></i>
-                                                        <span class="tooltip-label">Quick View</span>
-                                                    </a>
-                                                </div>
-                                            </li>
+                                           <li>
+  <div class="wishlist-btn">
+    <a href="https://www.facebook.com/login" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-facebook"></i>
+      <span class="tooltip-label">Facebook</span>
+    </a>
+  </div>
+</li>
+
+                                        <li>
+  <div class="compare-btn">
+    <a href="https://www.instagram.com/accounts/login/" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-instagram"></i>
+      <span class="tooltip-label">Instagram</span>
+    </a>
+  </div>
+</li>
+
+                                         <li>
+  <div class="quick-view-btn">
+    <a href="https://www.linkedin.com/login" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-linkedin"></i>
+      <span class="tooltip-label">LinkedIn</span>
+    </a>
+  </div>
+</li>
+
                                         </ul>
                                     </div>
                                 </div>
     
                                 <div class="products-content">
-                                    <h3><a href="products-type-5.html">Gildan Men's Crew T-Shirt</a></h3>
+                                    <h3><a href="products-type-5.html">krina balar</a></h3>
                                     <div class="price">
-                                        <span class="new-price">$150</span>
+                                        <span class="new-price">Graphics Designer</span>
                                     </div>
-                                    <div class="star-rating">
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
+                                   
+                                    <a href="cart.html" class="add-to-cart">Graphics Designer</a>
+                                </div>
+                            </div>
+
+                         <div class="single-products-box">
+                                <div class="products-image">
+                                    <a >
+                                        <img src="/assets/pics/teamslider1.jpg" class="main-image" alt="image" />
+                                        <img src="/assets/pics/teamslider1.jpg" class="hover-image" alt="image" />
+                                    </a>
+    
+                                      <div class="products-button">
+                                        <ul>
+                                           <li>
+  <div class="wishlist-btn">
+    <a href="https://www.facebook.com/login" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-facebook"></i>
+      <span class="tooltip-label">Facebook</span>
+    </a>
+  </div>
+</li>
+
+                                        <li>
+  <div class="compare-btn">
+    <a href="https://www.instagram.com/accounts/login/" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-instagram"></i>
+      <span class="tooltip-label">Instagram</span>
+    </a>
+  </div>
+</li>
+
+                                         <li>
+  <div class="quick-view-btn">
+    <a href="https://www.linkedin.com/login" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-linkedin"></i>
+      <span class="tooltip-label">LinkedIn</span>
+    </a>
+  </div>
+</li>
+
+                                        </ul>
                                     </div>
-                                    <a href="cart.html" class="add-to-cart">Add to Cart</a>
+                                </div>
+    
+                                <div class="products-content">
+                                    <h3><a href="products-type-5.html">Vishal Bhatt</a></h3>
+                                    <div class="price">
+                                       
+                                        <span class="new-price">Legal Advisor</span>
+                                    </div>
+                                    
+                                    <a href="cart.html" class="add-to-cart">Legal Advisor</a>
                                 </div>
                             </div>
 
                             <div class="single-products-box">
                                 <div class="products-image">
-                                    <a href="products-type-5.html">
-                                        <img src="assets/img/products/img5.jpg" class="main-image" alt="image" />
-                                        <img src="assets/img/products/img-hover5.jpg" class="hover-image" alt="image" />
+                                    <a >
+                                        <img src="/assets/pics/teamslide2.jpg" class="main-image" alt="image" />
+                                        <img src="/assets/pics/teamslide2.jpg" class="hover-image" alt="image" />
                                     </a>
     
-                                    <div class="products-button">
+                                     <div class="products-button">
                                         <ul>
-                                            <li>
-                                                <div class="wishlist-btn">
-                                                    <a href="#">
-                                                        <i class='bx bx-heart'></i>
-                                                        <span class="tooltip-label">Add to Wishlist</span>
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="compare-btn">
-                                                    <a href="#">
-                                                        <i class='bx bx-refresh'></i>
-                                                        <span class="tooltip-label">Compare</span>
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="quick-view-btn">
-                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#productsQuickView">
-                                                        <i class='bx bx-search-alt'></i>
-                                                        <span class="tooltip-label">Quick View</span>
-                                                    </a>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-    
-                                <div class="products-content">
-                                    <h3><a href="products-type-5.html">Yidarton Women's Comfy</a></h3>
-                                    <div class="price">
-                                        <span class="new-price">$240</span>
-                                    </div>
-                                    <div class="star-rating">
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                    </div>
-                                    <a href="cart.html" class="add-to-cart">Add to Cart</a>
-                                </div>
-                            </div>
+                                           <li>
+  <div class="wishlist-btn">
+    <a href="https://www.facebook.com/login" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-facebook"></i>
+      <span class="tooltip-label">Facebook</span>
+    </a>
+  </div>
+</li>
 
-                            <div class="single-products-box">
-                                <div class="products-image">
-                                    <a href="products-type-5.html">
-                                        <img src="assets/img/products/img6.jpg" class="main-image" alt="image" />
-                                        <img src="assets/img/products/img-hover6.jpg" class="hover-image" alt="image" />
-                                    </a>
-    
-                                    <div class="products-button">
-                                        <ul>
-                                            <li>
-                                                <div class="wishlist-btn">
-                                                    <a href="#">
-                                                        <i class='bx bx-heart'></i>
-                                                        <span class="tooltip-label">Add to Wishlist</span>
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="compare-btn">
-                                                    <a href="#">
-                                                        <i class='bx bx-refresh'></i>
-                                                        <span class="tooltip-label">Compare</span>
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="quick-view-btn">
-                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#productsQuickView">
-                                                        <i class='bx bx-search-alt'></i>
-                                                        <span class="tooltip-label">Quick View</span>
-                                                    </a>
-                                                </div>
-                                            </li>
+                                        <li>
+  <div class="compare-btn">
+    <a href="https://www.instagram.com/accounts/login/" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-instagram"></i>
+      <span class="tooltip-label">Instagram</span>
+    </a>
+  </div>
+</li>
+
+                                         <li>
+  <div class="quick-view-btn">
+    <a href="https://www.linkedin.com/login" target="_blank" rel="noopener noreferrer">
+      <i class="fa-brands fa-linkedin"></i>
+      <span class="tooltip-label">LinkedIn</span>
+    </a>
+  </div>
+</li>
+
                                         </ul>
                                     </div>
     
-                                    <div class="new-tag">New!</div>
+                            
                                 </div>
     
                                 <div class="products-content">
-                                    <h3><a href="products-type-5.html">Womens Tops Color</a></h3>
+                                    <h3><a href="products-type-5.html">Nayan Modi</a></h3>
                                     <div class="price">
-                                        <span class="old-price">$150</span>
-                                        <span class="new-price">$100</span>
+                                    
+                                        <span class="new-price">General Manager</span>
                                     </div>
-                                    <div class="star-rating">
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                    </div>
-                                    <a href="cart.html" class="add-to-cart">Add to Cart</a>
+                                
+                                    <a href="cart.html" class="add-to-cart">General Manager</a>
                                 </div>
                             </div>
                         </div>
