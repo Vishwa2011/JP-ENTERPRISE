@@ -5,15 +5,15 @@ import Footer from "./Footer";
 import Facility from "../Components/Facility";
 // import Instragram from "../Components/Instragram";
 const images = [
-  "/assets/pics/rate.jpg" ,
+  "/assets/pics/rate.jpg",
   "/assets/pics/speaker 3.jpg",
   "/assets/pics/speaker2.jpg",
   "/assets/pics/PRDUCAT.jpg",
   "/assets/pics/PRODUCT2.webp",
-  "/assets/pics/speaker.jpg" 
+  "/assets/pics/speaker.jpg",
 ];
 const Productdetails = () => {
- const [imgId, setImgId] = useState(1);
+  const [imgId, setImgId] = useState(1);
   const showcaseRef = useRef(null);
   const zoomRef = useRef(null);
   const [zoomStyles, setZoomStyles] = useState({});
@@ -130,42 +130,42 @@ const Productdetails = () => {
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-5 col-md-12">
-      <div className="product-imgs">
-        <div
-          className="img-display zoom-container"
-          onMouseMove={handleMouseMove}
-          onMouseEnter={() => setIsZoomVisible(true)}
-          onMouseLeave={() => setIsZoomVisible(false)}
-        >
-          <div className="img-showcase" ref={showcaseRef}>
-            {images.map((src, index) => (
-              <img key={index} src={src} alt={`shoe ${index + 1}`} />
-            ))}
-          </div>
+                <div className="product-imgs">
+                  <div
+                    className="img-display zoom-container"
+                    onMouseMove={handleMouseMove}
+                    onMouseEnter={() => setIsZoomVisible(true)}
+                    onMouseLeave={() => setIsZoomVisible(false)}
+                  >
+                    <div className="img-showcase" ref={showcaseRef}>
+                      {images.map((src, index) => (
+                        <img key={index} src={src} alt={`shoe ${index + 1}`} />
+                      ))}
+                    </div>
 
-          {isZoomVisible && (
-            <div className="zoom-lens" style={zoomStyles}></div>
-          )}
-        </div>
+                    {isZoomVisible && (
+                      <div className="zoom-lens" style={zoomStyles}></div>
+                    )}
+                  </div>
 
-        <div className="img-select">
-          {images.map((src, index) => (
-            <div className="img-item" key={index}>
-              <button
-                onClick={() => setImgId(index + 1)}
-                style={{
-                  border: "none",
-                  background: "transparent",
-                  padding: 0,
-                }}
-              >
-                <img src={src} alt={`shoe thumb ${index + 1}`} />
-              </button>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
+                  <div className="img-select">
+                    {images.map((src, index) => (
+                      <div className="img-item" key={index}>
+                        <button
+                          onClick={() => setImgId(index + 1)}
+                          style={{
+                            border: "none",
+                            background: "transparent",
+                            padding: 0,
+                          }}
+                        >
+                          <img src={src} alt={`shoe thumb ${index + 1}`} />
+                        </button>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
 
               <div className="col-lg-7 col-md-12">
                 <div className="products-details-desc">
@@ -290,22 +290,29 @@ const Productdetails = () => {
                       </span>
                     </div>
 
-                    <button
-                      type="submit"
-                      className="default-btn "
+                    <a href="/Cart">
+                      {" "}
+                      <button
+                        type="submit"
+                        className="default-btn "
+                        style={{ marginRight: "10px" }}
+                      >
+                        <i className="fas fa-cart-plus"></i> Add to Cart
+                      </button>
+                    </a>
+                    <a
+                      href="#"
+                      className="optional-btn"
                       style={{ marginRight: "10px" }}
                     >
-                      <i className="fas fa-cart-plus"></i> Add to Cart
-                    </button>
-                    <a href="#" className="optional-btn"  style={{ marginRight: "10px" }}>
                       <i className="bx bx-heart"></i>
                     </a>
-                     <a
-  href="https://wa.me/919265407449"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="optional"
->
+                    <a
+                      href="https://wa.me/919265407449"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="optional"
+                    >
                       <i class="fa-brands fa-whatsapp"></i>
                     </a>
                   </div>
@@ -358,20 +365,20 @@ const Productdetails = () => {
                         <div className="accordion-content show">
                           <ul>
                             <li>
-                               Advanced Ultrasonic Technology: Deters rodents
+                              Advanced Ultrasonic Technology: Deters rodents
                               with high-frequency soundwaves
                             </li>
                             <li>
-                               Silent & Safe Operation: Harmless to humans and
+                              Silent & Safe Operation: Harmless to humans and
                               pets
                             </li>
                             <li>
-                               Perfect for Indoor Use: Ideal for kitchens,
+                              Perfect for Indoor Use: Ideal for kitchens,
                               storerooms, and homes
                             </li>
                             <li>
-                               Energy Efficient: Runs continuously with low
-                              power usage
+                              Energy Efficient: Runs continuously with low power
+                              usage
                             </li>
                             <li>
                               🇮🇳 Made in India: Durable build & local warranty
@@ -593,7 +600,6 @@ const Productdetails = () => {
           <div className="related-products">
             <div className="container">
               <div className="section-title">
-             
                 <h2>Related Products</h2>
               </div>
 

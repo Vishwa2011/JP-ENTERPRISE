@@ -8,28 +8,28 @@ const lookbookItems = [
   {
     id: 1,
     img: "/assets/pics/book1.png",
-    label: "German Technology",
+    label: "Vikas Patel",
     title: "Rat Guard User Guide",
     price: "₹200",
   },
   {
     id: 2,
     img: "/assets/pics/book2.png",
-    label: "Warehouse & Restaurant Use",
+    label: "Mahesh Shah",
     title: "Ultrasonic Repeller Handbook",
     price: "₹200",
   },
   {
     id: 3,
     img: "/assets/pics/book3.png",
-    label: "Home Protection",
+    label: "Hari Mehta",
     title: "Home Safety Manual",
     price: "₹200",
   },
   {
     id: 4,
     img: "/assets/pics/book4.png",
-    label: "Product Features",
+    label: "Prit Vora",
     title: "Technical Attribute Guide",
     price: "₹200",
   },
@@ -60,13 +60,13 @@ export default function DigitalCourse() {
           {lookbookItems.map((item) => (
             <div className="col-lg-3 col-md-6" key={item.id}>
               <div className="single-lookbook-box">
-                <a href="#">
+                <a href="/DigitalCourseDetails">
                   <img src={item.img} alt="image" />
                 </a>
                 <div className="content" style={{ textAlign: "center" }}>
                   <p>{item.label}</p>
                   <h5>
-                    <a href="#">{item.title}</a>
+                    <a href="/DigitalCourseDetails">{item.title}</a>
                   </h5>
                   <p>{item.price}</p>
                 </div>
