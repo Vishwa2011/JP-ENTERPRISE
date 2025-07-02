@@ -24,7 +24,7 @@ const OurProducts = () => {
   const productsData = [
     {
       id: 1,
-      name: "High-Powered Ultrasonic Rat Repellent for Gardens, Factories, and Warehouses - Intense Noise for Effective Outdoor and Indoor Rat Deterrence",
+      name: "High-Powered Ultrasonic Rat Repellent",
       image1: "/assets/pics/rate.jpg",
       image2: "/assets/pics/speaker.jpg",
       oldPrice: "₹9999",
@@ -33,7 +33,7 @@ const OurProducts = () => {
     },
     {
       id: 2,
-      name: "Smart Ultrasonic Rat Repellent for Commercial & Home Use | Safe & Silent Rodent Defense – 1500 Sq. Ft",
+      name: "Smart Ultrasonic Rat Repellent ",
       image1: "/assets/pics/rate.jpg",
       image2: "/assets/pics/speaker2.jpg",
       oldPrice: "₹9999",
@@ -42,7 +42,7 @@ const OurProducts = () => {
     },
     {
       id: 3,
-      name: "High-Frequency Ultrasonic Rat Repeller for Kitchen & Storage – 1500 Sq. Ft | Safe, Silent & Made in India",
+      name: "High-Frequency Ultrasonic Rat Repelle",
       image1: "/assets/pics/rate.jpg",
       image2: "/assets/pics/speaker 3.jpg",
       oldPrice: "₹9999",
@@ -51,7 +51,7 @@ const OurProducts = () => {
     },
      {
       id: 4,
-      name: "High-Frequency Ultrasonic Rat Repeller – Dual Indoor & Outdoor Use | 1500 Sq. Ft | Plug & Play",
+      name: "High-Frequency Ultrasonic Rat Repeller ",
       image1: "/assets/pics/rate.jpg",
       image2: "/assets/pics/speaker 3.jpg",
       oldPrice: "₹9999",
@@ -616,8 +616,7 @@ const OurProducts = () => {
                   <div className="products-content">
                     <h3>
                       <a href="#">
-                        High-Frequency Ultrasonic Rat Repeller – Dual Indoor &
-                        Outdoor Use | 1500 Sq. Ft | Plug & Play
+                        High-Frequency Ultrasonic Rat Repeller 
                       </a>
                     </h3>
 
