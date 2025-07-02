@@ -25,22 +25,31 @@ const Warranty = () => {
                   </div>
                 </div>
                 {/* <!-- End Page Title --> */}
-
-
-                <div className="flex items-center space-x-2" style={{justifyContent:'center',display:'flex',paddingTop:'65px'}}>
-  <input
-    type="text"
-    placeholder="Search here..."
-    className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-  />
-  <button className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700" style={{background:'rgb(245, 63, 133)',border:'rgb(245, 63, 133)'}}>
-    Search
-  </button>
+<div className="flex flex-col items-center pt-[65px]" style={{justifyContent:'center',display:'flex',paddingTop:'50px'}}>
+  <div className="flex">
+  <label className="mb-1 font-semibold"  style={{paddingBottom:'10px'}}>Warranty No:</label><br />
+    <input
+      type="text"
+      placeholder="Search here..."
+      className="px-4 py-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+      style={{marginRight:'10px'}}
+    />
+    <button
+      className="px-4 py-2 text-white rounded-r-lg"
+      style={{
+        background: 'rgb(245, 63, 133)',
+        border: 'rgb(245, 63, 133)'
+      }}
+    >
+      Search
+    </button>
+  </div>
 </div>
+
 
         
                 {/* <!-- Start About Area --> */}
-                <section className="about-area ptb-100">
+                <section className="about-area " style={{paddingTop:'70px',paddingBottom:'100px'}}>
                   <div className="container">
                     <div className="row align-items-center justify-content-center">
                       <div className="col-lg-6 col-md-12">

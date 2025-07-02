@@ -163,33 +163,34 @@ $(document).ready(function () {
     
     // Products Slides
     $(document).ready(function () {  
-    $('.products-slides').owlCarousel({
-        loop: true,
-        nav: true,
-        dots: false,
-        autoplayHoverPause: true,
-        autoplay: true,
-        margin: 30,
-        navText: [
-            "<i class='flaticon-left'></i>",
-            "<i class='flaticon-right-arrow'></i>"
-        ],
-        responsive: {
-            0: {
-                items: 1,
-            },
-            576: {
-                items: 2,
-            },
-            768: {
-                items: 2,
-            },
-            1200: {
-                items: 3,
-            }
-        }
-    })
-    });
+  $('.products-slides').owlCarousel({
+    loop: true,
+    nav: true,
+    dots: false,
+    autoplayHoverPause: true,
+    autoplay: true,
+    margin: 30,
+    navText: [
+      "<i class='flaticon-left'></i>",
+      "<i class='flaticon-right-arrow'></i>"
+    ],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      576: {
+        items: 2,
+      },
+      768: {
+        items: 3,
+      },
+      1200: {
+        items: 4, // ✅ Show 4 items at 1200px and above
+      }
+    }
+  });
+});
+
 
 
      anime({
