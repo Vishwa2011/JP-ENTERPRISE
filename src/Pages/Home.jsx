@@ -368,9 +368,7 @@ const Home = () => {
                   <span className="category">Rat Repellent</span>
                   <h3>
                     <a href="/Productdetails">
-                      High-Powered Ultrasonic Rat Repellent for Gardens,
-                      Factories, and Warehouses - Intense Noise for Effective
-                      Outdoor and Indoor Rat Deterrence
+                      High-Powered Ultrasonic Rat Repellent 
                     </a>
                   </h3>
                   <span>Brand: Generic</span>
@@ -458,8 +456,7 @@ const Home = () => {
                   <span className="category">Rat Repellent</span>
                   <h3>
                     <a href="/Productdetails">
-                      Smart Ultrasonic Rat Repellent for Commercial & Home Use |
-                      Safe & Silent Rodent Defense – 1500 Sq. Ft
+                      Smart Ultrasonic Rat Repellent 
                     </a>
                   </h3>
                   <span>Brand: Generic</span>
@@ -541,8 +538,7 @@ const Home = () => {
                   <span className="category">Rat Repellent</span>
                   <h3>
                     <a href="/Productdetails">
-                      High-Frequency Ultrasonic Rat Repeller – Dual Indoor &
-                      Outdoor Use | 1500 Sq. Ft | Plug & Play
+                      High-Frequency Ultrasonic Rat Repeller 
                     </a>
                   </h3>
                   <span>Brand: Generic</span>

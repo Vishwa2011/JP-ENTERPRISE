@@ -170,8 +170,7 @@ const Productdetails = () => {
               <div className="col-lg-7 col-md-12">
                 <div className="products-details-desc">
                   <h3>
-                    Smart Ultrasonic Rat Repellent for Commercial & Home Use |
-                    Safe & Silent Rodent Defense – 1500 Sq. Ft
+                    Smart Ultrasonic Rat Repellent 
                   </h3>
 
                   <div className="price">
@@ -662,8 +661,7 @@ const Productdetails = () => {
                   <div className="products-content">
                     <h3>
                       <a href="#">
-                        High-Frequency Ultrasonic Rat Repeller for Kitchen &
-                        Storage – 1500 Sq. Ft | Safe....
+                        High-Frequency Ultrasonic Rat Repeller 
                       </a>
                     </h3>
                     <div className="price">
@@ -743,8 +741,7 @@ const Productdetails = () => {
                   <div className="products-content">
                     <h3>
                       <a href="#">
-                        High-Frequency Ultrasonic Rat Repeller – Dual Indoor &
-                        Outdoor Use | 1500 Sq. Ft | Plug...
+                        High-Frequency Ultrasonic Rat Repeller
                       </a>
                     </h3>
                     <div className="price">
@@ -822,8 +819,7 @@ const Productdetails = () => {
                   <div className="products-content">
                     <h3>
                       <a href="#">
-                        High-Powered Ultrasonic Rat Repellent for Gardens,
-                        Factories, and Warehouses.....
+                        High-Powered Ultrasonic Rat Repellent
                       </a>
                     </h3>
                     <div className="price">
@@ -901,8 +897,7 @@ const Productdetails = () => {
                   <div className="products-content">
                     <h3>
                       <a href="#">
-                        High-Frequency Ultrasonic Rat Repeller for Kitchen &
-                        Storage – 1500 Sq. Ft | Safe....
+                        High-Frequency Ultrasonic Rat Repeller 
                       </a>
                     </h3>
                     <div className="price">
@@ -980,8 +975,7 @@ const Productdetails = () => {
                   <div className="products-content">
                     <h3>
                       <a href="#">
-                        High-Frequency Ultrasonic Rat Repeller – Dual Indoor &
-                        Outdoor Use | 1500 Sq. Ft | Plug...
+                        High-Frequency Ultrasonic Rat Repeller 
                       </a>
                     </h3>
                     <div className="price">
@@ -1061,8 +1055,7 @@ const Productdetails = () => {
                   <div className="products-content">
                     <h3>
                       <a href="#">
-                        High-Powered Ultrasonic Rat Repellent for Gardens,
-                        Factories, and Warehouses.....
+                        High-Powered Ultrasonic Rat Repellent
                       </a>
                     </h3>
                     <div className="price">
@@ -1123,8 +1116,7 @@ const Productdetails = () => {
                 <div className="products-content">
                   <h3>
                     <a href="#">
-                      High-Frequency Ultrasonic Rat Repeller – Dual Indoor &
-                      Outdoor Use | 1500 Sq. Ft | Plug & Play
+                      High-Frequency Ultrasonic Rat Repeller 
                     </a>
                   </h3>
 
