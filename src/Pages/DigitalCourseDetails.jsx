@@ -9,7 +9,7 @@ const images = [
   "/assets/pics/book2.png",
   "/assets/pics/book3.png",
   "/assets/pics/book4.png",
- 
+     
 ];
 const DigitalCourseDetails = () => {
   const [imgId, setImgId] = useState(1);
