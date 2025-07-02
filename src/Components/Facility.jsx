@@ -1,62 +1,49 @@
-import React from 'react'
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/autoplay';
 
 export default function Facility() {
+  const facilities = [
+    { icon: 'flaticon-tracking', title: 'Free Shipping Worldwide' },
+    { icon: 'flaticon-return', title: 'Easy Return Policy' },
+    { icon: 'flaticon-shuffle', title: '7 Day Exchange Policy' },
+    { icon: 'flaticon-sale', title: 'Weekend Discount Coupon' },
+    { icon: 'flaticon-credit-card', title: 'Secure Payment Methods' },
+    { icon: 'flaticon-location', title: 'Track Your Package' },
+    { icon: 'flaticon-customer-service', title: '24/7 Customer Support' },
+  ];
+
   return (
-    <div>
-      <section className="facility-area pb-70">
-            <div className="container">
-                <div className="facility-slides owl-carousel owl-theme">
-                    <div className="single-facility-box">
-                        <div className="icon">
-                            <i class='flaticon-tracking'></i>
-                        </div>
-                        <h3>Free Shipping Worldwide</h3>
-                    </div>
-
-                    <div className="single-facility-box">
-                        <div className="icon">
-                            <i class='flaticon-return'></i>
-                        </div>
-                        <h3>Easy Return Policy</h3>
-                    </div>
-
-                    <div className="single-facility-box">
-                        <div className="icon">
-                            <i class='flaticon-shuffle'></i>
-                        </div>
-                        <h3>7 Day Exchange Policy</h3>
-                    </div>
-
-                    <div className="single-facility-box">
-                        <div className="icon">
-                            <i class='flaticon-sale'></i>
-                        </div>
-                        <h3>Weekend Discount Coupon</h3>
-                    </div>
-
-                    <div className="single-facility-box">
-                        <div className="icon">
-                            <i class='flaticon-credit-card'></i>
-                        </div>
-                        <h3>Secure Payment Methods</h3>
-                    </div>
-
-                    <div className="single-facility-box">
-                        <div className="icon">
-                            <i class='flaticon-location'></i>
-                        </div>
-                        <h3>Track Your Package</h3>
-                    </div>
-
-                    <div className="single-facility-box">
-                        <div className="icon">
-                            <i class='flaticon-customer-service'></i>
-                        </div>
-                        <h3>24/7 Customer Support</h3>
-                    </div>
+    <section className="facility-area pb-70">
+      <div className="container">
+        <Swiper
+          modules={[Autoplay]}
+          spaceBetween={30}
+          slidesPerView={4}
+          autoplay={{ delay: 2500 }}
+          loop={true}
+          breakpoints={{
+            320: { slidesPerView: 1 },
+            576: { slidesPerView: 2 },
+            768: { slidesPerView: 3 },
+            1024: { slidesPerView: 4 },
+          }}
+          className="facility-swiper"
+        >
+          {facilities.map((item, index) => (
+            <SwiperSlide key={index}>
+              <div className="single-facility-box">
+                <div className="icon">
+                  <i className={item.icon}></i>
                 </div>
-            </div>
-        </section>
-    </div>
-  )
+                <h3>{item.title}</h3>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </section>
+  );
 }

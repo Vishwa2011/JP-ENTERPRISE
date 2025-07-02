@@ -188,7 +188,7 @@ const Home = () => {
                       <span className="sub-title">Protect Your Space!</span>
                       <h1>Say Goodbye to Rats</h1>
                       <p>
-                        Keep your home and office safe from wire-chewing rodents
+                        Keep your Gardens and Factories safe from wire-chewing rodents
                         – Limited Offer!
                       </p>
                       <div className="btn-box">
@@ -260,7 +260,7 @@ const Home = () => {
                   style={{ marginBottom: "10px", fontSize: "18px" }}
                 >
                   
-                  <i class="fa-regular fa-circle-check" style={{color:'rgb(245, 63, 133)',marginRight:'10px'}}></i>
+                  <i className="fa-regular fa-circle-check" style={{color:'rgb(245, 63, 133)',marginRight:'10px'}}></i>
                   {item}
                 </li>
               ))}
@@ -331,7 +331,7 @@ const Home = () => {
                             data-bs-toggle="modal"
                             data-bs-target="#shoppingWishlistModal"
                           >
-                            <i class="bx bx-heart"></i>
+                            <i className="bx bx-heart"></i>
                             <span className="tooltip-label">
                               Add to Wishlist
                             </span>
@@ -353,7 +353,7 @@ const Home = () => {
                             data-bs-toggle="modal"
                             data-bs-target="#productsQuickView"
                           >
-                            <i class="bx bx-search-alt"></i>
+                            <i className="bx bx-search-alt"></i>
                             <span className="tooltip-label">Quick View</span>
                           </a>
                         </div>
@@ -373,11 +373,11 @@ const Home = () => {
                   </h3>
                   <span>Brand: Generic</span>
                   <div className="star-rating">
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
+                    <i className="bx bxs-star"></i>
+                    <i className="bx bxs-star"></i>
+                    <i className="bx bxs-star"></i>
+                    <i className="bx bxs-star"></i>
+                    <i className="bx bxs-star"></i>
                   </div>
                   <div className="price">
                     <span className="new-price">₹3,331</span>
@@ -419,7 +419,7 @@ const Home = () => {
                             data-bs-toggle="modal"
                             data-bs-target="#shoppingWishlistModal"
                           >
-                            <i class="bx bx-heart"></i>
+                            <i className="bx bx-heart"></i>
                             <span className="tooltip-label">
                               Add to Wishlist
                             </span>
@@ -441,7 +441,7 @@ const Home = () => {
                             data-bs-toggle="modal"
                             data-bs-target="#productsQuickView"
                           >
-                            <i class="bx bx-search-alt"></i>
+                            <i className="bx bx-search-alt"></i>
                             <span className="tooltip-label">Quick View</span>
                           </a>
                         </div>
@@ -461,11 +461,11 @@ const Home = () => {
                   </h3>
                   <span>Brand: Generic</span>
                   <div className="star-rating">
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
+                    <i className="bx bxs-star"></i>
+                    <i className="bx bxs-star"></i>
+                    <i className="bx bxs-star"></i>
+                    <i className="bx bxs-star"></i>
+                    <i className="bx bxs-star"></i>
                   </div>
                   <div className="price">
                     <span className="new-price">₹3,429</span>
@@ -503,7 +503,7 @@ const Home = () => {
                             data-bs-toggle="modal"
                             data-bs-target="#shoppingWishlistModal"
                           >
-                            <i class="bx bx-heart"></i>
+                            <i className="bx bx-heart"></i>
                             <span className="tooltip-label">
                               Add to Wishlist
                             </span>
@@ -525,7 +525,7 @@ const Home = () => {
                             data-bs-toggle="modal"
                             data-bs-target="#productsQuickView"
                           >
-                            <i class="bx bx-search-alt"></i>
+                            <i className="bx bx-search-alt"></i>
                             <span className="tooltip-label">Quick View</span>
                           </a>
                         </div>
@@ -543,11 +543,11 @@ const Home = () => {
                   </h3>
                   <span>Brand: Generic</span>
                   <div className="star-rating">
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
-                    <i class="bx bxs-star"></i>
+                    <i className="bx bxs-star"></i>
+                    <i className="bx bxs-star"></i>
+                    <i className="bx bxs-star"></i>
+                    <i className="bx bxs-star"></i>
+                    <i className="bx bxs-star"></i>
                   </div>
                   <div className="price">
                     <span className="new-price">₹3,331</span>
@@ -569,10 +569,10 @@ const Home = () => {
       {/* <!-- End Products Area --> */}
 <div style={{ background:'#f4f4f4'}}>
    
-      <div class="container " style={{ paddingBottom: "100px",paddingTop:'65px'}}>
-        <div class="text-center mb-4">
+      <div className="container " style={{ paddingBottom: "100px",paddingTop:'65px'}}>
+        <div className="text-center mb-4">
           <span
-            class="text-uppercase  fw-semibold"
+            className="text-uppercase  fw-semibold"
             style={{ color: "rgb(245, 63, 133)" }}
           >
             Smart Choice for Safety
@@ -580,15 +580,15 @@ const Home = () => {
           <h2>Proven solutions for a rodent-free life.</h2>
         </div>
 
-        <div class="row g-4">
+        <div className="row g-4">
           {/* <!-- Box 1 --> */}
-          <div class="col-lg-4">
+          <div className="col-lg-4">
             <div
-              class="bg-light rounded-4 p-4 shadow d-flex gap-3 shield"
+              className="bg-light rounded-4 p-4 shadow d-flex gap-3 shield"
               style={{ backgroundColor: "#f1f8f5" }}
             >
               <i
-                class="fa-solid fa-shield"
+                className="fa-solid fa-shield"
                 style={{
                   fontSize: "34px",
                   paddingTop: "13px",
@@ -602,12 +602,12 @@ const Home = () => {
                 }}
               >
                 <h3
-                  class="h5 fw-bold mb-2"
+                  className="h5 fw-bold mb-2"
                   style={{ fontSize: "29px", marginBottom: "11px" }}
                 >
                   Rodent Shield
                 </h3>
-                <p class="text-muted" style={{ fontSize: "17px" }}>
+                <p className="text-muted" style={{ fontSize: "17px" }}>
                   Guards your home and vehicle.
                 </p>
               </div>
@@ -615,13 +615,13 @@ const Home = () => {
           </div>
 
           {/* <!-- Box 2 --> */}
-          <div class="col-lg-4">
+          <div className="col-lg-4">
             <div
-              class="bg-light rounded-4 p-4 shadow d-flex gap-3 shield"
+              className="bg-light rounded-4 p-4 shadow d-flex gap-3 shield"
               style={{ backgroundColor: "#f1f8f5" }}
             >
               <i
-                class="fa-solid fa-helmet-safety"
+                className="fa-solid fa-helmet-safety"
                 style={{
                   fontSize: "34px",
                   paddingTop: "13px",
@@ -635,12 +635,12 @@ const Home = () => {
                 }}
               >
                 <h3
-                  class="h5 fw-bold mb-2"
+                  className="h5 fw-bold mb-2"
                   style={{ fontSize: "29px", marginBottom: "11px" }}
                 >
                   Natural & Safe
                 </h3>
-                <p class="text-muted" style={{ fontSize: "17px" }}>
+                <p className="text-muted" style={{ fontSize: "17px" }}>
                   Gentle on people and pets.
                 </p>
               </div>
@@ -648,13 +648,13 @@ const Home = () => {
           </div>
 
           {/* <!-- Box 3 --> */}
-          <div class="col-lg-4">
+          <div className="col-lg-4">
             <div
-              class="bg-light rounded-4 p-4 shadow d-flex gap-3 shield"
+              className="bg-light rounded-4 p-4 shadow d-flex gap-3 shield"
               style={{ backgroundColor: "#f1f8f5" }}
             >
               <i
-                class="fa-solid fa-hands-holding-circle"
+                className="fa-solid fa-hands-holding-circle"
                 style={{
                   fontSize: "34px",
                   paddingTop: "13px",
@@ -668,12 +668,12 @@ const Home = () => {
                 }}
               >
                 <h3
-                  class="h5 fw-bold mb-2"
+                  className="h5 fw-bold mb-2"
                   style={{ fontSize: "29px", marginBottom: "11px" }}
                 >
                   Lasting Protection
                 </h3>
-                <p class="text-muted" style={{ fontSize: "17px" }}>
+                <p className="text-muted" style={{ fontSize: "17px" }}>
                   Works long after application.
                 </p>
               </div>
@@ -1466,7 +1466,7 @@ const Home = () => {
               aria-label="Close"
             >
               <span aria-hidden="true">
-                <i class="bx bx-x"></i>
+                <i className="bx bx-x"></i>
               </span>
             </button>
 
@@ -1493,11 +1493,11 @@ const Home = () => {
 
                   <div className="products-review">
                     <div className="rating">
-                      <i class="bx bxs-star"></i>
-                      <i class="bx bxs-star"></i>
-                      <i class="bx bxs-star"></i>
-                      <i class="bx bxs-star"></i>
-                      <i class="bx bxs-star"></i>
+                      <i className="bx bxs-star"></i>
+                      <i className="bx bxs-star"></i>
+                      <i className="bx bxs-star"></i>
+                      <i className="bx bxs-star"></i>
+                      <i className="bx bxs-star"></i>
                     </div>
                     <a href="#" className="rating-count">
                       3 ratings

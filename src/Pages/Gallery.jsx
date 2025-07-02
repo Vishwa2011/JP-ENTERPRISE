@@ -28,6 +28,21 @@ export default function Gallery() {
   return (
     <div>
       <Navbar />
+       {/* <!-- Start Page Title --> */}
+        <div className="page-title-area">
+          <div className="container">
+            <div className="page-title-content">
+              <h2>Gallery</h2>
+              <ul>
+                <li>
+                  <a href="/">Home</a>
+                </li>
+                <li>Gallery</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        {/* <!-- End Page Title --> */}
       <div className="gallerypage mt-5 mb-5">
         <div className="container">
           <div className="about-content text-center">

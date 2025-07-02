@@ -98,7 +98,7 @@ export default function Cart() {
                       <span className="subtotal-amount">₹3,331</span>
 
                       <a href="#" className="remove">
-                        <i class="bx bx-trash"></i>
+                        <i className="bx bx-trash"></i>
                       </a>
                     </td>
                   </tr>
@@ -145,7 +145,7 @@ export default function Cart() {
                       <span className="subtotal-amount">₹3,331</span>
 
                       <a href="#" className="remove">
-                        <i class="bx bx-trash"></i>
+                        <i className="bx bx-trash"></i>
                       </a>
                     </td>
                   </tr>

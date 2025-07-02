@@ -42,7 +42,7 @@ const OurProducts = () => {
     },
     {
       id: 3,
-      name: "High-Frequency Ultrasonic Rat Repelle",
+      name: "High-Frequency Repeller for Kitchen & Storage",
       image1: "/assets/pics/rate.jpg",
       image2: "/assets/pics/speaker 3.jpg",
       oldPrice: "₹9999",
@@ -51,7 +51,7 @@ const OurProducts = () => {
     },
      {
       id: 4,
-      name: "High-Frequency Ultrasonic Rat Repeller ",
+      name: "High-Frequency Repeller Dual Indoor & Outdoor",
       image1: "/assets/pics/rate.jpg",
       image2: "/assets/pics/speaker 3.jpg",
       oldPrice: "₹9999",
@@ -91,9 +91,9 @@ const OurProducts = () => {
       <Navbar />
       <>
         {/* <!-- Start Page Title --> */}
-        <div class="page-title-area">
-          <div class="container">
-            <div class="page-title-content">
+        <div className="page-title-area">
+          <div className="container">
+            <div className="page-title-content">
               <h2>Our Products</h2>
               <ul>
                 <li>
@@ -187,7 +187,7 @@ const OurProducts = () => {
               </div>
             </div>
 
-            <div id="products-collections-filter" className={`row ${view}`}>
+            <div id="row products-collections-filter" className={`row ${view}`}>
               {productsData.map((product) => (
                 <div
                   key={product.id}
@@ -305,53 +305,53 @@ const OurProducts = () => {
 
         {/* <!-- Start Products Filter Modal Area --> */}
         <div
-          class="modal left fade productsFilterModal"
+          className="modal left fade productsFilterModal"
           id="productsFilterModal"
           tabindex="-1"
           role="dialog"
         >
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
+          <div className="modal-dialog" role="document">
+            <div className="modal-content">
               <button
                 type="button"
-                class="close"
+                className="close"
                 data-bs-dismiss="modal"
                 aria-label="Close"
               >
                 <span aria-hidden="true">
-                  <i class="bx bx-x"></i> Close
+                  <i className="bx bx-x"></i> Close
                 </span>
               </button>
 
-              <div class="modal-body">
-                <div class="woocommerce-widget-area">
-                  <div class="woocommerce-widget filter-list-widget">
-                    <h3 class="woocommerce-widget-title">Current Selection</h3>
+              <div className="modal-body">
+                <div className="woocommerce-widget-area">
+                  <div className="woocommerce-widget filter-list-widget">
+                    <h3 className="woocommerce-widget-title">Current Selection</h3>
 
-                    <div class="selected-filters-wrap-list">
+                    <div className="selected-filters-wrap-list">
                       <ul>
                         <li>
                           <a href="#" >
-                            <i class="bx bx-x"></i> Rat Repellent
+                            <i className="bx bx-x"></i> Rat Repellent
                           </a>
                         </li>
                       </ul>
 
-                      <a href="#" class="delete-selected-filters">
-                        <i class="bx bx-trash"></i> <span>Clear All</span>
+                      <a href="#" className="delete-selected-filters">
+                        <i className="bx bx-trash"></i> <span>Clear All</span>
                       </a>
                     </div>
                   </div>
 
-                  <div class="woocommerce-widget collections-list-widget">
-                    <h3 class="woocommerce-widget-title">Material</h3>
+                  <div className="woocommerce-widget collections-list-widget">
+                    <h3 className="woocommerce-widget-title">Material</h3>
 
-                    <ul class="collections-list-row">
+                    <ul className="collections-list-row">
                       <li>
                         <a href="#">Metal</a>
                       </li>
-                      <li class="active">
-                        <a href="#" class="active">
+                      <li className="active">
+                        <a href="#" className="active">
                           Plastic / Polymer
                         </a>
                       </li>
@@ -366,13 +366,13 @@ const OurProducts = () => {
                     </ul>
                   </div>
 
-                  <div class="woocommerce-widget price-list-widget">
-                    <h3 class="woocommerce-widget-title">Price</h3>
+                  <div className="woocommerce-widget price-list-widget">
+                    <h3 className="woocommerce-widget-title">Price</h3>
 
-                    <div class="collection-filter-by-price">
-                      <span class="irs irs--flat js-irs-0">
-                        <span class="irs">
-                          <span class="irs-line" tabindex="0"></span>
+                    <div className="collection-filter-by-price">
+                      <span className="irs irs--flat js-irs-0">
+                        <span className="irs">
+                          <span className="irs-line" tabindex="0"></span>
                           <span
                             className="irs-min"
                             style={{ visibility: "hidden" }}
@@ -445,7 +445,7 @@ const OurProducts = () => {
                         </span>
                       </span>
                       <input
-                        class="js-range-of-price irs-hidden-input"
+                        className="js-range-of-price irs-hidden-input"
                         type="text"
                         data-min="0"
                         data-max="1055"
@@ -457,17 +457,17 @@ const OurProducts = () => {
                     </div>
                   </div>
 
-                  <div class="woocommerce-widget size-list-widget">
-                    <h3 class="woocommerce-widget-title">Size</h3>
+                  <div className="woocommerce-widget size-list-widget">
+                    <h3 className="woocommerce-widget-title">Size</h3>
 
-                    <ul class="size-list-row">
+                    <ul className="size-list-row">
                       <li>
                         <a href="#">20</a>
                       </li>
                       <li>
                         <a href="#">24</a>
                       </li>
-                      <li class="active">
+                      <li className="active">
                         <a href="#">36</a>
                       </li>
                       <li>
@@ -494,64 +494,64 @@ const OurProducts = () => {
                     </ul>
                   </div>
 
-                  <div class="woocommerce-widget color-list-widget">
-                    <h3 class="woocommerce-widget-title">Color</h3>
+                  <div className="woocommerce-widget color-list-widget">
+                    <h3 className="woocommerce-widget-title">Color</h3>
 
-                    <ul class="color-list-row">
-                      <li class="active">
-                        <a href="#" title="Black" class="color-black"></a>
+                    <ul className="color-list-row">
+                      <li className="active">
+                        <a href="#" title="Black" className="color-black"></a>
                       </li>
                       <li>
-                        <a href="#" title="Red" class="color-red"></a>
+                        <a href="#" title="Red" className="color-red"></a>
                       </li>
                       <li>
-                        <a href="#" title="Yellow" class="color-yellow"></a>
+                        <a href="#" title="Yellow" className="color-yellow"></a>
                       </li>
                       <li>
-                        <a href="#" title="White" class="color-white"></a>
+                        <a href="#" title="White" className="color-white"></a>
                       </li>
                       <li>
-                        <a href="#" title="Blue" class="color-blue"></a>
+                        <a href="#" title="Blue" className="color-blue"></a>
                       </li>
                       <li>
-                        <a href="#" title="Green" class="color-green"></a>
+                        <a href="#" title="Green" className="color-green"></a>
                       </li>
                       <li>
                         <a
                           href="#"
                           title="Yellow Green"
-                          class="color-yellowgreen"
+                          className="color-yellowgreen"
                         ></a>
                       </li>
                       <li>
-                        <a href="#" title="Pink" class="color-pink"></a>
+                        <a href="#" title="Pink" className="color-pink"></a>
                       </li>
                       <li>
-                        <a href="#" title="Violet" class="color-violet"></a>
+                        <a href="#" title="Violet" className="color-violet"></a>
                       </li>
                       <li>
                         <a
                           href="#"
                           title="Blue Violet"
-                          class="color-blueviolet"
+                          className="color-blueviolet"
                         ></a>
                       </li>
                       <li>
-                        <a href="#" title="Lime" class="color-lime"></a>
+                        <a href="#" title="Lime" className="color-lime"></a>
                       </li>
                       <li>
-                        <a href="#" title="Plum" class="color-plum"></a>
+                        <a href="#" title="Plum" className="color-plum"></a>
                       </li>
                       <li>
-                        <a href="#" title="Teal" class="color-teal"></a>
+                        <a href="#" title="Teal" className="color-teal"></a>
                       </li>
                     </ul>
                   </div>
 
-                  <div class="woocommerce-widget brands-list-widget">
-                    <h3 class="woocommerce-widget-title">Brands</h3>
+                  <div className="woocommerce-widget brands-list-widget">
+                    <h3 className="woocommerce-widget-title">Brands</h3>
 
-                    <ul class="brands-list-row">
+                    <ul className="brands-list-row">
                       <li>
                         <a href="#">Generic</a>
                       </li>
@@ -561,21 +561,21 @@ const OurProducts = () => {
                       <li>
                         <a href="#">Rodexit</a>
                       </li>
-                      {/* <li class="active"><a href="#">Moncler</a></li>
+                      {/* <li className="active"><a href="#">Moncler</a></li>
                                             <li><a href="#">Fendi</a></li>
                                             <li><a href="#">Versace</a></li> */}
                     </ul>
                   </div>
 
-                  <div class="woocommerce-widget aside-trending-widget">
-                    <div class="aside-trending-products">
+                  <div className="woocommerce-widget aside-trending-widget">
+                    <div className="aside-trending-products">
                       <img src="/assets/pics/blogdetails.jpg" alt="image" />
 
-                      <div class="category">
+                      <div className="category">
                         <h3>Top Trending</h3>
                         {/* <span>Spring/Summer 2024 Collection</span> */}
                       </div>
-                      <a href="/" class="link-btn"></a>
+                      <a href="/" className="link-btn"></a>
                     </div>
                   </div>
                 </div>
@@ -601,7 +601,7 @@ const OurProducts = () => {
                 aria-label="Close"
               >
                 <span aria-hidden="true">
-                  <i class="bx bx-x"></i>
+                  <i className="bx bx-x"></i>
                 </span>
               </button>
 
@@ -627,11 +627,11 @@ const OurProducts = () => {
 
                     <div className="products-review">
                       <div className="rating">
-                        <i class="bx bxs-star"></i>
-                        <i class="bx bxs-star"></i>
-                        <i class="bx bxs-star"></i>
-                        <i class="bx bxs-star"></i>
-                        <i class="bx bxs-star"></i>
+                        <i className="bx bxs-star"></i>
+                        <i className="bx bxs-star"></i>
+                        <i className="bx bxs-star"></i>
+                        <i className="bx bxs-star"></i>
+                        <i className="bx bxs-star"></i>
                       </div>
                       <a href="#" className="rating-count">
                         3 ratings

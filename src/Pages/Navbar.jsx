@@ -114,7 +114,7 @@ const Navbar = () => {
                 </div>
               </div>
 
-              <div className="col-lg-4 col-md-12">
+              <div className="col-lg-4 col-md-12 d-flex justify-content-between justify-content-lg-end">
                 <ul className="header-top-menu">
                   <li>
                     <a href="/Login">
@@ -231,61 +231,78 @@ const Navbar = () => {
                       Home
                     </NavLink>
                   </li>
-                <li className="nav-item dropdown">
+                  <li className="nav-item dropdown">
+                    <NavLink
+                      to="/Aboutus"
+                      className={({ isActive }) =>
+                        `nav-link dropdown-toggle${isActive ? " active" : ""}`
+                      }
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      About Us
+                    </NavLink>
+                    <ul className="dropdown-menu show">
+                      <li>
+                        <NavLink to="/Aboutus" className="dropdown-item">
+                          About Us
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/Mission" className="dropdown-item">
+                          Mission
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/Vision" className="dropdown-item">
+                          Vision
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/Ourteam" className="dropdown-item">
+                          Our Team
+                        </NavLink>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="nav-item dropdown">
   <NavLink
     to="/Aboutus"
     className={({ isActive }) =>
       `nav-link dropdown-toggle${isActive ? " active" : ""}`
     }
-    onClick={(e) => e.preventDefault()} 
+    onClick={(e) => e.preventDefault()}
   >
-    About Us
+    Our Products
   </NavLink>
-  <ul className="dropdown-menu show">
+
+  <ul className="dropdown-menu dropdown-menu1 show">
+    {/* Product Link Section */}
     <li>
-      <NavLink to="/Aboutus" className="dropdown-item">
-        About Us
-      </NavLink>
-    </li>
-    <li>
-      <NavLink to="/Mission" className="dropdown-item">
-        Mission
-      </NavLink>
-    </li>
-    <li>
-      <NavLink to="/Vision" className="dropdown-item">
-        Vision
-      </NavLink>
-    </li>
-    <li>
-      <NavLink to="/Ourteam" className="dropdown-item">
-        Our Team
-      </NavLink>
-    </li>
-  </ul>
-</li>
-                <li className="nav-item dropdown">
-  <NavLink
-    to="/Aboutus"
-    className={({ isActive }) =>
-      `nav-link dropdown-toggle${isActive ? " active" : ""}`
-    }
-    onClick={(e) => e.preventDefault()} 
-  >
-   Our Products
-  </NavLink>
-  <ul className="dropdown-menu show">
-    <li>
-       <h6 class="submenu-title">Our Products</h6>
+      <h6 className="submenu-title">Our Products</h6>
       <NavLink to="/OurProducts" className="dropdown-item">
-       Rat Guard
+        Rat Guard
       </NavLink>
     </li>
-   
+
+    {/* Top Trending Section */}
+    <li className="product-box">
+      <div className="category_nav">
+        <h4>Top Trending</h4>
+      </div>
+      <img src="/assets/pics/navimg1.jpg" alt="Top Trending" />
+    </li>
+
+    {/* Popular Products Section */}
+    <li className="product-box">
+      <div className="category_nav">
+        <h4>Popular Products</h4>
+      </div>
+      <img src="/assets/pics/navimg2.jpg" alt="Popular Products" />
+    </li>
   </ul>
 </li>
 
-                
+
                   <li className="nav-item">
                     <NavLink
                       to="/Blog"
@@ -296,16 +313,16 @@ const Navbar = () => {
                       Blog
                     </NavLink>
                   </li>
-                     <li className="nav-item ">
-                      <NavLink
-                        to="/Warranty"
-                        className={({ isActive }) =>
-                          `nav-link${isActive ? " active" : ""}`
-                        }
-                      >
-                        Warranty
-                      </NavLink>
-                    </li>
+                  <li className="nav-item ">
+                    <NavLink
+                      to="/Warranty"
+                      className={({ isActive }) =>
+                        `nav-link${isActive ? " active" : ""}`
+                      }
+                    >
+                      Warranty
+                    </NavLink>
+                  </li>
                   <li className="nav-item">
                     <NavLink
                       to="/Contact"
@@ -400,18 +417,18 @@ const Navbar = () => {
                       </ul>
                     </li>
 
-                    <li class="nav-item megamenu">
-                      <a href="" class="nav-link">
-                        Our Products <i class="bx bx-chevron-down"></i>
+                    <li className="nav-item megamenu">
+                      <a href="" className="nav-link">
+                        Our Products <i className="bx bx-chevron-down"></i>
                       </a>
-                      <ul class="dropdown-menu">
-                        <li class="nav-item">
-                          <div class="container">
-                            <div class="row justify-content-start">
-                              <div class="col-4">
-                                <h6 class="submenu-title">Our Products</h6>
+                      <ul className="dropdown-menu">
+                        <li className="nav-item">
+                          <div className="container">
+                            <div className="row justify-content-start">
+                              <div className="col-4">
+                                <h6 className="submenu-title">Our Products</h6>
 
-                                <ul class="megamenu-submenu">
+                                <ul className="megamenu-submenu">
                                   <li>
                                     <NavLink
                                       to="/OurProducts"
@@ -425,47 +442,41 @@ const Navbar = () => {
                                 </ul>
                               </div>
 
-                              <div class="col-4">
-                                <ul class="megamenu-submenu">
+                              <div className="col-4">
+                                <ul className="megamenu-submenu">
                                   <li>
                                     {" "}
-                                    <div class="aside-trending-products">
+                                    <div className="aside-trending-products">
                                       <img
                                         src="/assets/pics/navimg1.jpg"
                                         alt="image"
                                       />
 
-                                      <div class="category">
+                                      <div className="category">
                                         <h4>Top Trending</h4>
                                       </div>
 
-                                      <a
-                                        href="/"
-                                        class="link-btn"
-                                      ></a>
+                                      <a href="/" className="link-btn"></a>
                                     </div>
                                   </li>
                                 </ul>
                               </div>
 
-                              <div class="col-4">
-                                <ul class="megamenu-submenu">
+                              <div className="col-4">
+                                <ul className="megamenu-submenu">
                                   <li>
                                     {" "}
-                                    <div class="aside-trending-products">
+                                    <div className="aside-trending-products">
                                       <img
                                         src="/assets/pics/navimg2.jpg"
                                         alt="image"
                                       />
 
-                                      <div class="category">
+                                      <div className="category">
                                         <h4>Popular Products</h4>
                                       </div>
 
-                                      <a
-                                        href="/"
-                                        class="link-btn"
-                                      ></a>
+                                      <a href="/" className="link-btn"></a>
                                     </div>
                                   </li>
                                 </ul>
@@ -476,7 +487,6 @@ const Navbar = () => {
                       </ul>
                     </li>
 
-                  
                     <li className="nav-item">
                       <NavLink
                         to="/Blog"
@@ -487,7 +497,7 @@ const Navbar = () => {
                         Blog
                       </NavLink>
                     </li>
-                      <li className="nav-item ">
+                    <li className="nav-item ">
                       <NavLink
                         to="/Warranty"
                         className={({ isActive }) =>
@@ -507,7 +517,6 @@ const Navbar = () => {
                         Contact Us
                       </NavLink>
                     </li>
-                    
                   </ul>
 
                   <div className="others-option">
@@ -645,18 +654,18 @@ const Navbar = () => {
                       </ul>
                     </li>
 
-                     <li class="nav-item megamenu">
-                      <a href="" class="nav-link">
-                        Our Products <i class="bx bx-chevron-down"></i>
+                    <li className="nav-item megamenu">
+                      <a href="" className="nav-link">
+                        Our Products <i className="bx bx-chevron-down"></i>
                       </a>
-                      <ul class="dropdown-menu">
-                        <li class="nav-item">
-                          <div class="container">
-                            <div class="row justify-content-start">
-                              <div class="col-4">
-                                <h6 class="submenu-title">Our Products</h6>
+                      <ul className="dropdown-menu">
+                        <li className="nav-item">
+                          <div className="container">
+                            <div className="row justify-content-start">
+                              <div className="col-4">
+                                <h6 className="submenu-title">Our Products</h6>
 
-                                <ul class="megamenu-submenu">
+                                <ul className="megamenu-submenu">
                                   <li>
                                     <NavLink
                                       to="/OurProducts"
@@ -670,47 +679,41 @@ const Navbar = () => {
                                 </ul>
                               </div>
 
-                              <div class="col-4">
-                                <ul class="megamenu-submenu">
+                              <div className="col-4">
+                                <ul className="megamenu-submenu">
                                   <li>
                                     {" "}
-                                    <div class="aside-trending-products">
+                                    <div className="aside-trending-products">
                                       <img
                                         src="/assets/pics/navimg1.jpg"
                                         alt="image"
                                       />
 
-                                      <div class="category">
+                                      <div className="category">
                                         <h4>Top Trending</h4>
                                       </div>
 
-                                      <a
-                                        href="/"
-                                        class="link-btn"
-                                      ></a>
+                                      <a href="/" className="link-btn"></a>
                                     </div>
                                   </li>
                                 </ul>
                               </div>
 
-                              <div class="col-4">
-                                <ul class="megamenu-submenu">
+                              <div className="col-4">
+                                <ul className="megamenu-submenu">
                                   <li>
                                     {" "}
-                                    <div class="aside-trending-products">
+                                    <div className="aside-trending-products">
                                       <img
                                         src="/assets/pics/navimg2.jpg"
                                         alt="image"
                                       />
 
-                                      <div class="category">
+                                      <div className="category">
                                         <h4>Popular Products</h4>
                                       </div>
 
-                                      <a
-                                        href="/"
-                                        class="link-btn"
-                                      ></a>
+                                      <a href="/" className="link-btn"></a>
                                     </div>
                                   </li>
                                 </ul>
@@ -731,7 +734,7 @@ const Navbar = () => {
                         Blog
                       </NavLink>
                     </li>
-                     <li className="nav-item ">
+                    <li className="nav-item ">
                       <NavLink
                         to="/Warranty"
                         className={({ isActive }) =>
@@ -751,7 +754,6 @@ const Navbar = () => {
                         Contact Us
                       </NavLink>
                     </li>
-                   
                   </ul>
 
                   <div className="others-option">
@@ -867,9 +869,7 @@ const Navbar = () => {
                     <div className="products-content">
                       <h3>
                         <a href="#">
-                          High-Powered Ultrasonic Rat Repellent for Gardens,
-                          Factories, and Warehouses - Intense Noise for
-                          Effective Outdoor and Indoor Rat Deterrence
+                          High-Powered Ultrasonic Rat Repellent
                         </a>
                       </h3>
                       <span>Brand: Generic</span>
@@ -893,8 +893,7 @@ const Navbar = () => {
                     <div className="products-content">
                       <h3>
                         <a href="#">
-                          Smart Ultrasonic Rat Repellent for Commercial & Home
-                          Use | Safe & Silent Rodent Defense – 1500 Sq. Ft
+                          Smart Ultrasonic Rat Repellent 
                         </a>
                       </h3>
                       <span>Brand: Generic</span>
@@ -1089,9 +1088,7 @@ const Navbar = () => {
                     <div className="products-content">
                       <h3>
                         <a href="#">
-                          High-Powered Ultrasonic Rat Repellent for Gardens,
-                          Factories, and Warehouses - Intense Noise for
-                          Effective Outdoor and Indoor Rat Deterrence
+                          High-Powered Ultrasonic Rat Repellent
                         </a>
                       </h3>
                       <span>Brand: Generic</span>
@@ -1115,8 +1112,7 @@ const Navbar = () => {
                     <div className="products-content">
                       <h3>
                         <a href="#">
-                          Smart Ultrasonic Rat Repellent for Commercial & Home
-                          Use | Safe & Silent Rodent Defense – 1500 Sq. Ft
+                          Smart Ultrasonic Rat Repellent 
                         </a>
                       </h3>
                       <span>Brand: Generic</span>
