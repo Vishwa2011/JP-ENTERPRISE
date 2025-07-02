@@ -29,6 +29,7 @@ import Warranty from "./Pages/Warranty";
 import Vision from "./Pages/Vision";
 import DigitalCourse from "./Pages/DigitalCourse";
 import Ourteam from "./Pages/Ourteam";
+import DigitalCourseDetails from "./Pages/DigitalCourseDetails";
 function App() {
    const { pathname } = useLocation();
 
@@ -108,6 +109,7 @@ function App() {
      <Route path="/Ourteam" element={<Ourteam />} />
         <Route path="/Vision" element={<Vision/>}/>
         <Route path="/DigitalCourse" element={<DigitalCourse/>}/>
+        <Route path="/DigitalCourseDetails" element={<DigitalCourseDetails/>}/>
      </Routes>
 
       <a 
