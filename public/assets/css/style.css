@@ -9321,3 +9321,32 @@ Go Top CSS
 color: #fff;
   background-color: #25D366; /* WhatsApp green */
 }
+
+
+
+
+.nav-item.dropdown .dropdown-menu {
+  display: none;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-item {
+  padding: 8px 10px;
+  font-size: 14px;
+  color: #000;
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: var(--bs-dropdown-link-active-color);
+    text-decoration: none;
+    background-color: #f53f85;
+}
+.dropdown-item:hover {
+  color: white;
+  background-color: #f53f85;
+}

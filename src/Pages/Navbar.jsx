@@ -231,26 +231,61 @@ const Navbar = () => {
                       Home
                     </NavLink>
                   </li>
-                  <li className="nav-item">
-                    <NavLink
-                      to="/Aboutus"
-                      className={({ isActive }) =>
-                        `nav-link${isActive ? " active" : ""}`
-                      }
-                    >
-                      About Us
-                    </NavLink>
-                  </li>
-                  <li className="nav-item">
-                    <NavLink
-                      to="/OurProducts"
-                      className={({ isActive }) =>
-                        `nav-link${isActive ? " active" : ""}`
-                      }
-                    >
-                      Our Products
-                    </NavLink>
-                  </li>
+                <li className="nav-item dropdown">
+  <NavLink
+    to="/Aboutus"
+    className={({ isActive }) =>
+      `nav-link dropdown-toggle${isActive ? " active" : ""}`
+    }
+    onClick={(e) => e.preventDefault()} 
+  >
+    About Us
+  </NavLink>
+  <ul className="dropdown-menu show">
+    <li>
+      <NavLink to="/Aboutus" className="dropdown-item">
+        About Us
+      </NavLink>
+    </li>
+    <li>
+      <NavLink to="/Mission" className="dropdown-item">
+        Mission
+      </NavLink>
+    </li>
+    <li>
+      <NavLink to="/Vision" className="dropdown-item">
+        Vision
+      </NavLink>
+    </li>
+    <li>
+      <NavLink to="/Ourteam" className="dropdown-item">
+        Our Team
+      </NavLink>
+    </li>
+  </ul>
+</li>
+                <li className="nav-item dropdown">
+  <NavLink
+    to="/Aboutus"
+    className={({ isActive }) =>
+      `nav-link dropdown-toggle${isActive ? " active" : ""}`
+    }
+    onClick={(e) => e.preventDefault()} 
+  >
+   Our Products
+  </NavLink>
+  <ul className="dropdown-menu show">
+    <li>
+       <h6 class="submenu-title">Our Products</h6>
+      <NavLink to="/OurProducts" className="dropdown-item">
+       Rat Guard
+      </NavLink>
+    </li>
+   
+  </ul>
+</li>
+
+                
                   <li className="nav-item">
                     <NavLink
                       to="/Blog"
