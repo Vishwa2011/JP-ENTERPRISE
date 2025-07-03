@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Facility from "../Components/Facility";
 import Footer from "./Footer";
+import Instragram from "../Components/Instragram";
 
 const images = [
   { src: "/assets/pics/rate.jpg", alt: "Image 01" },
@@ -90,6 +91,7 @@ export default function Gallery() {
         </div>
       </div>
       <Facility />
+      <Instragram />
       <Footer />
     </div>
   );

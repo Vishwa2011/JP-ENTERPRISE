@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Navbar from "./Navbar";
 import Facility from "../Components/Facility";
-// import Instragram from '../Components/Instragram'
+import Instragram from '../Components/Instragram'
 import Footer from "./Footer";
 
 export default function Cart() {
@@ -193,7 +193,7 @@ export default function Cart() {
       </section>
       {/* <!-- End Cart Area --> */}
       <Facility />
-      {/* <Instragram /> */}
+      <Instragram />
       <Footer />
     </div>
   );

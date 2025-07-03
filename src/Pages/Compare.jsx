@@ -1,6 +1,6 @@
 import React from 'react'
 import Facility from '../Components/Facility'
-// import Instragram from '../Components/Instragram'
+import Instragram from '../Components/Instragram'
 import Footer from './Footer'
 import Navbar from './Navbar'
 
@@ -175,7 +175,7 @@ export default function Compare() {
         </section>
         {/* <!-- End Compare Area --> */}
       <Facility />
-      {/* <Instragram /> */}
+      <Instragram />
       <Footer />
     </div>
   )

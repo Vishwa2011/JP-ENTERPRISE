@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Facility from '../Components/Facility'
-// import Instragram from '../Components/Instragram'
+import Instragram from '../Components/Instragram'
 import Footer from './Footer'
 
 export default function TermsandConditions() {
@@ -39,7 +39,7 @@ export default function TermsandConditions() {
       </section>
       {/* <!-- End Customer Service Area --> */}
       <Facility />
-      {/* <Instragram /> */}
+      <Instragram />
       <Footer />
     </div>
   )

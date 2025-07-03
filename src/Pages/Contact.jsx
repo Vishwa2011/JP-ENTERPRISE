@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import Facility from '../Components/Facility'
-// import Instragram from '../Components/Instragram'
+import Instragram from '../Components/Instragram'
 
 export default function Contact() {
   return (
@@ -119,7 +119,7 @@ export default function Contact() {
         </div>
         {/* <!-- End Map --> */}
       <Facility />
-      {/* <Instragram /> */}
+      <Instragram />
       <Footer />
     </div>
   )

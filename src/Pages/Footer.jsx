@@ -71,7 +71,7 @@ export default function Footer() {
 
                                 <form className="newsletter-form" data-bs-toggle="validator">
                                     <label>Your E-mail Address:</label>
-                                    <input type="email" className="input-newsletter" placeholder="Enter your email" name="EMAIL" required autocomplete="off" />
+                                    <input type="email" className="input-newsletter" placeholder="Enter your email" name="EMAIL" required autoComplete="off" />
                                     <button type="submit">Subscribe</button>
                                     <div id="validator-newsletter" className="form-result"></div>
                                 </form>

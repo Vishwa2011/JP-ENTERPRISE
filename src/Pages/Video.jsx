@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import Facility from '../Components/Facility'
 import Footer from './Footer'
+import Instragram from '../Components/Instragram'
 
 export default function Video() {
   return (
@@ -97,6 +98,7 @@ export default function Video() {
      
       </div>
       <Facility />
+      <Instragram />
       <Footer />
     </div>
   )

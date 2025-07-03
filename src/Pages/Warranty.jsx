@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Facility from "../Components/Facility";
 import $ from "jquery";
+import Instragram from "../Components/Instragram";
 
 const images = [
   "/assets/pics/rate.jpg",
@@ -491,7 +492,7 @@ const Warranty = () => {
         </section>
         {/* <!-- End Product Details Area --></div> */}
 
-        {/* <Instragram /> */}
+        <Instragram />
       </div>
 
       {/* <!-- Start QuickView Modal Area --> */}

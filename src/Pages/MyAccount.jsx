@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Facility from "../Components/Facility";
 import Footer from "./Footer";
+import Instragram from "../Components/Instragram";
 
 export default function MyAccount() {
   const [activeTab, setActiveTab] = useState("orders");
@@ -292,6 +293,7 @@ export default function MyAccount() {
       </div>
 
       <Facility />
+      <Instragram />
       <Footer />
     </div>
   );

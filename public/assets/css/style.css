@@ -9380,3 +9380,6 @@ color: #fff;
 
 /*  */
 
+.instagram-swiper .swiper-slide {
+  transition: all 0.3s ease;
+}

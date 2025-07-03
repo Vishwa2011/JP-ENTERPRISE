@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-// import Instragram from "../Components/Instragram"
+import Instragram from "../Components/Instragram"
 import Facility from "../Components/Facility";
 
 import {
@@ -1374,7 +1374,7 @@ const Home = () => {
       {/* <!-- End Categories Banner Area --> */}
 
       {/* <!-- Start Instagram Area --> */}
-      {/* <Instragram /> */}
+      <Instragram />
       {/* <!-- End Instagram Area --> */}
 
       {/* <!-- Start Wishlist Modal --> */}
