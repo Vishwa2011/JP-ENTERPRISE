@@ -169,36 +169,36 @@ const Productdetails = () => {
 
               <div className="col-lg-7 col-md-12">
                 <div className="products-details-desc">
-                  <h3>
-                    Smart Ultrasonic Rat Repellent 
-                  </h3>
+                  <span className="sub-title">Rat Guard </span>
+                  <h3>Smart Ultrasonic Rat Repellent</h3>
 
-                  <div className="price">
-                    <span className="new-price">₹3331</span>
-                    <span className="old-price">₹9999</span>
-                  </div>
-                  <div className="products-review">
-                    <div className="rating">
-                      <i className="bx bx-star"></i>
-                      <i className="bx bx-star"></i>
-                      <i className="bx bx-star"></i>
-                      <i className="bx bx-star"></i>
-                      <i className="bx bx-star"></i>
+                  <div className="d-flex align-items-center gap-3 mt-2">
+                    <div className="rating bg-success text-white px-2 py-1 rounded">
+                      <i className="bx bxs-star"></i> 4.5
                     </div>
-                    <a href="#" className="rating-count">
-                      {" "}
-                      3 ratings
-                    </a>
+                    <span className="text-muted">(27 Ratings)</span>
                   </div>
 
-                  <ul className="products-info">
-                    <li>
+                  <div
+                    className="price mt-3"
+                    style={{
+                      borderTop: "1px solid #515151",
+                      paddingTop: "10px",
+                    }}
+                  >
+                    <span className="new-price fw-bold fs-4">₹3331</span>
+                    <del className="old-price ms-2 text-muted">₹9999</del>
+                    <span className="ms-2 text-success">(-67%)</span>
+                  </div>
+
+                  {/* <ul className="products-info styled-info list-unstyled"> */}
+                  {/* <li>
                       <span>Brand:</span> <a href="#">Generic</a>
                     </li>
                     <li>
                       <span>Colour:</span> <a href="#">Black</a>
-                    </li>
-                    <li>
+                    </li> */}
+                  {/* <li>
                       <span>Style:</span> <a href="#">modern</a>
                     </li>
                     <li>
@@ -214,47 +214,34 @@ const Productdetails = () => {
                     <li>
                       <span>Number of Pieces:</span> <a href="#">1</a>
                     </li>
-                  </ul>
+                  </ul> */}
+                  
+                  <div className="product-specs-grid">
+                    <div className="spec-item">
+                      <div className="label">Style</div>
+                      <div className="value">Modern</div>
+                    </div>
+                    <div className="spec-item">
+                      <div className="label">Material</div>
+                      <div className="value">Metal</div>
+                    </div>
+                    <div className="spec-item">
+                      <div className="label">Product Dimensions</div>
+                      <div className="value">5L x 10W x 10H Centimeters</div>
+                    </div>
+                    <div className="spec-item">
+                      <div className="label">Item Weight</div>
+                      <div className="value">750 Grams</div>
+                    </div>
+                    <div className="spec-item">
+                      <div className="label">Number of Pieces</div>
+                      <div className="value">1</div>
+                    </div>
+                  </div>
 
-                  {/* <div className="products-color-switch">
-                    <span>Color:</span>
+                 
 
-                    <ul>
-                      <li>
-                        <a href="#" title="Black" className="color-black"></a>
-                      </li>
-                      <li>
-                        <a href="#" title="White" className="color-white"></a>
-                      </li>
-                      <li className="active">
-                        <a href="#" title="Green" className="color-green"></a>
-                      </li>
-                      <li>
-                        <a
-                          href="#"
-                          title="Yellow Green"
-                          className="color-yellowgreen"
-                        ></a>
-                      </li>
-                      <li>
-                        <a href="#" title="Teal" className="color-teal"></a>
-                      </li>
-                    </ul>
-                  </div> */}
-
-                  {/* <div className="products-size-wrapper">
-                                <span>Size:</span>
-
-                                <ul>
-                                    <li><a href="#">XS</a></li>
-                                    <li className="active"><a href="#">S</a></li>
-                                    <li><a href="#">M</a></li>
-                                    <li><a href="#">XL</a></li>
-                                    <li><a href="#">XXL</a></li>
-                                </ul>
-                            </div> */}
-
-                  <div className="products-info-btn mt-2">
+                  <div className="products-info-btn mt-4">
                     <a
                       href="#"
                       data-bs-toggle="modal"
@@ -304,7 +291,7 @@ const Productdetails = () => {
                       className="optional-btn"
                       style={{ marginRight: "10px" }}
                     >
-                      <i className="bx bx-heart"></i>
+                      <i className="bx bx-heart"></i> WishList
                     </a>
                     <a
                       href="https://wa.me/919265407449"
@@ -312,7 +299,7 @@ const Productdetails = () => {
                       rel="noopener noreferrer"
                       className="optional"
                     >
-                      <i className="fa-brands fa-whatsapp"></i>
+                      <i className="fa-brands fa-whatsapp"></i> Whatsapp
                     </a>
                   </div>
 
@@ -399,14 +386,14 @@ const Productdetails = () => {
                         <div className="accordion-content">
                           <table className="table table-striped">
                             <tbody>
-                              <tr>
+                              {/* <tr>
                                 <td>Brand:</td>
                                 <td>Generic</td>
                               </tr>
                               <tr>
                                 <td>Colour:</td>
                                 <td>Black</td>
-                              </tr>
+                              </tr> */}
                               <tr>
                                 <td>Style:</td>
                                 <td>modern</td>
@@ -660,9 +647,7 @@ const Productdetails = () => {
 
                   <div className="products-content">
                     <h3>
-                      <a href="#">
-                        High-Frequency Ultrasonic Rat Repeller 
-                      </a>
+                      <a href="#">High-Frequency Ultrasonic Rat Repeller</a>
                     </h3>
                     <div className="price">
                       <span className="new-price">₹3429</span>
@@ -740,9 +725,7 @@ const Productdetails = () => {
 
                   <div className="products-content">
                     <h3>
-                      <a href="#">
-                        High-Frequency Ultrasonic Rat Repeller
-                      </a>
+                      <a href="#">High-Frequency Ultrasonic Rat Repeller</a>
                     </h3>
                     <div className="price">
                       <span className="new-price">₹3429</span>
@@ -818,9 +801,7 @@ const Productdetails = () => {
 
                   <div className="products-content">
                     <h3>
-                      <a href="#">
-                        High-Powered Ultrasonic Rat Repellent
-                      </a>
+                      <a href="#">High-Powered Ultrasonic Rat Repellent</a>
                     </h3>
                     <div className="price">
                       <span className="new-price">₹3429</span>
@@ -896,9 +877,7 @@ const Productdetails = () => {
 
                   <div className="products-content">
                     <h3>
-                      <a href="#">
-                        High-Frequency Ultrasonic Rat Repeller 
-                      </a>
+                      <a href="#">High-Frequency Ultrasonic Rat Repeller</a>
                     </h3>
                     <div className="price">
                       <span className="new-price">₹3429</span>
@@ -974,9 +953,7 @@ const Productdetails = () => {
 
                   <div className="products-content">
                     <h3>
-                      <a href="#">
-                        High-Frequency Ultrasonic Rat Repeller 
-                      </a>
+                      <a href="#">High-Frequency Ultrasonic Rat Repeller</a>
                     </h3>
                     <div className="price">
                       <span className="new-price">₹3429</span>
@@ -1054,9 +1031,7 @@ const Productdetails = () => {
 
                   <div className="products-content">
                     <h3>
-                      <a href="#">
-                        High-Powered Ultrasonic Rat Repellent
-                      </a>
+                      <a href="#">High-Powered Ultrasonic Rat Repellent</a>
                     </h3>
                     <div className="price">
                       <span className="new-price">₹3429</span>
@@ -1115,9 +1090,7 @@ const Productdetails = () => {
               <div className="col-lg-6 col-md-6">
                 <div className="products-content">
                   <h3>
-                    <a href="#">
-                      High-Frequency Ultrasonic Rat Repeller 
-                    </a>
+                    <a href="#">High-Frequency Ultrasonic Rat Repeller</a>
                   </h3>
 
                   <div className="price">
@@ -1139,9 +1112,9 @@ const Productdetails = () => {
                   </div>
 
                   <ul className="products-info">
-                    <li>
+                    {/* <li>
                       <span>Brand:</span> <a href="#">Generic</a>
-                    </li>
+                    </li> */}
                     <li>
                       <span>Style:</span> <a href="#">modern</a>
                     </li>

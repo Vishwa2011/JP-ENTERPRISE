@@ -404,9 +404,9 @@ const DigitalCourseDetails = () => {
                   </div>
 
                   <ul className="products-info">
-                    <li>
+                    {/* <li>
                       <span>Brand:</span> <a href="#">Generic</a>
-                    </li>
+                    </li> */}
                     <li>
                       <span>Style:</span> <a href="#">modern</a>
                     </li>
