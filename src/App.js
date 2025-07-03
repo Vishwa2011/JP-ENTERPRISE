@@ -105,8 +105,8 @@ function App() {
         <Route path="/Video" element={<Video/>}/>
         <Route path="/Mission" element={<Mission/>}/>
         <Route path="/Warranty" element={<Warranty />}/>
-  <Route path="/Mission" element={<Mission/>}/>    
-     <Route path="/Ourteam" element={<Ourteam />} />
+        <Route path="/Mission" element={<Mission/>}/>    
+        <Route path="/Ourteam" element={<Ourteam />} />
         <Route path="/Vision" element={<Vision/>}/>
         <Route path="/DigitalCourse" element={<DigitalCourse/>}/>
         <Route path="/DigitalCourseDetails" element={<DigitalCourseDetails/>}/>
@@ -118,9 +118,9 @@ function App() {
       rel="noopener noreferrer"
       className="whatsapp-button"
     >
-      <FaWhatsapp size={40} />
+      <FaWhatsapp size={30} />
     </a>
-     <div class="go-top"><i class='bx bx-up-arrow-alt'></i></div>
+     <div className="go-top"><i class='bx bx-up-arrow-alt'></i></div>
          <div
       className={`go-top ${showButton ? 'active' : ''}`}
       onClick={scrollToTop}

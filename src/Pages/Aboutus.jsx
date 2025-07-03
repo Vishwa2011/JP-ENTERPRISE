@@ -173,7 +173,7 @@ const Aboutus = () => {
 
         {/* <!-- Start Offer Area --> */}
         <section
-          className="offer-area bg-image1 ptb-100 jarallax"
+          className="offer-area bg-image1 ptb-100 mb-5 jarallax"
           data-jarallax='{"speed": 0.3}'
         >
           <div className="container-fluid">

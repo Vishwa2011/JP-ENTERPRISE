@@ -312,7 +312,7 @@ const Productdetails = () => {
                       rel="noopener noreferrer"
                       className="optional"
                     >
-                      <i class="fa-brands fa-whatsapp"></i>
+                      <i className="fa-brands fa-whatsapp"></i>
                     </a>
                   </div>
 
@@ -1101,7 +1101,7 @@ const Productdetails = () => {
               aria-label="Close"
             >
               <span aria-hidden="true">
-                <i class="bx bx-x"></i>
+                <i className="bx bx-x"></i>
               </span>
             </button>
 
@@ -1127,11 +1127,11 @@ const Productdetails = () => {
 
                   <div className="products-review">
                     <div className="rating">
-                      <i class="bx bxs-star"></i>
-                      <i class="bx bxs-star"></i>
-                      <i class="bx bxs-star"></i>
-                      <i class="bx bxs-star"></i>
-                      <i class="bx bxs-star"></i>
+                      <i className="bx bxs-star"></i>
+                      <i className="bx bxs-star"></i>
+                      <i className="bx bxs-star"></i>
+                      <i className="bx bxs-star"></i>
+                      <i className="bx bxs-star"></i>
                     </div>
                     <a href="#" className="rating-count">
                       3 ratings
@@ -1192,11 +1192,11 @@ const Productdetails = () => {
                   <div className="products-add-to-cart">
                     <div className="input-counter">
                       <span className="minus-btn">
-                        <i class="bx bx-minus"></i>
+                        <i className="bx bx-minus"></i>
                       </span>
                       <input type="text" value="1" min="1" max="10" />
                       <span className="plus-btn">
-                        <i class="bx bx-plus"></i>
+                        <i className="bx bx-plus"></i>
                       </span>
                     </div>
 

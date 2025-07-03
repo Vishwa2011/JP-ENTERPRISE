@@ -54,7 +54,7 @@ export default function Checkout() {
       <section className="checkout-area ptb-100">
         <div className="container">
           <div className="user-actions">
-            <i class="bx bx-log-in"></i>
+            <i className="bx bx-log-in"></i>
             <span>
               Returning customer? <a href="/Login">Click here to login</a>
             </span>
@@ -287,7 +287,7 @@ export default function Checkout() {
               <td><input
           type="text"
           className="form-control"
-          placeholder="Enter Promo Code"
+          placeholder="Enter Promo Code (save10)"
           value={promoCode}
           onChange={(e) => setPromoCode(e.target.value)}
         /></td>

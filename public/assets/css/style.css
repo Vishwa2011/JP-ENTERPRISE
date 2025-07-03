@@ -9306,8 +9306,8 @@ Go Top CSS
 }
 .whatsapp-button {
   position: fixed;
-  bottom: 74px; /* Distance from bottom */
-  right: 23px;  /* Distance from right */
+  bottom: 60px; /* Distance from bottom */
+  right: 30px;  /* Distance from right */
   background-color: #25D366; /* WhatsApp green */
   border-radius: 50%;
   padding: 8px; /* Small padding to reduce the button size */
@@ -9321,3 +9321,62 @@ Go Top CSS
 color: #fff;
   background-color: #25D366; /* WhatsApp green */
 }
+
+
+
+
+.nav-item.dropdown .dropdown-menu {
+  display: none;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-item {
+  padding: 8px 10px;
+  font-size: 14px;
+  color: #000;
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: var(--bs-dropdown-link-active-color);
+    text-decoration: none;
+    background-color: #f53f85;
+}
+.dropdown-item:hover {
+  color: white;
+  background-color: #f53f85;
+}
+
+.dropdown-menu1 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+  background: white;
+  width: 100%;
+}
+
+.product-box {
+  /* width: 150px; */
+  text-align: center;
+}
+
+.category_nav h4 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.product-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+/*  */
+
