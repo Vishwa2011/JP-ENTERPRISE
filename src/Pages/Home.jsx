@@ -169,7 +169,7 @@ const Home = () => {
                   <div className="col-lg-6">
                     <div className="banner-image">
                       <div className="circle"></div>
-                      <img src="/assets/pics/bbb.png" alt="image" />
+                      <img src="/assets/pics/Photoroom.png" alt="image" />
                     </div>
                   </div>
                 </div>
@@ -567,7 +567,7 @@ const Home = () => {
         </div>
       </section>
       {/* <!-- End Products Area --> */}
-<div style={{ background:'#f4f4f4'}}>
+<div style={{ background:'#f53f851c'}}>
    
       <div className="container " style={{ paddingBottom: "100px",paddingTop:'65px'}}>
         <div className="text-center mb-4">
@@ -747,7 +747,11 @@ const Home = () => {
         </div>
       </div>
       {/*  */}
+   {/* <!-- Start Facility Area --> */}
 
+      <Facility />
+ 
+      {/* <!-- End Facility Area --> */}
       {/* <!-- Start Offer Products Area --> */}
        <section className="offer-products-area" style={{ paddingBottom: "100px" }}>
       <div className="container">
@@ -767,10 +771,10 @@ const Home = () => {
             <div className="single-offer-products d-flex flex-column flex-md-row align-items-center justify-content-between">
               <div className="content">
                 <h3>
-                  <a href="/OurProducts">Latest Rat Repellent Devices</a>
+                  <a href="/OurProducts">Latest Rat Repellent </a>
                 </h3>
                 <p>
-                  Protect your home, office, and car from rodent damage with our
+                  Protect your office and car from rodent damage with our
                   newly launched ultrasonic products.
                 </p>
                 <a href="/OurProducts" className="default-btn">
@@ -781,7 +785,7 @@ const Home = () => {
               <div className="image">
                 <a href="/OurProducts">
                   <img
-                    src="/assets/pics/Say Goodbye to Rodents!.png"
+                    src="/assets/pics/Rodents1.png"
                     alt="JP Enterprise new collection"
                     style={{ border: "1px solid" }}
                   />
@@ -808,7 +812,7 @@ const Home = () => {
               <div className="image">
                 <a href="/OurProducts">
                   <img
-                    src="/assets/pics/baners.png"
+                    src="/assets/pics/Rodents!2.png"
                     alt="JP Enterprise popular products"
                     style={{ border: "1px solid" }}
                   />
@@ -835,7 +839,7 @@ const Home = () => {
               <div className="image">
                 <a href="/OurProducts">
                   <img
-                    src="/assets/pics/bg3.png"
+                    src="/assets/pics/Rodents!3.png"
                     alt="JP Enterprise trending products"
                     style={{ border: "1px solid" }}
                   />
@@ -851,9 +855,7 @@ const Home = () => {
 
   
 
-      {/* <!-- Start Facility Area --> */}
-      <Facility />
-      {/* <!-- End Facility Area --> */}
+   
 
 
 
@@ -969,6 +971,31 @@ const Home = () => {
     </div>
       {/* <!-- End Brand Area --> */}
 
+
+         {/* <!-- Start Offer Area --> */}
+<section
+  className="offer-area bg-image1 ptb-100 jarallax"
+  data-jarallax='{"speed": 0.3}'
+>
+  <div className="container-fluid">
+    <div className="row justify-content-center">
+      <div className="col-lg-5 col-md-6">
+        <div className="offer-content text-white text-center">
+          <span className="sub-title">Limited Time Offer on Rat Repellent</span>
+          <h2>Flat 40% OFF</h2>
+          <p>Protect Your Home with Smart Ultrasonic Technology</p>
+          <a href="#" className="default-btn">
+            Shop Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{/* <!-- End Offer Area --> */}
+
+
+
       {/* <!-- Start Testimonials Area --> */}
     
        <section className="testimonials-area ptb-100">
@@ -1033,7 +1060,7 @@ const Home = () => {
   
 
       {/* why choose start */}
-<div style={{background:'#f4f4f4'}}>
+<div style={{background:'#f53f851c'}}>
 
       <section className="section" >
         <div className="about-content text-center mb-4">
@@ -1172,7 +1199,7 @@ const Home = () => {
       {/* <!-- End Blog Area --> */}
 
       {/* <!-- Start Categories Banner Area --> */}
-      <div style={{background:'rgb(244, 244, 244)'}}>
+      <div style={{background:'#f53f851c'}}>
 
       <section className="categories-banner-area  pb-70" style={{paddingTop:'80px'}}>
         <div className="about-content text-center mb-4">

@@ -172,27 +172,27 @@ const Aboutus = () => {
         </section>
         {/* <!-- End About Area --> */}
 
-        {/* <!-- Start Offer Area --> */}
-        <section
-          className="offer-area bg-image1 ptb-100 mb-5 jarallax"
-          data-jarallax='{"speed": 0.3}'
-        >
-          <div className="container-fluid">
-            <div className="row justify-content-center">
-              <div className="col-lg-5 col-md-6">
-                <div className="offer-content">
-                  <span className="sub-title">Limited Time Offer!</span>
-                  <h2>-40% OFF</h2>
-                  <p>Get The Best Deals Now</p>
-                  <a href="" className="default-btn">
-                    Discover Now
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* <!-- End Offer Area --> */}
+   {/* <!-- Start Offer Area --> */}
+<section
+  className="offer-area bg-image1 ptb-100 mb-5 jarallax"
+  data-jarallax='{"speed": 0.3}'
+>
+  <div className="container-fluid">
+    <div className="row justify-content-center">
+      <div className="col-lg-5 col-md-6">
+        <div className="offer-content text-white text-center">
+          <span className="sub-title">Limited Time Offer on Rat Repellent</span>
+          <h2>Flat 40% OFF</h2>
+          <p>Protect Your Home with Smart Ultrasonic Technology</p>
+          <a href="#" className="default-btn">
+            Shop Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{/* <!-- End Offer Area --> */}
 
         {/* <!-- Start Partner Area --> */}
         {/* <div className="partner-area ptb-70">
