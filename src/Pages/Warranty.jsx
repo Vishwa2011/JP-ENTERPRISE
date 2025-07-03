@@ -128,22 +128,15 @@ const Warranty = () => {
         {/* <!-- End Page Title --> */}
       <div className="support-page">
       <div className="container">
-        <div className="warranty-container">
-  <h2 className="title">Warranty Lookup</h2>
-  <p className="subtitle">Enter a Service Tag or Product ID below.</p>
-
-  <div className="search-box">
-    <input
-      type="text"
-      placeholder="Enter Service Tag"
-      className="search-input"
-    />
-    <button className="search-button">Search</button>
-  </div>
-
-  <p className="help-link">How to find your product identifier</p>
-</div>
-
+        <h1>Warranty Lookup</h1>
+        <p>Enter a Service Tag or Product ID below.</p>
+        <div className="search-bar">
+          <input type="text" placeholder="Enter Service Tag" />
+          <button className="search-btns">Search</button>
+        </div>
+        <p className="helper-link">
+          <a href="#">How to find your product identifier</a>
+        </p>
       </div>
 
       {/* <div className="sidebar">
@@ -153,35 +146,62 @@ const Warranty = () => {
         <button>🔒 My Products</button>
       </div> */}
 
-      <div className="help-section">
-        <h2>How can we help you?</h2>
-        <div className="cards">
-          <div className="card">
-            <h4>Extend or Upgrade Support</h4>
-            <p>Minimize repair costs and keep devices running smoothly.</p>
-          </div>
-          <div className="card">
-            <h4>Retail Registration</h4>
-            <p>Register your product to access personalized support.</p>
-          </div>
-          <div className="card">
-            <h4>Ownership Transfer</h4>
-            <p>Transfer device and service ownership with ease.</p>
-          </div>
-          <div className="card">
-            <h4>Service Contracts for Business</h4>
-            <p>Maintenance and support for business devices.</p>
-          </div>
-          <div className="card">
-            <h4>Service Contracts for Home</h4>
-            <p>Coverage for home devices and technical help.</p>
-          </div>
-          <div className="card">
-            <h4>Self-repair</h4>
-            <p>Order parts, get tips, and repair your device yourself.</p>
-          </div>
+<div className="help-section ">
+  <h2 className="help-title text-center mb-4">How can we help you?</h2>
+  <div className="row">
+    <div className="col-md-4 mb-4">
+      <div className="card h-100">
+        <div className="card-body">
+          <h4 className="card-title text-primary">Installation Guide</h4>
+          <p className="card-text">Step-by-step instructions for setting up your rat repellent device at home or office.</p>
         </div>
       </div>
+    </div>
+    <div className="col-md-4 mb-4">
+      <div className="card h-100">
+        <div className="card-body">
+          <h4 className="card-title text-primary"> Coverage Area</h4>
+          <p className="card-text">Understand how much space each device can protect and how to maximize coverage.</p>
+        </div>
+      </div>
+    </div>
+    <div className="col-md-4 mb-4">
+      <div className="card h-100">
+        <div className="card-body">
+          <h4 className="card-title text-primary">Ownership Transfer</h4>
+          <p className="card-text">Transfer device and service ownership with ease.</p>
+        </div>
+      </div>
+    </div>
+
+    <div className="col-md-4 mb-4">
+      <div className="card h-100">
+        <div className="card-body">
+          <h4 className="card-title text-primary">Service Contracts for Business</h4>
+          <p className="card-text">Maintenance and support for business devices.</p>
+        </div>
+      </div>
+    </div>
+    <div className="col-md-4 mb-4">
+      <div className="card h-100">
+        <div className="card-body">
+          <h4 className="card-title text-primary">Service Contracts for Home</h4>
+          <p className="card-text">Coverage for home devices and technical help.</p>
+        </div>
+      </div>
+    </div>
+    <div className="col-md-4 mb-4">
+      <div className="card h-100">
+        <div className="card-body">
+          <h4 className="card-title text-primary">Self-repair</h4>
+          <p className="card-text">Order parts, get tips, and repair your device yourself.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
     </div>
 </div>
     
