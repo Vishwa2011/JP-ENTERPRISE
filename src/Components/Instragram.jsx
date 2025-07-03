@@ -6,16 +6,16 @@ import "swiper/css/autoplay";
 
 export default function Instragram() {
   const images = [
-    "img1.jpg",
-    "img2.jpg",
-    "img3.jpg",
-    "img4.jpg",
-    "img10.jpg",
-    "img6.jpg",
-    "img7.jpg",
-    "img8.jpg",
-    "img9.jpg",
-    "img5.jpg",
+    "insta1.png",
+    "insta2.webp",
+    "insta3.jpg",
+    "insta4.webp",
+    "insta5.jpg",
+    "insta6.png",
+    "insta1.png",
+    "insta2.webp",
+    "insta3.jpg",
+    "insta4.webp",
   ];
 
   return (
