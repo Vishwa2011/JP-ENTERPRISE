@@ -9415,94 +9415,180 @@ color: #fff;
 
 /*  */
 
-
-.support-page .container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px 20px;
-  background: #fff;
+.support-page {
+  background-color: #fff;
+  padding: 60px 20px;
   text-align: center;
+  color: #000;
 }
 
-.support-page h1 {
-  font-size: 24px;
-  margin-bottom: 10px;
+.support-page .title {
+  font-size: 32px;
+  font-weight: bold;
+  color: rgb(245, 63, 133);
 }
 
-.search-bar {
-  margin-top: 20px;
-}
-
-.search-bar input {
-  padding: 10px;
-  width: 300px;
+.support-page .subtitle {
+  color: #555;
   font-size: 16px;
-  margin-right: 10px;
 }
 
-.search-btns {
+.support-page .search-bar input {
+  padding: 10px;
+  width: 280px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.support-page .search-bar input:focus {
+  border-color: rgb(245, 63, 133);
+  box-shadow: 0 0 5px rgba(245, 63, 133, 0.5);
+  outline: none;
+}
+
+.support-page .search-btns {
   padding: 10px 20px;
-  background: #f53f85;
+  background: rgb(245, 63, 133);
   color: white;
   border: none;
+  border-radius: 5px;
+  font-weight: 500;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-.helper-link {
-  margin-top: 10px;
+.support-page .search-btns:hover {
+  background: #d3366c;
 }
 
-.sidebar {
-  position: fixed;
-  right: 20px;
-  top: 100px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.support-page .helper-link a {
+  font-size: 14px;
+  color: #000;
+  text-decoration: underline;
 }
 
-.sidebar button {
-  padding: 10px;
-  background: #e6f3ff;
-  border: 1px solid #007bff;
-  cursor: pointer;
+.support-page .help-section {
+  margin-top: 70px;
+  padding: 20px 10px;
+}
+
+.support-page .help-title {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #000;
   font-weight: bold;
 }
 
-.help-section {
-  margin-top: 60px;
+.support-page .card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
   padding: 20px;
-  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-.help-section h2 {
-  margin-bottom: 20px;
+.support-page .card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 0%;
+  background-color: rgb(245, 63, 133);
+  transition: height 0.4s ease;
 }
 
-.help-section .cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-  padding: 0 10px;
+.support-page .card:hover::before {
+  height: 100%;
 }
 
-.help-section .card {
-  background: #f4f4f4;
-  padding: 20px;
-  text-align: left;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
-}
-.help-section  .card:hover {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
-.help-section .card h4 {
-  margin-bottom: 10px;
-  color: #007bff;
+.support-page .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(245, 63, 133, 0.2);
+  border-color: rgb(245, 63, 133);
 }
 
-.help-section .card p {
-  margin: 0;
-  font-size: 14px;
+.support-page .card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(245, 63, 133);
+  transition: color 0.3s ease;
 }
 
+.support-page .card:hover .card-title {
+  color: #000;
+}
+
+/* Card animation on load */
+.support-page .animate-card {
+  animation: fadeUp 0.6s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.warranty-detail h3 {
+  font-weight: 600;
+  color: rgb(245, 63, 133);
+}
+
+.warranty-detail {
+  border-left: 5px solid rgb(245, 63, 133);
+  animation: fadeInUp 0.6s ease-in-out;
+  background-color: #fff;
+}
+
+.warranty-table th {
+  width: 200px;
+  font-weight: 600;
+  color: #000;
+  padding: 12px;
+  vertical-align: middle;
+  background: #f8f8f8;
+}
+
+.warranty-table td {
+  color: #333;
+  font-weight: 500;
+  padding: 12px;
+  background: #fff;
+}
+
+.warranty-table tr:not(:last-child) {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
