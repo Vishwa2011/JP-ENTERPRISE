@@ -111,50 +111,7 @@ const OurProducts = () => {
           <div className="container">
             <div className="products-filter-options">
               <div className="row align-items-center justify-content-end">
-                {/* <div className="col-lg-4 col-md-4">
-                  <div className="d-lg-flex d-md-flex align-items-center">
-                    <span className="sub-title">
-                      <a
-                        href="#"
-                        data-bs-toggle="modal"
-                        data-bs-target="#productsFilterModal"
-                      >
-                        <i className="bx bx-filter-alt"></i> Filter
-                      </a>
-                    </span>
-
-                    <span className="sub-title d-none d-lg-block d-md-block">
-                      View:
-                    </span>
-
-                    <div className="view-list-row d-none d-lg-block d-md-block">
-                      <div className="view-column">
-                        {viewButtons.map(({ class: viewClass, label }) => (
-                          <a
-                            key={label}
-                            href="#"
-                            className={`${label} ${
-                              view === viewClass ? "active" : ""
-                            }`}
-                            onClick={(e) => {
-                              e.preventDefault();
-                              handleViewChange(viewClass);
-                            }}
-                          >
-                            <span></span>
-                            <span></span>
-                            {label.includes("three") && <span></span>}
-                            {label.includes("four") && <span></span>}
-                          </a>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-lg-4 col-md-4">
-                  <p>Showing 1 – 18 of 100</p>
-                </div> */}
+            
 
                <div className="col-lg-4 col-md-4">
       <div className="products-ordering-list">

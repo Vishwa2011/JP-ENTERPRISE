@@ -849,200 +849,73 @@ const Home = () => {
 
       {/* <!-- End Offer Products Area --> */}
 
-      {/* <!-- Start Products Area --> */}
-      {/* <section className="products-area pt-100 pb-70">
-            <div className="container">
-                <div className="section-title">
-                    <span className="sub-title">See Our Collection</span>
-                    <h2>Popular Products</h2>
-                </div>
-
-                <div className="row justify-content-center">
-                  
-
-                    <div className="col-lg-4 col-md-6 col-sm-6">
-                        <div className="single-productsBox">
-                            <div className="products-image">
-                                <a href="/Productdetails">
-                                    <img src="/assets/pics/rate.jpg" className="main-image" alt="image" />
-                                    <img src="/assets/pics/speaker 3.jpg" className="hover-image" alt="image" />
-                                </a>
-
-                                <div className="products-button">
-                                    <ul>
-                                        <li>
-                                            <div className="wishlist-btn">
-                                               <a href="#" data-bs-toggle="modal" data-bs-target="#shoppingWishlistModal">
-                                                    <i class='bx bx-heart'></i>
-                                                    <span className="tooltip-label">Add to Wishlist</span>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div className="compare-btn">
-                                                <a href="/Compare">
-                                                    <i class='bx bx-refresh'></i>
-                                                    <span className="tooltip-label">Compare</span>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div className="quick-view-btn">
-                                                <a href="#" data-bs-toggle="modal" data-bs-target="#productsQuickView">
-                                                    <i class='bx bx-search-alt'></i>
-                                                    <span className="tooltip-label">Quick View</span>
-                                                </a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div className="products-content">
-                                <span className="category">Rat Repellent</span>
-                                <h3><a href="/Productdetails">High-Frequency Ultrasonic Rat Repeller – Dual Indoor & Outdoor Use | 1500 Sq. Ft | Plug & Play</a></h3>
-                                <span>Brand: Generic</span>
-                                <div className="star-rating">
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                </div>
-                                 <div className="price">
-                                    <span className="old-price">₹9,999</span>
-                                    <span className="new-price">₹3,331</span>
-                                </div>
-                                <a href="/Cart" className="add-to-cart">Add to Cart</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-4 col-md-6 col-sm-6">
-                        <div className="single-productsBox">
-                            <div className="products-image">
-                                <a href="/Productdetails">
-                                    <img src="/assets/pics/rate.jpg" className="main-image" alt="image" />
-                                    <img src="/assets/pics/speaker.jpg" className="hover-image" alt="image" />
-                                </a>
-
-                                <div className="products-button">
-                                    <ul>
-                                        <li>
-                                            <div className="wishlist-btn">
-                                               <a href="#" data-bs-toggle="modal" data-bs-target="#shoppingWishlistModal">
-                                                    <i class='bx bx-heart'></i>
-                                                    <span className="tooltip-label">Add to Wishlist</span>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div className="compare-btn">
-                                                <a href="/Compare">
-                                                    <i class='bx bx-refresh'></i>
-                                                    <span className="tooltip-label">Compare</span>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div className="quick-view-btn">
-                                                <a href="#" data-bs-toggle="modal" data-bs-target="#productsQuickView">
-                                                    <i class='bx bx-search-alt'></i>
-                                                    <span className="tooltip-label">Quick View</span>
-                                                </a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div className="products-content">
-                                <span className="category">Rat Repellent</span>
-                                <h3><a href="/Productdetails">High-Powered Ultrasonic Rat Repellent for Gardens, Factories, and Warehouses - Intense Noise for Effective Outdoor and Indoor Rat Deterrence</a></h3>
-                                <span>Brand: Generic</span>
-                                <div className="star-rating">
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                </div>
-                               <div className="price">
-                                    <span className="old-price">₹9,999</span>
-                                    <span className="new-price">₹3,331</span>
-                                </div>
-                                <a href="/Cart" className="add-to-cart">Add to Cart</a>
-                            </div>
-                        </div>
-                    </div>
-
-                   
-
-                    <div className="col-lg-4 col-md-6 col-sm-6">
-                        <div className="single-productsBox">
-                            <div className="products-image">
-                                <a href="/Productdetails">
-                                    <img src="/assets/pics/rate.jpg" className="main-image" alt="image" />
-                                    <img src="/assets/pics/speaker2.jpg" className="hover-image" alt="image" />
-                                </a>
-
-                                <div className="products-button">
-                                    <ul>
-                                        <li>
-                                            <div className="wishlist-btn">
-                                               <a href="#" data-bs-toggle="modal" data-bs-target="#shoppingWishlistModal">
-                                                    <i class='bx bx-heart'></i>
-                                                    <span className="tooltip-label">Add to Wishlist</span>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div className="compare-btn">
-                                                <a href="/Compare">
-                                                    <i class='bx bx-refresh'></i>
-                                                    <span className="tooltip-label">Compare</span>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div className="quick-view-btn">
-                                                <a href="#" data-bs-toggle="modal" data-bs-target="#productsQuickView">
-                                                    <i class='bx bx-search-alt'></i>
-                                                    <span className="tooltip-label">Quick View</span>
-                                                </a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div className="products-content">
-                               <span className="category">Rat Repellent</span>
-                                <h3><a href="/Productdetails">Smart Ultrasonic Rat Repellent for Commercial & Home Use | Safe & Silent Rodent Defense – 1500 Sq. Ft</a></h3>
-                                <span>Brand: Generic</span>
-                                <div className="star-rating">
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                </div>
-                                  <div className="price">
-                                    <span className="old-price">₹9,999</span>
-                                    <span className="new-price">₹3,429</span>
-                                </div>
-                                <a href="/Cart" className="add-to-cart">Add to Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> */}
-      {/* <!-- End Products Area --> */}
+  
 
       {/* <!-- Start Facility Area --> */}
       <Facility />
       {/* <!-- End Facility Area --> */}
+
+
+
+              {/* <!-- Start About Area --> */}
+        <section className="about-area " style={{paddingTop:'60px',paddingBottom:'90px'}}>
+          <div className="container">
+            <div className="row align-items-center justify-content-center">
+              <div className="col-lg-6 col-md-12">
+                <div className="about-image">
+                  <img
+                    src="/assets/pics/about1.jpg"
+                    className="shadow"
+                    alt="image"
+                  />
+                  <img
+                    src="/assets/pics/about (1).png"
+                    className="shadow"
+                    alt="image"
+                  />
+                </div>
+              </div>
+
+              <div className="col-lg-6 col-md-12">
+                <div className="about-content">
+                  <span className="sub-title">Rat Repellent</span>
+                  
+                  <h5>
+                    JP Enterprise offers advanced ultrasonic rat repellent
+                    devices for every need.
+                  </h5>
+                  <p style={{textAlign:'justify'}}>
+                   The machine continuously emits ultrasonic frequencies that create an uncomfortable environment for rats. This forces them to leave the area without causing them any harm.
+                  </p>
+                  <p style={{textAlign:'justify'}}>
+                    This device uses no poison, no harmful chemicals, and no traps. It is completely safe for children, pets, and the environment, making it a smart alternative to traditional pest control methods.
+                  </p>
+
+                     <p style={{textAlign:'justify'}}>
+                 Just plug it in and let it work! There’s no maintenance required. Its compact design makes it perfect for use in homes, shops, offices, godowns, or factories.</p>
+                  <p style={{textAlign:'justify'}}>
+                 The machine is energy efficient and designed to run continuously with very low electricity usage. It's a one-time investment that provides long-term protection from rats.
+                  </p>
+
+                 
+                  <p style={{textAlign:'justify'}}>
+               The Ultrasonic Rat Repellent Machine is a modern, eco-friendly solution to keep rats away from your home, office, warehouse, or shop. It emits high-frequency sound waves that are inaudible to humans and pets but extremely uncomfortable for rats, forcing them to leave the area without harm.
+                  </p>
+                
+                <div className="btn-box">
+                        <a href="/OurProducts" className="default-btn">
+                          Buy Now
+                        </a>
+                        {/* <a href="/OurProducts" className="optional-btn">Shop Men's</a> */}
+                      </div>
+                </div>
+              </div>
+            </div>
+
+       
+          </div>
+        </section>
+        {/* <!-- End About Area --> */}
 
       {/* <!-- Start Brand Area --> */}
      <div className="brand-area ptb-70">
@@ -1157,7 +1030,52 @@ const Home = () => {
         
       {/* <!-- End Testimonials Area --> */}
 
-      {/* <!-- Start Blog Area --> */}
+  
+
+      {/* why choose start */}
+<div style={{background:'#f4f4f4'}}>
+
+      <section className="section" >
+        <div className="about-content text-center mb-4">
+          <span className="sub-title">Why Choose Us?</span>
+          <h2>Smarter safety, no harm done.</h2>
+        </div>
+
+        <div className="offer-grid">
+          <div className="offer-card">
+            <i className="fa-solid fa-shield-halved"></i>
+            <h3>Pure Protection, Zero Chemicals</h3>
+            <p>Safe for you, your pets, and tough on rodents.</p>
+          </div>
+
+          <div className="offer-card">
+            <i className="fa-solid fa-bolt"></i>
+            <h3>Power-Smart Performance</h3>
+            <p>Round-the-clock defense with minimal energy use.</p>
+          </div>
+
+          <div className="offer-card">
+            <i className="fa-solid fa-heart-circle-check"></i>
+            <h3>Safe for All, Harmful to None</h3>
+            <p>
+              Targets only rodents — keeping your loved ones completely safe.
+            </p>
+          </div>
+
+          <div className="offer-card">
+            <i className="fa-solid fa-plug-circle-bolt"></i>
+            <h3>Invest Once, Protect Always</h3>
+            <p>
+              No refills, no fuss—just plug in and enjoy lifelong protection.
+            </p>
+          </div>
+        </div>
+      </section>
+</div>
+
+      {/* why choose end */}
+
+          {/* <!-- Start Blog Area --> */}
       <section className="blog-area pt-100 pb-70">
         <div className="container">
           <div className="section-title">
@@ -1253,51 +1171,10 @@ const Home = () => {
 
       {/* <!-- End Blog Area --> */}
 
-      {/* why choose start */}
-<div style={{background:'#f4f4f4'}}>
-
-      <section className="section" >
-        <div className="about-content text-center mb-4">
-          <span className="sub-title">Why Choose Us?</span>
-          <h2>Smarter safety, no harm done.</h2>
-        </div>
-
-        <div className="offer-grid">
-          <div className="offer-card">
-            <i className="fa-solid fa-shield-halved"></i>
-            <h3>Pure Protection, Zero Chemicals</h3>
-            <p>Safe for you, your pets, and tough on rodents.</p>
-          </div>
-
-          <div className="offer-card">
-            <i className="fa-solid fa-bolt"></i>
-            <h3>Power-Smart Performance</h3>
-            <p>Round-the-clock defense with minimal energy use.</p>
-          </div>
-
-          <div className="offer-card">
-            <i className="fa-solid fa-heart-circle-check"></i>
-            <h3>Safe for All, Harmful to None</h3>
-            <p>
-              Targets only rodents — keeping your loved ones completely safe.
-            </p>
-          </div>
-
-          <div className="offer-card">
-            <i className="fa-solid fa-plug-circle-bolt"></i>
-            <h3>Invest Once, Protect Always</h3>
-            <p>
-              No refills, no fuss—just plug in and enjoy lifelong protection.
-            </p>
-          </div>
-        </div>
-      </section>
-</div>
-
-      {/* why choose end */}
-
       {/* <!-- Start Categories Banner Area --> */}
-      <section className="categories-banner-area pt-100 pb-70">
+      <div style={{background:'rgb(244, 244, 244)'}}>
+
+      <section className="categories-banner-area  pb-70" style={{paddingTop:'80px'}}>
         <div className="about-content text-center mb-4">
           <span className="sub-title">Effective Solution</span>
           <h2>Discover the power of JP Enterprise ultrasound rat repellent</h2>
@@ -1371,6 +1248,7 @@ const Home = () => {
          </div>
         </div>
       </section>
+      </div>
       {/* <!-- End Categories Banner Area --> */}
 
       {/* <!-- Start Instagram Area --> */}
