@@ -5,6 +5,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay"; 
+import Facility from "../Components/Facility";
+import Instragram from "../Components/Instragram";
 
 const teamMembers = [
   {
@@ -157,7 +159,8 @@ const Ourteam = () => {
         </div>
       </section>
       {/* <!-- End Products Area --></div> */}
-
+        <Facility />
+        <Instragram />
       <Footer />
     </>
   );

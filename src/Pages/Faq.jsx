@@ -413,7 +413,7 @@ export default function Faq() {
         </section>
         {/* <!-- End FAQ Area --> */}
       <Facility />
-      {/* <Instragram /> */}
+      <Instragram />
       <Footer />
     </div>
   )

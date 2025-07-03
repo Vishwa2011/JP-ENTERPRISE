@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import Facility from '../Components/Facility'
 import Footer from './Footer'
+import Instragram from '../Components/Instragram'
 
 export default function Vision() {
   return (
@@ -72,6 +73,7 @@ export default function Vision() {
         {/* <!-- End About Area --> */}
       </div>
       <Facility />
+      <Instragram />
       <Footer />
     </div>
   )

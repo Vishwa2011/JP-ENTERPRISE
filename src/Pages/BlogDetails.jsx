@@ -468,7 +468,7 @@ export default function BlogDetails() {
         </section>
         {/* <!-- End Blog Details Area --> */}
       <Facility />
-      {/* <Instragram /> */}
+      <Instragram />
       <Footer />
     </div>
   )

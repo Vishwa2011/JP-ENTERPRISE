@@ -2,6 +2,7 @@ import { useState } from "react";
 import Facility from '../Components/Facility'
 import Footer from './Footer'
 import Navbar from './Navbar'
+import Instragram from "../Components/Instragram";
 
 
 const lookbookItems = [
@@ -176,6 +177,7 @@ export default function DigitalCourse() {
     </section>
         {/* <!-- End Lookbook Area --> */}
       <Facility />
+      <Instragram />
       <Footer />
     </div>
   )

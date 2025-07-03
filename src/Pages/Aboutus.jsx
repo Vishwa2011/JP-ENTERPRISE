@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Facility from "../Components/Facility";
+import Instragram from "../Components/Instragram";
 
 const Aboutus = () => {
   return (
@@ -242,7 +243,7 @@ const Aboutus = () => {
         {/* <!-- End Partner Area --> */}
 
         <Facility />
-        {/* <Instragram /> */}
+        <Instragram />
       </div>
       <Footer />
     </>

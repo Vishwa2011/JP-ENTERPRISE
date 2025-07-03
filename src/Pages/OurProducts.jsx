@@ -2,7 +2,7 @@ import { useState } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Facility from "../Components/Facility";
-// import Instragram from '../Components/Instragram'
+import Instragram from '../Components/Instragram'
 
 const OurProducts = () => {
       const options = [
@@ -713,7 +713,7 @@ const OurProducts = () => {
         </div>
         {/* <!-- End QuickView Modal Area --> */}
         <Facility />
-        {/* <Instragram /> */}
+        <Instragram />
       </>
       <Footer />
     </>

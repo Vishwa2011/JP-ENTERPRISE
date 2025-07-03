@@ -3,7 +3,7 @@ import $ from "jquery";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Facility from "../Components/Facility";
-// import Instragram from "../Components/Instragram";
+import Instragram from "../Components/Instragram";
 const images = [
   "/assets/pics/rate.jpg",
   "/assets/pics/speaker 3.jpg",
@@ -1080,7 +1080,7 @@ const Productdetails = () => {
         </section>
         {/* <!-- End Product Details Area --></div> */}
         <Facility />
-        {/* <Instragram /> */}
+        <Instragram />
       </div>
       <Footer />
 
