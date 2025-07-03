@@ -23,7 +23,7 @@ const Warranty = () => {
   const [error, setError] = useState(false);
   const [showInfo, setShowInfo] = useState(false);
 
-  const validTags = ["JP456XYZ"]; // Add more if needed
+  const validTags = ["123"]; // Add more if needed
 
   const handleSearch = () => {
     if (validTags.includes(serviceTag.trim().toUpperCase())) {
@@ -141,137 +141,185 @@ const Warranty = () => {
         </div>
         {/* <!-- End Page Title --> */}
 
-   <div className="support-page">
-      <div className="container">
-        <h1 className="title">Warranty Lookup</h1>
-        <p className="subtitle">Enter a Service Tag or Product ID below.</p>
+        <div className="support-page">
+          <div className="container">
+            <h1 className="title">Warranty Lookup</h1>
+            <p className="subtitle">Enter a Service Tag or Product ID below.</p>
 
-        {error && (
-          <div className="alert alert-warning d-flex justify-content-between align-items-center">
-            <span>
-              ⚠️ No match found for that Service Tag or Product ID. Please try
-              again.
-            </span>
-            <button
-              onClick={() => setError(false)}
-              className="btn-close"
-              style={{
-                background: "none",
-                border: "none",
-                fontSize: "18px",
-                lineHeight: "1",
-              }}
-            >
-              &times;
-            </button>
+            {error && (
+              <div className="alert alert-warning d-flex justify-content-between align-items-center">
+                <span>
+                  ⚠️ No match found for that Service Tag or Product ID. Please
+                  try again.
+                </span>
+                <button
+                  onClick={() => setError(false)}
+                  className="btn-close"
+                  style={{
+                    background: "none",
+                    border: "none",
+                    fontSize: "18px",
+                    lineHeight: "1",
+                  }}
+                >
+                  &times;
+                </button>
+              </div>
+            )}
+
+            <div className="search-bar d-flex justify-content-center align-items-center flex-wrap gap-2 mt-3">
+              <input
+                type="text"
+                placeholder="Enter Service Tag (123)"
+                value={serviceTag}
+                onChange={(e) => setServiceTag(e.target.value)}
+              />
+              <button className="search-btns" onClick={handleSearch}>
+                Search
+              </button>
+            </div>
+
+            <p className="helper-link mt-2">
+              <a href="#">How to find your product identifier</a>
+            </p>
           </div>
-        )}
 
-        <div className="search-bar d-flex justify-content-center align-items-center flex-wrap gap-2 mt-3">
-          <input
-            type="text"
-            placeholder="Enter Service Tag (JP456XYZ)"
-            value={serviceTag}
-            onChange={(e) => setServiceTag(e.target.value)}
-          />
-          <button className="search-btns" onClick={handleSearch}>
-            Search
-          </button>
-        </div>
+          {/* Show Warranty Info if valid */}
+          {showInfo && (
+            <div className="container mt-5 p-4 shadow rounded bg-light warranty-detail">
+              <h3 className="mb-5 ">Product Warranty Details</h3>
 
-        <p className="helper-link mt-2">
-          <a href="#">How to find your product identifier</a>
-        </p>
-      </div>
+              <div className="row align-items-center">
+                {/* Product Image */}
+                <div className="col-md-4 mb-3 mb-md-0 text-center">
+                  <div className="product-imgs">
+                    <div
+                      className="img-display zoom-container"
+                      onMouseMove={handleMouseMove}
+                      onMouseEnter={() => setIsZoomVisible(true)}
+                      onMouseLeave={() => setIsZoomVisible(false)}
+                    >
+                      <div className="img-showcase" ref={showcaseRef}>
+                        {images.map((src, index) => (
+                          <img
+                            key={index}
+                            src={src}
+                            alt={`shoe ${index + 1}`}
+                          />
+                        ))}
+                      </div>
 
-      {/* Show Warranty Info if valid */}
-      {showInfo && (
-      <div className="container mt-5 p-4 shadow rounded bg-light warranty-detail">
-  <h3 className="mb-3 ">Product Warranty Details</h3>
+                      {isZoomVisible && (
+                        <div className="zoom-lens" style={zoomStyles}></div>
+                      )}
+                    </div>
 
-  <table className="table warranty-table mb-0">
-    <tbody>
-      <tr>
-        <th>Product Name:</th>
-        <td>Smart Ultrasonic Rat Repellent</td>
-      </tr>
-      <tr>
-        <th>Model Number:</th>
-        <td>JP-RATGUARD01</td>
-      </tr>
-      <tr>
-        <th>Serial Number:</th>
-        <td>JP456XYZ</td>
-      </tr>
-      <tr>
-        <th>Purchase Date:</th>
-        <td>15 March 2024</td>
-      </tr>
-      <tr>
-        <th>Warranty Status:</th>
-        <td><span className="badge bg-success">Active</span></td>
-      </tr>
-      <tr>
-        <th>Warranty Expiry:</th>
-        <td>15 March 2025</td>
-      </tr>
-      <tr>
-        <th>Support:</th>
-        <td>1-Year Standard Warranty</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-      )}
+                    <div className="img-select">
+                      {images.map((src, index) => (
+                        <div className="img-item" key={index}>
+                          <button
+                            onClick={() => setImgId(index + 1)}
+                            style={{
+                              border: "none",
+                              background: "transparent",
+                              padding: 0,
+                            }}
+                          >
+                            <img src={src} alt={`shoe thumb ${index + 1}`} />
+                          </button>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
 
-      {/* Help Cards */}
-      <div className="help-section">
-        <h2 className="help-title">How can we help you?</h2>
-        <div className="row">
-          {[
-            {
-              title: "Device Installation",
-              text: "Follow easy steps to install your ultrasonic rat repellent at home or in your office without expert help.",
-            },
-            {
-              title: "Effective Coverage",
-              text: "Learn how much area each device can cover and how to place it for maximum rodent protection.",
-            },
-            {
-              title: "Warranty Registration",
-              text: "Register your product to activate the warranty and enjoy hassle-free service support.",
-            },
-            {
-              title: "Business Use Support",
-              text: "Explore service plans and setup help for offices, warehouses, and industrial spaces.",
-            },
-            {
-              title: "Home Use Guidance",
-              text: "Get recommendations on where and how to use the device inside your home for best results.",
-            },
-            {
-              title: "Troubleshooting & Repairs",
-              text: "Fix common issues, order replacement parts, and get DIY repair instructions.",
-            },
-          ].map((item, i) => (
-            <div className="col-md-4 mb-4" key={i}>
-              <div className="card h-100 shadow-sm animate-card">
-                <div className="card-body">
-                  <h4 className="card-title">{item.title}</h4>
-                  <p className="card-text">{item.text}</p>
+                {/* Warranty Table */}
+                <div className="col-md-8"> 
+                  <table className="table warranty-table mb-0">
+                    <tbody>
+                      <tr>
+                        <th>Product Name:</th>
+                        <td>Smart Ultrasonic Rat Repellent</td>
+                      </tr>
+                      <tr>
+                        <th>Model Number:</th>
+                        <td>JP-RATGUARD01</td>
+                      </tr>
+                      <tr>
+                        <th>Serial Number:</th>
+                        <td>123</td>
+                      </tr>
+                      <tr>
+                        <th>Purchase Date:</th>
+                        <td>15 March 2024</td>
+                      </tr>
+                      <tr>
+                        <th>Warranty Status:</th>
+                        <td>
+                          <span className="badge bg-success">Active</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>Warranty Expiry:</th>
+                        <td>15 March 2025</td>
+                      </tr>
+                      <tr>
+                        <th>Support:</th>
+                        <td>1-Year Standard Warranty</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
-          ))}
+          )}
+
+          {/* Help Cards */}
+          <div className="help-section">
+            <h2 className="help-title">How can we help you?</h2>
+            <div className="row">
+              {[
+                {
+                  title: "Device Installation",
+                  text: "Follow easy steps to install your ultrasonic rat repellent at home or in your office without expert help.",
+                },
+                {
+                  title: "Effective Coverage",
+                  text: "Learn how much area each device can cover and how to place it for maximum rodent protection.",
+                },
+                {
+                  title: "Warranty Registration",
+                  text: "Register your product to activate the warranty and enjoy hassle-free service support.",
+                },
+                {
+                  title: "Business Use Support",
+                  text: "Explore service plans and setup help for offices, warehouses, and industrial spaces.",
+                },
+                {
+                  title: "Home Use Guidance",
+                  text: "Get recommendations on where and how to use the device inside your home for best results.",
+                },
+                {
+                  title: "Troubleshooting & Repairs",
+                  text: "Fix common issues, order replacement parts, and get DIY repair instructions.",
+                },
+              ].map((item, i) => (
+                <div className="col-md-4 mb-4" key={i}>
+                  <div className="card h-100 shadow-sm animate-card">
+                    <div className="card-body">
+                      <h4 className="card-title">{item.title}</h4>
+                      <p className="card-text">{item.text}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-
-</div>
-    
       <Facility />
-
+      <Instragram />
       <Footer />
     </>
   );

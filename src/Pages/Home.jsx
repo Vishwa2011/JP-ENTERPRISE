@@ -203,7 +203,7 @@ const Home = () => {
                   <div className="col-lg-6">
                     <div className="banner-image">
                       <div className="circle"></div>
-                      <img src="/assets/pics/machine2.png" alt="image" />
+                      <img src="/assets/pics/slider2.png" alt="image" />
                     </div>
                   </div>
                 </div>
