@@ -38,7 +38,7 @@ export default function BlogDetails() {
                                         <li>
                                             <i class='bx bx-folder-open'></i>
                                             <span>Category</span>
-                                            <a href="#">Fashion</a>
+                                            <a href="#">Rat Guard</a>
                                         </li>
                                         <li>
                                             <i class='bx bx-group'></i>
