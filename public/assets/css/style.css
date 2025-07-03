@@ -1524,7 +1524,7 @@ Main Banner CSS
   padding-top: 30px;
   position: relative;
   z-index: 1;
-  background-color: #f4f4f4;
+  background-color: #f53f851c;
 }
 .hero-banner .main-banner-content {
   max-width: 100%;
@@ -4382,7 +4382,7 @@ Testimonials CSS
 Brand CSS
 =================================================*/
 .brand-area {
-  background-color: #f4f4f4;
+  background-color: #f53f851c;
 }
 
 .brand-item {
