@@ -19,7 +19,7 @@ export default function Instragram() {
   ];
 
   return (
-    <div className="instagram-area">
+    <div className="instagram-area" style={{paddingTop:'60px'}}>
       <div className="container-fluid">
         <div className="instagram-title">
           <a href="#" target="_blank" rel="noreferrer">

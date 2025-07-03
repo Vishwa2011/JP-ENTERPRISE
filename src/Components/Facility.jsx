@@ -16,6 +16,8 @@ export default function Facility() {
   ];
 
   return (
+    <div>
+
     <section className="facility-area pb-70">
       <div className="container">
         <Swiper
@@ -45,5 +47,6 @@ export default function Facility() {
         </Swiper>
       </div>
     </section>
+    </div>
   );
 }
