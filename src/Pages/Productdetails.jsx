@@ -19,6 +19,14 @@ const Productdetails = () => {
   const [zoomStyles, setZoomStyles] = useState({});
   const [isZoomVisible, setIsZoomVisible] = useState(false);
 
+
+  const reviewRef = useRef(null); // reference to review form
+
+  const scrollToReview = (e) => {
+    e.preventDefault();
+    reviewRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   const slideImage = () => {
     const displayWidth = showcaseRef.current?.children[0].clientWidth;
     if (displayWidth && showcaseRef.current) {
@@ -441,9 +449,9 @@ const Productdetails = () => {
                                 <i className="bx bx-star"></i>
                               </div>
                               <p>Based on 3 reviews</p>
-                              <a href="#" className="default-btn">
-                                Write a Review
-                              </a>
+                              <a  className="default-btn" onClick={scrollToReview}>
+        Write a Review
+      </a>
                             </div>
 
                             <div className="review-comments">
@@ -508,71 +516,68 @@ const Productdetails = () => {
                               </div>
                             </div>
 
-                            <div className="review-form">
-                              <h3>Write a Review</h3>
+                              <div className="review-form" ref={reviewRef}>
+        <h3>Write a Review</h3>
 
-                              <form>
-                                <div className="row justify-content-center">
-                                  <div className="col-lg-6 col-md-6">
-                                    <div className="form-group">
-                                      <input
-                                        type="text"
-                                        id="name"
-                                        name="name"
-                                        placeholder="Enter your name"
-                                        className="form-control"
-                                      />
-                                    </div>
-                                  </div>
+        <form>
+          <div className="row justify-content-center">
+            <div className="col-lg-6 col-md-6">
+              <div className="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your name"
+                  className="form-control"
+                />
+              </div>
+            </div>
 
-                                  <div className="col-lg-6 col-md-6">
-                                    <div className="form-group">
-                                      <input
-                                        type="email"
-                                        id="email"
-                                        name="email"
-                                        placeholder="Enter your email"
-                                        className="form-control"
-                                      />
-                                    </div>
-                                  </div>
+            <div className="col-lg-6 col-md-6">
+              <div className="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  className="form-control"
+                />
+              </div>
+            </div>
 
-                                  <div className="col-lg-12 col-md-12">
-                                    <div className="form-group">
-                                      <input
-                                        type="text"
-                                        id="review-title"
-                                        name="review-title"
-                                        placeholder="Enter your review title"
-                                        className="form-control"
-                                      />
-                                    </div>
-                                  </div>
+            <div className="col-lg-12 col-md-12">
+              <div className="form-group">
+                <input
+                  type="text"
+                  id="review-title"
+                  name="review-title"
+                  placeholder="Enter your review title"
+                  className="form-control"
+                />
+              </div>
+            </div>
 
-                                  <div className="col-lg-12 col-md-12">
-                                    <div className="form-group">
-                                      <textarea
-                                        name="review-body"
-                                        id="review-body"
-                                        cols="30"
-                                        rows="6"
-                                        placeholder="Write your experience with JP Enterprise's rat repellent product"
-                                        className="form-control"
-                                      ></textarea>
-                                    </div>
-                                  </div>
+            <div className="col-lg-12 col-md-12">
+              <div className="form-group">
+                <textarea
+                  name="review-body"
+                  id="review-body"
+                  cols="30"
+                  rows="6"
+                  placeholder="Write your experience with JP Enterprise's rat repellent product"
+                  className="form-control"
+                ></textarea>
+              </div>
+            </div>
 
-                                  <div className="col-lg-12 col-md-12">
-                                    <button
-                                      type="submit"
-                                      className="default-btn"
-                                    >
-                                      Submit Review
-                                    </button>
-                                  </div>
-                                </div>
-                              </form>
-                            </div>
+            <div className="col-lg-12 col-md-12">
+              <button type="submit" className="default-btn">
+                Submit Review
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
                           </div>
                         </div>
                       </li>
