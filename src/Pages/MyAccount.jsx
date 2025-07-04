@@ -8,6 +8,13 @@ export default function MyAccount() {
   const [activeTab, setActiveTab] = useState("orders");
   const [isEditing, setIsEditing] = useState(false);
   const [isEditingAddress, setIsEditingAddress] = useState(false);
+  const [trackingVisible, setTrackingVisible] = useState(false);
+
+const handleTrackOrder = (e) => {
+  e.preventDefault();
+  // You can add validation here or call an API
+  setTrackingVisible(true);
+};
   const [user, setUser] = useState({
     name: "XYZ",
     email: "xyz@example.com",
@@ -15,7 +22,7 @@ export default function MyAccount() {
     address:
       "324-327 3rd Floor, Laxmi Enclave, Katargam, Surat, Gujarat 395004",
     joined: "April 10, 2024",
-    profilePic: "/assets/pics/user.png",
+    profilePic: "/assets/pics/rate.jpg'",
   });
 
   const [formData, setFormData] = useState(user);
@@ -54,22 +61,43 @@ export default function MyAccount() {
       id: "#10536",
       date: "January 4, 2024",
       status: "Processing",
+      img:'/assets/pics/rate.jpg',
+      name:'Rat Repellent',
       total: "₹3,331 for 1 item",
     },
     {
       id: "#10391",
       date: "May 30, 2023",
       status: "Processing",
+      img:'/assets/pics/rate.jpg',
+        name:'Rat Repellent',
       total: "₹3,331 for 1 item",
     },
     {
       id: "#10350",
       date: "May 29, 2023",
       status: "Processing",
+      img:'/assets/pics/rate.jpg',
+        name:'Rat Repellent',
       total: "₹3,331 for 1 item",
     },
   ];
-
+  const cancel = [
+    {
+      id: "#10536",
+      date: "January 4, 2024",
+      status: "Processing",
+      total: "₹3,331 for 1 item",
+    }
+  ];
+  const returnorder = [
+    {
+      id: "#10536",
+      date: "January 4, 2024",
+      status: "Processing",
+      total: "₹3,331 for 1 item",
+    }
+  ];
   return (
     <div>
       <Navbar />
@@ -100,6 +128,18 @@ export default function MyAccount() {
               className={activeTab === "details" ? "active" : ""}
             >
               Tracking Order
+            </li>
+             <li
+              onClick={() => setActiveTab("cancel")}
+              className={activeTab === "cancel" ? "active" : ""}
+            >
+              cancel Order
+            </li>
+            <li
+              onClick={() => setActiveTab("returnorder")}
+              className={activeTab === "returnorder" ? "active" : ""}
+            >
+              return Order
             </li>
             <li
               onClick={() => setActiveTab("logout")}
@@ -199,6 +239,8 @@ export default function MyAccount() {
                     <th>Order</th>
                     <th>Date</th>
                     <th>Status</th>
+                    <th>Image</th>
+                    <th>Name</th>
                     <th>Total</th>
                     <th>Actions</th>
                   </tr>
@@ -217,9 +259,11 @@ export default function MyAccount() {
                       </td>
                       <td>{order.date}</td>
                       <td>{order.status}</td>
+                      <td><img src={order.img} alt="" style={{ width: "40px", height: "40px", objectFit: "cover", borderRadius: "4px" }}/></td>
+                      <td>{order.name}</td>
                       <td>{order.total}</td>
                       <td>
-                        <button className="view-btn">View</button>
+                       <a href="/OrderView"> <button className="view-btn">View</button></a>
                       </td>
                     </tr>
                   ))}
@@ -262,31 +306,128 @@ export default function MyAccount() {
               )}
             </div>
           )}
-          {activeTab === "details" && (
-            <div className="tracking-box">
-              <h3 className="tracking-title">All In One Package Tracking</h3>
-              <form className="tracking-form">
-                <label htmlFor="orderId">ORDER ID</label>
-                <input
-                  type="text"
-                  id="orderId"
-                  name="orderId"
-                  placeholder="Enter your order ID"
-                />
+         {activeTab === "details" && (
+  <div className="tracking-box">
+    <h3 className="tracking-title">All In One Package Tracking</h3>
+    <form className="tracking-form" onSubmit={handleTrackOrder}>
+      <label htmlFor="orderId">ORDER ID</label>
+      <input
+        type="text"
+        id="orderId"
+        name="orderId"
+        placeholder="Enter your order ID"
+      />
 
-                <label htmlFor="email">BILLING E-MAIL</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Enter your email"
-                />
+      <label htmlFor="email">BILLING E-MAIL</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+      />
 
-                <button type="submit" className="track-btn">
-                  TRACK ORDER
-                </button>
-              </form>
-            </div>
+      <button type="submit" className="track-btn">
+        TRACK ORDER
+      </button>
+    </form>
+
+    {trackingVisible && (
+      <div class="container">
+  <div class="row">
+						<div class="col-12 col-md-10 hh-grayBox pt45 pb20">
+							<div class="row justify-content-between">
+								<div class="order-tracking completed">
+									<span class="is-complete"></span>
+									<p>Ordered<br /><span>Mon, June 24</span></p>
+								</div>
+								<div class="order-tracking completed">
+									<span class="is-complete"></span>
+									<p>Shipped<br /><span>Tue, June 25</span></p>
+								</div>
+								<div class="order-tracking">
+									<span class="is-complete"></span>
+									<p>Delivered<br /><span>Fri, June 28</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+</div>
+    )}
+  </div>
+)}
+           {activeTab === "cancel" && (
+            <>
+              <h3>cancel Orders</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Order</th>
+                    <th>Date</th>
+                 
+                    <th>Total</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {cancel.map((cancel, i) => (
+                    <tr key={i}>
+                      <td
+                        style={{
+                          color: "#f53f85",
+                          cursor: "pointer",
+                          fontWeight: "600",
+                        }}
+                      >
+                        {cancel.id}
+                      </td>
+                      <td>{cancel.date}</td>
+                      
+                      <td>{cancel.total}</td>
+                      <td>
+                       <a href="#"> <button className="view-btn">Cancel</button></a>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </>
+          )}
+           {activeTab === "returnorder" && (
+            <>
+              <h3>return Orders</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Order</th>
+                    <th>Date</th>
+                 
+                    <th>Total</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {returnorder.map((returnorder, i) => (
+                    <tr key={i}>
+                      <td
+                        style={{
+                          color: "#f53f85",
+                          cursor: "pointer",
+                          fontWeight: "600",
+                        }}
+                      >
+                        {returnorder.id}
+                      </td>
+                      <td>{returnorder.date}</td>
+                      
+                      <td>{returnorder.total}</td>
+                      <td>
+                       <a href="#"> <button className="view-btn">return</button></a>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </>
           )}
           {activeTab === "logout" && <h3>You have been logged out.</h3>}
         </div>

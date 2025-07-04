@@ -31,6 +31,7 @@ import DigitalCourse from "./Pages/DigitalCourse";
 import Ourteam from "./Pages/Ourteam";
 import DigitalCourseDetails from "./Pages/DigitalCourseDetails";
 import Forgot from "./Pages/Forgot";
+import OrderView from "./Pages/OrderView";
 function App() {
    const { pathname } = useLocation();
 
@@ -112,6 +113,7 @@ function App() {
         <Route path="/DigitalCourse" element={<DigitalCourse/>}/>
         <Route path="/DigitalCourseDetails" element={<DigitalCourseDetails/>}/>
         <Route path="/Forgot" element={<Forgot />} />
+        <Route path="/OrderView" element={<OrderView />} />
      </Routes>
 
       <a 
