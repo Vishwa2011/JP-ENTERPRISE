@@ -88,7 +88,7 @@ export default function Faq() {
                                         </a>
         
                                         <div className="accordion-content show">
-                                            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                                            <p>We offer standard, express, and same-day shipping depending on your location and product availability.</p>
                                         </div>
                                     </li>
 
@@ -99,7 +99,9 @@ export default function Faq() {
                                         </a>
         
                                         <div className="accordion-content">
-                                            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                                            <p> Shipping times typically range from 3–7 business days for standard delivery
+      and 1–2 business days for express delivery. Costs vary depending on your
+      location and selected shipping method at checkout.</p>
                                         </div>
                                     </li>
 
@@ -110,12 +112,20 @@ export default function Faq() {
                                         </a>
         
                                         <div className="accordion-content">
-                                            <ul>
-                                                <li>Credit Card: Visa, MasterCard, Discover, American Express, JCB, Visa Electron. The total will be charged to your card when the order is shipped.</li>
-                                                <li>Comero features a Fast Checkout option, allowing you to securely save your credit card details so that you don't have to re-enter them for future purchases.</li>
-                                                <li>PayPal: Shop easily online without having to enter your credit card details on the website. Your account will be charged once the order is completed. To register for a PayPal account, visit the website paypal.com.</li>
-                                                <li>Credit Card: Visa, MasterCard, Discover, American Express, JCB, Visa Electron. The total will be charged to your card when the order is shipped.</li>
-                                            </ul>
+                                           <ul>
+      <li>
+        <strong>Credit Card:</strong> Visa, MasterCard, Discover, American Express, JCB, Visa Electron.
+        The total will be charged to your card when the order is shipped.
+      </li>
+      <li>
+        <strong>Fast Checkout:</strong> Our site features a secure Fast Checkout option,
+        allowing you to save your credit card details for quicker future purchases.
+      </li>
+      <li>
+        <strong>PayPal:</strong> Shop easily without entering card details. Your account will be charged
+        after the order is completed. To sign up, visit <a href="https://www.paypal.com" target="_blank" rel="noopener noreferrer">paypal.com</a>.
+      </li>
+    </ul>
                                         </div>
                                     </li>
 
@@ -154,7 +164,7 @@ export default function Faq() {
                                         </a>
         
                                         <div className="accordion-content show">
-                                            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                                            <p>We offer standard, express, and same-day shipping depending on your location and product availability.</p>
                                         </div>
                                     </li>
 
@@ -165,7 +175,9 @@ export default function Faq() {
                                         </a>
         
                                         <div className="accordion-content">
-                                            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                                            <p> Shipping times typically range from 3–7 business days for standard delivery
+      and 1–2 business days for express delivery. Costs vary depending on your
+      location and selected shipping method at checkout.</p>
                                         </div>
                                     </li>
 
@@ -176,12 +188,20 @@ export default function Faq() {
                                         </a>
         
                                         <div className="accordion-content">
-                                            <ul>
-                                                <li>Credit Card: Visa, MasterCard, Discover, American Express, JCB, Visa Electron. The total will be charged to your card when the order is shipped.</li>
-                                                <li>Comero features a Fast Checkout option, allowing you to securely save your credit card details so that you don't have to re-enter them for future purchases.</li>
-                                                <li>PayPal: Shop easily online without having to enter your credit card details on the website. Your account will be charged once the order is completed. To register for a PayPal account, visit the website paypal.com.</li>
-                                                <li>Credit Card: Visa, MasterCard, Discover, American Express, JCB, Visa Electron. The total will be charged to your card when the order is shipped.</li>
-                                            </ul>
+                                           <ul>
+      <li>
+        <strong>Credit Card:</strong> Visa, MasterCard, Discover, American Express, JCB, Visa Electron.
+        The total will be charged to your card when the order is shipped.
+      </li>
+      <li>
+        <strong>Fast Checkout:</strong> Our site features a secure Fast Checkout option,
+        allowing you to save your credit card details for quicker future purchases.
+      </li>
+      <li>
+        <strong>PayPal:</strong> Shop easily without entering card details. Your account will be charged
+        after the order is completed. To sign up, visit <a href="https://www.paypal.com" target="_blank" rel="noopener noreferrer">paypal.com</a>.
+      </li>
+    </ul>
                                         </div>
                                     </li>
 
@@ -220,7 +240,7 @@ export default function Faq() {
                                         </a>
         
                                         <div className="accordion-content show">
-                                            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                                            <p>We offer standard, express, and same-day shipping depending on your location and product availability.</p>
                                         </div>
                                     </li>
 
@@ -231,7 +251,9 @@ export default function Faq() {
                                         </a>
         
                                         <div className="accordion-content">
-                                            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                                            <p> Shipping times typically range from 3–7 business days for standard delivery
+      and 1–2 business days for express delivery. Costs vary depending on your
+      location and selected shipping method at checkout.</p>
                                         </div>
                                     </li>
 
@@ -242,12 +264,20 @@ export default function Faq() {
                                         </a>
         
                                         <div className="accordion-content">
-                                            <ul>
-                                                <li>Credit Card: Visa, MasterCard, Discover, American Express, JCB, Visa Electron. The total will be charged to your card when the order is shipped.</li>
-                                                <li>Comero features a Fast Checkout option, allowing you to securely save your credit card details so that you don't have to re-enter them for future purchases.</li>
-                                                <li>PayPal: Shop easily online without having to enter your credit card details on the website. Your account will be charged once the order is completed. To register for a PayPal account, visit the website paypal.com.</li>
-                                                <li>Credit Card: Visa, MasterCard, Discover, American Express, JCB, Visa Electron. The total will be charged to your card when the order is shipped.</li>
-                                            </ul>
+                                           <ul>
+      <li>
+        <strong>Credit Card:</strong> Visa, MasterCard, Discover, American Express, JCB, Visa Electron.
+        The total will be charged to your card when the order is shipped.
+      </li>
+      <li>
+        <strong>Fast Checkout:</strong> Our site features a secure Fast Checkout option,
+        allowing you to save your credit card details for quicker future purchases.
+      </li>
+      <li>
+        <strong>PayPal:</strong> Shop easily without entering card details. Your account will be charged
+        after the order is completed. To sign up, visit <a href="https://www.paypal.com" target="_blank" rel="noopener noreferrer">paypal.com</a>.
+      </li>
+    </ul>
                                         </div>
                                     </li>
 
@@ -286,7 +316,7 @@ export default function Faq() {
                                         </a>
         
                                         <div className="accordion-content show">
-                                            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                                            <p>We offer standard, express, and same-day shipping depending on your location and product availability.</p>
                                         </div>
                                     </li>
 
@@ -297,7 +327,9 @@ export default function Faq() {
                                         </a>
         
                                         <div className="accordion-content">
-                                            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                                            <p> Shipping times typically range from 3–7 business days for standard delivery
+      and 1–2 business days for express delivery. Costs vary depending on your
+      location and selected shipping method at checkout.</p>
                                         </div>
                                     </li>
 
@@ -308,12 +340,20 @@ export default function Faq() {
                                         </a>
         
                                         <div className="accordion-content">
-                                            <ul>
-                                                <li>Credit Card: Visa, MasterCard, Discover, American Express, JCB, Visa Electron. The total will be charged to your card when the order is shipped.</li>
-                                                <li>Comero features a Fast Checkout option, allowing you to securely save your credit card details so that you don't have to re-enter them for future purchases.</li>
-                                                <li>PayPal: Shop easily online without having to enter your credit card details on the website. Your account will be charged once the order is completed. To register for a PayPal account, visit the website paypal.com.</li>
-                                                <li>Credit Card: Visa, MasterCard, Discover, American Express, JCB, Visa Electron. The total will be charged to your card when the order is shipped.</li>
-                                            </ul>
+                                           <ul>
+      <li>
+        <strong>Credit Card:</strong> Visa, MasterCard, Discover, American Express, JCB, Visa Electron.
+        The total will be charged to your card when the order is shipped.
+      </li>
+      <li>
+        <strong>Fast Checkout:</strong> Our site features a secure Fast Checkout option,
+        allowing you to save your credit card details for quicker future purchases.
+      </li>
+      <li>
+        <strong>PayPal:</strong> Shop easily without entering card details. Your account will be charged
+        after the order is completed. To sign up, visit <a href="https://www.paypal.com" target="_blank" rel="noopener noreferrer">paypal.com</a>.
+      </li>
+    </ul>
                                         </div>
                                     </li>
 
@@ -352,7 +392,7 @@ export default function Faq() {
                                         </a>
         
                                         <div className="accordion-content show">
-                                            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                                            <p>We offer standard, express, and same-day shipping depending on your location and product availability.</p>
                                         </div>
                                     </li>
 
@@ -363,7 +403,9 @@ export default function Faq() {
                                         </a>
         
                                         <div className="accordion-content">
-                                            <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                                            <p> Shipping times typically range from 3–7 business days for standard delivery
+      and 1–2 business days for express delivery. Costs vary depending on your
+      location and selected shipping method at checkout.</p>
                                         </div>
                                     </li>
 
@@ -374,12 +416,20 @@ export default function Faq() {
                                         </a>
         
                                         <div className="accordion-content">
-                                            <ul>
-                                                <li>Credit Card: Visa, MasterCard, Discover, American Express, JCB, Visa Electron. The total will be charged to your card when the order is shipped.</li>
-                                                <li>Comero features a Fast Checkout option, allowing you to securely save your credit card details so that you don't have to re-enter them for future purchases.</li>
-                                                <li>PayPal: Shop easily online without having to enter your credit card details on the website. Your account will be charged once the order is completed. To register for a PayPal account, visit the website paypal.com.</li>
-                                                <li>Credit Card: Visa, MasterCard, Discover, American Express, JCB, Visa Electron. The total will be charged to your card when the order is shipped.</li>
-                                            </ul>
+                                           <ul>
+      <li>
+        <strong>Credit Card:</strong> Visa, MasterCard, Discover, American Express, JCB, Visa Electron.
+        The total will be charged to your card when the order is shipped.
+      </li>
+      <li>
+        <strong>Fast Checkout:</strong> Our site features a secure Fast Checkout option,
+        allowing you to save your credit card details for quicker future purchases.
+      </li>
+      <li>
+        <strong>PayPal:</strong> Shop easily without entering card details. Your account will be charged
+        after the order is completed. To sign up, visit <a href="https://www.paypal.com" target="_blank" rel="noopener noreferrer">paypal.com</a>.
+      </li>
+    </ul>
                                         </div>
                                     </li>
 

@@ -6,7 +6,7 @@ import 'swiper/css/autoplay';
 
 export default function Facility() {
   const facilities = [
-    { icon: 'flaticon-tracking', title: 'Free Shipping Worldwide' },
+    { icon: 'flaticon-tracking', title: 'Free Shipping ' },
     { icon: 'flaticon-return', title: 'Easy Return Policy' },
     { icon: 'flaticon-shuffle', title: '7 Day Exchange Policy' },
     { icon: 'flaticon-sale', title: 'Weekend Discount Coupon' },

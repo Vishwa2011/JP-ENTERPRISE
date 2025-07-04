@@ -29,7 +29,7 @@ export default function Blog() {
                     <div className="col-lg-4 col-md-6">
         <div className="single-blog-post">
           <div className="post-image">
-            <a href="/Blog">
+            <a href="/BlogDetails">
               <img src="/assets/pics/Rat-in-Car.png" alt="Rat Infestation Prevention" />
             </a>
             <div className="date">
@@ -39,7 +39,7 @@ export default function Blog() {
 
           <div className="post-content">
             <span className="category">Awareness</span>
-            <h3><a href="/Blog">Top 5 Signs You May Have a Rat Problem</a></h3>
+            <h3><a href="/BlogDetails">Top 5 Signs You May Have a Rat Problem</a></h3>
             <a href="/BlogDetails" className="details-btn">Read Story</a>
           </div>
         </div>
@@ -48,7 +48,7 @@ export default function Blog() {
       <div className="col-lg-4 col-md-6">
         <div className="single-blog-post">
           <div className="post-image">
-            <a href="/Blog">
+            <a href="/BlogDetails">
               <img src="/assets/pics/blog2.jpg" alt="Why Rat Repellent is Important" />
             </a>
              <div className="date">
@@ -58,7 +58,7 @@ export default function Blog() {
 
           <div className="post-content">
             <span className="category">Tips</span>
-            <h3><a href="/Blog">Why Every Office Needs a Rat Repellent Device</a></h3>
+            <h3><a href="/BlogDetails">Why Every Office Needs a Rat Repellent Device</a></h3>
             <a href="/BlogDetails" className="details-btn">Read Story</a>
           </div>
         </div>
@@ -67,7 +67,7 @@ export default function Blog() {
       <div className="col-lg-4 col-md-6">
         <div className="single-blog-post">
           <div className="post-image">
-            <a href="/Blog">
+            <a href="/BlogDetails">
               <img src="/assets/pics/Rat-gnawing.png" alt="How ultrasonic repellers work" />
             </a>
              <div className="date">
@@ -77,7 +77,7 @@ export default function Blog() {
 
           <div className="post-content">
             <span className="category">Technology</span>
-            <h3><a href="/Blog">How Ultrasonic Rat Repellent Technology Works</a></h3>
+            <h3><a href="/BlogDetails">How Ultrasonic Rat Repellent Technology Works</a></h3>
             <a href="/BlogDetails" className="details-btn">Read Story</a>
           </div>
         </div>

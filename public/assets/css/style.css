@@ -4116,7 +4116,7 @@ Offer CSS
 .single-offer-products {
   position: relative;
   border-radius: 5px;
-  padding-right: 100px;
+  /* padding-right: 100px; */
 }
 .single-offer-products img {
   display: inline-block !important;
@@ -4134,7 +4134,7 @@ Offer CSS
 }
 .single-offer-products .content {
   position: absolute;
-  right: 15px;
+  right: 200px;
   box-shadow: 0px 8px 16px 0px rgba(146, 184, 255, 0.2);
   background-color: #ffffff;
   border-radius: 5px;
@@ -4381,9 +4381,9 @@ Testimonials CSS
 /*================================================
 Brand CSS
 =================================================*/
-.brand-area {
+/* .brand-area {
   background-color: #f53f851c;
-}
+} */
 
 .brand-item {
   text-align: center;

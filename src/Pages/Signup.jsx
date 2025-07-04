@@ -51,7 +51,7 @@ export default function Signup() {
 
                         <button type="submit" className="default-btn">Signup</button>
 
-                        <a href="/" className="return-store">or Return to Store</a>
+                        <a href="/Login" className="return-store">Back to Login</a>
                     </form>
                 </div>
             </div>

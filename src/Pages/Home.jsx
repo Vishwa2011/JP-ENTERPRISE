@@ -277,7 +277,7 @@ const Home = () => {
                 cursor: "pointer",
               }}
             >
-              Protect Your Space Today! →
+              Protect Your Space Today →
             </button>
           </div>
 
@@ -757,9 +757,66 @@ const Home = () => {
        <div className="home-slides-two owl-carousel owl-theme owl-loaded owl-drag" style={{marginBottom:'60px'}}>
         <img src="/assets/pics/Power Surge Protection (2).png" alt="" />
       </div>
+
+
+      
+     {/* <!-- Start Brand Area --> */}
+     <div className="brand-area ptb-70 mb-5">
+      <div className="container">
+        <div className="section-title">
+          <h2>We are Deal With</h2>
+        </div>
+
+        <Swiper
+          modules={[Autoplay]}
+          spaceBetween={30}
+          slidesPerView={2}
+          loop={true}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+          breakpoints={{
+            640: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+            },
+            1024: {
+              slidesPerView: 5,
+              spaceBetween: 60,
+            },
+          }}
+        >
+          {[
+            "/assets/pics/brand1.png",
+            "/assets/pics/brand2.png",
+            "/assets/pics/brand3.png",
+            "/assets/pics/brand4.png",
+            "/assets/pics/brand5.png",
+            "/assets/pics/brand6.png",
+          ].map((img, i) => (
+            <SwiperSlide key={i}>
+              <div className="brand-item" style={{width:'150px'}} >
+                <a href="#">
+                  <img src={img} alt={`brand${i + 1}`} />
+                </a>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </div>
+      {/* <!-- End Brand Area --> */}
+
+
+
       {/* <!-- Start Offer Products Area --> */}
        <section className="offer-products-area" style={{ paddingBottom: "100px" }}>
-      <div className="container">
+      <div className="">
         <Swiper
           modules={[Autoplay, Pagination, EffectFade]}
           spaceBetween={30}
@@ -860,57 +917,6 @@ const Home = () => {
 
   
 
-     {/* <!-- Start Brand Area --> */}
-     <div className="brand-area ptb-70">
-      <div className="container">
-        <div className="section-title">
-          <h2>We are Deal With</h2>
-        </div>
-
-        <Swiper
-          modules={[Autoplay]}
-          spaceBetween={30}
-          slidesPerView={2}
-          loop={true}
-          autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,
-          }}
-          breakpoints={{
-            640: {
-              slidesPerView: 3,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 4,
-              spaceBetween: 30,
-            },
-            1024: {
-              slidesPerView: 5,
-              spaceBetween: 60,
-            },
-          }}
-        >
-          {[
-            "/assets/pics/brand1.png",
-            "/assets/pics/brand2.png",
-            "/assets/pics/brand3.png",
-            "/assets/pics/brand4.png",
-            "/assets/pics/brand5.png",
-            "/assets/pics/brand6.png",
-          ].map((img, i) => (
-            <SwiperSlide key={i}>
-              <div className="brand-item" style={{width:'150px'}} >
-                <a href="#">
-                  <img src={img} alt={`brand${i + 1}`} />
-                </a>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-    </div>
-      {/* <!-- End Brand Area --> */}
 
 
 
