@@ -86,7 +86,8 @@ const handleTrackOrder = (e) => {
     {
       id: "#10536",
       date: "January 4, 2024",
-      status: "Processing",
+      img:'/assets/pics/rate.jpg',
+        name:'Rat Repellent',
       total: "₹3,331 for 1 item",
     }
   ];
@@ -95,6 +96,8 @@ const handleTrackOrder = (e) => {
       id: "#10536",
       date: "January 4, 2024",
       status: "Processing",
+      img:'/assets/pics/rate.jpg',
+        name:'Rat Repellent',
       total: "₹3,331 for 1 item",
     }
   ];
@@ -332,26 +335,36 @@ const handleTrackOrder = (e) => {
     </form>
 
     {trackingVisible && (
-      <div class="container">
-  <div class="row">
+      <div className="mt-5">
+        <div class="container">
+  <div class="row justify-content-center">
 						<div class="col-12 col-md-10 hh-grayBox pt45 pb20">
 							<div class="row justify-content-between">
 								<div class="order-tracking completed">
 									<span class="is-complete"></span>
-									<p>Ordered<br /><span>Mon, June 24</span></p>
+									<p>Order<br />Processed</p>
 								</div>
 								<div class="order-tracking completed">
 									<span class="is-complete"></span>
-									<p>Shipped<br /><span>Tue, June 25</span></p>
+									<p>Order<br />Designing</p>
 								</div>
 								<div class="order-tracking">
 									<span class="is-complete"></span>
-									<p>Delivered<br /><span>Fri, June 28</span></p>
+									<p>Order<br />Shipped</p>
+								</div>
+                <div class="order-tracking">
+									<span class="is-complete"></span>
+									<p>Order<br />In Route</p>
+								</div>
+                <div class="order-tracking">
+									<span class="is-complete"></span>
+									<p>Order<br />Arrived</p>
 								</div>
 							</div>
 						</div>
 					</div>
 </div>
+      </div>
     )}
   </div>
 )}
@@ -363,7 +376,8 @@ const handleTrackOrder = (e) => {
                   <tr>
                     <th>Order</th>
                     <th>Date</th>
-                 
+                 <th>Image</th>
+                    <th>Name</th>
                     <th>Total</th>
                     <th>Actions</th>
                   </tr>
@@ -381,7 +395,8 @@ const handleTrackOrder = (e) => {
                         {cancel.id}
                       </td>
                       <td>{cancel.date}</td>
-                      
+                      <td><img src={cancel.img} alt="" style={{ width: "40px", height: "40px", objectFit: "cover", borderRadius: "4px" }}/></td>
+                      <td>{cancel.name}</td>
                       <td>{cancel.total}</td>
                       <td>
                        <a href="#"> <button className="view-btn">Cancel</button></a>
@@ -400,7 +415,8 @@ const handleTrackOrder = (e) => {
                   <tr>
                     <th>Order</th>
                     <th>Date</th>
-                 
+                 <th>Image</th>
+                    <th>Name</th>
                     <th>Total</th>
                     <th>Actions</th>
                   </tr>
@@ -418,7 +434,8 @@ const handleTrackOrder = (e) => {
                         {returnorder.id}
                       </td>
                       <td>{returnorder.date}</td>
-                      
+                      <td><img src={returnorder.img} alt="" style={{ width: "40px", height: "40px", objectFit: "cover", borderRadius: "4px" }}/></td>
+                      <td>{returnorder.name}</td>
                       <td>{returnorder.total}</td>
                       <td>
                        <a href="#"> <button className="view-btn">return</button></a>

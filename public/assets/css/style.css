@@ -9125,7 +9125,7 @@ Go Top CSS
 .tracking-box {
   background: #fff;
   padding: 40px;
-  max-width: 500px;
+  /* max-width: 500px; */
   /* margin: 0 auto; */
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
   border-radius: 10px;
@@ -9671,7 +9671,7 @@ color: #fff;
 
 /*  */
 .hh-grayBox {
-	background-color: #F8F8F8;
+	background-color: #f53f851c;
 	margin-bottom: 20px;
 	padding: 35px;
   margin-top: 20px;
@@ -9679,7 +9679,7 @@ color: #fff;
 .pt45{padding-top:45px;}
 .order-tracking{
 	text-align: center;
-	width: 33.33%;
+	width: 20%;
 	position: relative;
 	display: block;
 }
