@@ -189,7 +189,7 @@ const Warranty = () => {
             <div className="container mt-5 p-4 shadow rounded bg-light warranty-detail">
               <h3 className="mb-5 ">Product Warranty Details</h3>
 
-              <div className="row align-items-center">
+              <div className="row align-items-stretch">
                 {/* Product Image */}
                 <div className="col-md-4 mb-3 mb-md-0 text-center">
                   <div className="product-imgs">
@@ -235,7 +235,7 @@ const Warranty = () => {
 
                 {/* Warranty Table */}
                 <div className="col-md-8"> 
-                  <table className="table warranty-table mb-0">
+                  <table className="table warranty-table mb-0 h-100">
                     <tbody>
                       <tr>
                         <th>Product Name:</th>

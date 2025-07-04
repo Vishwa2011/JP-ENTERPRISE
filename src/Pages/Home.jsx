@@ -567,7 +567,7 @@ const Home = () => {
         </div>
       </section>
       {/* <!-- End Products Area --> */}
-<div style={{ background:'#f53f851c'}}>
+<div style={{ background:'#f53f851c',marginBottom:'60px'}}>
    
       <div className="container " style={{ paddingBottom: "100px",paddingTop:'65px'}}>
         <div className="text-center mb-4">
@@ -685,7 +685,7 @@ const Home = () => {
 
       {/*  */}
 
-      <div className="container-fluid " style={{paddingBottom:'135px',paddingTop:'100px'}} >
+      {/* <div className="container-fluid " style={{paddingBottom:'135px',paddingTop:'100px'}} >
         <div className="about-content text-center mb-4">
           <span className="sub-title">Advanced Ultrasonic Defense System</span>
           <h2>
@@ -694,7 +694,7 @@ const Home = () => {
           </h2>
         </div>
         <div className="row align-items-center d-flex justify-content-center">
-          {/* Left features */}
+         
           <div className="col-lg-4 col-md-6 mb-4 mb-lg-0 featuresLeft">
             {featuresLeft.map((item, i) => (
               <div className="card border-0 mb-3 shadow-sm" key={i}>
@@ -711,7 +711,7 @@ const Home = () => {
             ))}
           </div>
 
-          {/* Center Image & Button */}
+         
           <div className="col-lg-4 col-md-12 text-center">
             <div>
               <img
@@ -728,7 +728,7 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Right features */}
+       
           <div className="col-lg-4 col-md-6 mt-4 mt-lg-0 featuresRight">
             {featuresRight.map((item, i) => (
               <div className="card border-0 mb-3 shadow-sm" key={i}>
@@ -745,13 +745,18 @@ const Home = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
+
+     
       {/*  */}
    {/* <!-- Start Facility Area --> */}
 
       <Facility />
  
       {/* <!-- End Facility Area --> */}
+       <div className="home-slides-two owl-carousel owl-theme owl-loaded owl-drag" style={{marginBottom:'60px'}}>
+        <img src="/assets/pics/Power Surge Protection (2).png" alt="" />
+      </div>
       {/* <!-- Start Offer Products Area --> */}
        <section className="offer-products-area" style={{ paddingBottom: "100px" }}>
       <div className="container">
@@ -855,71 +860,7 @@ const Home = () => {
 
   
 
-   
-
-
-
-              {/* <!-- Start About Area --> */}
-        <section className="about-area " style={{paddingTop:'60px',paddingBottom:'90px'}}>
-          <div className="container">
-            <div className="row align-items-center justify-content-center">
-              <div className="col-lg-6 col-md-12">
-                <div className="about-image">
-                  <img
-                    src="/assets/pics/about1.jpg"
-                    className="shadow"
-                    alt="image"
-                  />
-                  <img
-                    src="/assets/pics/about (1).png"
-                    className="shadow"
-                    alt="image"
-                  />
-                </div>
-              </div>
-
-              <div className="col-lg-6 col-md-12">
-                <div className="about-content">
-                  <span className="sub-title">Rat Repellent</span>
-                  
-                  <h5>
-                    JP Enterprise offers advanced ultrasonic rat repellent
-                    devices for every need.
-                  </h5>
-                  <p style={{textAlign:'justify'}}>
-                   The machine continuously emits ultrasonic frequencies that create an uncomfortable environment for rats. This forces them to leave the area without causing them any harm.
-                  </p>
-                  <p style={{textAlign:'justify'}}>
-                    This device uses no poison, no harmful chemicals, and no traps. It is completely safe for children, pets, and the environment, making it a smart alternative to traditional pest control methods.
-                  </p>
-
-                     <p style={{textAlign:'justify'}}>
-                 Just plug it in and let it work! There’s no maintenance required. Its compact design makes it perfect for use in homes, shops, offices, godowns, or factories.</p>
-                  <p style={{textAlign:'justify'}}>
-                 The machine is energy efficient and designed to run continuously with very low electricity usage. It's a one-time investment that provides long-term protection from rats.
-                  </p>
-
-                 
-                  <p style={{textAlign:'justify'}}>
-               The Ultrasonic Rat Repellent Machine is a modern, eco-friendly solution to keep rats away from your home, office, warehouse, or shop. It emits high-frequency sound waves that are inaudible to humans and pets but extremely uncomfortable for rats, forcing them to leave the area without harm.
-                  </p>
-                
-                <div className="btn-box">
-                        <a href="/OurProducts" className="default-btn">
-                          Buy Now
-                        </a>
-                        {/* <a href="/OurProducts" className="optional-btn">Shop Men's</a> */}
-                      </div>
-                </div>
-              </div>
-            </div>
-
-       
-          </div>
-        </section>
-        {/* <!-- End About Area --> */}
-
-      {/* <!-- Start Brand Area --> */}
+     {/* <!-- Start Brand Area --> */}
      <div className="brand-area ptb-70">
       <div className="container">
         <div className="section-title">
@@ -970,6 +911,70 @@ const Home = () => {
       </div>
     </div>
       {/* <!-- End Brand Area --> */}
+
+
+
+              {/* <!-- Start About Area --> */}
+        <section className="about-area " style={{paddingTop:'60px',paddingBottom:'90px'}}>
+          <div className="container">
+            <div className="row align-items-center justify-content-center">
+              <div className="col-lg-6 col-md-12">
+                <div className="about-image">
+                  <img
+                    src="/assets/pics/Delivering.png"
+                    className="shadow"
+                    alt="image"
+                  />
+                  <img
+                    src="/assets/pics/JP Enterprise (1).png"
+                    className="shadow"
+                    alt="image"
+                  />
+                </div>
+              </div>
+
+              <div className="col-lg-6 col-md-12">
+                <div className="about-content">
+                  <span className="sub-title">Rat Repellent</span>
+                  
+                  <h5>
+                    JP Enterprise offers advanced ultrasonic rat repellent
+                    devices for every need.
+                  </h5>
+                  <p style={{textAlign:'justify'}}>
+                   The machine continuously emits ultrasonic frequencies that create an uncomfortable environment for rats. This forces them to leave the area without causing them any harm.
+                  </p>
+                  <p style={{textAlign:'justify'}}>
+                    This device uses no poison, no harmful chemicals, and no traps. It is completely safe for children, pets, and the environment, making it a smart alternative to traditional pest control methods.
+                  </p>
+
+                     <p style={{textAlign:'justify'}}>
+                 Just plug it in and let it work! There’s no maintenance required. Its compact design makes it perfect for use in homes, shops, offices, godowns, or factories.</p>
+                  <p style={{textAlign:'justify'}}>
+                 The machine is energy efficient and designed to run continuously with very low electricity usage. It's a one-time investment that provides long-term protection from rats.
+                  </p>
+
+                 
+                  <p style={{textAlign:'justify'}}>
+               The Ultrasonic Rat Repellent Machine is a modern, eco-friendly solution to keep rats away from your home, office, warehouse, or shop. It emits high-frequency sound waves that are inaudible to humans and pets but extremely uncomfortable for rats, forcing them to leave the area without harm.
+                  </p>
+                
+                <div className="btn-box">
+                        <a href="/OurProducts" className="default-btn">
+                          Buy Now
+                        </a>
+                        {/* <a href="/OurProducts" className="optional-btn">Shop Men's</a> */}
+                      </div>
+                </div>
+              </div>
+            </div>
+
+       
+          </div>
+        </section>
+        {/* <!-- End About Area --> */}
+
+    
 
 
          {/* <!-- Start Offer Area --> */}

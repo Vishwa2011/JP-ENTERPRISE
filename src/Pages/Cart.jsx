@@ -63,17 +63,17 @@ export default function Cart() {
                       </a>
                     </td>
 
-                    <td className="product-name">
-                      <a href="#">High-Powered Ultrasonic</a>
+                     <td className="product-name">
+                      <a href="#">Smart Ultrasonic </a>
                       <ul>
                         <li>
-                          Color: <span>Black</span>
-                        </li>
-                        <li>
-                          Brand: <span>Generic</span>
+                          Style: <span>Modern</span>
                         </li>
                         <li>
                           Material: <span>Metal</span>
+                        </li>
+                        <li>
+                          Item Weight: <span>750 Grams</span>
                         </li>
                       </ul>
                     </td>
@@ -114,13 +114,13 @@ export default function Cart() {
                       <a href="#">Smart Ultrasonic </a>
                       <ul>
                         <li>
-                          Color: <span>Black</span>
-                        </li>
-                        <li>
-                          Brand: <span>Generic</span>
+                          Style: <span>Modern</span>
                         </li>
                         <li>
                           Material: <span>Metal</span>
+                        </li>
+                        <li>
+                          Item Weight: <span>750 Grams</span>
                         </li>
                       </ul>
                     </td>

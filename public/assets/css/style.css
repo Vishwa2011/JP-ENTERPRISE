@@ -4038,7 +4038,7 @@ Offer CSS
   background-repeat: no-repeat;
 }
 .offer-area.bg-image1 {
-  background-image: url(../../assets/pics/abouts.jpg);
+  background-image: url(../../assets/pics/abc1.png);
 }
 .offer-area.bg-image2 {
   background-image: url(../../assets/img/offer-bg2.jpg);
@@ -9508,7 +9508,7 @@ color: #fff;
 }
 
 .support-page .card:hover {
-  transform: translateY(-8px);
+  transform: translateY(10px);
   box-shadow: 0 12px 24px rgba(245, 63, 133, 0.2);
   border-color: rgb(245, 63, 133);
 }
@@ -9527,7 +9527,7 @@ color: #fff;
 /* Card animation on load */
 .support-page .animate-card {
   animation: fadeUp 0.6s ease forwards;
-  opacity: 0;
+  opacity: 1;
   transform: translateY(20px);
 }
 .product-image {
@@ -9573,6 +9573,7 @@ color: #fff;
   font-weight: 500;
   padding: 12px;
   background: #fff;
+  line-height: 4;
 }
 
 .warranty-table tr:not(:last-child) {
