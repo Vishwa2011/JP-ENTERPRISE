@@ -42,7 +42,7 @@ export default function Login() {
 
                                 <button type="submit" className="default-btn">Login</button>
 
-                                <a href="#" className="forgot-password">Lost your password?</a>
+                                <a href="/Forgot" className="forgot-password">Forgot your password?</a>
                             </form>
                         </div>
                     </div>
