@@ -815,7 +815,7 @@ const Home = () => {
 
 
       {/* <!-- Start Offer Products Area --> */}
-       <section className="offer-products-area" style={{ paddingBottom: "100px" }}>
+       {/* <section className="offer-products-area" style={{ paddingBottom: "100px" }}>
       <div className="">
         <Swiper
           modules={[Autoplay, Pagination, EffectFade]}
@@ -911,7 +911,7 @@ const Home = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-    </section>
+    </section> */}
 
       {/* <!-- End Offer Products Area --> */}
 

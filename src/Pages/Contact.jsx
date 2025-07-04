@@ -1,10 +1,66 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import Facility from '../Components/Facility'
 import Instragram from '../Components/Instragram'
 
 export default function Contact() {
+      const canvasRef = useRef(null);
+  const [captchaCode, setCaptchaCode] = useState("");
+  const [inputValue, setInputValue] = useState("");
+
+  useEffect(() => {
+    generateCaptcha();
+  }, []);
+
+  const generateCaptcha = () => {
+    const canvas = canvasRef.current;
+    const ctx = canvas.getContext("2d");
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    let generatedCode = "";
+
+    const angleMin = -45;
+    const angleMax = 45;
+    const fontSizeMin = 20;
+    const fontSizeMax = 30;
+
+    for (let i = 0; i < 6; i++) {
+      const char = chars.charAt(Math.floor(Math.random() * chars.length));
+      generatedCode += char;
+
+      const fontSize = fontSizeMin + Math.random() * (fontSizeMax - fontSizeMin);
+      ctx.font = `${fontSize}px Arial`;
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillStyle = `rgb(${Math.floor(Math.random() * 256)}, 
+                          ${Math.floor(Math.random() * 256)}, 
+                          ${Math.floor(Math.random() * 256)})`;
+
+      const angle = angleMin + Math.random() * (angleMax - angleMin);
+      ctx.translate(20 + i * 30, canvas.height / 2);
+      ctx.rotate((angle * Math.PI) / 180);
+      ctx.fillText(char, 0, 0);
+      ctx.rotate((-angle * Math.PI) / 180);
+      ctx.translate(-(20 + i * 30), -canvas.height / 2);
+    }
+
+    setCaptchaCode(generatedCode);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (inputValue !== captchaCode) {
+      alert("Invalid captcha code. Please try again.");
+      setInputValue("");
+      generateCaptcha();
+    } else {
+      alert("Form submitted successfully.");
+      setInputValue("");
+      generateCaptcha();
+    }
+  };
   return (
     <div>
       <Navbar />
@@ -98,6 +154,38 @@ export default function Contact() {
                                             <div className="help-block with-errors"></div>
                                         </div>
                                     </div>
+                                        <form onSubmit={handleSubmit} id="captcha-form">
+    <div style={{display:'flex'}}>
+<div>
+
+      <canvas
+        id="captcha"
+        ref={canvasRef}
+        width="200"
+        height="70"
+        style={{ display: "block", marginBottom: "10px" }}
+      ></canvas>
+</div>
+      <div style={{alignItems:"center",display:'flex'}}>
+
+      <button type="button" className="btn btn-secondary me-2" onClick={generateCaptcha} style={{height:'35px'}}>
+        Refresh Captcha
+      </button>
+      </div>
+    </div>
+        <div className="mb-3">
+        <label htmlFor="captcha-input" className="form-label">Enter Captcha</label>
+        <input
+          type="text"
+          className="form-control"
+          id="captcha-input"
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
+          required
+        />
+      </div>
+      
+    </form>
 
                                     <div className="col-lg-12 col-md-12">
                                         <button type="submit" className="default-btn">Send Message</button>
