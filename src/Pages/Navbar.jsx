@@ -286,18 +286,14 @@ const Navbar = () => {
 
     {/* Top Trending Section */}
     <li className="product-box">
-      <div className="category_nav">
-        <h4>Top Trending</h4>
-      </div>
-      <img src="/assets/pics/navimg1.jpg" alt="Top Trending" />
+
+      <img src="/assets/pics/menubar1.png" alt="Top Trending" />
     </li>
 
     {/* Popular Products Section */}
     <li className="product-box">
-      <div className="category_nav">
-        <h4>Popular Products</h4>
-      </div>
-      <img src="/assets/pics/navimg2.jpg" alt="Popular Products" />
+    
+      <img src="/assets/pics/menubar2.jpg" alt="Popular Products" />
     </li>
   </ul>
 </li>
@@ -448,13 +444,11 @@ const Navbar = () => {
                                     {" "}
                                     <div className="aside-trending-products">
                                       <img
-                                        src="/assets/pics/navimg1.jpg"
+                                        src="/assets/pics/menubar1.png"
                                         alt="image"
                                       />
 
-                                      <div className="category">
-                                        <h4>Top Trending</h4>
-                                      </div>
+                                    
 
                                       <a href="/" className="link-btn"></a>
                                     </div>
@@ -468,13 +462,11 @@ const Navbar = () => {
                                     {" "}
                                     <div className="aside-trending-products">
                                       <img
-                                        src="/assets/pics/navimg2.jpg"
+                                        src="/assets/pics/menubar2.jpg"
                                         alt="image"
                                       />
 
-                                      <div className="category">
-                                        <h4>Popular Products</h4>
-                                      </div>
+                                    
 
                                       <a href="/" className="link-btn"></a>
                                     </div>
@@ -685,14 +677,11 @@ const Navbar = () => {
                                     {" "}
                                     <div className="aside-trending-products">
                                       <img
-                                        src="/assets/pics/navimg1.jpg"
+                                        src="/assets/pics/menubar1.png"
                                         alt="image"
                                       />
 
-                                      <div className="category">
-                                        <h4>Top Trending</h4>
-                                      </div>
-
+                                   
                                       <a href="/" className="link-btn"></a>
                                     </div>
                                   </li>
@@ -705,13 +694,11 @@ const Navbar = () => {
                                     {" "}
                                     <div className="aside-trending-products">
                                       <img
-                                        src="/assets/pics/navimg2.jpg"
+                                        src="/assets/pics/menubar2.jpg"
                                         alt="image"
                                       />
 
-                                      <div className="category">
-                                        <h4>Popular Products</h4>
-                                      </div>
+                                    
 
                                       <a href="/" className="link-btn"></a>
                                     </div>

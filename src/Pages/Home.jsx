@@ -1389,7 +1389,7 @@ const Home = () => {
             <div className="row align-items-center justify-content-center">
               <div className="col-lg-6 col-md-6">
                 <div className="products-image">
-                  <img src="/assets/pics/rate1.jpg" alt="image" />
+                  <img src="/assets/pics/rate.jpg" alt="image" />
                 </div>
               </div>
 
