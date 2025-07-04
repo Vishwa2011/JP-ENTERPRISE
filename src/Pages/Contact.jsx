@@ -29,7 +29,7 @@ export default function Contact() {
                     <div className="col-lg-5 col-md-12">
                         <div className="contact-info">
                             <h3>Here to Help</h3>
-                            <p>Have a question? You may find an answer in our <a href="#">FAQs</a>. But you can also contact us.</p>
+                            <p>Have a question? You may find an answer in our <a href="/Faq">FAQs</a>. But you can also contact us.</p>
 
                             <ul className="contact-list">
                                 <li><i class='bx bx-map'></i> Location: <a href="#">Surat , Gujarat 395004</a></li>
