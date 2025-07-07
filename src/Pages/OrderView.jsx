@@ -44,7 +44,7 @@ export default function OrderView() {
               </div>
   </div>
                 </div>
-                <div className="col-6">
+                <div className="col-6" >
                   {/* Delivery Details */}
               <div>
                 <p className="text-green-600 text-lg font-semibold">
