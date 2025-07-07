@@ -265,20 +265,16 @@ const Home = () => {
                 </li>
               ))}
             </ul>
-            <button
+            <a className="default-btn" href="/OurProducts"
               style={{
                 marginTop: "30px",
                 padding: "12px 24px",
-                backgroundColor: " rgb(245, 63, 133)",
-                color: "#fff",
-                border: "none",
-                borderRadius: "6px",
                 fontSize: "16px",
                 cursor: "pointer",
               }}
             >
               Protect Your Space Today →
-            </button>
+            </a>
           </div>
 
           {/* Right Image */}
