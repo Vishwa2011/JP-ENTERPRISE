@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Facility from "../Components/Facility";
 import Instragram from "../Components/Instragram";
+import { useNavigate } from "react-router-dom";
 const images = [
   "/assets/pics/rate.jpg",
   "/assets/pics/speaker 3.jpg",
@@ -18,14 +19,40 @@ const Productdetails = () => {
   const zoomRef = useRef(null);
   const [zoomStyles, setZoomStyles] = useState({});
   const [isZoomVisible, setIsZoomVisible] = useState(false);
+   const [showPopup, setShowPopup] = useState(false);
+  const navigate = useNavigate();
 
+  const handleAddToCart = () => {
+    setShowPopup(true);
 
+    // Add to cart logic (API or local storage) here...
+
+    setTimeout(() => {
+      setShowPopup(false);
+      navigate("/Cart");
+    }, 1000);
+  };
+
+  const [showPopup1, setShowPopup1] = useState(false);
+  const navigate1 = useNavigate();
+
+  const handleBuyNow = () => {
+    // Show popup
+    setShowPopup1(true);
+
+    // After 2 seconds, hide popup and navigate
+    setTimeout(() => {
+      setShowPopup1(false);
+      navigate1("/Checkout");
+    }, 2000);
+  };
   const reviewRef = useRef(null); // reference to review form
 
   const scrollToReview = (e) => {
     e.preventDefault();
     reviewRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
+
 
   const slideImage = () => {
     const displayWidth = showcaseRef.current?.children[0].clientWidth;
@@ -284,16 +311,18 @@ const Productdetails = () => {
                       </span>
                     </div>
 
-                    <a href="/Cart">
-                      {" "}
-                      <button
-                        type="submit"
-                        className="default-btn "
-                        style={{ marginRight: "10px" }}
-                      >
-                        <i className="fas fa-cart-plus"></i> Add to Cart
-                      </button>
-                    </a>
+                   <button
+        type="button"
+        className="default-btn"
+        style={{ marginRight: "10px" }}
+        onClick={handleAddToCart}
+      >
+        <i className="fas fa-cart-plus"></i> Add to Cart
+      </button>
+
+      <div className={`popup-container ${showPopup ? "show" : ""}`}>
+        ✅ Product added to cart successfully!
+      </div>
                     <a
                       href="#"
                       className="optional-btn"
@@ -338,11 +367,16 @@ const Productdetails = () => {
                       </label>
                     </div>
 
-                    <div className="item">
-                      <a href="#" className="default-btn">
-                        Buy it now!
-                      </a>
-                    </div>
+                      <div className="item">
+        <button className="default-btn" onClick={handleBuyNow}>
+          Buy it now!
+        </button>
+      </div>
+
+      {/* Animated Popup */}
+      <div className={`popup-container ${showPopup1 ? "show" : ""}`}>
+       ✅ Product added! Taking you to checkout...
+      </div>
                   </div>
 
                   <div className="products-details-accordion">
@@ -1178,14 +1212,14 @@ const Productdetails = () => {
                       </span>
                     </div>
 
-                    <button type="submit" className="default-btn">
+                    <a href="/Cart"><button type="submit" className="default-btn">
                       Add to Cart
-                    </button>
+                    </button></a>
                   </div>
 
-                  <a href="#" className="view-full-info">
+                  {/* <a href="#" className="view-full-info">
                     View Full Info
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>

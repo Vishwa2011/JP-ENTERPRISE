@@ -184,7 +184,7 @@ const Aboutus = () => {
           <span className="sub-title">Limited Time Offer on Rat Repellent</span>
           <h2>Flat 40% OFF</h2>
           <p>Protect Your Home with Smart Ultrasonic Technology</p>
-          <a href="#" className="default-btn">
+          <a href="/OurProducts" className="default-btn">
             Shop Now
           </a>
         </div>

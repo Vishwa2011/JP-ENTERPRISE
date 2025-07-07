@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 import Facility from "../Components/Facility";
 import Instragram from "../Components/Instragram";
 import Footer from "./Footer";
-
+import { useNavigate } from "react-router-dom";
 export default function Checkout() {
     const [promoCode, setPromoCode] = useState("");
   const [discount, setDiscount] = useState(0);
@@ -14,7 +14,16 @@ export default function Checkout() {
   const shipping = 300;
   const subtotal = productTotal;
   const discountedTotal = subtotal - discount + shipping;
+ const [showAnimation, setShowAnimation] = useState(false);
+  const navigate = useNavigate();
 
+  const handlePlaceOrder = () => {
+    setShowAnimation(true);
+
+    setTimeout(() => {
+      navigate("/PlaceOrder");
+    }, 3000); // 3 seconds delay
+  };
   const handleApplyPromo = () => {
     if (promoCode.toLowerCase() === "save10") {
       setDiscount(500);
@@ -353,9 +362,24 @@ export default function Checkout() {
                       </p>
                     </div>
 
-                    <a href="#" className="default-btn">
+                    {/* <a href="#" className="default-btn">
                       Place Order
-                    </a>
+                    </a> */}
+                {showAnimation && (
+        <div className="fullpage-animation">
+          <div className="checkmark-circle">
+            <div className="background"></div>
+            <div className="checkmark"></div>
+          </div>
+          <h1 className="order-text">Order Confirmed!</h1>
+        </div>
+      )}
+
+      {!showAnimation && (
+        <a onClick={handlePlaceOrder} className="default-btn">
+          Place Order
+        </a>
+      )}
                   </div>
                 </div>
               </div>

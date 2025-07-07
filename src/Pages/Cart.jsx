@@ -154,22 +154,15 @@ export default function Cart() {
             </div>
 
             <div className="cart-buttons">
-              <div className="row align-items-center justify-content-center">
+              <div className="row justify-content-center">
                 <div className="col-lg-7 col-sm-7 col-md-7">
-                  <a href="#" className="optional-btn">
+                  <a href="/OurProducts" className="optional-btn">
                     Continue Shopping
                   </a>
                 </div>
 
-                <div className="col-lg-5 col-sm-5 col-md-5 text-end">
-                  <a href="/OurProducts" className="default-btn">
-                    Update Cart
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="cart-totals">
+                <div className="col-lg-5 col-sm-5 col-md-5 ">
+                    <div className="cart-totals mt-0">
               <h3>Cart Totals</h3>
 
               <ul>
@@ -188,6 +181,29 @@ export default function Cart() {
                 Proceed to Checkout
               </a>
             </div>
+                </div>
+              </div>
+            </div>
+
+            {/* <div className="cart-totals">
+              <h3>Cart Totals</h3>
+
+              <ul>
+                <li>
+                  Subtotal <span>₹3,331.00</span>
+                </li>
+                <li>
+                  Shipping <span>₹300.00</span>
+                </li>
+                <li>
+                  Total <span>₹3,631.00</span>
+                </li>
+              </ul>
+
+              <a href="/Checkout" className="default-btn">
+                Proceed to Checkout
+              </a>
+            </div> */}
           </form>
         </div>
       </section>
