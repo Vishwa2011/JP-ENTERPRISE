@@ -9231,7 +9231,11 @@ Go Top CSS
     font-size: 14px;
     padding: 8px;
   }
+.tracking-form {
 
+      width: 100%;
+   
+}
   .view-btn,
   .track-btn {
     font-size: 14px;

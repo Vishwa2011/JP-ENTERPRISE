@@ -521,6 +521,7 @@ const Navbar = () => {
                       <div className="cart-btn">
                         <a
                           href="#"
+                          title="Wish List"
                           data-bs-toggle="modal"
                           data-bs-target="#shoppingWishlistModal"
                         >
@@ -533,6 +534,7 @@ const Navbar = () => {
                         <a
                           href="#"
                           data-bs-toggle="modal"
+                          title="Add To Cart"
                           data-bs-target="#shoppingCartModal"
                         >
                           <i className="bx bx-shopping-bag"></i>
@@ -542,7 +544,7 @@ const Navbar = () => {
                     </div>
                     <div className="option-item">
                       <div className="cart-btn">
-                        <a href="/MyAccount">
+                        <a href="/MyAccount" title="My Account">
                           <i className="bx bxs-user"></i>
                         </a>
                       </div>
@@ -749,6 +751,7 @@ const Navbar = () => {
                         <a
                           href="#"
                           data-bs-toggle="modal"
+                          title="Wish List"
                           data-bs-target="#shoppingWishlistModal"
                         >
                           <i className="bx bx-heart"></i>
@@ -760,6 +763,7 @@ const Navbar = () => {
                       <div className="cart-btn">
                         <a
                           href="#"
+                          title="Add to Cart"
                           data-bs-toggle="modal"
                           data-bs-target="#shoppingCartModal"
                         >
@@ -770,7 +774,7 @@ const Navbar = () => {
                     </div>
                     <div className="option-item">
                       <div className="cart-btn">
-                        <a href="/MyAccount">
+                        <a href="/MyAccount" title="My Account">
                           <i className="bx bxs-user"></i>
                         </a>
                       </div>

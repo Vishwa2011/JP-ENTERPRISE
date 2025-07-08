@@ -136,13 +136,13 @@ const handleTrackOrder = (e) => {
               onClick={() => setActiveTab("cancel")}
               className={activeTab === "cancel" ? "active" : ""}
             >
-              cancel Order
+              Cancel Order
             </li>
             <li
               onClick={() => setActiveTab("returnorder")}
               className={activeTab === "returnorder" ? "active" : ""}
             >
-              return Order
+              Return Order
             </li>
             <li
               onClick={() => setActiveTab("logout")}
@@ -153,7 +153,7 @@ const handleTrackOrder = (e) => {
           </ul>
         </div>
 
-        <div className="account-content">
+      <div className="account-content" style={{overflowX:'auto'}}>
           {activeTab === "profile" && (
             <>
               <h3>Profile Overview</h3>
@@ -236,6 +236,7 @@ const handleTrackOrder = (e) => {
           {activeTab === "orders" && (
             <>
               <h3>Orders</h3>
+              
               <table>
                 <thead>
                   <tr>
@@ -339,7 +340,7 @@ const handleTrackOrder = (e) => {
         <div class="container">
   <div class="row justify-content-center">
 						<div class="col-12 col-md-10 hh-grayBox pt45 pb20">
-							<div class="row justify-content-between">
+							<div class="row justify-content-between ">
 								<div class="order-tracking completed">
 									<span class="is-complete"></span>
 									<p>Order<br />Processed</p>
