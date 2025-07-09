@@ -64,6 +64,13 @@ const DigitalCourseDetails = () => {
       setCount(count + 1);
     }
   };
+    const reviewRef = useRef(null); // reference to review form
+  
+    const scrollToReview = (e) => {
+      e.preventDefault();
+      reviewRef.current?.scrollIntoView({ behavior: 'smooth' });
+    };
+  
 
   useEffect(() => {
     // Tabs
@@ -269,7 +276,22 @@ const DigitalCourseDetails = () => {
                         </a>
 
                         <div className="accordion-content">
-                          <div className="products-review-form mt-0">
+                          <div className="products-review-form ">
+                                 <h3>Customer Reviews</h3>
+
+                            <div className="review-title">
+                              <div className="rating">
+                                <i className="bx bxs-star"></i>
+                                <i className="bx bxs-star"></i>
+                                <i className="bx bxs-star"></i>
+                                <i className="bx bxs-star"></i>
+                                <i className="bx bx-star"></i>
+                              </div>
+                              <p>Based on 3 reviews</p>
+                              <a  className="default-btn" onClick={scrollToReview}>
+        Write a Review
+      </a>
+                            </div>
                         
                             <div className="review-comments mt-0">
                               <div className="review-item mt-0">
@@ -290,6 +312,7 @@ const DigitalCourseDetails = () => {
                                   warehouse. I haven't seen a single rat since
                                   installation!
                                 </p>
+                                
                               </div>
 
                               <div className="review-item">
@@ -332,6 +355,68 @@ const DigitalCourseDetails = () => {
                                 </p>
                               </div>
                             </div>
+                             <div className="review-form" ref={reviewRef}>
+        <h3>Write a Review</h3>
+
+        <form>
+          <div className="row justify-content-center">
+            <div className="col-lg-6 col-md-6">
+              <div className="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your name"
+                  className="form-control"
+                />
+              </div>
+            </div>
+
+            <div className="col-lg-6 col-md-6">
+              <div className="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  className="form-control"
+                />
+              </div>
+            </div>
+
+            <div className="col-lg-12 col-md-12">
+              <div className="form-group">
+                <input
+                  type="text"
+                  id="review-title"
+                  name="review-title"
+                  placeholder="Enter your review title"
+                  className="form-control"
+                />
+              </div>
+            </div>
+
+            <div className="col-lg-12 col-md-12">
+              <div className="form-group">
+                <textarea
+                  name="review-body"
+                  id="review-body"
+                  cols="30"
+                  rows="6"
+                  placeholder="Write your experience with JP Enterprise's rat repellent product"
+                  className="form-control"
+                ></textarea>
+              </div>
+            </div>
+
+            <div className="col-lg-12 col-md-12">
+              <button type="submit" className="default-btn">
+                Submit Review
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
                           </div>
                         </div>
                       </li>
