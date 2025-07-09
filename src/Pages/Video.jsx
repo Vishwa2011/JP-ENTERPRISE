@@ -29,7 +29,7 @@ export default function Video() {
       <section className="categories-banner-area pt-100 pb-70">
         <div className="about-content text-center mb-4">
           <span className="sub-title">Effective Solution</span>
-          <h2>Discover the power of JP Enterprise ultrasound rat repellent</h2>
+          <h2>See the JP Enterprise Solution That Keeps Rats Away</h2>
         </div>
         <div className="container">
           <div className="row justify-content-center">
@@ -44,20 +44,21 @@ export default function Video() {
                     overflow: "hidden",
                   }}
                 >
-                  <iframe
-                    src="https://www.youtube.com/embed/LRVyANxYMME?rel=0&showinfo=0"
-                    title="YouTube video"
-                    style={{
-                      position: "absolute",
-                      top: 0,
-                      left: 0,
-                      width: "100%",
-                      height: "100%",
-                      border: "0",
-                    }}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
+                 <video
+  src="/assets/pics/video1.mp4"
+  controls
+  style={{
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    border: "0",
+    objectFit: "cover",
+  }}
+ preload="metadata"
+   
+/>
                 </div>
               </div>
             </div>
@@ -73,20 +74,21 @@ export default function Video() {
                     overflow: "hidden",
                   }}
                 >
-                  <iframe
-                    src="https://www.youtube.com/embed/LRVyANxYMME?rel=0&showinfo=0"
-                    title="YouTube video"
-                    style={{
-                      position: "absolute",
-                      top: 0,
-                      left: 0,
-                      width: "100%",
-                      height: "100%",
-                      border: "0",
-                    }}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
+                <video
+  src="/assets/pics/video1.mp4"
+  controls
+  style={{
+    position: "absolute",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    border: "0",
+    objectFit: "cover",
+  }}
+  preload="metadata"
+  
+/>
                 </div>
               </div>
             </div>
