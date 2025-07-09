@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Facility from "../Components/Facility";
 import Instragram from "../Components/Instragram";
+import { useNavigate } from "react-router-dom";
 const images = [
   "/assets/pics/book1.png",
   "/assets/pics/book2.png",
@@ -17,7 +18,32 @@ const DigitalCourseDetails = () => {
   const zoomRef = useRef(null);
   const [zoomStyles, setZoomStyles] = useState({});
   const [isZoomVisible, setIsZoomVisible] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
+  const navigate = useNavigate();
 
+  const handleAddToCart = () => {
+    setShowPopup(true);
+
+    // Add to cart logic (API or local storage) here...
+
+    setTimeout(() => {
+      setShowPopup(false);
+      navigate("/Cart");
+    }, 1000);
+  };
+    const [showPopup1, setShowPopup1] = useState(false);
+    const navigate1 = useNavigate();
+  
+    const handleBuyNow = () => {
+      // Show popup
+      setShowPopup1(true);
+  
+      // After 2 seconds, hide popup and navigate
+      setTimeout(() => {
+        setShowPopup1(false);
+        navigate1("/Checkout");
+      }, 2000);
+    };
   const slideImage = () => {
     const displayWidth = showcaseRef.current?.children[0].clientWidth;
     if (displayWidth && showcaseRef.current) {
@@ -182,7 +208,7 @@ const DigitalCourseDetails = () => {
                   </div>
 
                   <div className="products-add-to-cart">
-                    <a href="/Cart">
+                    {/* <a href="/Cart">
                       {" "}
                       <button
                         type="submit"
@@ -191,8 +217,20 @@ const DigitalCourseDetails = () => {
                       >
                         <i className="fas fa-cart-plus"></i> Add to Cart
                       </button>
-                    </a>
-                    <a href="">
+                    </a> */}
+                        <button
+        type="button"
+        className="default-btn"
+        style={{ marginRight: "10px" }}
+        onClick={handleAddToCart}
+      >
+        <i className="fas fa-cart-plus"></i> Add to Cart
+      </button>
+
+      <div className={`popup-container ${showPopup ? "show" : ""}`}>
+        ✅ Product added to cart successfully!
+      </div>
+                    {/* <a href="">
                       {" "}
                       <button
                         type="submit"
@@ -201,8 +239,16 @@ const DigitalCourseDetails = () => {
                       >
                         <i className="fas fa-shopping-cart"></i> Buy Now
                       </button>
-                    </a>
-                  </div>
+                    </a> */}
+                         {/* <div className="item"> */}
+        <button className="default-btn" onClick={handleBuyNow}>
+          Buy it now!
+        </button>
+      {/* </div> */}
+                  </div>   {/* Animated Popup */}
+      <div className={`popup-container ${showPopup1 ? "show" : ""}`}>
+       ✅ Product added! Taking you to checkout...
+      </div>
 
                   {/* <div className="wishlist-compare-btn">
                     <a href="#" className="optional-btn">
@@ -279,7 +325,7 @@ const DigitalCourseDetails = () => {
                           <div className="products-review-form ">
                                  <h3>Customer Reviews</h3>
 
-                            <div className="review-title">
+                            <div className="review-title" style={{marginBottom:'20px'}}>
                               <div className="rating">
                                 <i className="bx bxs-star"></i>
                                 <i className="bx bxs-star"></i>
