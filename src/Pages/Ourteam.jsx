@@ -22,7 +22,7 @@ const teamMembers = [
   {
     name: "Priya Patel",
     title: "Web Designer",
-    img: "/assets/pics/teamslide3.jpg",
+    img: "/assets/pics/lady.jpg",
   },
   {
     name: "Krina Balar",
@@ -37,7 +37,7 @@ const teamMembers = [
   {
     name: "Priya Patel",
     title: "Web Designer",
-    img: "/assets/pics/teamslide3.jpg",
+    img: "/assets/pics/lady.jpg",
   },
 ];
 const Ourteam = () => {
