@@ -32,7 +32,15 @@ const Productdetails = () => {
       navigate("/Cart");
     }, 1000);
   };
+ const [showPopup2, setShowPopup2] = useState(false);
 
+  const handleWishlistClick = (e) => {
+    e.preventDefault();
+    setShowPopup2(true);
+    setTimeout(() => {
+      setShowPopup2(false);
+    }, 2000); // hide after 2 seconds
+  };
   const [showPopup1, setShowPopup1] = useState(false);
   const navigate1 = useNavigate();
 
@@ -324,12 +332,31 @@ const Productdetails = () => {
         ✅ Product added to cart successfully!
       </div>
                     <a
-                      href="#"
-                      className="optional-btn"
-                      style={{ marginRight: "10px" }}
-                    >
-                      <i className="bx bx-heart"></i> WishList
-                    </a>
+        href="#"
+        className="optional-btn"
+        style={{ marginRight: "10px" }}
+        onClick={handleWishlistClick}
+      >
+        <i className="bx bx-heart"></i> WishList
+      </a>
+
+      {showPopup2 && (
+        <div
+          style={{
+            position: "fixed",
+            top: "20px",
+            right: "center",
+            background: "#28a745",
+            color: "#fff",
+            padding: "10px 20px",
+            borderRadius: "5px",
+            boxShadow: "0 2px 10px rgba(0,0,0,0.2)",
+            zIndex: 9999,
+          }}
+        >
+          ✅ Added to wishlist successfully!
+        </div>
+      )}
                     <a
                       href="https://wa.me/919265407449"
                       target="_blank"
