@@ -27,7 +27,7 @@ export default function OrderView() {
 
             <div className="col-12" style={{padding:'100px 0px'}}>
               <div className="row">
-                <div className="col-6">
+                <div className="col-md-6">
     {/* Title */}
             <h3 className="text-2xl font-bold ">High-Powered Ultrasonic Rat Repellent</h3>
 
@@ -44,7 +44,7 @@ export default function OrderView() {
               </div>
   </div>
                 </div>
-                <div className="col-6" >
+                <div className="col-md-6" >
                   {/* Delivery Details */}
               <div>
                 <p className="text-green-600 text-lg font-semibold">

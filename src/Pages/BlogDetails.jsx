@@ -458,7 +458,7 @@ export default function BlogDetails() {
                                         <i class='bx bx-phone-call'></i>
                                     </div>
                                     <span>Emergency</span>
-                                    <a href="tel:+098798768753">+0987-9876-8753</a>
+                                    <a href="tel:+919265407449">+91 9265407449</a>
                                 </div>
                             </section>
                         </aside>
