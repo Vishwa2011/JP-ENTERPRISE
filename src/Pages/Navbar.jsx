@@ -137,6 +137,7 @@ const Navbar = () => {
                         data-bs-target="#shoppingWishlistModal"
                       >
                         <i className="bx bx-heart"></i>
+                        <span>2</span>
                       </a>
                     </div>
                   </div>
@@ -148,7 +149,7 @@ const Navbar = () => {
                         data-bs-target="#shoppingCartModal"
                       >
                         <i className="bx bx-shopping-bag"></i>
-                        <span>0</span>
+                        <span>2</span>
                       </a>
                     </div>
                   </div>
@@ -526,6 +527,7 @@ const Navbar = () => {
                           data-bs-target="#shoppingWishlistModal"
                         >
                           <i className="bx bx-heart"></i>
+                           <span>2</span>
                         </a>
                       </div>
                     </div>
@@ -538,7 +540,7 @@ const Navbar = () => {
                           data-bs-target="#shoppingCartModal"
                         >
                           <i className="bx bx-shopping-bag"></i>
-                          <span>0</span>
+                          <span>2</span>
                         </a>
                       </div>
                     </div>
@@ -755,6 +757,7 @@ const Navbar = () => {
                           data-bs-target="#shoppingWishlistModal"
                         >
                           <i className="bx bx-heart"></i>
+                          <span>2</span>
                         </a>
                       </div>
                     </div>
@@ -768,7 +771,7 @@ const Navbar = () => {
                           data-bs-target="#shoppingCartModal"
                         >
                           <i className="bx bx-shopping-bag"></i>
-                          <span>0</span>
+                          <span>2</span>
                         </a>
                       </div>
                     </div>

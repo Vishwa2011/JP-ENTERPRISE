@@ -595,7 +595,7 @@ const OurProducts = () => {
                       </a>
                     </div>
 
-                    <ul className="products-info">
+                    <ul className="products-info mb-4">
                       {/* <li>
                         <span>Brand:</span> <a href="#">Generic</a>
                       </li> */}
@@ -622,57 +622,7 @@ const OurProducts = () => {
                       </li>
                     </ul>
 
-                    <div className="products-color-switch">
-                      <h4>Color:</h4>
-
-                      <ul>
-                        <li>
-                          <a
-                            href="#"
-                            data-bs-toggle="tooltip"
-                            data-placement="top"
-                            title="Black"
-                            className="color-black"
-                          ></a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            data-bs-toggle="tooltip"
-                            data-placement="top"
-                            title="White"
-                            className="color-white"
-                          ></a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            data-bs-toggle="tooltip"
-                            data-placement="top"
-                            title="Green"
-                            className="color-green"
-                          ></a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            data-bs-toggle="tooltip"
-                            data-placement="top"
-                            title="Yellow Green"
-                            className="color-yellowgreen"
-                          ></a>
-                        </li>
-                        <li>
-                          <a
-                            href="#"
-                            data-bs-toggle="tooltip"
-                            data-placement="top"
-                            title="Teal"
-                            className="color-teal"
-                          ></a>
-                        </li>
-                      </ul>
-                    </div>
+                  
 
                     {/* <div className="products-size-wrapper">
                                     <h4>Size:</h4>
