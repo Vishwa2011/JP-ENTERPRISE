@@ -34,6 +34,7 @@ import Forgot from "./Pages/Forgot";
 import OrderView from "./Pages/OrderView";
 import PlaceOrder from "./Pages/PlaceOrder";
 import TrackOrder from "./Pages/TrackOrder";
+import RecentProducts from "./Components/RecentProducts";
 function App() {
    const { pathname } = useLocation();
 
@@ -118,6 +119,7 @@ function App() {
         <Route path="/OrderView" element={<OrderView />} />
         <Route path="/PlaceOrder" element={<PlaceOrder />} />
         <Route path="/TrackOrder" element={<TrackOrder />} />
+        <Route path="/RecentProducts" element={<RecentProducts />} />
      </Routes>
 
       <a 
