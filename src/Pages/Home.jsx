@@ -502,7 +502,7 @@ const Home = () => {
             <h2>We are Deal With</h2>
           </div>
 
-          <Swiper
+          {/* <Swiper
             modules={[Autoplay]}
             spaceBetween={30}
             slidesPerView={2}
@@ -542,7 +542,38 @@ const Home = () => {
                 </div>
               </SwiperSlide>
             ))}
-          </Swiper>
+          </Swiper> */}
+                <div class="logoees">
+<div class="logo_itemes">
+<img src="/assets/pics/brand1.png"/>
+<img src="/assets/pics/brand2.png"/>
+<img src="/assets/pics/brand3.png"/>
+<img src="/assets/pics/brand4.png"/>
+<img src="/assets/pics/brand5.png"/>
+<img src="/assets/pics/brand6.png"/>
+<img src="/assets/pics/brand1.png"/>
+<img src="/assets/pics/brand2.png"/>
+<img src="/assets/pics/brand3.png"/>
+<img src="/assets/pics/brand4.png"/>
+<img src="/assets/pics/brand5.png"/>
+<img src="/assets/pics/brand6.png"/>
+<img src="/assets/pics/brand1.png"/>
+<img src="/assets/pics/brand2.png"/>
+<img src="/assets/pics/brand3.png"/>
+<img src="/assets/pics/brand4.png"/>
+<img src="/assets/pics/brand5.png"/>
+<img src="/assets/pics/brand6.png"/>
+<img src="/assets/pics/brand1.png"/>
+<img src="/assets/pics/brand2.png"/>
+<img src="/assets/pics/brand3.png"/>
+<img src="/assets/pics/brand4.png"/>
+<img src="/assets/pics/brand5.png"/>
+<img src="/assets/pics/brand6.png"/>
+<img src="/assets/pics/brand1.png"/>
+
+</div>
+
+</div>
         </div>
       </div>
       {/* <!-- End Brand Area --> */}
