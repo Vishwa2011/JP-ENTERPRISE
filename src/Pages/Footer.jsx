@@ -16,7 +16,7 @@ export default function Footer() {
                                 <ul className="footer-contact-info">
                                     <li><i class='bx bx-map'></i> <a href="#" target="_blank">Surat , Gujarat 395004</a></li>
                                     <li><i class='bx bx-phone-call'></i> <a href="tel:+919265407449">+91 9265407449</a></li>
-                                     <li><i class='bx bx-mobile'></i> <a href= "tel:+917622009263">+91 7622009263</a></li>
+                                     {/* <li><i class='bx bx-mobile'></i> <a href= "tel:+917622009263">+91 7622009263</a></li> */}
                                     <li><i class='bx bx-envelope'></i> <a href="mailto:jpexport42@gmail.com">jpexport42@gmail.com</a></li>
                                 </ul>
                             </div>
