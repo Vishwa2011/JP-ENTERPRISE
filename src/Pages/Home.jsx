@@ -139,6 +139,68 @@ const Home = () => {
       setCount(count + 1);
     }
   };
+    const [counts, setCounts] = useState({
+    totalOrder: 0,
+    liveClient: 0,
+    totalClient: 0,
+    feedback: 0,
+  });
+
+  useEffect(() => {
+    const targets = {
+      totalOrder: 23,
+      liveClient: 56,
+      totalClient: 90,
+      feedback: 200,
+    };
+
+    const duration = 2000; // animation duration in milliseconds
+    const frameRate = 60; // how many times per second
+    const steps = duration / (1000 / frameRate); // total steps
+
+    const increments = {
+      totalOrder: targets.totalOrder / steps,
+      liveClient: targets.liveClient / steps,
+      totalClient: targets.totalClient / steps,
+      feedback: targets.feedback / steps,
+    };
+
+    let current = { ...counts };
+    let step = 0;
+
+    const interval = setInterval(() => {
+      step++;
+
+      current = {
+        totalOrder: Math.min(
+          targets.totalOrder,
+          current.totalOrder + increments.totalOrder
+        ),
+        liveClient: Math.min(
+          targets.liveClient,
+          current.liveClient + increments.liveClient
+        ),
+        totalClient: Math.min(
+          targets.totalClient,
+          current.totalClient + increments.totalClient
+        ),
+        feedback: Math.min(
+          targets.feedback,
+          current.feedback + increments.feedback
+        ),
+      };
+
+      setCounts({
+        totalOrder: Math.round(current.totalOrder),
+        liveClient: Math.round(current.liveClient),
+        totalClient: Math.round(current.totalClient),
+        feedback: Math.round(current.feedback),
+      });
+
+      if (step >= steps) clearInterval(interval);
+    }, 1000 / frameRate);
+  }, []);
+
   return (
     <div>
       <Navbar />
@@ -300,6 +362,7 @@ const Home = () => {
 
       {/* <!-- Start Products Area --> */}
       <RecentProducts />
+
       {/* <!-- End Products Area --> */}
       <div style={{ background: "#00000029", marginBottom: "60px" }}>
         <div
@@ -319,12 +382,13 @@ const Home = () => {
           <div className="row g-4">
             {/* <!-- Box 1 --> */}
             <div className="col-lg-4">
-              <div
+              <a href="/ReturnPolicy">
+                <div
                 className="bg-light rounded-4 p-4 shadow d-flex gap-3 shield"
                 style={{ backgroundColor: "#f1f8f5" }}
               >
                 <i
-                  className="fa-solid fa-shield"
+                  className="fa-solid fa-arrow-rotate-left"
                   style={{
                     fontSize: "34px",
                     paddingTop: "13px",
@@ -341,23 +405,25 @@ const Home = () => {
                     className="h5 fw-bold mb-2"
                     style={{ fontSize: "29px", marginBottom: "11px" }}
                   >
-                    Rodent Shield
+                    Easy Return Policy
                   </h3>
                   <p className="text-muted" style={{ fontSize: "17px" }}>
-                    Guards your home and vehicle.
+                    Hassle-free returns within 7 days.
                   </p>
                 </div>
               </div>
+              </a>
             </div>
 
             {/* <!-- Box 2 --> */}
             <div className="col-lg-4">
-              <div
+             <a href="">
+               <div
                 className="bg-light rounded-4 p-4 shadow d-flex gap-3 shield"
                 style={{ backgroundColor: "#f1f8f5" }}
               >
                 <i
-                  className="fa-solid fa-helmet-safety"
+                  className="fa-solid fa-right-left"
                   style={{
                     fontSize: "34px",
                     paddingTop: "13px",
@@ -374,23 +440,25 @@ const Home = () => {
                     className="h5 fw-bold mb-2"
                     style={{ fontSize: "29px", marginBottom: "11px" }}
                   >
-                    Natural & Safe
+                    Exchange Policy
                   </h3>
                   <p className="text-muted" style={{ fontSize: "17px" }}>
-                    Gentle on people and pets.
+                     Quick and simple product exchanges.
                   </p>
                 </div>
               </div>
+             </a>
             </div>
 
             {/* <!-- Box 3 --> */}
             <div className="col-lg-4">
-              <div
+             <a href="">
+               <div
                 className="bg-light rounded-4 p-4 shadow d-flex gap-3 shield"
                 style={{ backgroundColor: "#f1f8f5" }}
               >
                 <i
-                  className="fa-solid fa-hands-holding-circle"
+                  className="fa-solid fa-truck-fast"
                   style={{
                     fontSize: "34px",
                     paddingTop: "13px",
@@ -407,13 +475,14 @@ const Home = () => {
                     className="h5 fw-bold mb-2"
                     style={{ fontSize: "29px", marginBottom: "11px" }}
                   >
-                    Lasting Protection
+                    Track Your Package
                   </h3>
                   <p className="text-muted" style={{ fontSize: "17px" }}>
-                    Works long after application.
+                     Stay updated with real-time tracking.
                   </p>
                 </div>
               </div>
+             </a>
             </div>
           </div>
         </div>
@@ -422,9 +491,61 @@ const Home = () => {
       {/*  */}
       {/* <!-- Start Facility Area --> */}
 
-      <Facility />
+      {/* <Facility /> */}
 
       {/* <!-- End Facility Area --> */}
+
+          {/* <!-- Start Brand Area --> */}
+      <div className="brand-area pb-70 mb-2">
+        <div className="container">
+          <div className="section-title">
+            <h2>We are Deal With</h2>
+          </div>
+
+          <Swiper
+            modules={[Autoplay]}
+            spaceBetween={30}
+            slidesPerView={2}
+            loop={true}
+            autoplay={{
+              delay: 2000,
+              disableOnInteraction: false,
+            }}
+            breakpoints={{
+              640: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+              },
+              1024: {
+                slidesPerView: 5,
+                spaceBetween: 60,
+              },
+            }}
+          >
+            {[
+              "/assets/pics/brand1.png",
+              "/assets/pics/brand2.png",
+              "/assets/pics/brand3.png",
+              "/assets/pics/brand4.png",
+              "/assets/pics/brand5.png",
+              "/assets/pics/brand6.png",
+            ].map((img, i) => (
+              <SwiperSlide key={i}>
+                <div className="brand-item" style={{ width: "150px" }}>
+                  <a href="#">
+                    <img src={img} alt={`brand${i + 1}`} />
+                  </a>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      </div>
+      {/* <!-- End Brand Area --> */}
 
       <div
         className="container-fluid "
@@ -498,57 +619,7 @@ const Home = () => {
         <img src="/assets/pics/Power Surge Protection (2).png" alt="" />
       </div> */}
 
-      {/* <!-- Start Brand Area --> */}
-      <div className="brand-area ptb-70 mb-2">
-        <div className="container">
-          <div className="section-title">
-            <h2>We are Deal With</h2>
-          </div>
-
-          <Swiper
-            modules={[Autoplay]}
-            spaceBetween={30}
-            slidesPerView={2}
-            loop={true}
-            autoplay={{
-              delay: 2000,
-              disableOnInteraction: false,
-            }}
-            breakpoints={{
-              640: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-              },
-              768: {
-                slidesPerView: 4,
-                spaceBetween: 30,
-              },
-              1024: {
-                slidesPerView: 5,
-                spaceBetween: 60,
-              },
-            }}
-          >
-            {[
-              "/assets/pics/brand1.png",
-              "/assets/pics/brand2.png",
-              "/assets/pics/brand3.png",
-              "/assets/pics/brand4.png",
-              "/assets/pics/brand5.png",
-              "/assets/pics/brand6.png",
-            ].map((img, i) => (
-              <SwiperSlide key={i}>
-                <div className="brand-item" style={{ width: "150px" }}>
-                  <a href="#">
-                    <img src={img} alt={`brand${i + 1}`} />
-                  </a>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-      </div>
-      {/* <!-- End Brand Area --> */}
+  
 
       <div
         id="shopify-section-template--18276792860857__video_section_3ixD7W"
@@ -1043,6 +1114,32 @@ const Home = () => {
         </section>
       </div>
       {/* <!-- End Categories Banner Area --> */}
+
+ <div>
+      <section className="section">
+        <div className="offer-grid1">
+          <div className="offer-card1">
+            <p>{counts.totalOrder}+</p>
+            <h3>Total Order</h3>
+          </div>
+
+          <div className="offer-card1">
+            <p>{counts.liveClient}+</p>
+            <h3>Live Client</h3>
+          </div>
+
+          <div className="offer-card1">
+            <p>{counts.totalClient}+</p>
+            <h3>Total Client</h3>
+          </div>
+
+          <div className="offer-card1">
+            <p>{counts.feedback}+</p>
+            <h3>Feedback</h3>
+          </div>
+        </div>
+      </section>
+    </div>
 
       {/* <!-- Start Instagram Area --> */}
       <Instragram />
