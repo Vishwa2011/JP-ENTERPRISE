@@ -8747,14 +8747,14 @@ Go Top CSS
   padding: 40px 25px;
   border-radius: 16px;
   transition: all 0.3s ease;
-  border: 1px solid #ececec;
+  border: 2px solid #f53f85;
   text-align: center;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+    box-shadow:0 10px 30px rgb(245 63 133 / 60%);
 }
 
 .offer-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(245, 63, 133, 0.15);
+  transform: scale(1.08);
+  box-shadow:0 10px 30px rgb(245 63 133 / 60%);
 }
 
 .offer-card i {
@@ -10215,4 +10215,43 @@ color: #fff;
 
 .logo_itemes img{
   height: 100px;
+}
+
+ .offer-grid1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.offer-card1 {
+  background: #f9f9f9;
+  padding: 40px 25px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  border: 2px solid #f53f85;
+  text-align: center;
+  box-shadow:0 10px 30px rgb(245 63 133 / 60%);
+}
+
+.offer-card1:hover {
+  transform: scale(1.08);
+   box-shadow:0 10px 30px rgb(245 63 133 / 60%);
+}
+
+.offer-card1 p {
+  font-size: 30px;
+  font-weight: 400;
+  color: #f53f85;
+  margin-bottom: 20px;
+}
+
+.offer-card1 h3 {
+  color: #f53f85;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.offer-card1:hover p {
+  color: #000;
+  transition: color 0.3s ease;
 }
