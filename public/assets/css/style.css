@@ -57,7 +57,8 @@ Default CSS
 body {
   padding: 0;
   margin: 0;
-  font-family: "Lato";
+  /* font-family: "Lato"; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 15px;
 }
 
@@ -65,7 +66,10 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+::selection {
+    background: #f53f85;
+    color: white;
+}
 .d-table {
   width: 100%;
   height: 100%;
@@ -100,7 +104,8 @@ p:last-child {
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   color: #000000;
-  font-family: "Cabin";
+  /* font-family: "Cabin"; */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .ptb-100 {
@@ -8974,7 +8979,7 @@ Go Top CSS
 .account-container {
   display: flex;
   padding: 40px;
-  font-family: 'Segoe UI', sans-serif;
+  
   background: #fff;
 }
 
@@ -9861,7 +9866,7 @@ color: #fff;
   max-width: 600px;
   margin: 30px auto;
   padding: 15px;
-  font-family: Arial, sans-serif;
+  
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px #eee;
@@ -10012,7 +10017,7 @@ color: #fff;
   border-radius: 8px;
   background: #fff;
   box-shadow: 0 0 10px #eee;
-  font-family: Arial, sans-serif;
+ 
 }
 
 
@@ -10240,7 +10245,7 @@ color: #fff;
 
 .offer-card1 p {
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 600;
   color: #f53f85;
   margin-bottom: 20px;
 }
