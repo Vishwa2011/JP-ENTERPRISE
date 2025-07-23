@@ -22,7 +22,7 @@ export default function Instragram() {
     <div className="instagram-area" style={{paddingTop:'60px'}}>
       <div className="container-fluid">
         <div className="instagram-title">
-          <a href="#" target="_blank" rel="noreferrer">
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
             <i className="bx bxl-instagram"></i> Follow us on @jp Enterprise
           </a>
         </div>

@@ -3,64 +3,83 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import Facility from '../Components/Facility'
 import Instragram from '../Components/Instragram'
+import ReCAPTCHA from 'react-google-recaptcha';
 
 export default function Contact() {
-      const canvasRef = useRef(null);
-  const [captchaCode, setCaptchaCode] = useState("");
-  const [inputValue, setInputValue] = useState("");
+      const [captchaValue, setCaptchaValue] = useState(null);
 
-  useEffect(() => {
-    generateCaptcha();
-  }, []);
-
-  const generateCaptcha = () => {
-    const canvas = canvasRef.current;
-    const ctx = canvas.getContext("2d");
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-    let generatedCode = "";
-
-    const angleMin = -45;
-    const angleMax = 45;
-    const fontSizeMin = 20;
-    const fontSizeMax = 30;
-
-    for (let i = 0; i < 6; i++) {
-      const char = chars.charAt(Math.floor(Math.random() * chars.length));
-      generatedCode += char;
-
-      const fontSize = fontSizeMin + Math.random() * (fontSizeMax - fontSizeMin);
-      ctx.font = `${fontSize}px Arial`;
-      ctx.textAlign = "center";
-      ctx.textBaseline = "middle";
-      ctx.fillStyle = `rgb(${Math.floor(Math.random() * 256)}, 
-                          ${Math.floor(Math.random() * 256)}, 
-                          ${Math.floor(Math.random() * 256)})`;
-
-      const angle = angleMin + Math.random() * (angleMax - angleMin);
-      ctx.translate(20 + i * 30, canvas.height / 2);
-      ctx.rotate((angle * Math.PI) / 180);
-      ctx.fillText(char, 0, 0);
-      ctx.rotate((-angle * Math.PI) / 180);
-      ctx.translate(-(20 + i * 30), -canvas.height / 2);
-    }
-
-    setCaptchaCode(generatedCode);
+  const handleCaptchaChange = (value) => {
+    console.log('Captcha value:', value);
+    setCaptchaValue(value);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (inputValue !== captchaCode) {
-      alert("Invalid captcha code. Please try again.");
-      setInputValue("");
-      generateCaptcha();
-    } else {
-      alert("Form submitted successfully.");
-      setInputValue("");
-      generateCaptcha();
+
+    if (!captchaValue) {
+      alert("Please complete the reCAPTCHA.");
+      return;
     }
+
+    // You can now safely submit the form data
+    alert("Form submitted successfully!");
   };
+//       const canvasRef = useRef(null);
+//   const [captchaCode, setCaptchaCode] = useState("");
+//   const [inputValue, setInputValue] = useState("");
+
+//   useEffect(() => {
+//     generateCaptcha();
+//   }, []);
+
+//   const generateCaptcha = () => {
+//     const canvas = canvasRef.current;
+//     const ctx = canvas.getContext("2d");
+//     ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+//     const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+//     let generatedCode = "";
+
+//     const angleMin = -45;
+//     const angleMax = 45;
+//     const fontSizeMin = 20;
+//     const fontSizeMax = 30;
+
+//     for (let i = 0; i < 6; i++) {
+//       const char = chars.charAt(Math.floor(Math.random() * chars.length));
+//       generatedCode += char;
+
+//       const fontSize = fontSizeMin + Math.random() * (fontSizeMax - fontSizeMin);
+//       ctx.font = `${fontSize}px Arial`;
+//       ctx.textAlign = "center";
+//       ctx.textBaseline = "middle";
+//       ctx.fillStyle = `rgb(${Math.floor(Math.random() * 256)}, 
+//                           ${Math.floor(Math.random() * 256)}, 
+//                           ${Math.floor(Math.random() * 256)})`;
+
+//       const angle = angleMin + Math.random() * (angleMax - angleMin);
+//       ctx.translate(20 + i * 30, canvas.height / 2);
+//       ctx.rotate((angle * Math.PI) / 180);
+//       ctx.fillText(char, 0, 0);
+//       ctx.rotate((-angle * Math.PI) / 180);
+//       ctx.translate(-(20 + i * 30), -canvas.height / 2);
+//     }
+
+//     setCaptchaCode(generatedCode);
+//   };
+
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     if (inputValue !== captchaCode) {
+//       alert("Invalid captcha code. Please try again.");
+//       setInputValue("");
+//       generateCaptcha();
+//     } else {
+//       alert("Form submitted successfully.");
+//       setInputValue("");
+//       generateCaptcha();
+//     }
+//   };
   return (
     <div>
       <Navbar />
@@ -105,13 +124,10 @@ export default function Contact() {
 
                             <h3>Follow Us:</h3>
                             <ul className="social">
-                                <li><a href="#" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                                <li><a href="#" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                                <li><a href="#" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                                <li><a href="#" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
-                                <li><a href="#" target="_blank"><i class='bx bxl-skype'></i></a></li>
-                                <li><a href="#" target="_blank"><i class='bx bxl-pinterest-alt'></i></a></li>
-                                <li><a href="#" target="_blank"><i class='bx bxl-youtube'></i></a></li>
+                                <li><a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                                <li><a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                                <li><a href="https://in.linkedin.com/" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
+                                <li><a href="https://www.youtube.com/" target="_blank"><i class='bx bxl-youtube'></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -121,7 +137,7 @@ export default function Contact() {
                             <h3>Drop Us A Line</h3>
                             <p>We're happy to answer any questions you have or provide you with an estimate. Just send us a message in the form below with any questions you may have.</p>
 
-                            <form id="contactForm">
+                            <form id="contactForm"  onSubmit={handleSubmit}>
                                 <div className="row justify-content-center">
                                     <div className="col-lg-12 col-md-6">
                                         <div className="form-group">
@@ -154,7 +170,7 @@ export default function Contact() {
                                             <div className="help-block with-errors"></div>
                                         </div>
                                     </div>
-                                        <form onSubmit={handleSubmit} id="captcha-form">
+                                        {/* <form onSubmit={handleSubmit} id="captcha-form">
     <div style={{display:'flex'}}>
 <div>
 
@@ -185,8 +201,14 @@ export default function Contact() {
         />
       </div>
       
-    </form>
-
+    </form> */}
+                                     {/* Google reCAPTCHA */}
+        <div className="col-lg-12 col-md-12 mb-3">
+          <ReCAPTCHA
+            sitekey="6LcXYZAbAAAAAN1234AbcDeFgHijkLMNOPqrsTUvw" // Replace with your real site key
+            onChange={handleCaptchaChange}
+          />
+        </div>
                                     <div className="col-lg-12 col-md-12">
                                         <button type="submit" className="default-btn">Send Message</button>
                                         <div id="msgSubmit" className="h3 text-center hidden"></div>

@@ -13,7 +13,7 @@ export default function Login() {
         <div className="page-title-area">
             <div className="container">
                 <div className="page-title-content">
-                    <h2>My Account</h2>
+                    <h2>Login</h2>
                     <ul>
                         <li><a href="/">Home</a></li>
                         <li>Login</li>

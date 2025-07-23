@@ -116,10 +116,9 @@ export default function BlogDetails() {
                                 <div className="article-share">
                                     <ul className="social">
                                         <li><span>Share:</span></li>
-                                        <li><a href="#" className="facebook" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                                        <li><a href="#" className="twitter" target="_blank"><i class='bx bxl-twitter'></i></a></li>
-                                        <li><a href="#" className="linkedin" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
-                                        <li><a href="#" className="instagram" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                                        <li><a href="https://www.facebook.com/" className="facebook" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                                        <li><a href="https://in.linkedin.com/" className="linkedin" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
+                                        <li><a href="https://www.instagram.com/" className="instagram" target="_blank"><i class='bx bxl-instagram'></i></a></li>
                                     </ul>
                                 </div>
                             </div>
