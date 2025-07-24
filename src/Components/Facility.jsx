@@ -6,13 +6,16 @@ import 'swiper/css/autoplay';
 
 export default function Facility() {
   const facilities = [
-    { icon: 'flaticon-tracking', title: 'Free Shipping ' },
-    { icon: 'flaticon-return', title: 'Easy Return Policy' },
-    { icon: 'flaticon-shuffle', title: '7 Day Exchange Policy' },
+    { icon: 'flaticon-tracking', title: 'Fast Shipping ' },
     { icon: 'flaticon-sale', title: 'Weekend Discount Coupon' },
     { icon: 'flaticon-credit-card', title: 'Secure Payment Methods' },
-    { icon: 'flaticon-location', title: 'Track Your Package' },
     { icon: 'flaticon-customer-service', title: '24/7 Customer Support' },
+    { icon: 'flaticon-tracking', title: 'Fast Shipping ' },
+       { icon: 'flaticon-sale', title: 'Weekend Discount Coupon' },
+    { icon: 'flaticon-credit-card', title: 'Secure Payment Methods' },
+    { icon: 'flaticon-customer-service', title: '24/7 Customer Support' },
+  
+   
   ];
 
   return (

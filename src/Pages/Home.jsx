@@ -382,7 +382,7 @@ const Home = () => {
           <div className="row g-4">
             {/* <!-- Box 1 --> */}
             <div className="col-lg-4">
-              <a href="/ReturnPolicy">
+              <a href="/PrivacyPolicy">
                 <div
                 className="bg-light rounded-4 p-4 shadow d-flex gap-3 shield"
                 style={{ backgroundColor: "#f1f8f5" }}
@@ -401,14 +401,14 @@ const Home = () => {
                     paddingLeft: "10px",
                   }}
                 >
-                  <h3
+                  <h4
                     className="h5 fw-bold mb-2"
-                    style={{ fontSize: "29px", marginBottom: "11px" }}
+                    style={{ fontSize: "26 px", marginBottom: "11px" }}
                   >
-                    Easy Return Policy
-                  </h3>
+                    Easy Privacy Policy
+                  </h4>
                   <p className="text-muted" style={{ fontSize: "17px" }}>
-                    Hassle-free returns within 7 days.
+                    We provide an easy privacy policy to ensure your data stays safe.
                   </p>
                 </div>
               </div>
@@ -417,7 +417,7 @@ const Home = () => {
 
             {/* <!-- Box 2 --> */}
             <div className="col-lg-4">
-             <a href="">
+             <a href="/ShippingPolicy">
                <div
                 className="bg-light rounded-4 p-4 shadow d-flex gap-3 shield"
                 style={{ backgroundColor: "#f1f8f5" }}
@@ -436,14 +436,14 @@ const Home = () => {
                     paddingLeft: "10px",
                   }}
                 >
-                  <h3
+                  <h4
                     className="h5 fw-bold mb-2"
-                    style={{ fontSize: "29px", marginBottom: "11px" }}
+                    style={{ fontSize: "26px", marginBottom: "11px" }}
                   >
-                    Exchange Policy
-                  </h3>
+                  Shipping Policy
+                  </h4>
                   <p className="text-muted" style={{ fontSize: "17px" }}>
-                     Quick and simple product exchanges.
+                     Our shipping policy ensures fast and reliable delivery to your doorstep.
                   </p>
                 </div>
               </div>
@@ -452,7 +452,7 @@ const Home = () => {
 
             {/* <!-- Box 3 --> */}
             <div className="col-lg-4">
-             <a href="">
+             <a href="/TrackOrder">
                <div
                 className="bg-light rounded-4 p-4 shadow d-flex gap-3 shield"
                 style={{ backgroundColor: "#f1f8f5" }}
@@ -471,14 +471,14 @@ const Home = () => {
                     paddingLeft: "10px",
                   }}
                 >
-                  <h3
+                  <h4
                     className="h5 fw-bold mb-2"
-                    style={{ fontSize: "29px", marginBottom: "11px" }}
+                    style={{ fontSize: "26px", marginBottom: "11px" }}
                   >
                     Track Your Package
-                  </h3>
+                  </h4>
                   <p className="text-muted" style={{ fontSize: "17px" }}>
-                     Stay updated with real-time tracking.
+                    Easily track your package anytime with our tracking system.
                   </p>
                 </div>
               </div>
@@ -491,92 +491,11 @@ const Home = () => {
       {/*  */}
       {/* <!-- Start Facility Area --> */}
 
-      {/* <Facility /> */}
+      <Facility />
 
       {/* <!-- End Facility Area --> */}
 
-          {/* <!-- Start Brand Area --> */}
-      <div className="brand-area pb-70 mb-2">
-        <div className="container">
-          <div className="section-title">
-            <h2>We are Deal With</h2>
-          </div>
-
-          {/* <Swiper
-            modules={[Autoplay]}
-            spaceBetween={30}
-            slidesPerView={2}
-            loop={true}
-            autoplay={{
-              delay: 2000,
-              disableOnInteraction: false,
-            }}
-            breakpoints={{
-              640: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-              },
-              768: {
-                slidesPerView: 4,
-                spaceBetween: 30,
-              },
-              1024: {
-                slidesPerView: 5,
-                spaceBetween: 60,
-              },
-            }}
-          >
-            {[
-              "/assets/pics/brand1.png",
-              "/assets/pics/brand2.png",
-              "/assets/pics/brand3.png",
-              "/assets/pics/brand4.png",
-              "/assets/pics/brand5.png",
-              "/assets/pics/brand6.png",
-            ].map((img, i) => (
-              <SwiperSlide key={i}>
-                <div className="brand-item" style={{ width: "150px" }}>
-                  <a href="#">
-                    <img src={img} alt={`brand${i + 1}`} />
-                  </a>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper> */}
-                <div class="logoees">
-<div class="logo_itemes">
-<img src="/assets/pics/brand1.png"/>
-<img src="/assets/pics/brand2.png"/>
-<img src="/assets/pics/brand3.png"/>
-<img src="/assets/pics/brand4.png"/>
-<img src="/assets/pics/brand5.png"/>
-<img src="/assets/pics/brand6.png"/>
-<img src="/assets/pics/brand1.png"/>
-<img src="/assets/pics/brand2.png"/>
-<img src="/assets/pics/brand3.png"/>
-<img src="/assets/pics/brand4.png"/>
-<img src="/assets/pics/brand5.png"/>
-<img src="/assets/pics/brand6.png"/>
-<img src="/assets/pics/brand1.png"/>
-<img src="/assets/pics/brand2.png"/>
-<img src="/assets/pics/brand3.png"/>
-<img src="/assets/pics/brand4.png"/>
-<img src="/assets/pics/brand5.png"/>
-<img src="/assets/pics/brand6.png"/>
-<img src="/assets/pics/brand1.png"/>
-<img src="/assets/pics/brand2.png"/>
-<img src="/assets/pics/brand3.png"/>
-<img src="/assets/pics/brand4.png"/>
-<img src="/assets/pics/brand5.png"/>
-<img src="/assets/pics/brand6.png"/>
-<img src="/assets/pics/brand1.png"/>
-
-</div>
-
-</div>
-        </div>
-      </div>
-      {/* <!-- End Brand Area --> */}
+   
 
       <div
         className="container-fluid "
@@ -596,7 +515,8 @@ const Home = () => {
         <div className="row align-items-center d-flex justify-content-center">
           <div className="col-lg-4 col-md-6 mb-4 mb-lg-0 featuresLeft">
             {featuresLeft.map((item, i) => (
-              <div className="card border-0 mb-3 shadow-sm" key={i}>
+             <div className="card border-0 mb-3 custom-shadow" key={i}>
+
                 <div className="card-body d-flex">
                   <div className="me-3 d-flex align-items-center">
                     {item.icon}
@@ -628,7 +548,7 @@ const Home = () => {
 
           <div className="col-lg-4 col-md-6 mt-4 mt-lg-0 featuresRight">
             {featuresRight.map((item, i) => (
-              <div className="card border-0 mb-3 shadow-sm" key={i}>
+              <div className="card border-0 mb-3 custom-shadow" key={i}>
                 <div className="card-body d-flex">
                   <div className="me-3 d-flex align-items-center">
                     {item.icon}
@@ -645,6 +565,48 @@ const Home = () => {
       </div>
 
       {/*  */}
+             {/* <!-- Start Brand Area --> */}
+      <div className="brand-area pb-70 mb-2 pt-70">
+        <div className="container">
+          <div className="section-title">
+            <h2>We are Deal With</h2>
+          </div>
+
+        
+                <div class="logoees">
+<div class="logo_itemes">
+<img src="/assets/pics/brand1 (1).png"/>
+<img src="/assets/pics/brand2.png"/>
+<img src="/assets/pics/brand3.png"/>
+<img src="/assets/pics/brand4.png"/>
+<img src="/assets/pics/brand5.png"/>
+<img src="/assets/pics/brand6.png"/>
+<img src="/assets/pics/brand1 (1).png"/>
+<img src="/assets/pics/brand2.png"/>
+<img src="/assets/pics/brand3.png"/>
+<img src="/assets/pics/brand4.png"/>
+<img src="/assets/pics/brand5.png"/>
+<img src="/assets/pics/brand6.png"/>
+<img src="/assets/pics/brand1 (1).png"/>
+<img src="/assets/pics/brand2.png"/>
+<img src="/assets/pics/brand3.png"/>
+<img src="/assets/pics/brand4.png"/>
+<img src="/assets/pics/brand5.png"/>
+<img src="/assets/pics/brand6.png"/>
+<img src="/assets/pics/brand1 (1).png"/>
+<img src="/assets/pics/brand2.png"/>
+<img src="/assets/pics/brand3.png"/>
+<img src="/assets/pics/brand4.png"/>
+<img src="/assets/pics/brand5.png"/>
+<img src="/assets/pics/brand6.png"/>
+<img src="/assets/pics/brand1 (1).png"/>
+
+</div>
+
+</div>
+        </div>
+      </div>
+      {/* <!-- End Brand Area --> */}
 
       {/* <div className="home-slides-two owl-carousel owl-theme owl-loaded owl-drag" style={{marginBottom:'60px'}}>
         <img src="/assets/pics/Power Surge Protection (2).png" alt="" />
@@ -1146,7 +1108,7 @@ const Home = () => {
       </div>
       {/* <!-- End Categories Banner Area --> */}
 
- <div>
+ <div style={{background:'#000'}}>
       <section className="section">
         <div className="offer-grid1">
           <div className="offer-card1">

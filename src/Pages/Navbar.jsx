@@ -963,10 +963,7 @@ const Navbar = () => {
                         <i className="bx bx-phone-call"></i>{" "}
                         <a href="tel:+919265407449">+91 9265407449</a>
                       </li>
-                      <li>
-                        <i className="bx bx-mobile"></i>{" "}
-                        <a href="tel:+917622009263">+91 7622009263</a>
-                      </li>
+                    
                       <li>
                         <i className="bx bx-envelope"></i>{" "}
                         <a href="mailto:jpexport42@gmail.com">
@@ -986,15 +983,7 @@ const Navbar = () => {
                         <i className="bx bxl-facebook"></i>
                       </a>
                     </li>
-                    <li>
-                      <a
-                        href="https://twitter.com/login"
-                        className="d-block"
-                        target="_blank"
-                      >
-                        <i className="bx bxl-twitter"></i>
-                      </a>
-                    </li>
+                  
                     <li>
                       <a
                         href="https://www.instagram.com/"
@@ -1004,24 +993,8 @@ const Navbar = () => {
                         <i className="bx bxl-instagram"></i>
                       </a>
                     </li>
-                    <li>
-                      <a
-                        href="https://www.linkedin.com/login"
-                        className="d-block"
-                        target="_blank"
-                      >
-                        <i className="bx bxl-linkedin"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.pinterest.com/"
-                        className="d-block"
-                        target="_blank"
-                      >
-                        <i className="bx bxl-pinterest-alt"></i>
-                      </a>
-                    </li>
+                   
+                  
                   </ul>
                 </div>
 

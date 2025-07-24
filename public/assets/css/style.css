@@ -58,7 +58,7 @@ body {
   padding: 0;
   margin: 0;
   /* font-family: "Lato"; */
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   font-size: 15px;
 }
 
@@ -8943,7 +8943,7 @@ Go Top CSS
 .featuresLeft .card:hover ,
 .featuresRight .card:hover{
   transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 19px #000000e0;
 }
 
 /* Icon inside the card (optional zoom effect) */
@@ -10209,19 +10209,30 @@ color: #fff;
 
 .logo_itemes {
   display: inline-block;
-  animation: 35s slides infinite linear;
+  animation: 32s slides infinite linear;
   gap: 60px;
   display:flex;
+
+
+
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .logoees:hover .logo_itemes {
   animation-play-state: paused;
 }
 
-.logo_itemes img{
-  height: 100px;
+.logo-img {
+  width: 170px;
+  height: 80px;
+  object-fit: contain;
+  padding: 5px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 6px;
 }
-
  .offer-grid1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -10229,8 +10240,9 @@ color: #fff;
 }
 
 .offer-card1 {
+  width: 64%;
   background: #f9f9f9;
-  padding: 40px 25px;
+  padding: 6px 16px;
   border-radius: 16px;
   transition: all 0.3s ease;
   border: 2px solid #f53f85;
@@ -10247,7 +10259,7 @@ color: #fff;
   font-size: 30px;
   font-weight: 600;
   color: #f53f85;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 
 .offer-card1 h3 {
@@ -10259,4 +10271,12 @@ color: #fff;
 .offer-card1:hover p {
   color: #000;
   transition: color 0.3s ease;
+}
+.custom-shadow {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease-in-out;
+}
+
+.custom-shadow:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }

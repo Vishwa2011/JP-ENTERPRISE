@@ -23,10 +23,9 @@ export default function Footer() {
 
                             <ul className="social-link">
                                 <li><a href="https://www.facebook.com/" className="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
-                                <li><a href="https://twitter.com/login" className="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                              
                                 <li><a href="https://www.instagram.com/" className="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
-                                <li><a href="https://www.linkedin.com/login" className="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
-                                <li><a href="https://www.pinterest.com/" className="d-block" target="_blank"><i class='bx bxl-pinterest-alt'></i></a></li>
+                              
                             </ul>
                         </div>
                     </div>
