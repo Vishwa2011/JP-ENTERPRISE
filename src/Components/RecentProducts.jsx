@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
 export default function RecentProducts() {
-  const [selectedLabel, setSelectedLabel] = useState("Ultrasonic");
+  const [selectedLabel, setSelectedLabel] = useState("New Arrivals");
 
   const products = [
     {
       id: 1,
-      buttonLabel: "Ultrasonic",
+      buttonLabel: "New Arrivals",
       mainImage: "/assets/pics/rate.jpg",
       hoverImage: "/assets/pics/speaker.jpg",
       tag: "New!",
@@ -19,7 +19,7 @@ export default function RecentProducts() {
     },
     {
       id: 2,
-      buttonLabel: "Smart",
+      buttonLabel: "On Sale",
       mainImage: "/assets/pics/rate.jpg",
       hoverImage: "/assets/pics/speaker 3.jpg",
       tag: "Sale!",
@@ -32,7 +32,7 @@ export default function RecentProducts() {
     },
     {
       id: 3,
-      buttonLabel: "High-Frequency",
+      buttonLabel: "Limited Stock",
       mainImage: "/assets/pics/rate.jpg",
       hoverImage: "/assets/pics/speaker2.jpg",
       tag: "Hot!",
@@ -45,7 +45,7 @@ export default function RecentProducts() {
     },
     {
       id: 4,
-      buttonLabel: "High-Frequency",
+      buttonLabel: "Limited Stock",
       mainImage: "/assets/pics/rate.jpg",
       hoverImage: "/assets/pics/speaker 3.jpg",
       //   tag: "Hot!",
@@ -58,7 +58,7 @@ export default function RecentProducts() {
     },
     {
       id: 5,
-      buttonLabel: "Smart",
+      buttonLabel: "On Sale",
       mainImage: "/assets/pics/rate.jpg",
       hoverImage: "/assets/pics/speaker2.jpg",
       //tag: "Sale!",
@@ -71,7 +71,7 @@ export default function RecentProducts() {
     },
     {
       id: 6,
-      buttonLabel: "Ultrasonic",
+      buttonLabel: "New Arrivals",
       mainImage: "/assets/pics/rate.jpg",
       hoverImage: "/assets/pics/speaker2.jpg",
       tag: "New!",
@@ -84,7 +84,7 @@ export default function RecentProducts() {
     },
     {
       id: 7,
-      buttonLabel: "Ultrasonic",
+      buttonLabel: "New Arrivals",
       mainImage: "/assets/pics/rate.jpg",
       hoverImage: "/assets/pics/speaker 3.jpg",
       //tag: "New!",

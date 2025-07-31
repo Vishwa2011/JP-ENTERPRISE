@@ -626,30 +626,21 @@ const Home = () => {
           </div>
 
           <div class="video-wrapper">
-  <video
-    playsinline
-    controls
-    autoplay
-    muted
-    poster="files/bdff23e6f5d1441cb886b4ac28081f46.thumbnail.0000000000.webp"
-    class="custom-video-player"
-    preload="metadata"
-    aria-label="Why Kill When You Can Repel?"
-  >
-    <source src="/assets/pics/video1.mp4" type="video/mp4" />
-    
-    {/* <!-- 👇 Add this line --> */}
-    <track
-      src="/assets/captions/video1-en.vtt"
-      kind="captions"
-      srclang="en"
-      label="English captions"
-      default
-    />
-    
-    Your browser does not support the video tag.
-  </video>
-</div>
+            <video
+              playsinline="playsinline"
+              controls="controls"
+              autoplay="autoplay"
+              muted="muted"
+              poster="files/bdff23e6f5d1441cb886b4ac28081f46.thumbnail.0000000000.webp"
+              class="custom-video-player"
+              preload="metadata"
+              aria-label="Why Kill When You Can Repel?"
+            >
+              <source src="/assets/pics/video1.mp4" type="video/mp4" />
+              <track src="/assets/captions/video1-en.vtt" kind="captions" srclang="en" label="English captions" default />
+              Your browser does not support the video tag.
+            </video>
+          </div>
 
         </div>
       </div>
@@ -1122,7 +1113,7 @@ const Home = () => {
 
  <div style={{background:'#000'}}>
       <section className="section">
-        <div className="offer-grid1">
+        <div className="offer-grid1 ">
           <div className="offer-card1">
             <p>{counts.totalOrder}+</p>
             <h3>Total Order</h3>

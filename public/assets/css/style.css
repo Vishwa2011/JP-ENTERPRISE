@@ -8754,7 +8754,7 @@ Go Top CSS
   transition: all 0.3s ease;
   border: 2px solid #f53f85;
   text-align: center;
-    box-shadow:0 10px 30px rgb(245 63 133 / 60%);
+    /* box-shadow:0 10px 30px rgb(245 63 133 / 60%); */
 }
 
 .offer-card:hover {
@@ -10241,6 +10241,7 @@ color: #fff;
 
 .offer-card1 {
   width: 64%;
+  margin: auto;
   background: #f9f9f9;
   padding: 6px 16px;
   border-radius: 16px;
