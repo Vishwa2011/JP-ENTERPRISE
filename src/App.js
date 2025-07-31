@@ -127,6 +127,7 @@ function App() {
       target="_blank" 
       rel="noopener noreferrer"
       className="whatsapp-button"
+      aria-label="Visit our Whatsapp page"
     >
       <FaWhatsapp size={30} />
     </a>

@@ -402,7 +402,7 @@ const Home = () => {
                   }}
                 >
                   <h4
-                    className="h5 fw-bold mb-2"
+                    className="h4 fw-bold mb-2"
                     style={{ fontSize: "26 px", marginBottom: "11px" }}
                   >
                     Easy Privacy Policy
@@ -437,7 +437,7 @@ const Home = () => {
                   }}
                 >
                   <h4
-                    className="h5 fw-bold mb-2"
+                    className="h4 fw-bold mb-2"
                     style={{ fontSize: "26px", marginBottom: "11px" }}
                   >
                   Shipping Policy
@@ -472,7 +472,7 @@ const Home = () => {
                   }}
                 >
                   <h4
-                    className="h5 fw-bold mb-2"
+                    className="h4 fw-bold mb-2"
                     style={{ fontSize: "26px", marginBottom: "11px" }}
                   >
                     Track Your Package
@@ -522,7 +522,7 @@ const Home = () => {
                     {item.icon}
                   </div>
                   <div>
-                    <h6 className="mb-1 fw-bold">{item.title}</h6>
+                    <p className="h6 mb-1 fw-bold">{item.title}</p>
                     <p className="mb-0 small text-muted">{item.desc}</p>
                   </div>
                 </div>
@@ -626,19 +626,31 @@ const Home = () => {
           </div>
 
           <div class="video-wrapper">
-            <video
-              playsinline="playsinline"
-              controls="controls"
-              autoplay="autoplay"
-              muted="muted"
-              poster="files/bdff23e6f5d1441cb886b4ac28081f46.thumbnail.0000000000.webp"
-              class="custom-video-player"
-              preload="metadata"
-              aria-label="Why Kill When You Can Repel?"
-            >
-              <source src="/assets/pics/video1.mp4" type="video/mp4" />
-            </video>
-          </div>
+  <video
+    playsinline
+    controls
+    autoplay
+    muted
+    poster="files/bdff23e6f5d1441cb886b4ac28081f46.thumbnail.0000000000.webp"
+    class="custom-video-player"
+    preload="metadata"
+    aria-label="Why Kill When You Can Repel?"
+  >
+    <source src="/assets/pics/video1.mp4" type="video/mp4" />
+    
+    {/* <!-- 👇 Add this line --> */}
+    <track
+      src="/assets/captions/video1-en.vtt"
+      kind="captions"
+      srclang="en"
+      label="English captions"
+      default
+    />
+    
+    Your browser does not support the video tag.
+  </video>
+</div>
+
         </div>
       </div>
 

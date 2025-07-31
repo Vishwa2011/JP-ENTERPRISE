@@ -22,7 +22,7 @@ export default function Instragram() {
     <div className="instagram-area" style={{paddingTop:'60px'}}>
       <div className="container-fluid">
         <div className="instagram-title">
-          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Visit our Instagram page">
             <i className="bx bxl-instagram"></i> Follow us on @jp Enterprise
           </a>
         </div>
@@ -52,6 +52,7 @@ export default function Instragram() {
                   target="_blank"
                   rel="noreferrer"
                   className="link-btn"
+                  aria-label="Visit our Instagram page"
                 ></a>
               </div>
             </SwiperSlide>
