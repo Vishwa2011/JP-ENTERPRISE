@@ -10280,3 +10280,11 @@ color: #fff;
 .custom-shadow:hover {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
+@media (max-width: 480px) {
+  .offer-grid1 {
+    justify-content: center;
+  }
+  .offer-card1{
+    margin: 0 auto;
+  }
+}
