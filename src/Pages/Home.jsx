@@ -575,31 +575,31 @@ const Home = () => {
         
                 <div class="logoees">
 <div class="logo_itemes">
-<img src="/assets/pics/brand1 (1).png"/>
-<img src="/assets/pics/brand2.png"/>
-<img src="/assets/pics/brand3.png"/>
-<img src="/assets/pics/brand4.png"/>
-<img src="/assets/pics/brand5.png"/>
-<img src="/assets/pics/brand6.png"/>
-<img src="/assets/pics/brand1 (1).png"/>
-<img src="/assets/pics/brand2.png"/>
-<img src="/assets/pics/brand3.png"/>
-<img src="/assets/pics/brand4.png"/>
-<img src="/assets/pics/brand5.png"/>
-<img src="/assets/pics/brand6.png"/>
-<img src="/assets/pics/brand1 (1).png"/>
-<img src="/assets/pics/brand2.png"/>
-<img src="/assets/pics/brand3.png"/>
-<img src="/assets/pics/brand4.png"/>
-<img src="/assets/pics/brand5.png"/>
-<img src="/assets/pics/brand6.png"/>
-<img src="/assets/pics/brand1 (1).png"/>
-<img src="/assets/pics/brand2.png"/>
-<img src="/assets/pics/brand3.png"/>
-<img src="/assets/pics/brand4.png"/>
-<img src="/assets/pics/brand5.png"/>
-<img src="/assets/pics/brand6.png"/>
-<img src="/assets/pics/brand1 (1).png"/>
+<img src="/assets/pics/brand1 (1).png" alt="Deal With" />
+<img src="/assets/pics/brand2.png" alt="Deal With" />
+<img src="/assets/pics/brand3.png" alt="Deal With" />
+<img src="/assets/pics/brand4.png" alt="Deal With" />
+<img src="/assets/pics/brand5.png" alt="Deal With" />
+<img src="/assets/pics/brand6.png" alt="Deal With" />
+<img src="/assets/pics/brand1 (1).png" alt="Deal With" />
+<img src="/assets/pics/brand2.png" alt="Deal With" />
+<img src="/assets/pics/brand3.png" alt="Deal With" />
+<img src="/assets/pics/brand4.png" alt="Deal With" />
+<img src="/assets/pics/brand5.png" alt="Deal With" />
+<img src="/assets/pics/brand6.png" alt="Deal With" />
+<img src="/assets/pics/brand1 (1).png" alt="Deal With" />
+<img src="/assets/pics/brand2.png" alt="Deal With" />
+<img src="/assets/pics/brand3.png" alt="Deal With" />
+<img src="/assets/pics/brand4.png" alt="Deal With" />
+<img src="/assets/pics/brand5.png" alt="Deal With" />
+<img src="/assets/pics/brand6.png" alt="Deal With" />
+<img src="/assets/pics/brand1 (1).png" alt="Deal With" />
+<img src="/assets/pics/brand2.png" alt="Deal With" />
+<img src="/assets/pics/brand3.png" alt="Deal With" />
+<img src="/assets/pics/brand4.png" alt="Deal With" />
+<img src="/assets/pics/brand5.png" alt="Deal With" />
+<img src="/assets/pics/brand6.png" alt="Deal With" />
+<img src="/assets/pics/brand1 (1).png" alt="Deal With" />
 
 </div>
 
