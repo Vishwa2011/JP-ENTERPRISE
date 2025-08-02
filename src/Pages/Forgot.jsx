@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+
 
 const Forgot = () => {
-  const [useMobile, setUseMobile] = useState(false); // toggle flag
+  const [useMobile, setUseMobile] = useState(false);
   const [email, setEmail] = useState('');
   const [mobile, setMobile] = useState('');
   const [showOtpSection, setShowOtpSection] = useState(false);
@@ -14,7 +15,6 @@ const Forgot = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     if (useMobile) {
       if (!mobile) {
         setErrorMessage('Please enter your mobile number');
@@ -34,7 +34,6 @@ const Forgot = () => {
 
   const handleOtpSubmit = (e) => {
     e.preventDefault();
-
     if (otp === '123456') {
       setErrorMessage('');
       setOtpVerified(true);
@@ -45,59 +44,39 @@ const Forgot = () => {
 
   const handlePasswordReset = (e) => {
     e.preventDefault();
-
     if (newPassword !== confirmPassword) {
       setErrorMessage("Passwords don't match");
       return;
     }
-
     setErrorMessage('');
     setSuccessMessage('Password reset successful!');
-    // Reset or redirect logic goes here
   };
 
   return (
-    <>
-      <div style={{ maxWidth: '400px', margin: 'auto', padding: '20px' }}>
-      <h1 className='h1'>Forgot your password?</h1>
-      <hr />
+    <div className="forgot-page">
+      <div className="form-container">
+        <h2>Reset Your Password</h2>
+        <p className="subtext">Time for a fresh start! Go ahead and set a new password.</p>
 
-      {errorMessage && (
-        <div style={{ color: 'red', marginBottom: '10px' }}>{errorMessage}</div>
-      )}
+        {errorMessage && <div className="error-text">{errorMessage}</div>}
+        {successMessage && <div className="success-text">{successMessage}</div>}
 
-      {successMessage && (
-        <div style={{ color: 'green', marginBottom: '10px' }}>{successMessage}</div>
-      )}
-
-      {/* Step 1: Email or Mobile input */}
-      {!showOtpSection && !otpVerified && (
-        <form onSubmit={handleSubmit} className='form'>
-          <h3 className='h3'>{useMobile ? 'Enter your mobile number' : 'Enter your email address'}</h3>
-
-          {useMobile ? (
+        {/* Step 1 */}
+        {!showOtpSection && !otpVerified && (
+          <form onSubmit={handleSubmit} className="form">
             <input
-              type="tel"
-              placeholder="Enter your mobile number"
-              value={mobile}
-              onChange={(e) => setMobile(e.target.value)}
+              type={useMobile ? 'tel' : 'email'}
+              placeholder={useMobile ? 'Enter your mobile number' : 'Enter your email address'}
+              value={useMobile ? mobile : email}
+              onChange={(e) =>
+                useMobile ? setMobile(e.target.value) : setEmail(e.target.value)
+              }
               required
-              style={{ width: '100%', padding: '8px', marginBottom: '10px' }}
             />
-          ) : (
-            <input
-              type="email"
-              placeholder="Enter your email address"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              style={{ width: '100%', padding: '8px', marginBottom: '10px' }}
-            />
-          )}
 
-          <div style={{ marginBottom: '10px' }}>
             <a
               href="#"
+              className="toggle-link"
               onClick={(e) => {
                 e.preventDefault();
                 setUseMobile(!useMobile);
@@ -105,76 +84,53 @@ const Forgot = () => {
                 setMobile('');
                 setErrorMessage('');
               }}
-              style={{ fontSize: '14px', color: '#f53f85', textDecoration: 'underline' }}
             >
               {useMobile ? 'Forgot With Email?' : 'Forgot With Mobile Number?'}
             </a>
-          </div>
-<div style={{justifyContent:'center',display:'flex'}}>
-    <button type="submit" className='button'>Send OTP</button>
-</div>
-        
-        </form>
-      )}
 
-      {/* Step 2: OTP */}
-      {showOtpSection && !otpVerified && (
-        <form onSubmit={handleOtpSubmit} className='form'>
-          <h3 className='h3'>Enter OTP</h3>
-          <input
-            type="text"
-            placeholder="Enter OTP"
-            value={otp}
-            onChange={(e) => setOtp(e.target.value)}
-            required
-            style={{ width: '100%', padding: '8px', marginBottom: '10px' }}
-          />
-          <div style={{justifyContent:'center',display:'flex'}}>
+            <button type="submit" className="form-button">Send OTP</button>
+          </form>
+        )}
 
-          <button type="submit" className='button'>Submit OTP</button>
-          </div>
-        </form>
-      )}
+        {/* Step 2 */}
+        {showOtpSection && !otpVerified && (
+          <form onSubmit={handleOtpSubmit} className="form">
+            <input
+              type="text"
+              placeholder="Enter OTP"
+              value={otp}
+              onChange={(e) => setOtp(e.target.value)}
+              required
+            />
+            <button type="submit" className="form-button">Submit OTP</button>
+          </form>
+        )}
 
-      {/* Step 3: Password Reset */}
-      {otpVerified && (
-        <form onSubmit={handlePasswordReset} className='form'>
-          <h3 className='h3'>Reset Your Password</h3>
-          <input
-            type="password"
-            placeholder="New Password"
-            value={newPassword}
-            onChange={(e) => setNewPassword(e.target.value)}
-            required
-            style={{ width: '100%', padding: '8px', marginBottom: '10px' }}
-          />
-          <input
-            type="password"
-            placeholder="Confirm Password"
-            value={confirmPassword}
-            onChange={(e) => setConfirmPassword(e.target.value)}
-            required
-            style={{ width: '100%', padding: '8px', marginBottom: '25px' }}
-          />
-          <div style={{justifyContent:'center',display:'flex'}}>
-      <button type="submit" className='button'>Reset Password</button>
-          </div>
-          <div>
-            <a
-              href="/"
-          
-              style={{ fontSize: '14px', color: '#f53f85', textDecoration: 'underline' }}
-            >
-            Back To Home 
-            </a>
-          </div>
-        </form>
-       
-      )}
-    
+        {/* Step 3 */}
+        {otpVerified && (
+          <form onSubmit={handlePasswordReset} className="form">
+            <input
+              type="password"
+              placeholder="New Password"
+              value={newPassword}
+              onChange={(e) => setNewPassword(e.target.value)}
+              required
+            />
+            <input
+              type="password"
+              placeholder="Confirm Password"
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
+              required
+            />
+            <button type="submit" className="form-button">Save Changes</button>
+            <p className="login-link">
+              Already part of the family? <a href="/">Log in here.</a>
+            </p>
+          </form>
+        )}
+      </div>
     </div>
-    </>
-  
   );
 };
 

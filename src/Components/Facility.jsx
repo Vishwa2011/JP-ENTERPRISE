@@ -21,7 +21,7 @@ export default function Facility() {
   return (
     <div>
 
-    <section className="facility-area pb-70">
+    <section className="facility-area " style={{paddingBottom:'30px'}}>
       <div className="container">
         <Swiper
           modules={[Autoplay]}

@@ -663,7 +663,7 @@ const OurProducts = () => {
         </div>
         {/* <!-- End QuickView Modal Area --> */}
         <Facility />
-        <Instragram />
+        {/* <Instragram /> */}
       </>
       <Footer />
     </>

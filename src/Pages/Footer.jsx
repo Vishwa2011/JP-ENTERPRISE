@@ -82,16 +82,17 @@ export default function Footer() {
                 <div className="footer-bottom-area">
                     <div className="row align-items-center justify-content-center">
                         <div className="col-lg-6 col-md-6">
-                            <p>© JP Enterprise is Proudly  by    <a href="https://successinnovativetechnologiespvtltd.com/" target="_blank">  Success Innovative Technologies Private Limited </a></p>
+                            
+                            <p>Copyright © 2025 JP Enterprise. All Rights Reserved and Proudly Powered By <a href="https://successinnovativetechnologiespvtltd.com/" target="_blank">  Success Innovative Technologies Private Limited </a></p>
                         </div>
 
                         <div className="col-lg-6 col-md-6">
                             <ul className="payment-types">
-                                <li><a href="#" target="_blank"><img src="assets/img/payment/visa.png" alt="image" /></a></li>
-                                <li><a href="#" target="_blank"><img src="assets/img/payment/mastercard.png" alt="image" /></a></li>
-                                <li><a href="#" target="_blank"><img src="assets/img/payment/mastercard2.png" alt="image" /></a></li>
-                                <li><a href="#" target="_blank"><img src="assets/img/payment/visa2.png" alt="image" /></a></li>
-                                <li><a href="#" target="_blank"><img src="assets/img/payment/expresscard.png" alt="image" /></a></li>
+                                <li><a href="#" target="_blank"><img src="assets/img/payment/visa.png" alt="image"  loading="lazy" /></a></li>
+                                <li><a href="#" target="_blank"><img src="assets/img/payment/mastercard.png" alt="image"  loading="lazy" /></a></li>
+                                <li><a href="#" target="_blank"><img src="assets/img/payment/mastercard2.png" alt="image" loading="lazy"  /></a></li>
+                                <li><a href="#" target="_blank"><img src="assets/img/payment/visa2.png" alt="image"  loading="lazy" /></a></li>
+                                <li><a href="#" target="_blank"><img src="assets/img/payment/expresscard.png" alt="image"  loading="lazy" /></a></li>
                             </ul>
                         </div>
                     </div>

@@ -19,7 +19,7 @@ export default function Instragram() {
   ];
 
   return (
-    <div className="instagram-area" style={{paddingTop:'60px'}}>
+    <div className="instagram-area" style={{paddingTop:'30px',paddingBottom:'30px'}}>
       <div className="container-fluid">
         <div className="instagram-title">
           <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Visit our Instagram page">
@@ -28,30 +28,31 @@ export default function Instragram() {
         </div>
 
         <Swiper
-          slidesPerView={6}
+          slidesPerView={7}
           spaceBetween={20}
-          loop={true}
-          autoplay={{ delay: 2500, disableOnInteraction: false }}
-          modules={[Autoplay]}
+          // loop={true}
+          // autoplay={{ delay: 2500, disableOnInteraction: false }}
+          // modules={[Autoplay]}
           className="instagram-swiper"
           breakpoints={{
-            0: { slidesPerView: 2 },
-            576: { slidesPerView: 3 },
-            768: { slidesPerView: 4 },
-            992: { slidesPerView: 5 },
-            1200: { slidesPerView: 6 },
+            0: { slidesPerView: 3 },
+            576: { slidesPerView: 4 },
+            768: { slidesPerView: 5 },
+            992: { slidesPerView: 6 },
+            1200: { slidesPerView: 7 },
           }}
         >
           {images.map((img, i) => (
             <SwiperSlide key={i}>
               <div className="single-instagram-post">
-                <img src={`assets/img/instagram/${img}`} alt={`Instagram ${i}`} />
+                <img src={`assets/img/instagram/${img}`} alt={`Instagram ${i}`} loading="lazy"  />
                 <i className="bx bxl-instagram"></i>
                 <a
                   href="https://www.instagram.com/"
                   target="_blank"
                   rel="noreferrer"
                   className="link-btn"
+                  
                   aria-label="Visit our Instagram page"
                 ></a>
               </div>

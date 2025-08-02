@@ -337,7 +337,7 @@ const Navbar = () => {
           {/* laptop view  */}
           <div className="xton-nav">
             <div className="container-fluid">
-              <nav className="navbar navbar-expand-md navbar-light">
+              <nav className="navbar navbar-expand-md navbar-light pt-0 pb-0">
                 <a className="navbar-brand" href="/">
                   <img
                     src="/assets/pics/jp.logo.png"
@@ -551,7 +551,7 @@ const Navbar = () => {
                         </a>
                       </div>
                     </div>
-                    <div className="option-item">
+                    {/* <div className="option-item">
                       <div
                         className="burger-menu"
                         data-bs-toggle="modal"
@@ -561,7 +561,7 @@ const Navbar = () => {
                         <span className="middle-bar"></span>
                         <span className="bottom-bar"></span>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </nav>
@@ -572,9 +572,9 @@ const Navbar = () => {
 
         {/* <!-- Start Sticky Navbar Area --> */}
         <div className="navbar-area header-sticky">
-          <div className="xton-nav">
+          <div className="xton-nav ">
             <div className="container-fluid">
-              <nav className="navbar navbar-expand-md navbar-light">
+              <nav className="navbar navbar-expand-md navbar-light pt-0 pb-0">
                 <a className="navbar-brand" href="/">
                   <img
                     src="/assets/pics/jp.logo.png"
@@ -782,7 +782,7 @@ const Navbar = () => {
                         </a>
                       </div>
                     </div>
-                    <div className="option-item">
+                    {/* <div className="option-item">
                       <div
                         className="burger-menu"
                         data-bs-toggle="modal"
@@ -792,7 +792,7 @@ const Navbar = () => {
                         <span className="middle-bar"></span>
                         <span className="bottom-bar"></span>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </nav>

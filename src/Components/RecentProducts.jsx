@@ -106,7 +106,7 @@ export default function RecentProducts() {
   );
 
   return (
-    <section className="products-area pb-70">
+    <section className="products-area " style={{paddingBottom:'30px',paddingTop:"30px"}}>
       <div className="container">
         <div className="section-title text-center">
           <span className="sub-title">See Our Collection</span>

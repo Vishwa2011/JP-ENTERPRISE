@@ -23,6 +23,7 @@ import { Autoplay, Pagination, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import RecentProducts from "../Components/RecentProducts";
+import CategorySection from "../Components/CategorySection";
 
 const testimonials = [
   {
@@ -276,19 +277,32 @@ const Home = () => {
         </div>
       </div>
       {/* <!-- End Main Banner Area --> */}
-
+      <CategorySection />
       {/* section strt */}
 
       <section
         className="bird-repellent-banner"
-        style={{ padding: "100px 20px", background: "#fff" }}
+        style={{ padding: "30px 20px", background: "#fff" }}
       >
         <div
           className="container"
           style={{ display: "flex", flexWrap: "wrap", alignItems: "center" }}
         >
           {/* Left Content */}
-          <div className=" col-md-6 col-12 left-content">
+<div
+            className=" col-md-6 col-12 right-image"
+            style={{ textAlign: "center", marginTop: "30px" }}
+          >
+            <img
+              src="/assets/pics/swsw.png"
+              alt="Bird Repellent Device"
+              style={{ maxWidth: "100%", height: "auto", borderRadius: "10px" }}
+            />
+          </div>
+          
+
+          {/* Right Image */}
+          <div className=" col-md-6 col-12 left-content " style={{paddingLeft:'15px'}}>
             <h2
               style={{
                 fontSize: "36px",
@@ -299,7 +313,7 @@ const Home = () => {
               Tough on Rats,
               <span
                 style={{
-                  color: " rgb(245, 63, 133)",
+                  color: " #1dabaf",
                   marginRight: "10px",
                   marginLeft: "10px",
                 }}
@@ -324,7 +338,7 @@ const Home = () => {
                 >
                   <i
                     className="fa-regular fa-circle-check"
-                    style={{ color: "rgb(245, 63, 133)", marginRight: "10px" }}
+                    style={{ color: "#258495", marginRight: "10px" }}
                   ></i>
                   {item}
                 </li>
@@ -343,18 +357,6 @@ const Home = () => {
               Protect Your Space Today →
             </a>
           </div>
-
-          {/* Right Image */}
-          <div
-            className=" col-md-6 col-12 right-image"
-            style={{ textAlign: "center", marginTop: "30px" }}
-          >
-            <img
-              src="/assets/pics/swsw.png"
-              alt="Bird Repellent Device"
-              style={{ maxWidth: "100%", height: "auto", borderRadius: "10px" }}
-            />
-          </div>
         </div>
       </section>
 
@@ -364,15 +366,15 @@ const Home = () => {
       <RecentProducts />
 
       {/* <!-- End Products Area --> */}
-      <div style={{ background: "#00000029", marginBottom: "60px" }}>
+      <div style={{ background: "#2584951f", marginBottom: "30px" }}>
         <div
           className="container "
-          style={{ paddingBottom: "100px", paddingTop: "65px" }}
+          style={{ paddingBottom: "30px", paddingTop: "30px" }}
         >
           <div className="text-center mb-4">
             <span
               className="text-uppercase  fw-semibold"
-              style={{ color: "rgb(245, 63, 133)" }}
+              style={{ color: "#1dabaf" }}
             >
               Smart Choice for Safety
             </span>
@@ -392,17 +394,17 @@ const Home = () => {
                   style={{
                     fontSize: "34px",
                     paddingTop: "13px",
-                    color: "rgb(245, 63, 133)",
+                    color: "#258495",
                   }}
                 ></i>
                 <div
                   style={{
-                    borderLeft: "3px solid rgb(245, 63, 133)",
+                    borderLeft: "3px solid #258495",
                     paddingLeft: "10px",
                   }}
                 >
                   <h4
-                    className="h4 fw-bold mb-2"
+                    className=" fw-bold mb-2"
                     style={{ fontSize: "26 px", marginBottom: "11px" }}
                   >
                     Easy Privacy Policy
@@ -427,17 +429,17 @@ const Home = () => {
                   style={{
                     fontSize: "34px",
                     paddingTop: "13px",
-                    color: "rgb(245, 63, 133)",
+                    color: "#258495",
                   }}
                 ></i>
                 <div
                   style={{
-                    borderLeft: "3px solid rgb(245, 63, 133)",
+                    borderLeft: "3px solid #258495",
                     paddingLeft: "10px",
                   }}
                 >
                   <h4
-                    className="h4 fw-bold mb-2"
+                    className=" fw-bold mb-2"
                     style={{ fontSize: "26px", marginBottom: "11px" }}
                   >
                   Shipping Policy
@@ -462,17 +464,17 @@ const Home = () => {
                   style={{
                     fontSize: "34px",
                     paddingTop: "13px",
-                    color: "rgb(245, 63, 133)",
+                    color: "#258495",
                   }}
                 ></i>
                 <div
                   style={{
-                    borderLeft: "3px solid rgb(245, 63, 133)",
+                    borderLeft: "3px solid #258495",
                     paddingLeft: "10px",
                   }}
                 >
                   <h4
-                    className="h4 fw-bold mb-2"
+                    className="fw-bold mb-2"
                     style={{ fontSize: "26px", marginBottom: "11px" }}
                   >
                     Track Your Package
@@ -500,9 +502,9 @@ const Home = () => {
       <div
         className="container-fluid "
         style={{
-          paddingBottom: "135px",
-          paddingTop: "100px",
-          background: "#00000029",
+          paddingBottom: "30px",
+          paddingTop: "30px",
+          background: "#2584951f",
         }}
       >
         <div className="about-content text-center mb-4">
@@ -533,7 +535,7 @@ const Home = () => {
           <div className="col-lg-4 col-md-12 text-center">
             <div>
               <img
-                src="/assets/pics/rate.jpg"
+                src="/assets/pics/machine.png"
                 alt="Product"
                 className="img-fluid float-animation"
                 style={{ maxHeight: "420px" }}
@@ -554,7 +556,7 @@ const Home = () => {
                     {item.icon}
                   </div>
                   <div>
-                    <h6 className="mb-1 fw-bold">{item.title}</h6>
+                    <p className=" h6 mb-1 fw-bold">{item.title}</p>
                     <p className="mb-0 small text-muted">{item.desc}</p>
                   </div>
                 </div>
@@ -566,40 +568,43 @@ const Home = () => {
 
       {/*  */}
              {/* <!-- Start Brand Area --> */}
-      <div className="brand-area pb-70 mb-2 pt-70">
+      <div className="brand-area " style={{paddingTop:"30px", paddingBottom:'30px'}}>
         <div className="container">
-          <div className="section-title">
+          <div className="section-title mb-0">
             <h2>We are Deal With</h2>
           </div>
 
         
                 <div class="logoees">
 <div class="logo_itemes">
-<img src="/assets/pics/brand1 (1).png" alt="Deal With" />
-<img src="/assets/pics/brand2.png" alt="Deal With" />
-<img src="/assets/pics/brand3.png" alt="Deal With" />
-<img src="/assets/pics/brand4.png" alt="Deal With" />
-<img src="/assets/pics/brand5.png" alt="Deal With" />
-<img src="/assets/pics/brand6.png" alt="Deal With" />
-<img src="/assets/pics/brand1 (1).png" alt="Deal With" />
-<img src="/assets/pics/brand2.png" alt="Deal With" />
-<img src="/assets/pics/brand3.png" alt="Deal With" />
-<img src="/assets/pics/brand4.png" alt="Deal With" />
-<img src="/assets/pics/brand5.png" alt="Deal With" />
-<img src="/assets/pics/brand6.png" alt="Deal With" />
-<img src="/assets/pics/brand1 (1).png" alt="Deal With" />
-<img src="/assets/pics/brand2.png" alt="Deal With" />
-<img src="/assets/pics/brand3.png" alt="Deal With" />
-<img src="/assets/pics/brand4.png" alt="Deal With" />
-<img src="/assets/pics/brand5.png" alt="Deal With" />
-<img src="/assets/pics/brand6.png" alt="Deal With" />
-<img src="/assets/pics/brand1 (1).png" alt="Deal With" />
-<img src="/assets/pics/brand2.png" alt="Deal With" />
-<img src="/assets/pics/brand3.png" alt="Deal With" />
-<img src="/assets/pics/brand4.png" alt="Deal With" />
-<img src="/assets/pics/brand5.png" alt="Deal With" />
-<img src="/assets/pics/brand6.png" alt="Deal With" />
-<img src="/assets/pics/brand1 (1).png" alt="Deal With" />
+<img src="/assets/pics/raj.png" alt="Deal With" loading="lazy" />
+<img src="/assets/pics/Untitled design (1).png" alt="Deal With" loading="lazy" />
+<img src="/assets/pics/am.png" alt="Deal With" loading="lazy" />
+<img src="/assets/pics/Untitled design (2).png" alt="Deal With" loading="lazy" />
+<img src="/assets/pics/Untitled design (3).png" alt="Deal With" loading="lazy" />
+<img src="/assets/pics/Untitled design (4).png" alt="Deal With" loading="lazy" />
+
+<img src="/assets/pics/raj.png" alt="Deal With" loading="lazy" />
+<img src="/assets/pics/Untitled design (1).png" alt="Deal With" loading="lazy" />
+<img src="/assets/pics/am.png" alt="Deal With" loading="lazy" />
+<img src="/assets/pics/Untitled design (2).png" alt="Deal With" loading="lazy" />
+<img src="/assets/pics/Untitled design (3).png" alt="Deal With" loading="lazy" />
+<img src="/assets/pics/Untitled design (4).png" alt="Deal With" loading="lazy" />
+
+<img src="/assets/pics/raj.png" alt="Deal With" loading="lazy" />
+<img src="/assets/pics/Untitled design (1).png" alt="Deal With" loading="lazy" />
+<img src="/assets/pics/am.png" alt="Deal With" loading="lazy" />
+<img src="/assets/pics/Untitled design (2).png" alt="Deal With" loading="lazy" />
+<img src="/assets/pics/Untitled design (3).png" alt="Deal With" loading="lazy" />
+<img src="/assets/pics/Untitled design (4).png" alt="Deal With" loading="lazy" />
+
+<img src="/assets/pics/raj.png" alt="Deal With" loading="lazy" />
+<img src="/assets/pics/Untitled design (1).png" alt="Deal With" loading="lazy" />
+<img src="/assets/pics/am.png" alt="Deal With" loading="lazy" />
+<img src="/assets/pics/Untitled design (2).png" alt="Deal With" loading="lazy" />
+<img src="/assets/pics/Untitled design (3).png" alt="Deal With" loading="lazy" />
+<img src="/assets/pics/Untitled design (4).png" alt="Deal With" loading="lazy" />
+
 
 </div>
 
@@ -616,9 +621,9 @@ const Home = () => {
 
       <div
         id="shopify-section-template--18276792860857__video_section_3ixD7W"
-        class="shopify-section"
+        class="shopify-section "
       >
-        <div class="custom-video-section">
+        <div class="custom-video-section pt-0">
 
           <div className="about-content text-center mb-4">
             <span className="sub-title">Watch Our Video</span>
@@ -832,7 +837,7 @@ const Home = () => {
 
       {/* <!-- Start Testimonials Area --> */}
 
-      <section className="testimonials-area ptb-100">
+      <section className="testimonials-area " style={{paddingTop:"30px", paddingBottom:'30px'}}>
         <div className="container">
           <div className="section-title">
             <span className="sub-title">Testimonials</span>
@@ -860,7 +865,7 @@ const Home = () => {
                     background:
                       i === activeIndex + 1 ||
                       (activeIndex === testimonials.length - 1 && i === 0)
-                        ? "rgb(245, 63, 133)"
+                        ? "#258495"
                         : "#fff",
                     color:
                       i === activeIndex + 1 ||
@@ -892,8 +897,8 @@ const Home = () => {
       {/* <!-- End Testimonials Area --> */}
 
       {/* why choose start */}
-      <div style={{ background: "#00000029" }}>
-        <section className="section">
+      <div style={{ background: "#2584951f" }}>
+        <section className="section" style={{paddingTop:'30px',paddingBottom:'30px'}}>
           <div className="about-content text-center mb-4">
             <span className="sub-title">Why Choose Us?</span>
             <h2>Smarter safety, no harm done.</h2>
@@ -934,7 +939,7 @@ const Home = () => {
       {/* why choose end */}
 
       {/* <!-- Start Blog Area --> */}
-      <section className="blog-area pt-100 pb-70">
+      <section className="blog-area " style={{paddingTop:"30px", paddingBottom:'30px'}}>
         <div className="container">
           <div className="section-title">
             <span className="sub-title">Recent Insights</span>
@@ -948,7 +953,7 @@ const Home = () => {
                   <a href="/Blog">
                     <img
                       src="/assets/pics/Rat-in-Car.png"
-                      alt="Rat Infestation Prevention"
+                      alt="Rat Infestation Prevention" loading="lazy"
                     />
                   </a>
                   <div className="date">
@@ -974,7 +979,7 @@ const Home = () => {
                   <a href="/Blog">
                     <img
                       src="/assets/pics/blog2.jpg"
-                      alt="Why Rat Repellent is Important"
+                      alt="Why Rat Repellent is Important" loading="lazy"
                     />
                   </a>
                   <div className="date">
@@ -1002,7 +1007,7 @@ const Home = () => {
                   <a href="/Blog">
                     <img
                       src="/assets/pics/Rat-gnawing.png"
-                      alt="How ultrasonic repellers work"
+                      alt="How ultrasonic repellers work" loading="lazy"
                     />
                   </a>
                   <div className="date">
@@ -1030,10 +1035,10 @@ const Home = () => {
       {/* <!-- End Blog Area --> */}
 
       {/* <!-- Start Categories Banner Area --> */}
-      <div style={{ background: "#00000029" }}>
+      <div style={{ background: "#2584951f" }}>
         <section
-          className="categories-banner-area  pb-70"
-          style={{ paddingTop: "80px" }}
+          className="categories-banner-area  "
+          style={{ paddingTop: "30px" ,paddingBottom:'30px'}}
         >
           <div className="about-content text-center mb-4">
             <span className="sub-title">Effective Solution</span>
@@ -1126,7 +1131,7 @@ const Home = () => {
 
           <div className="offer-card1">
             <p>{counts.totalClient}+</p>
-            <h3>Total Client</h3>
+            <h3>Jp Customers</h3>
           </div>
 
           <div className="offer-card1">

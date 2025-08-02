@@ -31,6 +31,29 @@ const handleTrackOrder = (e) => {
     setFormData(user);
     setIsEditing(true);
   };
+  const [passwordData, setPasswordData] = useState({
+  currentPassword: '',
+  newPassword: '',
+  confirmNewPassword: '',
+});
+const handlePasswordInputChange = (e) => {
+  const { name, value } = e.target;
+  setPasswordData((prev) => ({
+    ...prev,
+    [name]: value,
+  }));
+};
+
+const handlePasswordChange = (e) => {
+  e.preventDefault();
+  if (passwordData.newPassword !== passwordData.confirmNewPassword) {
+    alert("New passwords do not match.");
+    return;
+  }
+
+  // TODO: Add API call or logic to change the password
+  console.log("Changing password:", passwordData);
+};
 
   const handleChange = (e) => {
     const { name, value, files } = e.target;
@@ -113,6 +136,12 @@ const handleTrackOrder = (e) => {
               className={activeTab === "profile" ? "active" : ""}
             >
               Profile
+            </li>
+             <li
+              onClick={() => setActiveTab("password")}
+              className={activeTab === "password" ? "active" : ""}
+            >
+              Password Change
             </li>
             <li
               onClick={() => setActiveTab("orders")}
@@ -232,6 +261,55 @@ const handleTrackOrder = (e) => {
               )}
             </>
           )}
+          {activeTab === "password" && (
+  <>
+    <h3>Change Password</h3>
+
+    <div className="profile-box">
+      <form onSubmit={handlePasswordChange}>
+        <div className="form-group">
+          <label>Current Password</label>
+          <input
+            type="password"
+            name="currentPassword"
+            value={passwordData.currentPassword}
+            onChange={handlePasswordInputChange}
+            placeholder="Enter current password"
+            required
+          />
+        </div>
+
+        <div className="form-group">
+          <label>New Password</label>
+          <input
+            type="password"
+            name="newPassword"
+            value={passwordData.newPassword}
+            onChange={handlePasswordInputChange}
+            placeholder="Enter new password"
+            required
+          />
+        </div>
+
+        <div className="form-group">
+          <label>Confirm New Password</label>
+          <input
+            type="password"
+            name="confirmNewPassword"
+            value={passwordData.confirmNewPassword}
+            onChange={handlePasswordInputChange}
+            placeholder="Confirm new password"
+            required
+          />
+        </div>
+
+        <button type="submit" className="view-btn">
+          Change Password
+        </button>
+      </form>
+    </div>
+  </>
+)}
 
           {activeTab === "orders" && (
             <>
@@ -254,7 +332,7 @@ const handleTrackOrder = (e) => {
                     <tr key={i}>
                       <td
                         style={{
-                          color: "#f53f85",
+                          color: "#258495",
                           cursor: "pointer",
                           fontWeight: "600",
                         }}
@@ -388,7 +466,7 @@ const handleTrackOrder = (e) => {
                     <tr key={i}>
                       <td
                         style={{
-                          color: "#f53f85",
+                          color: "#258495",
                           cursor: "pointer",
                           fontWeight: "600",
                         }}
@@ -427,7 +505,7 @@ const handleTrackOrder = (e) => {
                     <tr key={i}>
                       <td
                         style={{
-                          color: "#f53f85",
+                          color: "#258495",
                           cursor: "pointer",
                           fontWeight: "600",
                         }}
